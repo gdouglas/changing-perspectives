@@ -1,18 +1,24 @@
+<?=
+    $language = "";
+    include 'language-detect.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>THUNDER IN OUR VOICES</title>
 <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
-<body class="home">
+<body class="splash">
+    <a class="skip-main" href="#main">Skip to main content</a>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
     </header>
-    <main>
-        <div class="blocks">
-            
+    <main id="main" tabindex="-1">
+        <h1 class="site-title">Changing Perspectives</h1>
+        <div class="pull-quote text-center">
+            <p>Learn about the the explorations of George Vancouver</p>
         </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
 </body>
 </html>

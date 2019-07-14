@@ -1,0 +1,39 @@
+{
+  "name": "thunder-in-our-voices",
+  "version": "1.0.0",
+  "description": "Thunder in Our Voices website for the Virtual Museum of Canada",
+  "main": "index.php",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "js-cookie": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.4.0"
+  },
+  "scripts": {
+    "concat-css": "concat -o ./dist/styles.css ./styles/form.css ./styles/main.css"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "not dead"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdouglas/thunder.git"
+  },
+  "author": "Graham Douglas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdouglas/thunder/issues"
+  },
+  "homepage": "https://github.com/gdouglas/thunder#readme"
+}

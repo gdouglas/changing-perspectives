@@ -1,24 +1,12 @@
-<?=
-    $language = "";
+<?php
+    $language = "en";
     include 'language-detect.php';
+    if ($lang === "en" || $lang == "fra") {
+        $language = $lang;
+    }
+    header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+    header("Cache-Control: post-check=0, pre-check=0", false);
+    header("Pragma: no-cache");
+    header("Location: http://localhost:8000/$lang/home/");
+    die();
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
-</head>
-<body class="splash">
-    <a class="skip-main" href="#main">Skip to main content</a>
-    <header>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
-    </header>
-    <main id="main" tabindex="-1">
-        <h1 class="site-title">Changing Perspectives</h1>
-        <div class="pull-quote text-center">
-            <p>Learn about the the explorations of George Vancouver</p>
-        </div>
-    </main>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
-</body>
-</html>

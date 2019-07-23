@@ -42,6 +42,9 @@ p {
 img {
     max-width: 100%;
 }
+.vmc-logo {
+    height: 38px;
+}
 .pull-quote p {
     max-width: none;
 }

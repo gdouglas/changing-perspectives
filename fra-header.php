@@ -4,7 +4,7 @@
 </div>
 <?php
     $language_link = '<a href="/en'.substr($_SERVER['REQUEST_URI'], 4).'">English</a>';
-    $logo = '<img src="/images/vmc-logo-en.png" alt="Virtual Museum of Canada">';
+    $logo = '<img src="/images/logos/vmc_fre_col.svg" class="vmc-logo" alt="Virtual Museum of Canada">';
 ?>
 <div class="right">
     <?php

@@ -15,25 +15,25 @@
         <div class="pull-quote text-center">
             <p>Learn about the the explorations of George Vancouver Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora nemo neque officia, ut, optio totam cumque distinctio ab assumenda maxime minus adipisci facilis sint, doloremque dolor id libero repellendus?</p>
             <nav class="tiles">
-                <a href="/context">
+                <a href="/en/context">
                     <figure class="tile">
                         <img src="/images/context.jpg" alt="">
                         <figcaption>Global context during George Vancouvers expedition</figcaption>
                     </figure>
                 </a>
-                <a href="/expedition">
+                <a href="/en/expedition">
                     <figure class="tile">
                         <img src="/images/expedition.jpg" alt="">
                         <figcaption>Details about expedition</figcaption>
                     </figure>
                 </a>
-                <a href="technologies/">
+                <a href="/en/technologies/">
                     <figure class="tile">
                         <img src="/images/technologies.jpg" alt="">
                         <figcaption>Technologies of the time</figcaption>
                     </figure>
                 </a>
-                <a href="legacies/">
+                <a href="/en/legacies/">
                     <figure class="tile">
                         <img src="/images/legacies.jpg" alt="">
                         <figcaption>Enduring legacies of the expeditions of George Vancouver</figcaption>

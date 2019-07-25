@@ -11,7 +11,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1 class="site-title">Technologies/h1>
+        <h1 class="site-title">Technologies</h1>
             <div class="pull-quote text-center">
                 <p>Learn about the the technologies during the times of George Vancouver</p>
             </div>

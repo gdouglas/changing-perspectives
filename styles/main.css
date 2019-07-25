@@ -91,7 +91,7 @@ h1 {
     width: 100%;
     flex: 1;
 }
-.tile {
+.tiles > a {
     width: 25%;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -102,6 +102,19 @@ h1 {
     text-align: center;
     position: relative;
     min-width: 150px;
+}
+.tile {
+    position: relative;
+    margin: 0;
+}
+.tile figcaption {
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 25%;
+    width: 100%;
+    padding: 10px;
+    text-shadow: #000 2px 2px;
+    color: #fff;
 }
 .right {
     display: -webkit-box;

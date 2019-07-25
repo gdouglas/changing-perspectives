@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Thunder in our voices Feedback Form</title>
+    <title>Changing Perspectives Feedback Form</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
     <script src="/scripts/validation.js"></script>
 	<script>

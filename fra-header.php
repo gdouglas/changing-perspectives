@@ -1,6 +1,6 @@
 <a class="skip-main" href="#main">Skip to main content</a>
 <div>
-    <a href="\" class="site-title">THUNDER IN OUR VOICES</a>
+    <a href="\" class="site-title">Changing Perspectives</a>
 </div>
 <?php
     $language_link = '<a href="/en'.substr($_SERVER['REQUEST_URI'], 4).'">English</a>';

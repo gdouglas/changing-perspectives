@@ -47,7 +47,7 @@
 
 	$full_name = $_POST['email_sender_name']; // required
 	$email_from = $_POST['email_sender_email']; // required
-	$subject = "Thunder in our voices feedback | ".$_POST['email_subject']; // required
+	$subject = "Changing Perspectives feedback | ".$_POST['email_subject']; // required
 	$comments = $_POST['email_body']; // required
 	$antispam = $_POST['AntiSpam']; // required
 

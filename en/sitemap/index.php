@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Sitemap | THUNDER IN OUR VOICES</title>
+<title>Sitemap | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>
@@ -12,7 +12,7 @@
     </header>
     <main id="main" tabindex="-1" class="text-left">
         <ul>
-            <li><a href="/">Thunder in our voices</a>
+            <li><a href="/">Changing Perspectives</a>
                 <ul>
                     <li><a href="/en/intro/">Introduction</a></li>
                     <li><a href="/en/dehcho/">Dehcho</a>

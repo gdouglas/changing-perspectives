@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Thank You | THUNDER IN OUR VOICES</title>
+    <title>Thank You | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

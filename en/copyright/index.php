@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Copyright | THUNDER IN OUR VOICES</title>
+    <title>Copyright | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

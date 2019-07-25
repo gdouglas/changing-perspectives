@@ -1,7 +1,7 @@
 {
-  "name": "thunder-in-our-voices",
+  "name": "changing-perspectives",
   "version": "1.0.0",
-  "description": "Thunder in Our Voices website for the Virtual Museum of Canada",
+  "description": "An exhibition of the life and times of George Vancouver",
   "main": "index.php",
   "dependencies": {
     "jquery": "^3.4.1",
@@ -28,12 +28,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gdouglas/thunder.git"
+    "url": "git+https://github.com/gdouglas/changing-perspectives.git"
   },
   "author": "Graham Douglas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gdouglas/thunder/issues"
+    "url": "https://github.com/gdouglas/changing-perspectives/issues"
   },
-  "homepage": "https://github.com/gdouglas/thunder#readme"
+  "homepage": "https://github.com/gdouglas/changing-perspectives"
 }

@@ -1,0 +1,19 @@
+.slider {
+    overflow-x: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+}
+.slide {
+    margin: 20px;
+    flex-shrink: 0;
+    width: 450px;
+    display: inline-block;
+}
+.slide-content {
+    display:none;
+}
+.slide-content:target {
+    display: block;
+}

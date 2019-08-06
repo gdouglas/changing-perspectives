@@ -16,8 +16,7 @@
 <body>
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
-        <h1>Crossed Paths</h1>
+        <h1>Changing Perspectives</h1>
     </header>
             <form class="text-center" name="contactform" method="post" action="send.php" onsubmit="return validate.check(this)">
                 <fieldset>

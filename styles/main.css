@@ -5,7 +5,7 @@
 body {
     margin: 0 auto;
     background: #f8f8f6;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 16px;
     height: 100vh;
     display: -webkit-box;
@@ -54,6 +54,7 @@ h1 {
     text-align: center;
     font-weight: normal;
     margin: 0;
+    font-family: 'Beth Ellen', cursive;
 }
 .medium-large {
     font-size: 1.25rem;
@@ -222,16 +223,12 @@ nav li {
     padding: 10px;
     line-height: 20px;
     display: inline;
-    /* border: 1px solid #ccc; */
     margin-left: -5px;
 }
 nav .current a {
     font-weight: bold;
     border-bottom: 2px solid #000;
     padding-bottom: 2px;
-}
-.workshop .current a {
-    border-bottom: 2px solid #fff;
 }
 header a {
     text-decoration: none;
@@ -289,71 +286,14 @@ a.skip-main:focus, a.skip-main:active {
     font-size:1.2em;
     z-index:999;
 }
-.banner {
-    min-width: 150px;
-}
-.wood-bg {
-    background-image: url("/images/wood-bg.jpg");
-    background-position: bottom;
-}
-
-/* individual page styles */
-.splash,
-.splash main {
-    background: #000;
-    color: #fff;
-}
-.splash h1 {
-    text-align: center;
-    font-weight: 100;
-    font-size: 6.6rem;
-    margin: 0;
-    margin-top: 6rem;
-}
-.splash .pull-quote {
-    margin-bottom: 3.4rem;
-}
-.splash .btn {
-    margin-top: 2rem;
-    color: #fff;
-    border-color: #fff;
-    font-size: 1.2rem
-}
-.workshop {
-    background: #000;
-    background-image: url("/images/workshop-bg.jpg");
-}
-.workshop .lightbox-trigger > img {
-    height: 220px;
-    width: auto;
-    max-width: none;
-
-}
-.workshop *:not(footer) {
-    background: none;
-    color: #fff;
-}
-.workshop-footer {
-    width: 100%;
-    padding: 50px;
-    box-sizing: border-box;
-    margin-top: -170px;
-}
-.workshop-footer>span{
-    margin-right: 1rem;
-}
-.dragging {
-    opacity: 0.4;
-}
-.error {
-    border: 1px solid red;
-}
 
 .justify-center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
 }
+/* individual page styles */
+
 /* Unopened lightbox */
 .lightbox {
     display: none;

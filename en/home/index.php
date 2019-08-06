@@ -13,30 +13,30 @@
     <main id="main" tabindex="-1">
         <h1 class="site-title">Changing Perspectives</h1>
         <div class="pull-quote text-center">
-            <p>Learn about the the explorations of George Vancouver Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempora nemo neque officia, ut, optio totam cumque distinctio ab assumenda maxime minus adipisci facilis sint, doloremque dolor id libero repellendus?</p>
+            <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
             <nav class="tiles">
                 <a href="/en/context">
                     <figure class="tile">
                         <img src="/images/context.jpg" alt="">
-                        <figcaption>Global context during George Vancouvers expedition</figcaption>
+                        <figcaption>The Context</figcaption>
                     </figure>
                 </a>
                 <a href="/en/expedition">
                     <figure class="tile">
                         <img src="/images/expedition.jpg" alt="">
-                        <figcaption>Details about expedition</figcaption>
-                    </figure>
-                </a>
-                <a href="/en/technologies/">
-                    <figure class="tile">
-                        <img src="/images/technologies.jpg" alt="">
-                        <figcaption>Technologies of the time</figcaption>
+                        <figcaption>The Expedition</figcaption>
                     </figure>
                 </a>
                 <a href="/en/legacies/">
                     <figure class="tile">
-                        <img src="/images/legacies.jpg" alt="">
-                        <figcaption>Enduring legacies of the expeditions of George Vancouver</figcaption>
+                        <img src="https://via.placeholder.com/450x300" alt="">
+                        <figcaption>The Legacies</figcaption>
+                    </figure>
+                </a>
+                <a href="/en/technologies/">
+                    <figure class="tile">
+                        <img src="/images/technology-navigation.png" alt="">
+                        <figcaption>European Navigation and Ship Technology</figcaption>
                     </figure>
                 </a>
             </nav>

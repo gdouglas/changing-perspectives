@@ -11,25 +11,38 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <nav class="breadcrumb">
-            <li><a href="/">Home</a></li>
-            <li><a href="/en/context">Context</a></li>
-            <li><a href="/en/context/overview">Overview</a></li>
-            <li><a href="/en/context/before-european">Pacific Northwest Coast before European contact</a></li>
-            <li><a href="/en/context/global-context">Global Context: European empire building</a></li>
-            <li><a href="/en/context/contact-trade">Contact & Trade in the PNWC prior to Vancouver</a></li>
-            <li><a href="/en/context/learning-activities">Learning Activities</a></li>
-        </nav>
         <h1 class="site-title">Context</h1>
         <div class="pull-quote text-center">
             <p>The world during the times of George Vancouver</p>
             <ul class="slider">
-                <li class="slide"><a href="/en/context#"><img src="https://via.placeholder.com/450x250">Context</a></li>
-                <li class="slide"><a href="/en/context#mod-1"><img src="https://via.placeholder.com/450x250">Overview</a></li>
-                <li class="slide"><a href="/en/context#mod-2"><img src="https://via.placeholder.com/450x250">Pacific Northwest Coast before European contact</a></li>
-                <li class="slide"><a href="/en/context#mod-3"><img src="https://via.placeholder.com/450x250">Global Context: European empire building</a></li>
-                <li class="slide"><a href="/en/context#mod-4"><img src="https://via.placeholder.com/450x250">Contact & Trade in the PNWC prior to Vancouver</a></li>
-                <li class="slide"><a href="/en/context#mod-5"><img src="https://via.placeholder.com/450x250">Learning Activities</a></li>
+                <li class="slide"><a href="/en/context#mod-1">
+                        <figure>
+                            <img src="https://via.placeholder.com/450x250">
+                            <figcaption>
+                                What was life like on the Pacific Northwest Coast before the Europeans came?
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="slide"><a href="/en/context#mod-2">
+                        <figure>
+                            <img src="https://via.placeholder.com/450x250">
+                            <figcaption>
+                                What were the Europeans trying to achieve in the “Age of Discovery”?
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="slide">
+                    <a href="/en/context#mod-3">
+                        <figure>
+                            <img src="https://via.placeholder.com/450x250">
+                            <figcaption>
+                                How did trade develop on the Pacific Northwest coast before Vancouver’s expedition?
+                            </figcaption>
+                        </figure>
+                    </a>
+                </li>
             </ul>
         </div>
         <section id="mod-1" class="slide-content">

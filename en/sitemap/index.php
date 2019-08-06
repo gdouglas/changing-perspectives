@@ -12,30 +12,12 @@
     </header>
     <main id="main" tabindex="-1" class="text-left">
         <ul>
-            <li><a href="/">Changing Perspectives</a>
-                <ul>
-                    <li><a href="/en/intro/">Introduction</a></li>
-                    <li><a href="/en/dehcho/">Dehcho</a>
-                        <ul>
-                            <li><a href="/en/dehcho/crossed-paths">Crossed Paths</a></li>
-                            <li><a href="/en/dehcho/river">The Dehcho</a></li>
-                            <li><a href="/en/dehcho/quiz">Challenge</a></li>
-                            <li><a href="/en/dehcho/workshop">Workshop</a>
-                                <ul>
-                                    <li><a href="/en/dehcho/workshop/students/">Students</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="/en/blowout/">Blowout</a></li>
-                    <li><a href="/en/inquiry/">Inquiry</a></li>
-                    <li><a href="/en/wildlife/">Wildlife</a></li>
-                    <li><a href="/en/feedback/">Feedback</a></li>
-                    <li><a href="/en/sitemap/">Sitemap</a></li>
-                    <li><a href="/en/credits">Credits</a></li>
-                </ul>
-            </li>
-
+            <li><a href="/en/home/" rel="noopener noreferrer">Home</a></li>
+            <li><a href="/en/context/" rel="noopener noreferrer">Context</a></li>
+            <li><a href="/en/expedition/" rel="noopener noreferrer">Vancouver Expedition</a></li>
+            <li><a href="/en/legacies/" rel="noopener noreferrer">Vancouver Legacies</a></li>
+            <li><a href="/en/technologies/" rel="noopener noreferrer">Navigation and Ship Technology</a></li>
+        </ul>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
 </body>

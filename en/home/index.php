@@ -11,7 +11,6 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1 class="site-title">Changing Perspectives</h1>
         <div class="pull-quote text-center">
             <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
             <nav class="tiles">

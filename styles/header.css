@@ -1,0 +1,57 @@
+header {
+    background: var(--main-bg-color);
+    background: #111;
+    color: #eee;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    box-shadow: 1px 1px 3px #eee;
+    position: relative;
+    z-index: 2;
+}
+header a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: gold;
+    font-weight: 100;
+}
+.site-title {
+    text-align: left;
+    font-size: 4rem;
+    line-height: 6rem;
+    display: inline-block;
+    font-family: 'Beth Ellen', sans-serif;
+}
+.site-title a {
+    font-size: inherit;
+    line-height: inherit;
+}
+.header-content {
+    margin-top: 2rem;
+    text-align: right;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+header nav {
+    margin-top: auto;
+}
+.vmc-logo {
+    height: 38px;
+}
+.right {
+    -webkit-box-align: flex-end;
+        -ms-flex-align: flex-end;
+            align-items: flex-end;
+    width: 300px;
+}
+.right a {
+    margin-right: 1rem;
+}

@@ -11,13 +11,13 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1 class="site-title">Context</h1>
+        <h1>Context</h1>
         <div class="pull-quote text-center">
             <p>The world during the times of George Vancouver</p>
             <ul class="slider">
                 <li class="slide"><a href="/en/context#mod-1">
                         <figure>
-                            <img src="https://via.placeholder.com/450x250">
+                            <img src="https://via.placeholder.com/650x400">
                             <figcaption>
                                 What was life like on the Pacific Northwest Coast before the Europeans came?
                             </figcaption>
@@ -26,7 +26,7 @@
                 </li>
                 <li class="slide"><a href="/en/context#mod-2">
                         <figure>
-                            <img src="https://via.placeholder.com/450x250">
+                            <img src="https://via.placeholder.com/650x400">
                             <figcaption>
                                 What were the Europeans trying to achieve in the “Age of Discovery”?
                             </figcaption>
@@ -36,7 +36,7 @@
                 <li class="slide">
                     <a href="/en/context#mod-3">
                         <figure>
-                            <img src="https://via.placeholder.com/450x250">
+                            <img src="https://via.placeholder.com/650x400">
                             <figcaption>
                                 How did trade develop on the Pacific Northwest coast before Vancouver’s expedition?
                             </figcaption>

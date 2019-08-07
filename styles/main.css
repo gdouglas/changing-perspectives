@@ -1,10 +1,14 @@
 @import "slider.css";
+@import "header.css";
 :root {
     font-size: 16px;
+    --main-bg-color: #fff;
+    --main-text-color: #222;
 }
 body {
     margin: 0 auto;
-    background: #f8f8f6;
+    color: var(--main-text-color);
+    background: var(--main-bg-color);
     font-family: 'Libre Baskerville', serif;
     font-size: 16px;
     height: 100vh;
@@ -16,10 +20,9 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
 }
-header,
 footer,
 main {
-    background: #f8f8f6;
+    background: var(--main-bg-color);
     margin: 0;
     padding: 0 20px;
     -webkit-box-sizing: border-box;
@@ -43,14 +46,11 @@ p {
 img {
     max-width: 100%;
 }
-.vmc-logo {
-    height: 38px;
-}
 .pull-quote p {
     max-width: none;
 }
 h1 {
-    font-size: 8.5rem;
+    font-size: 2.5rem;
     text-align: center;
     font-weight: normal;
     margin: 0;
@@ -78,13 +78,6 @@ h1 {
     line-height: 1.75rem;
     padding: 0 1rem;
 }
-.site-title {
-    padding: 20px 0 0 0;
-    text-align: left;
-    font-size: 2rem;
-    display: block;
-}
-
 .relative {
     position: relative;
 }
@@ -123,19 +116,6 @@ h1 {
     padding: 10px;
     text-shadow: #000 2px 2px;
     color: #fff;
-}
-.right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    float: right;
-    -webkit-box-align: flex-end;
-        -ms-flex-align: flex-end;
-            align-items: flex-end;
-    width: 300px;
-}
-.right a {
-    margin-right: 1rem;
 }
 .flex {
     display: -webkit-box;
@@ -229,11 +209,6 @@ nav .current a {
     font-weight: bold;
     border-bottom: 2px solid #000;
     padding-bottom: 2px;
-}
-header a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: #000;
 }
 footer {
     text-align: center;

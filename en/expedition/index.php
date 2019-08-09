@@ -3,6 +3,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
+    <title>Changing Perspectives | Expedition</title>
 </head>
 
 <body class="splash">

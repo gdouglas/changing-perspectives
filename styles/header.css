@@ -1,6 +1,5 @@
 header {
     background: var(--main-bg-color);
-    background: #111;
     color: #eee;
     font-weight: 100;
     margin: 0;
@@ -15,10 +14,41 @@ header {
     box-shadow: 1px 1px 3px #eee;
     position: relative;
     z-index: 2;
+    background-color: #111;
+}
+header:after {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    background: url(../images/header-ship.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+header:before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    background: url(../images/header-nootka.png);
+    background-position: left;
+    background-repeat: no-repeat;
 }
 header a {
     text-decoration: none;
     font-size: 1.1rem;
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     color: gold;
     font-weight: 100;
 }

@@ -3,6 +3,7 @@
 <head>
     <title>Credits | Changinge Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
+    <title>Changing Perspectives | Credits</title>
 </head>
 <body>
     <header>

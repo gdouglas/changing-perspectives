@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Credits | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
+    <title>Changing Perspectives | About</title>
 </head>
 
 <body>

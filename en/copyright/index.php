@@ -3,6 +3,7 @@
 <head>
     <title>Copyright | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
+    <title>Changing Perspectives | Copyright</title>
 </head>
 <body>
     <header>

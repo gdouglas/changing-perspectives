@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"?>
+    <title>Changing Perspectives | Home</title>
 </head>
 
 <body class="splash">

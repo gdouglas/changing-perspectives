@@ -15,26 +15,26 @@
         <div class="pull-quote text-center">
             <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
             <nav class="tiles">
-                <a href="/en/context">
-                    <figure class="tile">
+                <a href="/en/context" class="tile">
+                    <figure>
                         <img src="/images/context.jpg" alt="">
                         <figcaption>The Context</figcaption>
                     </figure>
                 </a>
-                <a href="/en/expedition">
-                    <figure class="tile">
+                <a href="/en/expedition" class="tile">
+                    <figure>
                         <img src="/images/expedition.jpg" alt="">
                         <figcaption>The Expedition</figcaption>
                     </figure>
                 </a>
-                <a href="/en/legacies/">
-                    <figure class="tile">
+                <a href="/en/legacies/" class="tile">
+                    <figure>
                         <img src="https://via.placeholder.com/450x300" alt="">
                         <figcaption>The Legacies</figcaption>
                     </figure>
                 </a>
-                <a href="/en/technologies/">
-                    <figure class="tile">
+                <a href="/en/technologies/" class="tile">
+                    <figure>
                         <img src="/images/technology-navigation.png" alt="">
                         <figcaption>European Navigation and Ship Technology</figcaption>
                     </figure>

@@ -5,19 +5,16 @@
     flex-wrap: nowrap;
     flex-grow: 1;
     -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 50%;
-    scroll-snap-stop: always;
-    scroll-behavior: smooth;
 }
 .slide {
     margin: 0 10px;
-    width: 650px;
+    width: 55vw;
     max-width: 80vw;
     box-sizing: border-box;
     flex-shrink: 0;
     display: inline-block;
     scroll-snap-align: start;
+    background: #ccc;
 }
 .slide figure {
     margin: 0;

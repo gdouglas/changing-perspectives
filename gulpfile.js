@@ -7,7 +7,7 @@ const { watch } = require('gulp');
 require('js-cookie')
 var nm = "./node_modules/";
 function scripts() {
-    return gulp.src([nm+"jquery/dist/jquery.js",nm+"js-cookie/src/*.js", "./scripts/validation.js", "./scripts/app.js"])
+    return gulp.src(["./scripts/validation.js", "./scripts/app.js"])
       .pipe(concat('app.js'))
       .pipe(gulp.dest('./dist'))
       .pipe(babel({

@@ -5,7 +5,7 @@ header {
     margin: 0;
     padding: 0 20px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -15,6 +15,7 @@ header {
     position: relative;
     z-index: 2;
     background-color: #111;
+    position: sticky;
 }
 header:after {
     content: "";
@@ -45,10 +46,10 @@ header:before {
 header a {
     text-decoration: none;
     font-size: 1.1rem;
-    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-	background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    background: -webkit-linear-gradient(top, #8f6b29, #fde08d, #df9f28);
+    background: linear-gradient(top, #8f6b29, #fde08d, #df9f28);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: gold;
     font-weight: 100;
 }
@@ -57,7 +58,7 @@ header a {
     font-size: 4rem;
     line-height: 6rem;
     display: inline-block;
-    font-family: 'Beth Ellen', sans-serif;
+    font-family: "Beth Ellen", sans-serif;
 }
 .site-title a {
     font-size: inherit;
@@ -78,8 +79,8 @@ header nav {
 }
 .right {
     -webkit-box-align: flex-end;
-        -ms-flex-align: flex-end;
-            align-items: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
     width: 300px;
 }
 .right a {

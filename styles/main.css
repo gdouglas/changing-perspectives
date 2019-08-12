@@ -1,15 +1,12 @@
+@import "variables.css";
+@import "utility.css";
 @import "slider.css";
 @import "header.css";
-:root {
-    font-size: 16px;
-    --main-bg-color: #fff;
-    --main-text-color: #222;
-}
 body {
     margin: 0 auto;
     color: var(--main-text-color);
     background: var(--main-bg-color);
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Libre Baskerville", serif;
     font-size: 16px;
     height: 100vh;
     display: -webkit-box;
@@ -17,8 +14,8 @@ body {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 footer,
 main {
@@ -26,10 +23,10 @@ main {
     margin: 0;
     padding: 0 20px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 100%;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     flex-shrink: 0;
 }
 main {
@@ -54,36 +51,13 @@ h1 {
     text-align: center;
     font-weight: normal;
     margin: 0;
-    font-family: 'Beth Ellen', cursive;
-}
-.medium-large {
-    font-size: 1.25rem;
-    line-height: 1.45rem;
-}
-.large {
-    font-size: 1.5rem;
-}
-.no-list {
-    list-style-type: none;
-}
-.inline {
-    display: inline;
+    font-family: "Beth Ellen", cursive;
 }
 *:focus:not(body) {
     outline: 2px solid #9ecaed;
     outline-offset: 4px;
 }
-.pull-quote {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
-    padding: 0 1rem;
-}
-.relative {
-    position: relative;
-}
-.z2 {
-    z-index: 2;
-}
+
 .tiles {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,8 +69,8 @@ h1 {
 .tile {
     width: 25%;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     padding: 0;
     display: inline-block;
     text-align: center;
@@ -104,7 +78,7 @@ h1 {
     min-width: 150px;
     margin: 0 5px;
     line-height: 1.7;
-    font-family: 'Beth Ellen', cursive;
+    font-family: "Beth Ellen", cursive;
 }
 .tile figure {
     margin: 0;
@@ -113,76 +87,6 @@ h1 {
     width: 100%;
     color: #222;
     text-decoration: none;
-}
-.flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 0%;
-            flex: 1 0 0;
-    display: flex;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
-    -ms-flex-negative: 1;
-        flex-shrink: 1;
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-}
-.active {
-    background: red;
-}
-.pull-right {
-    float: right;
-}
-.border {
-    border: 1px solid #000;
-}
-.no-border {
-    border: 0;
-}
-.text-center {
-    text-align: center;
-}
-.text-left {
-    text-align: left;
-}
-.text-center p {
-    margin-left: auto;
-    margin-right: auto;
-}
-.btn {
-    padding: 1rem 2rem;
-    border: 1px solid #000;
-    background: none;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
-    font-family: 'PT Sans', sans-serif;
-}
-.trigger {
-    cursor: pointer;
-    background: none;
-    border: none;
-}
-.flex-center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.flex-bottom > * {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
 }
 label {
     display: block;
@@ -194,7 +98,7 @@ main {
 nav {
     padding: 20px 0 0 0;
 }
-nav ul{
+nav ul {
     margin: 0;
     padding: 20px 0;
 }
@@ -207,7 +111,7 @@ nav li {
 }
 nav .current a {
     font-weight: bold;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #fde08d;
     padding-bottom: 2px;
 }
 footer {
@@ -218,17 +122,17 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 footer .block {
     padding: 15px 20px;
     -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
 }
 footer a {
     color: #fff;
@@ -237,43 +141,39 @@ footer a {
     color: lightgray;
 }
 a.skip-main {
-    left:-999px;
-    position:absolute;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
-    z-index:-999;
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
 }
-a.skip-main:focus, a.skip-main:active {
+a.skip-main:focus,
+a.skip-main:active {
     color: #fff;
-    background-color:#000;
+    background-color: #000;
     left: auto;
     top: auto;
     width: 30%;
     height: auto;
-    overflow:auto;
+    overflow: auto;
     margin: 10px 35%;
-    padding:5px;
+    padding: 5px;
     border-radius: 15px;
-    border:4px solid yellow;
-    text-align:center;
-    font-size:1.2em;
-    z-index:999;
+    border: 4px solid yellow;
+    text-align: center;
+    font-size: 1.2em;
+    z-index: 999;
 }
 
-.justify-center {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
 /* individual page styles */
 
 /* Unopened lightbox */
 .lightbox {
     display: none;
 }
-.lightbox.center video{
+.lightbox.center video {
     z-index: 2;
     position: absolute;
     top: 7.5rem;
@@ -308,7 +208,7 @@ a.skip-main:focus, a.skip-main:active {
 }
 /* Close button */
 .lightbox .close {
-    color: rgba(0,0,0,0);
+    color: rgba(0, 0, 0, 0);
     width: 0;
 }
 .lightbox .close::after {
@@ -321,11 +221,11 @@ a.skip-main:focus, a.skip-main:active {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     background-color: white;
     color: white;
     font-weight: bold;
@@ -343,7 +243,7 @@ a.skip-main:focus, a.skip-main:active {
     width: 100%;
     height: 100%;
     position: fixed;
-    background-color: rgba(0,0,0,.8);
+    background-color: rgba(0, 0, 0, 0.8);
     content: "";
     cursor: default;
 }

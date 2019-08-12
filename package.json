@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "An exhibition of the life and times of George Vancouver",
   "main": "index.php",
-  "dependencies": {
-    "jquery": "^3.4.1",
-    "js-cookie": "^2.2.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
@@ -35,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/gdouglas/changing-perspectives/issues"
   },
-  "homepage": "https://github.com/gdouglas/changing-perspectives"
+  "homepage": "https://github.com/gdouglas/changing-perspectives",
+  "dependencies": {
+    "element-scroll-polyfill": "^1.0.1"
+  }
 }

@@ -26,8 +26,16 @@
     text-decoration: none;
 }
 .slide-content {
-    display:none;
+    display: none;
 }
 .slide-content:target {
     display: block;
+}
+/* Hide scrollbars */
+.slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.slider::-webkit-scrollbar {
+    display: none;
 }

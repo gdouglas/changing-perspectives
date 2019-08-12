@@ -45,6 +45,10 @@
                     </a>
                 </li>
             </ul>
+            <div class="slider-controls">
+                <button id="prev" type="button" class="btn">Previous</button>
+                <button id="next" type="button" class="btn">Next</button>
+            </div>
         </div>
         <section id="mod-1" class="slide-content">
             <h2>Module 1</h2>

@@ -1,4 +1,9 @@
 window.onload = function () {
+    addSlider();
+    addSliderControls();
+};
+
+function addSlider(){
     const slider = document.querySelector('.slider');
     let isDown = false;
     let startX;
@@ -25,4 +30,25 @@ window.onload = function () {
         const walk = (x - startX) * 1;
         slider.scrollLeft = scrollLeft - walk;
     });
-};
+}
+function addSliderControls(){
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const width = slides[0].offsetWidth;
+    document.getElementById('prev').addEventListener('click', (e) => {
+        slider.scrollTo({
+            top: 0,
+            left: slider.scrollLeft - width,
+            behavior: 'smooth'
+        });
+    });
+    document.getElementById('next').addEventListener('click', (e) => {
+        slider.scrollTo({
+            top: 0,
+            left: slider.scrollLeft + width,
+            behavior: 'smooth'
+        });
+        // animateScrollTo(slider500);
+    });
+
+}

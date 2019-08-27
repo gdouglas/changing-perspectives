@@ -29,7 +29,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/750x400">
                             <figcaption>
-                                What were the Europeans trying to achieve in the “Age of Discovery”?
+                                What were the Europeans trying to achieve in the "Age of Discovery"?
                             </figcaption>
                         </figure>
                     </a>
@@ -39,7 +39,7 @@
                         <figure>
                             <img src="https://via.placeholder.com/750x400">
                             <figcaption>
-                                How did trade develop on the Pacific Northwest coast before Vancouver’s expedition?
+                                How did trade develop on the Pacific Northwest coast before Vancouver's expedition?
                             </figcaption>
                         </figure>
                     </a>

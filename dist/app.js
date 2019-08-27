@@ -57,8 +57,14 @@ function addSlider(){
 function addSliderControls(){
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
+    slides[0].classList.add("active");
     const width = slides[0].offsetWidth;
     document.getElementById('prev').addEventListener('click', (e) => {
+        const activeSlide = document.querySelector('.active');
+        if (activeSlide.previousElementSibling) {
+            activeSlide.classList.remove('active');
+            activeSlide.previousElementSibling.classList.add('active');
+        }
         slider.scrollTo({
             top: 0,
             left: slider.scrollLeft - width,
@@ -66,6 +72,11 @@ function addSliderControls(){
         });
     });
     document.getElementById('next').addEventListener('click', (e) => {
+        const activeSlide = document.querySelector('.active');
+        if (activeSlide.nextElementSibling) {
+            activeSlide.classList.remove('active');
+            activeSlide.nextElementSibling.classList.add('active');
+        }
         slider.scrollTo({
             top: 0,
             left: slider.scrollLeft + width,

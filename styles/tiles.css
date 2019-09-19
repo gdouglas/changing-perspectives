@@ -1,0 +1,31 @@
+.tiles {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.tile {
+    width: 300px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    min-width: 150px;
+    margin: 0 5px;
+    line-height: 1.7;
+    font-family: var(--title-font);
+}
+.tile figure {
+    margin: 0;
+}
+.tile figcaption {
+    width: 100%;
+    color: #222;
+    text-decoration: none;
+}

@@ -20,11 +20,11 @@
 .slide,
 .slide:last-of-type:after {
     margin: 0 10px;
-    width: 65vw;
+    width: 70%;
     box-sizing: border-box;
     flex-shrink: 0;
     display: inline-block;
-    background: #ccc;
+    background: #000;
     transform: scale(0.9);
     transition: all ease .3s;
 }
@@ -32,13 +32,22 @@
     margin: 0;
 }
 .slide figcaption {
-    padding: 2rem;
+    padding: 0.3rem;
 }
 .slide a {
     text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.slide a div {
+    width: 100%;
 }
 .slide-content {
     display: none;
+    box-sizing: border-box;
 }
 .slide-content:target {
     display: block;
@@ -54,4 +63,20 @@
 
 .active {
     transform: scale(1);
+}
+
+.lightbox a{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+}
+
+.lightbox:target a{
+    display: block;
 }

@@ -6,30 +6,13 @@ header {
     padding: 0 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-bottom: 1px solid #eee;
-    box-shadow: 1px 1px 3px #eee;
+    box-shadow: 0 2px 12px -5px black;
     position: relative;
     z-index: 2;
     background-color: #111;
-    position: sticky;
+    max-height: 185px;
 }
-header:after {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    opacity: 0.3;
-    z-index: -1;
-    background: url(../images/header-ship.png);
-    background-position: right;
-    background-repeat: no-repeat;
-}
+header:after,
 header:before {
     content: "";
     top: 0;
@@ -39,50 +22,137 @@ header:before {
     position: absolute;
     opacity: 0.3;
     z-index: -1;
-    background: url(../images/header-nootka.png);
-    background-position: left;
     background-repeat: no-repeat;
 }
-header a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    background: -webkit-linear-gradient(top, #8f6b29, #fde08d, #df9f28);
-    background: linear-gradient(top, #8f6b29, #fde08d, #df9f28);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: gold;
-    font-weight: 100;
+header:before {
+    background-image: url(../images/header-nootka.png);
+    background-position: left;
 }
+header:after {
+    background-image: url(../images/header-ship.png);
+    background-position: right;
+}
+.super-nav {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: flex-end;
+}
+.super-nav a:first-of-type{
+    margin: 4px 16px;
+}
+.vmc-logo {
+    height: 50px;
+}
+
+header nav {
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    display: flex;
+    max-width: calc(100% - 500px);
+    width: 100%;
+    padding: 0;
+}
+
+
 .site-title {
     text-align: left;
     font-size: 4rem;
     line-height: 6rem;
-    display: inline-block;
     font-family: "Beth Ellen", sans-serif;
+    display: flex;
 }
 .site-title a {
     font-size: inherit;
     line-height: inherit;
 }
-.header-content {
-    margin-top: 2rem;
-    text-align: right;
-    margin-left: auto;
+header .btn {
+    display: none;
+}
+nav {
+    padding: 20px 0 0 0;
+}
+nav ul {
+    margin: 0;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 0;
 }
-header nav {
-    margin-top: auto;
+nav li {
+    list-style-type: none;
+    line-height: 1.5;
+    display: flex;
+    margin-left: 4px;
+    text-align: center;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+    width: calc(20%);
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px 4px 0 0;
 }
-.vmc-logo {
-    height: 38px;
+@media screen and (min-width: 1591px) {
+    nav .link {
+        width: auto;
+
+    }
 }
-.right {
-    -webkit-box-align: flex-end;
-    -ms-flex-align: flex-end;
-    align-items: flex-end;
-    width: 300px;
+nav .current {
+    font-weight: bold;
+    border-bottom: 2px solid #fde08d;
 }
-.right a {
-    margin-right: 1rem;
+.link a {
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 0 auto;
+}
+@media sceen and (max-width: 1330px) {
+    header nav ul {
+        display: flex;
+    }
+}
+@media screen and (max-width: 1168px){
+    .site-title{
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    header nav {
+        position: static;
+        max-width: 100%;
+    }
+    header nav ul {
+        display: flex;
+        flex-basis: 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin-top: 10px;
+    }
+    header .link a{
+        padding: 4px;
+    }
+}
+@media screen and (max-width:500px) {
+    header {
+        display: flex;
+        align-items: flex-start;
+    }
+    header nav,
+    .super-nav{
+        display: none;
+    }
+    header .btn {
+        display: block;
+        background: #fff;
+        padding: 4px 9px;
+        margin: 16px 16px 0 auto;
+    }
+    header .btn:before,
+    header .btn:after {
+        content: '';
+        display: block;
+        border: 1px solid black;
+    }
 }

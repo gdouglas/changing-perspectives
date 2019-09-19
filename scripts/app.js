@@ -1,6 +1,8 @@
+// import MicroModal from "micromodal";
 window.onload = function () {
     addSlider();
     addSliderControls();
+    console.log("hi");
 };
 
 function addSlider(){

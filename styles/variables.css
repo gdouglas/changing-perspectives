@@ -2,4 +2,9 @@
     font-size: 16px;
     --main-bg-color: #fff;
     --main-text-color: #222;
+    --primary: #000;
+    --secondary: #01959E;
+    --gold: #FCDF8B;
+    --paper: #E8DEC8;
+    --title-font: "Beth Ellen", cursive;
 }

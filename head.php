@@ -14,7 +14,6 @@
 
   gtag('config', 'UA-139402400-1');
 </script>
-<script async src="/dist/app.js"></script>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1 ">
 <meta name="description" content="Learn about the explorations and times of George Vancouver" />

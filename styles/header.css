@@ -1,158 +1,218 @@
 header {
-    background: var(--main-bg-color);
-    color: #eee;
-    font-weight: 100;
-    margin: 0;
-    padding: 0 20px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    box-shadow: 0 2px 12px -5px black;
-    position: relative;
-    z-index: 2;
-    background-color: #111;
-    max-height: 185px;
+  background: var(--main-bg-color);
+  color: #eee;
+  font-weight: 100;
+  margin: 0;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  box-shadow: 0 2px 12px -5px black;
+  position: relative;
+  z-index: 2;
+  background-color: #111;
+  max-height: 185px;
+  transition: all 0.2s;
 }
 header:after,
 header:before {
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    opacity: 0.3;
-    z-index: -1;
-    background-repeat: no-repeat;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: 0.3;
+  z-index: -1;
+  background-repeat: no-repeat;
 }
 header:before {
-    background-image: url(../images/header-nootka.png);
-    background-position: left;
+  background-image: url(../images/header-nootka.png);
+  background-position: left;
 }
 header:after {
-    background-image: url(../images/header-ship.png);
-    background-position: right;
+  background-image: url(../images/header-ship.png);
+  background-position: right;
 }
 .super-nav {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    display: flex;
-    align-items: flex-end;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: flex-end;
 }
-.super-nav a:first-of-type{
-    margin: 4px 16px;
+.super-nav .lang-link {
+  margin: 4px 16px;
 }
 .vmc-logo {
-    height: 50px;
+  height: 50px;
 }
 
 header nav {
-    position: absolute;
-    right: 16px;
-    bottom: 0;
-    display: flex;
-    max-width: calc(100% - 500px);
-    width: 100%;
-    padding: 0;
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  display: flex;
+  max-width: calc(100% - 500px);
+  width: 100%;
+  padding: 0;
 }
-
 
 .site-title {
-    text-align: left;
-    font-size: 4rem;
-    line-height: 6rem;
-    font-family: "Beth Ellen", sans-serif;
-    display: flex;
+  text-align: left;
+  font-size: 4rem;
+  line-height: 6rem;
+  font-family: "Beth Ellen", sans-serif;
+  display: flex;
 }
 .site-title a {
-    font-size: inherit;
-    line-height: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 header .btn {
-    display: none;
+  display: none;
 }
 nav {
-    padding: 20px 0 0 0;
+  padding: 20px 0 0 0;
+  transition: all 0.2s ease;
 }
 nav ul {
-    margin: 0;
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 0;
 }
 nav li {
-    list-style-type: none;
-    line-height: 1.5;
-    display: flex;
-    margin-left: 4px;
-    text-align: center;
-    box-sizing: border-box;
-    background: rgba(0,0,0,0.5);
-    width: calc(20%);
-    align-items: center;
-    border-bottom: 2px solid transparent;
-    border-radius: 4px 4px 0 0;
+  list-style-type: none;
+  line-height: 1.5;
+  display: flex;
+  margin-left: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  width: calc(20%);
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+header .open {
+  visibility: visible;
+  transform: scaleY(1);
 }
 @media screen and (min-width: 1591px) {
-    nav .link {
-        width: auto;
-
-    }
+  nav .link {
+    width: auto;
+  }
 }
 nav .current {
-    font-weight: bold;
-    border-bottom: 2px solid #fde08d;
+  border-bottom: 2px solid #fde08d;
 }
 .link a {
-    padding: 10px 15px;
-    display: inline-block;
-    margin: 0 auto;
+  padding: 10px 15px;
+  display: inline-block;
+  margin: 0 auto;
 }
 @media sceen and (max-width: 1330px) {
-    header nav ul {
-        display: flex;
-    }
+  header nav ul {
+    display: flex;
+  }
 }
-@media screen and (max-width: 1168px){
-    .site-title{
-        font-size: 2rem;
-        line-height: 1.4;
-    }
-    header nav {
-        position: static;
-        max-width: 100%;
-    }
-    header nav ul {
-        display: flex;
-        flex-basis: 0px;
-        flex-grow: 1;
-        flex-shrink: 1;
-        margin-top: 10px;
-    }
-    header .link a{
-        padding: 4px;
-    }
+@media screen and (max-width: 1168px) {
+  .site-title {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+  header nav {
+    position: static;
+    max-width: 100%;
+  }
+  header nav ul {
+    display: flex;
+    flex-basis: 0px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-top: 10px;
+  }
+  header .link a {
+    padding: 4px;
+  }
 }
-@media screen and (max-width:500px) {
-    header {
-        display: flex;
-        align-items: flex-start;
-    }
-    header nav,
-    .super-nav{
-        display: none;
-    }
-    header .btn {
-        display: block;
-        background: #fff;
-        padding: 4px 9px;
-        margin: 16px 16px 0 auto;
-    }
-    header .btn:before,
-    header .btn:after {
-        content: '';
-        display: block;
-        border: 1px solid black;
-    }
+@media screen and (max-width: 561px) {
+  header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 70px;
+  }
+  header nav {
+    visibility: hidden;
+    transform: scaleY(0);
+  }
+  .link.current {
+    background: var(--secondary);
+  }
+  header .btn {
+    display: block;
+    background: #fff;
+    padding: 6px;
+    margin-left: auto;
+    position: absolute;
+    top: 70px;
+    right: 8px;
+    padding-right: 2em;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+  }
+  header .btn:after {
+    content: "";
+    position: absolute;
+    right: 0.25em;
+    top: 8px;
+    width: 20px;
+    height: 3px;
+    background: black;
+    box-shadow: 0 6px 0 0 black, 0 12px 0 0 black;
+  }
+  header nav ul {
+    flex-direction: column;
+    background: var(--paper);
+  }
+  header .link {
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    margin: 0;
+    background: none;
+  }
+  header .link a {
+    margin: 0 0 0 16px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .super-nav {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background: black;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+  .super-nav .lang-link {
+    margin-left: auto;
+    margin-top: 8px;
+    align-self: start;
+  }
+  .logo {
+    margin-right: auto;
+    padding: 0 0 0 16px;
+  }
 }

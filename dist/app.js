@@ -25,7 +25,7 @@ return tmp;},checkit:function(cvalue,ctype,cform){if(ctype=="NOT_EMPTY"){if(this
 window.onload = function () {
     addSlider();
     addSliderControls();
-    console.log("hi");
+    addNavButton();
 };
 
 function addSlider(){
@@ -87,4 +87,11 @@ function addSliderControls(){
         // animateScrollTo(slider500);
     });
 
+}
+function addNavButton() {
+    var navMenu = document.getElementById('nav-menu');
+    var topNav = document.getElementById('top-nav');
+    navMenu.addEventListener('click', ()=>{
+        topNav.classList.toggle('open');
+    })
 }

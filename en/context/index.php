@@ -15,34 +15,39 @@
         <h1>Context</h1>
         <div class="pull-quote text-center">
             <p>The world during the times of George Vancouver</p>
-            <ul class="slider">
-                <li class="slide">
-                    <a href="/en/context/#mod-1">
+        </div>
+        <ul class="slider">
+            <li class="slide">
+                <a href="/en/context/#mod-1">
                     <figure>
-                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                        <figcaption><h3 class="gold">Navigation</h3></figcaption>
+                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                        <figcaption>
+                            <h3 class="gold">Navigation</h3>
+                        </figcaption>
                     </figure>
-                    </a>
-                </li>
-                <li class="slide"><a href="/en/context/#mod-2">
-                        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                    </a>
-                </li>
-                <li class="slide">
-                    <a href="/en/context/#mod-3">
-                        <figure>
-                            <img src="https://via.placeholder.com/750x400">
-                            <figcaption>
-                                How did trade develop on the Pacific Northwest coast before Vancouver's expedition?
-                            </figcaption>
-                        </figure>
-                    </a>
-                </li>
-            </ul>
-            <div class="slider-controls">
-                <button id="prev" type="button" class="btn">Previous</button>
-                <button id="next" type="button" class="btn">Next</button>
-            </div>
+                </a>
+            </li>
+            <li class="slide"><a href="/en/context/#mod-2">
+                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                    <script src="https://player.vimeo.com/api/player.js"></script>
+                </a>
+            </li>
+            <li class="slide">
+                <a href="/en/context/#mod-3">
+                    <figure>
+                        <img src="https://via.placeholder.com/750x400">
+                        <figcaption>
+                            How did trade develop on the Pacific Northwest coast before Vancouver's expedition?
+                        </figcaption>
+                    </figure>
+                </a>
+            </li>
+        </ul>
+        <div class="slider-controlsv text-center">
+            <button id="prev" type="button" class="btn">Previous</button>
+            <button id="next" type="button" class="btn">Next</button>
+        </div>
         </div>
         <section id="mod-1" class="slide-content">
             <h2>Module 1</h2>

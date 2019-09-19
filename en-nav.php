@@ -1,4 +1,4 @@
-<nav>
+<nav id="top-nav">
     <ul>
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'home') ? '"current link"' : "link" ?>><a class="gold" href="/en/home/" rel="noopener noreferrer">Home</a></li>
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'context') ? '"current link"' : "link" ?>><a class="gold" href="/en/context/" rel="noopener noreferrer">Context</a></li>

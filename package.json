@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/gdouglas/changing-perspectives",
   "dependencies": {
+    "@vimeo/player": "^2.10.0",
     "element-scroll-polyfill": "^1.0.1",
     "micromodal": "^0.4.2"
   }

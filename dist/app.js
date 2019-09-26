@@ -30,7 +30,7 @@ window.onload = function () {
     addSliderControls();
     addNavButton();
 };
-function addSlider(){
+function addSlider() {
     const slider = document.querySelector('.slider');
     let isDown = false;
     let startX;
@@ -52,16 +52,18 @@ function addSlider(){
     });
     slider.addEventListener('mousemove', (e) => {
         if (!isDown) return;
+        // TODO get scroll drag working
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
         const walk = (x - startX) * 1;
         slider.scrollLeft = scrollLeft - walk;
     });
 }
-function addSliderControls(){
+function addSliderControls() {
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const width = slides[0].offsetWidth;
+    // TODO stop using hash, remove hash and add classes with js
     slides.forEach((el) => {
         el.addEventListener('click', (e) => {
             e.preventDefault();
@@ -69,7 +71,7 @@ function addSliderControls(){
         });
     })
     slider.addEventListener('scroll', (e) => {
-        const center = window.innerWidth/2;
+        const center = window.innerWidth / 2 + 10;
         slides.forEach(slide => {
             const start = offset(slide).left;
             const end = start + slide.offsetWidth;
@@ -78,7 +80,7 @@ function addSliderControls(){
             }
         });
     })
-    
+
     //scroll to initial slide
     slides[1].classList.add("active");
     slider.scrollTo({
@@ -87,60 +89,91 @@ function addSliderControls(){
         behavior: 'smooth'
     });
     document.getElementById('prev').addEventListener('click', (e) => {
-        slide("prev",slider,width);
+        slide(e, "prev", slider, width);
     });
     document.getElementById('next').addEventListener('click', (e) => {
-        slide("next", slider, width);
+        slide(e, "next", slider, width);
     });
 }
 function setActive(el) {
-    if(!el){
+
+    if (!el) {
         return;
     }
-    const scrollPos = window.scrollY;
-    window.location.hash = el.querySelector('a').hash;
-    window.scroll(0,scrollPos);
-    document.querySelector('.active').classList.remove("active");
+    if (el.classList.contains("active")) {
+        return;
+    }
+    let slideId = el.querySelector('a')
+    if (!slideId) {
+        return;
+    }
+    slideId = slideId.hash.replace('#', '');
+    const slideContent = document.getElementById(slideId);
+    document.querySelectorAll('.active').forEach((item) => {
+        item.classList.remove("active");
+    });
+    slideContent.classList.add("active");
     el.classList.add("active");
 
-}
-function slide(direction, slider, width) {
-    const slides = document.getElementsByClassName("slide");
-    let activeSlide = "";
-    const prevBtn = document.getElementById('prev');
-    const nextBtn = document.getElementById('next');
 
+    const slides = document.getElementsByClassName("slide");
+
+    // TODO disable slider on first and last slide      
     // slider has a empty slide as first and last element to set up spacing nicely
-    for (let i=0; i < slides.length; i++) {
-        if(slides[i].classList.contains('active')) {
-            activeSlide = slides[i];
-            (i >= slides.length - 2) ? disableNext = true : disableNext = false;
-            (i <= 1) ? disablePrevious = true : disablePrevious = false;
+    for (let i = 0; i < slides.length; i++) {
+        if (slides[i].classList.contains('active')) {
+            // let activeSlide = slides[i];
+            // -2 for empty first and last slide
+            if (i === slides.length - 2) {
+                console.log('last slide');
+                disableNext = true;
+                document.getElementById('next').disabled = true;
+            } else {
+                console.log('slide ', i)
+                 disableNext = false;
+                 document.getElementById('next').disabled = false;
+            }
+
+
+            if (i === 1) {
+                console.log('first slide');
+                // disablePrevious = true;
+            } else {
+                console.log('next slide ', i)
+                // disablePrevious = false;
+            }
         }
     }
-    nextBtn.disabled = disableNext;
-    prevBtn.disabled = disablePrevious;
+
+    // nextBtn.disabled = disableNext;
+    // prevBtn.disabled = disablePrevious;
+
+}
+function slide(e, direction, slider, width) {
+    // TODO stop all vimeo playing
+    e.preventDefault();
+    
+    let activeSlide = "";
+
     if (direction === "next" && !disableNext) {
-        setActive(activeSlide.nextElementSibling);
+        setActive(activeSlide.nextElementSibling, window.scrollY);
         slider.scrollTo({
-            top: 0,
             left: slider.scrollLeft + width,
             behavior: 'smooth'
-        }); 
+        });
     }
     if (direction === "prev" && !disablePrevious) {
-        setActive(activeSlide.previousElementSibling);
+        setActive(activeSlide.previousElementSibling, window.scrollY);
         slider.scrollTo({
-            top: 0,
             left: slider.scrollLeft - width,
             behavior: 'smooth'
-        });        
+        });
     }
 }
 function addNavButton() {
     var navMenu = document.getElementById('nav-menu');
     var topNav = document.getElementById('top-nav');
-    navMenu.addEventListener('click', ()=>{
+    navMenu.addEventListener('click', () => {
         topNav.classList.toggle('open');
     })
 }
@@ -148,7 +181,7 @@ function addNavButton() {
 //return element distance from top and left of client
 function offset(el) {
     var rect = el.getBoundingClientRect(),
-    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
 }

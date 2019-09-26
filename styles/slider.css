@@ -56,6 +56,7 @@
   box-sizing: border-box;
   justify-content: center;
 }
+.slide-content.active,
 .slide-content:target {
   display: flex;
 }
@@ -80,10 +81,19 @@
 }
 .slider-controls .btn {
     background: var(--secondary);
+    transition: all .2s ease-out;
     color: #fff;
     border: none;
     font-size: 22px;
     width: 150px;
+}
+.slider-controls .btn:hover {
+  box-shadow:0px 0px 15px 0px var(--primary) inset;
+}
+.slider-controls .btn:disabled {
+  background: darkgray;
+  color: gray;
+  cursor: not-allowed;
 }
 .slider-controls #next {
   margin-left: auto;
@@ -103,10 +113,10 @@
   left: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-
 .lightbox:target a {
   display: block;
 }
+
 @media screen and (max-width: 561px) {
   .slider,
   .slider .slide {

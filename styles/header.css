@@ -106,6 +106,12 @@ header .open {
 }
 nav .current {
   border-bottom: 2px solid #fde08d;
+  background: #9e8c58
+}
+.current a {
+  background: initial;
+  -webkit-text-fill-color: #000;
+  color: #000;
 }
 .link a {
   padding: 10px 15px;

@@ -1,10 +1,12 @@
-// import MicroModal from "micromodal";
+// initial state
+var disableNext = false;
+var disablePrevious = false;
+
 window.onload = function () {
     addSlider();
     addSliderControls();
     addNavButton();
 };
-
 function addSlider(){
     const slider = document.querySelector('.slider');
     let isDown = false;
@@ -37,9 +39,25 @@ function addSliderControls(){
     const slider = document.querySelector('.slider');
     const slides = document.querySelectorAll('.slide');
     const width = slides[0].offsetWidth;
-    slides[1].classList.add("active");
-    const scrollLeft = offset(slides[0]).left;
+    slides.forEach((el) => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            setActive(el);
+        });
+    })
+    slider.addEventListener('scroll', (e) => {
+        const center = window.innerWidth/2;
+        slides.forEach(slide => {
+            const start = offset(slide).left;
+            const end = start + slide.offsetWidth;
+            if (start < center && end > center) {
+                setActive(slide);
+            }
+        });
+    })
     
+    //scroll to initial slide
+    slides[1].classList.add("active");
     slider.scrollTo({
         top: 0,
         left: slider.scrollLeft + width,
@@ -47,43 +65,48 @@ function addSliderControls(){
     });
     document.getElementById('prev').addEventListener('click', (e) => {
         slide("prev",slider,width);
-        // const activeSlide = document.querySelector('.active');
-        // if (activeSlide.previousElementSibling) {
-        //     activeSlide.classList.remove('active');
-        //     activeSlide.previousElementSibling.classList.add('active');
-        // }
-        
     });
     document.getElementById('next').addEventListener('click', (e) => {
         slide("next", slider, width);
-        // const activeSlide = document.querySelector('.active');
-        // if (activeSlide.nextElementSibling) {
-        //     activeSlide.classList.remove('active');
-        //     activeSlide.nextElementSibling.classList.add('active');
-        // } else {
-        //     return;
-        // }
-        // slider.scrollTo({
-        //     top: 0,
-        //     left: slider.scrollLeft + width,
-        //     behavior: 'smooth'
-        // });
     });
+}
+function setActive(el) {
+    if(!el){
+        return;
+    }
+    const scrollPos = window.scrollY;
+    window.location.hash = el.querySelector('a').hash;
+    window.scroll(0,scrollPos);
+    document.querySelector('.active').classList.remove("active");
+    el.classList.add("active");
 
 }
 function slide(direction, slider, width) {
-    console.log('slide', direction);
     const slides = document.getElementsByClassName("slide");
-    const activeSlide = document.querySelector('.active');
-    if (direction === "next") {
-        console.log("next");
+    let activeSlide = "";
+    const prevBtn = document.getElementById('prev');
+    const nextBtn = document.getElementById('next');
+
+    // slider has a empty slide as first and last element to set up spacing nicely
+    for (let i=0; i < slides.length; i++) {
+        if(slides[i].classList.contains('active')) {
+            activeSlide = slides[i];
+            (i >= slides.length - 2) ? disableNext = true : disableNext = false;
+            (i <= 1) ? disablePrevious = true : disablePrevious = false;
+        }
+    }
+    nextBtn.disabled = disableNext;
+    prevBtn.disabled = disablePrevious;
+    if (direction === "next" && !disableNext) {
+        setActive(activeSlide.nextElementSibling);
         slider.scrollTo({
             top: 0,
             left: slider.scrollLeft + width,
             behavior: 'smooth'
         }); 
-    } else {
-        console.log('previous');
+    }
+    if (direction === "prev" && !disablePrevious) {
+        setActive(activeSlide.previousElementSibling);
         slider.scrollTo({
             top: 0,
             left: slider.scrollLeft - width,

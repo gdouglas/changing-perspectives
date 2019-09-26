@@ -7,6 +7,7 @@
   flex-wrap: nowrap;
   flex-grow: 1;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 }
 .slide:first-of-type,
 .slide:last-of-type {
@@ -23,6 +24,8 @@
 .slide {
   margin: 0;
   width: 70%;
+  scroll-margin: 0;
+  scroll-snap-align: center;
   box-sizing: border-box;
   flex-shrink: 0;
   display: inline-block;
@@ -49,10 +52,12 @@
 }
 .slide-content {
   display: none;
+  transition: all .3s;
   box-sizing: border-box;
+  justify-content: center;
 }
 .slide-content:target {
-  display: block;
+  display: flex;
 }
 /* Hide scrollbars */
 .slider {
@@ -70,6 +75,8 @@
   display: flex;
   height: 0;
   height: 60px;
+  animation: fadeIn 1.5s;
+  animation-timing-function: ease-in-out;
 }
 .slider-controls .btn {
     background: var(--secondary);
@@ -80,14 +87,6 @@
 }
 .slider-controls #next {
   margin-left: auto;
-}
-/* scroll snapping */
-.slider {
-  scroll-snap-type: x mandatory;
-}
-.slide {
-  scroll-margin: 0;
-  scroll-snap-align: center;
 }
 .active {
   transform: scale(1);
@@ -116,4 +115,10 @@
   .slider .slide {
     width: 80%;
   }
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }

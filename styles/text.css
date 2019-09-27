@@ -1,4 +1,3 @@
-a:visited,
 .gold {
     text-decoration: none;
     background: -webkit-linear-gradient(top, #8f6b29, #fde08d, #df9f28);
@@ -6,12 +5,8 @@ a:visited,
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     color: gold;
     font-weight: 100;
-}
-a:visited {
-    color: green;
 }
 h1,
 h2,
@@ -28,4 +23,14 @@ h2 {
 h3 {
     font-size: 2rem;
     line-height: 4.2rem;
+}
+@media (max-width: 620px) {
+    :root {
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    :root {
+        font-size: 12px;
+    }
 }

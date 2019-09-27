@@ -1,3 +1,11 @@
+.contact-form {
+    /* width: 100%; */
+    /* text-align: center; */
+}
+.contact-form fieldset {
+    /* width: 500px;
+    margin: 0 auto; */
+}
 .freecontactform {
 width: 460px;
 font-family: arial;

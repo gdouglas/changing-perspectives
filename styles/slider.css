@@ -85,8 +85,10 @@
     font-size: 22px;
     width: 150px;
 }
-.slider-controls .btn:hover {
-  box-shadow:0px 0px 15px 0px var(--primary) inset;
+@media (pointer) {
+  .slider-controls .btn:hover {
+    box-shadow:0px 0px 15px 0px var(--primary) inset;
+  }
 }
 .slider-controls .btn:disabled {
   background: darkgray;

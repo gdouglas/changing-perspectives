@@ -21,10 +21,6 @@ tmp=false;}}
 if(!tmp){alert(error_message);}
 if(to_focus.length>0){document.getElementById(to_focus).focus();}
 return tmp;},checkit:function(cvalue,ctype,cform){if(ctype=="NOT_EMPTY"){if(this.trim($$(cvalue)).length<1){return false;}else{return true;}}else if(ctype=="EMAIL"){exp=/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;if($$(cvalue).match(exp)==null){return false;}else{return true;}}},trim:function(s){if(s.length>0){return s.replace(/^\s+/,'').replace(/\s+$/,'');}else{return s;}}};
-// initial state
-var disableNext = false;
-var disablePrevious = false;
-
 window.onload = function () {
     addSlider();
     addSliderControls();
@@ -77,17 +73,20 @@ function addSliderControls() {
             const end = start + slide.offsetWidth;
             if (start < center && end > center) {
                 setActive(slide);
+                if (slides[slides.length - 1].classList.contains("active")){
+                    console.log(slides);
+                }
             }
         });
     })
 
     //scroll to initial slide
-    slides[1].classList.add("active");
-    slider.scrollTo({
-        top: 0,
-        left: slider.scrollLeft + width,
-        behavior: 'smooth'
-    });
+    // slides[1].classList.add("active");
+    // slider.scrollTo({
+    //     top: 0,
+    //     left: slider.scrollLeft + width,
+    //     behavior: 'smooth'
+    // });
     document.getElementById('prev').addEventListener('click', (e) => {
         slide(e, "prev", slider, width);
     });
@@ -122,32 +121,22 @@ function setActive(el) {
     // slider has a empty slide as first and last element to set up spacing nicely
     for (let i = 0; i < slides.length; i++) {
         if (slides[i].classList.contains('active')) {
+            console.log("slide num is ",i)
             // let activeSlide = slides[i];
-            // -2 for empty first and last slide
-            if (i === slides.length - 2) {
-                console.log('last slide');
-                disableNext = true;
+            if (i === slides.length - 1) {
                 document.getElementById('next').disabled = true;
             } else {
                 console.log('slide ', i)
-                 disableNext = false;
                  document.getElementById('next').disabled = false;
             }
 
-
-            if (i === 1) {
-                console.log('first slide');
-                // disablePrevious = true;
+            if (i === 0) {
+                document.getElementById('prev').disabled = true;
             } else {
-                console.log('next slide ', i)
-                // disablePrevious = false;
+                document.getElementById('prev').disabled = false;
             }
         }
     }
-
-    // nextBtn.disabled = disableNext;
-    // prevBtn.disabled = disablePrevious;
-
 }
 function slide(e, direction, slider, width) {
     // TODO stop all vimeo playing
@@ -155,14 +144,14 @@ function slide(e, direction, slider, width) {
     
     let activeSlide = "";
 
-    if (direction === "next" && !disableNext) {
+    if (direction === "next") {
         setActive(activeSlide.nextElementSibling, window.scrollY);
         slider.scrollTo({
             left: slider.scrollLeft + width,
             behavior: 'smooth'
         });
     }
-    if (direction === "prev" && !disablePrevious) {
+    if (direction === "prev") {
         setActive(activeSlide.previousElementSibling, window.scrollY);
         slider.scrollTo({
             left: slider.scrollLeft - width,

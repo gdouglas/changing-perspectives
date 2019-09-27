@@ -9,17 +9,14 @@
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
 }
-.slide:first-of-type,
-.slide:last-of-type {
-  opacity: 0;
-  pointer-events: none;
+.slide:first-of-type{
+  margin-left: 15%;
 }
 .slider .slide:last-of-type:after {
-  content: "";
-  height: 0;
-  width: calc(100% + 30vw) !important;
-  padding-right: 516px !important;
-  transform: scale(1);
+  content: '';
+  display: block;
+  width: 200%;
+  height: 1px;
 }
 .slide {
   margin: 0;
@@ -35,6 +32,7 @@
 }
 .slide figure {
   margin: 0;
+  text-align: center;
 }
 .slide figcaption {
   padding: 0.3rem;

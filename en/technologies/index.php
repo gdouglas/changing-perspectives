@@ -18,8 +18,7 @@
         </div>
         <div class="slider-container relative">
             <ul class="slider">
-                <li class="slide"></li>
-                <li class="slide">
+                <li class="slide active">
                     <a href="./#navigation">
                         <figure>
                             <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
@@ -38,6 +37,7 @@
                         </figcaption>
                     </a>
                 </li>
+                <!-- TODO put info inside of slides -->
                 <li class="slide">
                     <a href="./#sextant">
                         <figure>
@@ -68,10 +68,9 @@
                         </figure>
                     </a>
                 </li>
-                <li class="slide"></li>
             </ul>
             <div class="slider-controls">
-                <button id="prev" type="button" class="btn">Previous</button>
+                <button id="prev" type="button" class="btn" disabled>Previous</button>
                 <button id="next" type="button" class="btn">Next</button>
             </div>
         </div>
@@ -84,11 +83,11 @@
             <p>Brass <strong>sextant</strong> with five eyepieces, made by Jesse Ramsden, was used by Joseph Baker, Vancouver’s First Lieutenant and is on loan courtesy of Richard Baker. The sextant is a doubly reflecting navigation instrument with a graduated arc of 60° and a sighting mechanism, used for measuring the angular distances between objects and especially for taking altitudes in navigation.</p>
         </section>
         <section id="telescope" class="slide-content">
-            <p>Two stage, leather-covered <strong>telescope</strong> made by G. or P. Dolland, inscribed “Capt. John. Baker Royal Navy” on loan courtesy of Richard Baker.  Joseph Baker, Vancouver’s First Lieutenant . A telescope is an optical instrument which magnifies distant objects by arranging lenses or curved mirrors to collect and focus light.</p>
+            <p>Two stage, leather-covered <strong>telescope</strong> made by G. or P. Dolland, inscribed "Capt. John. Baker Royal Navy" on loan courtesy of Richard Baker.  Joseph Baker, Vancouver’s First Lieutenant . A telescope is an optical instrument which magnifies distant objects by arranging lenses or curved mirrors to collect and focus light.</p>
         </section>
         <section id="chronometer" class="slide-content">
             <div>
-                <p>John Arnold (maker) <strong>“Arnold 176” chronometer</strong> used by George Vancouver for 1790 expedition into Pacific Northwest. Completed in 1791 for the Board of Longitude, now in gimbal suspension with 3 tier mahogany case, purchased from Christie’s Auction House.</p>
+                <p>John Arnold (maker) <strong>"Arnold 176" chronometer</strong> used by George Vancouver for 1790 expedition into Pacific Northwest. Completed in 1791 for the Board of Longitude, now in gimbal suspension with 3 tier mahogany case, purchased from Christie’s Auction House.</p>
                 <p>A marine Chronometer is a timepiece that is precise and accurate enough to be used as a portable time standard, meaning it can be used to determine longitude by accurately measuring the time of a known fixed location. When first developed in the 18th century, it was a major technical achievement, as accurate knowledge of the time during sea voyage is necessary for navigation without the use of electronic or communication devices.</p>
             </div>
         </section>

@@ -21,6 +21,11 @@ tmp=false;}}
 if(!tmp){alert(error_message);}
 if(to_focus.length>0){document.getElementById(to_focus).focus();}
 return tmp;},checkit:function(cvalue,ctype,cform){if(ctype=="NOT_EMPTY"){if(this.trim($$(cvalue)).length<1){return false;}else{return true;}}else if(ctype=="EMAIL"){exp=/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;if($$(cvalue).match(exp)==null){return false;}else{return true;}}},trim:function(s){if(s.length>0){return s.replace(/^\s+/,'').replace(/\s+$/,'');}else{return s;}}};
+// import smoothscroll from 'smoothscroll-polyfill';
+
+// // kick off the polyfill!
+// smoothscroll.polyfill();
+
 window.onload = function () {
     addNavButton();
     if (document.querySelector(".slider")) {
@@ -74,9 +79,6 @@ function addSliderControls() {
             const end = start + slide.offsetWidth;
             if (start < center && end > center) {
                 setActive(slide);
-                // if (slides[slides.length - 1].classList.contains("active")){
-                //     console.log(slides);
-                // }
             }
         });
     })
@@ -95,16 +97,16 @@ function setActive(el) {
     if (el.classList.contains("active")) {
         return;
     }
-    let slideId = el.querySelector('a')
-    if (!slideId) {
-        return;
-    }
-    slideId = slideId.hash.replace('#', '');
-    const slideContent = document.getElementById(slideId);
+    // let slideId = el.querySelector('a')
+    // if (!slideId) {
+    //     return;
+    // }
+    // slideId = slideId.hash.replace('#', '');
+    // const slideContent = document.getElementById(slideId);
     document.querySelectorAll('.active').forEach((item) => {
         item.classList.remove("active");
     });
-    slideContent.classList.add("active");
+    // slideContent.classList.add("active");
     el.classList.add("active");
 
 

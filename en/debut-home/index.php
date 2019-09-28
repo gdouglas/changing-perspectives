@@ -29,7 +29,7 @@
                 </a>
                 <a href="/en/legacies/" class="tile">
                     <figure>
-                        <img src="https://via.placeholder.com/450x300" alt="">
+                        <img src="/images/Suzanne-Ahearne-toque-canoe.jpg" alt="">
                         <figcaption>The Legacies</figcaption>
                     </figure>
                 </a>

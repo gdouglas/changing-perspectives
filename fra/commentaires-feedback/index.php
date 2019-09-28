@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/fra-header.php" ?>
         <h1>Changing Perspectives</h1>
     </header>
     <main>
@@ -34,6 +34,6 @@
         <p>The Internet is a public forum and electronic information can be intercepted. For reasons of security and privacy, we ask that you not send us any personal or confidential information, such as your Social Insurance Number (SIN), home or business address.</p>
         </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/fra-footer.php" ?>
 </body>
 </html>

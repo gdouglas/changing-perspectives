@@ -1,5 +1,5 @@
 .slider {
-  padding: 10px 0;
+  padding: 10px 0 60px 0;
   margin: 30px 0;
   overflow-x: auto;
   height: auto;
@@ -8,11 +8,16 @@
   flex-grow: 1;
   -webkit-overflow-scrolling: touch;
   scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slider::-webkit-scrollbar {
+    display: none;
 }
 .slide:first-of-type{
   margin-left: 15%;
 }
-.slider .slide:last-of-type:after {
+.slide:last-of-type:after {
   content: '';
   display: block;
   width: 200%;
@@ -31,40 +36,30 @@
   transition: all ease 0.3s;
 }
 .slide figure {
-  margin: 0;
-  text-align: center;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
 }
 .slide figcaption {
-  padding: 0.3rem;
+  padding: 0 2rem;
+  text-align: center;
 }
-.slide a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.slide figcaption p{
+    max-width: 750px;
+    text-align: left;
+    color: rgba(255,255,255,0.85);
+    font-weight: lighter;
+    margin-left: auto;
+    margin-right: auto;
 }
-.slide a div {
-  width: 100%;
-}
-.slide-content {
-  display: none;
-  transition: all .3s;
-  box-sizing: border-box;
-  justify-content: center;
-}
-.slide-content.active,
-.slide-content:target {
-  display: flex;
-}
-/* Hide scrollbars */
-.slider {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.slider::-webkit-scrollbar {
-  display: none;
+.slide-icon {
+    width: 50px;
+    position: absolute;
+    left: 0;
 }
 .slider-controls {
   position: absolute;
@@ -125,6 +120,17 @@
   .slider .slide {
     width: 80%;
   }
+}
+@media screen and (max-width: 960px) {
+  .slider-controls {
+    position: static;
+    width: 100%;
+    justify-content: center;
+  }
+  .slider-controls #next {
+    margin-left: 8px;
+  }
+
 }
 
 @keyframes fadeIn {

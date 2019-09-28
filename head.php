@@ -5,15 +5,17 @@
 <link rel="stylesheet" type="text/css" href="/styles/main.css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans|Special+Elite|PT+Sans|Special+Elite&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Libre+Baskerville|Roboto+Slab|Slabo+27px&display=swap" rel="stylesheet">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139402400-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-139402400-1');
+  gtag('config', 'UA-148908480-1');
 </script>
+
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1 ">
 <meta name="description" content="Learn about the explorations and times of George Vancouver" />

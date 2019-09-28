@@ -1,14 +1,13 @@
-<a class="skip-main" href="#main">Skip to main content</a>
-<div>
-    <a href="\" class="site-title">Changing Perspectives</a>
+<div class="site-title">
+    <a class="gold" href="\">
+        Changer <br> de Perspective
+        </a>
 </div>
-<?php
-    $language_link = '<a href="/en'.substr($_SERVER['REQUEST_URI'], 4).'">English</a>';
-    $logo = '<img src="/images/logos/vmc_fre_col.svg" class="vmc-logo" alt="Virtual Museum of Canada">';
-?>
-<div class="right">
-    <?php
-        echo $language_link;
-        echo $logo;
-    ?>
+<button id="nav-menu" class="btn" type="button">Menu</button>
+<div id="super-nav" class="super-nav">
+    <a class="gold lang-link" href="/en<?php echo substr($_SERVER['REQUEST_URI'], 4); ?>">English</a>
+    <a class="gold logo" href="http://www.museevirtuel-virtualmuseum.ca/index-eng.jsp" target="_blank">
+        <img src="/images/logos/vmc_fre_col_rev.svg" class="vmc-logo" alt="Musée virtuel du Canada (MVC)">
+    </a>
 </div>
+<?php include "fra-nav.php"; ?>

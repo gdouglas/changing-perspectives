@@ -9,7 +9,7 @@
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header class="">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <h1>Context</h1>
@@ -92,7 +92,7 @@
             </div>
         </section>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-footer.php" ?>
 </body>
 
 </html>

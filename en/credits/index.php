@@ -16,6 +16,7 @@
         Exhibits Investment Program, Virtual Museum of Canada. The Virtual
         Museum of Canada is managed by the Canadian Museum of History, with
         the financial support of the Government of Canada.</p>
+        <p>Icons were provided by <a href="https://fontawesome.com/license" target="_blank">fontawesome</a></p> 
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
 </body>

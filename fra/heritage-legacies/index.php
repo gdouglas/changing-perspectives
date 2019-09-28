@@ -9,7 +9,7 @@
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <h1 class="site-title">Changing Perspectives</h1>
@@ -17,7 +17,7 @@
             <p>Learn about the the explorations of George Vancouver</p>
         </div>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-footer.php" ?>
 </body>
 
 </html>

@@ -9,7 +9,7 @@
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header class="">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <h1>Context</h1>
@@ -18,7 +18,7 @@
         </div>
         <ul class="slider">
             <li class="slide">
-                <a href="/en/context/#mod-1">
+                <a href="/fra/context/#mod-1">
                     <figure>
                         <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                         <script src="https://player.vimeo.com/api/player.js"></script>
@@ -28,13 +28,13 @@
                     </figure>
                 </a>
             </li>
-            <li class="slide"><a href="/en/context/#mod-2">
+            <li class="slide"><a href="/fra/context/#mod-2">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                 </a>
             </li>
             <li class="slide">
-                <a href="/en/context/#mod-3">
+                <a href="/fra/context/#mod-3">
                     <figure>
                         <img src="https://via.placeholder.com/750x400">
                         <figcaption>
@@ -77,7 +77,7 @@
             <div>hello 5</div>
         </section>
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-footer.php" ?>
 </body>
 
 </html>

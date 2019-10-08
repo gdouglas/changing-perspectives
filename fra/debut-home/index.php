@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fra">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"?>
@@ -9,33 +9,33 @@
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <div class="pull-quote text-center">
             <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
             <nav class="tiles">
-                <a href="/fra/context" class="tile">
+                <a href="/en/context" class="tile">
                     <figure>
-                        <img src="/images/context.jpg" alt="">
+                        <img src="/images/context.jpg" alt="Whale illustrated in Haida style">
                         <figcaption>The Context</figcaption>
                     </figure>
                 </a>
-                <a href="/fra/expedition" class="tile">
+                <a href="/en/expedition" class="tile">
                     <figure>
-                        <img src="/images/expedition.jpg" alt="">
+                        <img src="/images/expedition.jpg" alt="A painting of a sailing galleon">
                         <figcaption>The Expedition</figcaption>
                     </figure>
                 </a>
-                <a href="/fra/legacies/" class="tile">
+                <a href="/en/legacies/" class="tile">
                     <figure>
-                        <img src="https://via.placeholder.com/450x300" alt="">
+                        <img src="/images/Suzanne-Ahearne-toque-canoe.jpg" alt="A wooden statue overgrown with ferns on the ground">
                         <figcaption>The Legacies</figcaption>
                     </figure>
                 </a>
-                <a href="/fra/technologies/" class="tile">
+                <a href="/en/technologies/" class="tile">
                     <figure>
-                        <img src="/images/technology-navigation.png" alt="">
+                        <img src="/images/technology-navigation.png" alt="A chronometer">
                         <figcaption>European Navigation and Ship Technology</figcaption>
                     </figure>
                 </a>

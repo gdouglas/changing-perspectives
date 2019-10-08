@@ -17,25 +17,25 @@
             <nav class="tiles">
                 <a href="/en/context" class="tile">
                     <figure>
-                        <img src="/images/context.jpg" alt="">
+                        <img src="/images/context.jpg" alt="Whale illustrated in Haida style">
                         <figcaption>The Context</figcaption>
                     </figure>
                 </a>
                 <a href="/en/expedition" class="tile">
                     <figure>
-                        <img src="/images/expedition.jpg" alt="">
+                        <img src="/images/expedition.jpg" alt="A painting of a sailing galleon">
                         <figcaption>The Expedition</figcaption>
                     </figure>
                 </a>
                 <a href="/en/legacies/" class="tile">
                     <figure>
-                        <img src="/images/Suzanne-Ahearne-toque-canoe.jpg" alt="">
+                        <img src="/images/Suzanne-Ahearne-toque-canoe.jpg" alt="A wooden statue overgrown with ferns on the ground">
                         <figcaption>The Legacies</figcaption>
                     </figure>
                 </a>
                 <a href="/en/technologies/" class="tile">
                     <figure>
-                        <img src="/images/technology-navigation.png" alt="">
+                        <img src="/images/technology-navigation.png" alt="A chronometer">
                         <figcaption>European Navigation and Ship Technology</figcaption>
                     </figure>
                 </a>

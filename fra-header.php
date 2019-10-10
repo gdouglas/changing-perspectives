@@ -1,6 +1,6 @@
 <div class="site-title">
     <a class="gold" href="\">
-        Changer <br> de Perspective
+        Changer de Perspective
         </a>
 </div>
 <button id="nav-menu" class="btn" type="button">Menu</button>

@@ -9,7 +9,7 @@
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <div class="pull-quote text-center">

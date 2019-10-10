@@ -57,8 +57,21 @@ header nav {
   padding: 0;
 }
 
+@media screen and (min-width: 1400px) {
+  header nav {
+    display: flex;
+    max-width: calc(100% - 500px);
+    width: 100%;
+    padding: 0 0 0 15px;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin-left: auto;
+  }
+}
+
 .site-title {
   text-align: left;
+  max-width: 500px;
   font-size: 4rem;
   line-height: 6rem;
   font-family: "Beth Ellen", sans-serif;
@@ -106,7 +119,7 @@ header .open {
 }
 nav .current {
   border-bottom: 2px solid #fde08d;
-  background: #9e8c58
+  background: #9e8c58;
 }
 .current a {
   background: initial;
@@ -127,6 +140,8 @@ nav .current {
   .site-title {
     font-size: 2rem;
     line-height: 1.4;
+    max-width: 100%;
+    padding: 14px 0 20px 0;
   }
   header nav {
     position: static;

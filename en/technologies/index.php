@@ -67,6 +67,12 @@
                 <button id="next" type="button" class="btn">Next</button>
             </div>
         </div>
+        <section class="intructor-resources">
+            <h2>Instructor Resources</h2>
+            <a href="/files/technology/navigation-learning-activity.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation learning activity</a>
+            <a href="/files/technology/navigation-learning-activity-guidelines-for-teachers.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation Learning Activity Guidelines For Teachers</a>
+        </section>
+
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
 </body>

@@ -109,10 +109,24 @@ a.skip-main:active {
     font-size: 1.2em;
     z-index: 999;
 }
-
+.icon {
+    width: 20px;
+    padding: 0 5px;
+}
+.intructor-resources h2 {
+    font-size: 1.5rem;
+    text-align: left;
+}
+.download-link {
+    color: #000;
+    display: block;
+}
 /* individual page styles */
 
 .white-svg {
     stroke: white;
     fill: white;
+}
+a:visited {
+    color: #222;
 }

@@ -36,6 +36,10 @@ main {
     max-width: 1600px;
     flex-grow: 1;
 }
+main:focus {
+    outline: 0;
+    border: 0;
+}
 p {
     max-width: 1048px;
 }

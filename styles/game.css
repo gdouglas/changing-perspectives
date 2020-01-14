@@ -1,0 +1,8 @@
+#game {
+    border: 1px solid gray;
+    padding: 2rem 1rem;
+    box-shadow: 3px 3px 7px #989898;
+    border-radius: 3px;
+    max-width: 980px;
+    margin: 0 auto;
+}

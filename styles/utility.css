@@ -66,6 +66,20 @@
     cursor: pointer;
     font-family: "PT Sans", sans-serif;
 }
+.btn-action {
+    background: var(--primary);
+    color: var(--secondary);
+    font-size: 1.8rem;
+    font-weight: bold;
+    transition: all .2s ease;
+}
+.btn-action:visited {
+    color: var(--secondary);
+}
+.btn-action:hover {
+    background: var(--secondary);
+    color: var(--primary);
+}
 .flex-center {
     display: -webkit-box;
     display: -ms-flexbox;

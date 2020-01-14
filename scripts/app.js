@@ -105,6 +105,10 @@ function setActive(el) {
             }
         }
     }
+    // check for iframe video and play it
+    if (el.querySelector('iframe')){
+        el.querySelector('iframe').contentWindow.postMessage('{"method":"play"}', '*');
+    }
 }
 function slide(e, direction, slider, width) {
     // TODO stop all vimeo playing
@@ -146,9 +150,6 @@ function offset(el) {
 }
 
 // stop playing video
-var stopVideo = function ( element ) {
-    // TODO Get this to pause instead of just reloading
-    // console.log("stop Vid", element);
-    var iframeSrc = element.src;
-    element.src = iframeSrc;
+var stopVideo = function ( iframe ) {
+    iframe.contentWindow.postMessage('{"method":"pause"}', '*');
 };

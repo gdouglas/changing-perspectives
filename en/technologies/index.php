@@ -14,7 +14,7 @@
     <main id="main" tabindex="-1">
         <h1>Navigation and Ship Technology</h1>
         <div class="pull-quote text-center">
-            <p>The world during the times of George Vancouver</p>
+            <h2 class="subtitle">What did the Vancouver's Crew have available?</h2>
         </div>
         <div class="slider-container relative">
             <ul class="slider">

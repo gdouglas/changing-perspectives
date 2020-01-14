@@ -4,8 +4,8 @@
   "description": "An exhibition of the life and times of George Vancouver",
   "main": "index.php",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
     "babel-core": "^6.26.3",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",

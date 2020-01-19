@@ -71,6 +71,7 @@
   height: 60px;
   animation: fadeIn 1.5s;
   animation-timing-function: ease-in-out;
+  pointer-events: none;
 }
 .slider-controls .btn {
     background: var(--secondary);
@@ -79,6 +80,7 @@
     border: none;
     font-size: 22px;
     width: 150px;
+    pointer-events: all;
 }
 @media (pointer) {
   .slider-controls .btn:hover {

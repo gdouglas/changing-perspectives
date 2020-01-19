@@ -29,7 +29,7 @@
                 </a>
                 <a href="/en/legacies/" class="tile">
                     <figure>
-                        <img src="/images/Suzanne-Ahearne-toque-canoe.jpg" alt="A wooden statue overgrown with ferns on the ground">
+                        <img src="/images/legacies-landscape.jpg" alt="A wooden statue facing the sun set on a grassy shore">
                         <figcaption>The Legacies</figcaption>
                     </figure>
                 </a>

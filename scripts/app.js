@@ -46,6 +46,10 @@ function addSliderControls() {
     slides.forEach((el) => {
         el.addEventListener('click', (e) => {
             e.preventDefault();
+            console.log("click", e, e.target, e.target.tagName);
+            if (e.target.tagName == "a" || "A") {
+                window.location = e.target.href;
+            }
             setActive(el);
         });
     })

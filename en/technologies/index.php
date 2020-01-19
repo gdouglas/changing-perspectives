@@ -14,7 +14,7 @@
     <main id="main" tabindex="-1">
         <h1>Navigation and Ship Technology</h1>
         <div class="pull-quote text-center">
-            <p>The world during the times of George Vancouver</p>
+            <h2 class="subtitle">What did the Vancouver's Crew have available?</h2>
         </div>
         <div class="slider-container relative">
             <ul class="slider">
@@ -60,6 +60,17 @@
                         </figcaption>
                     </figure>
                     <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                </li>
+                <li class="slide">
+                    <figure>
+                        <img src="/images/chronometer.jpg" alt="brass chronometer">
+                        <figcaption>
+                            <h3 class="gold">Sailing Game</h3>
+                            <!-- todo let link work -->
+                            <a href="./game">Plan Game</a>
+                        </figcaption>
+                    </figure>
+                    <img class="slide-icon" src="/images/icons/gamepad-solid.svg" alt="game icon">
                 </li>
             </ul>
             <div class="slider-controls">

@@ -3,12 +3,13 @@
 @import "utility.css";
 @import "slider.css";
 @import "header.css";
+@import "footer.css";
 @import "tiles.css";
+@import "game.css";
 body {
     margin: 0 auto;
     color: var(--main-text-color);
     background: var(--main-bg-color);
-    /* font-family: "Libre Baskerville", serif; */
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     min-height: 100vh;
@@ -32,9 +33,10 @@ main {
     flex-wrap: wrap;
     flex-shrink: 0;
 }
-main {
+#main {
     max-width: 1600px;
     flex-grow: 1;
+    outline: 0
 }
 p {
     max-width: 1048px;
@@ -45,7 +47,7 @@ img {
 .pull-quote p {
     max-width: none;
 }
-*:focus:not(body) {
+body :focus-visible {
     outline: 2px solid #9ecaed;
     outline-offset: 4px;
 }
@@ -128,5 +130,5 @@ a.skip-main:active {
     fill: white;
 }
 a:visited {
-    color: #222;
+    color: var(--secondary);
 }

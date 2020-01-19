@@ -22,13 +22,11 @@
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Navigation</h3>
-                    <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                 </li>
                 <li class="slide">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Ships</h3>
-                    <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                 </li>
                 <li class="slide">
                     <figure>
@@ -38,7 +36,6 @@
                             <p>Brass <strong>sextant</strong> with five eyepieces, made by Jesse Ramsden, was used by Joseph Baker, Vancouver’s First Lieutenant and is on loan courtesy of Richard Baker. The sextant is a doubly reflecting navigation instrument with a graduated arc of 60° and a sighting mechanism, used for measuring the angular distances between objects and especially for taking altitudes in navigation.</p>
                         </figcaption>
                     </figure>
-                    <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
                 </li>
                 <li class="slide">
                     <figure>
@@ -48,7 +45,6 @@
                             <p>Two stage, leather-covered <strong>telescope</strong> made by G. or P. Dolland, inscribed "Capt. John. Baker Royal Navy" on loan courtesy of Richard Baker. Joseph Baker, Vancouver’s First Lieutenant . A telescope is an optical instrument which magnifies distant objects by arranging lenses or curved mirrors to collect and focus light.</p>
                         </figcaption>
                     </figure>
-                    <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
                 </li>
                 <li class="slide">
                     <figure>
@@ -59,7 +55,6 @@
                             <p>A marine Chronometer is a timepiece that is precise and accurate enough to be used as a portable time standard, meaning it can be used to determine longitude by accurately measuring the time of a known fixed location. When first developed in the 18th century, it was a major technical achievement, as accurate knowledge of the time during sea voyage is necessary for navigation without the use of electronic or communication devices.</p>
                         </figcaption>
                     </figure>
-                    <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
                 </li>
                 <li class="slide">
                     <figure>
@@ -70,13 +65,38 @@
                             <a href="./game">Plan Game</a>
                         </figcaption>
                     </figure>
-                    <img class="slide-icon" src="/images/icons/gamepad-solid.svg" alt="game icon">
                 </li>
             </ul>
             <div class="slider-controls">
                 <button id="prev" type="button" class="btn" disabled>Previous</button>
                 <button id="next" type="button" class="btn">Next</button>
             </div>
+            <ol class="slider-navigation">
+                <li><a href="#1">
+                        <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#2">
+                        <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#3">
+                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#4">
+                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#5">
+                        <img class="slide-icon" src="/images/icons/gamepad-solid.svg" alt="game icon">
+                    </a>
+                </li>
+            </ol>
         </div>
         <section class="intructor-resources">
             <h2>Instructor Resources</h2>

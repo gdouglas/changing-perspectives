@@ -94,7 +94,7 @@
 .slider-navigation > li > a {
     display: flex;
     height: 100%;
-    background: radial-gradient(#387989, #6dd5ed);
+    background: radial-gradient(var(--secondary), #6dd5ed);
     background-repeat: no-repeat;
 }
 .slide-icon {

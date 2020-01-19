@@ -8,6 +8,7 @@ window.onload = function () {
     if (document.querySelector(".slider")) {
         addSlider();
         addSliderControls();
+        addSlideListeners();
     }
 };
 function addSlider() {
@@ -15,6 +16,11 @@ function addSlider() {
     let isDown = false;
     let startX;
     let scrollLeft;
+
+    slider.addEventListener('scroll', (e) => {
+        console.log("scroll");
+
+    });
 
     slider.addEventListener('mousedown', (e) => {
         isDown = true;
@@ -44,15 +50,17 @@ function addSliderControls() {
     const slides = document.querySelectorAll('.slide');
     const width = slides[0].offsetWidth;
     slides.forEach((el) => {
+        // disable clicks so we can set focus
         el.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log("click", e, e.target, e.target.tagName);
-            if (e.target.tagName == "a" || "A") {
+            //allow link tags to navigate
+            if (e.target.tagName.toLowerCase() === "a") {
                 window.location = e.target.href;
             }
             setActive(el);
         });
-    })
+    });
+    //listen for a scroll and set the slide closest to the middle to active
     slider.addEventListener('scroll', (e) => {
         const center = window.innerWidth / 2 + 10;
         slides.forEach(slide => {
@@ -71,51 +79,21 @@ function addSliderControls() {
         slide(e, "next", slider, width);
     });
 }
-function setActive(el) {
-    if (!el) {
-        return;
-    }
-    if (el.classList.contains("active")) {
-        return;
-    }
-    // let slideId = el.querySelector('a')
-    // if (!slideId) {
-    //     return;
-    // }
-    // slideId = slideId.hash.replace('#', '');
-    // const slideContent = document.getElementById(slideId);
-    document.querySelectorAll('.active').forEach((item) => {
-        item.classList.remove("active");
-    });
-    // slideContent.classList.add("active");
-    el.classList.add("active");
-
-
-    const slides = document.getElementsByClassName("slide");
-
-    for (let i = 0; i < slides.length; i++) {
-        if (slides[i].classList.contains('active')) {
-            if (i === slides.length - 1) {
-                document.getElementById('next').disabled = true;
-            } else {
-                // console.log('slide ', i)
-                 document.getElementById('next').disabled = false;
+function addSlideListeners() {
+    let slides = document.getElementsByClassName("slide");
+    Object.keys(slides).forEach(slide => 
+        slides[slide].addEventListener('focusin', (event) => {
+            console.log(slides);
+            for (let i = 0; i < slides.length; i++) {
+                if ( slides[i].classList.contains('active') ) {
+                    console.log(i)
+                }
             }
-
-            if (i === 0) {
-                document.getElementById('prev').disabled = true;
-            } else {
-                document.getElementById('prev').disabled = false;
-            }
-        }
-    }
-    // check for iframe video and play it
-    if (el.querySelector('iframe')){
-        el.querySelector('iframe').contentWindow.postMessage('{"method":"play"}', '*');
-    }
+            setActive(event.target);
+          })
+    );
 }
 function slide(e, direction, slider, width) {
-    // TODO stop all vimeo playing
     e.preventDefault();
     document.querySelectorAll("iframe").forEach((video) => {
         stopVideo(video);
@@ -136,6 +114,73 @@ function slide(e, direction, slider, width) {
             behavior: 'smooth'
         });
     }
+}
+function setActive(el) {
+    // if there is no element or the element is already active abort
+    if (!el) {
+        return;
+    }
+    if (el.classList.contains("active")) {
+        return;
+    }
+    // let slideId = el.querySelector('a')
+    // if (!slideId) {
+    //     return;
+    // }
+    // slideId = slideId.hash.replace('#', '');
+    // const slideContent = document.getElementById(slideId);
+    document.querySelectorAll('.active').forEach((item) => {
+        item.classList.remove("active");
+    });
+    // slideContent.classList.add("active");
+    // el.classList.add("active");
+    
+    // set the slide in the middle of the screen to active
+    let centerItem = getCenterItem();
+    console.log(centerItem+ " add the active class here");
+
+
+    const slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        if (slides[i].classList.contains('active')) {
+            if (i === slides.length - 1) {
+                document.getElementById('next').disabled = true;
+            } else {
+                 document.getElementById('next').disabled = false;
+            }
+
+            if (i === 0) {
+                document.getElementById('prev').disabled = true;
+            } else {
+                document.getElementById('prev').disabled = false;
+            }
+        }
+    }
+    // check for iframe video and play it
+    if (el.querySelector('iframe')){
+        el.querySelector('iframe').contentWindow.postMessage('{"method":"play"}', '*');
+    }
+}
+function getCenterItem(){
+    // get the middle of the screen
+    let screenCenter = window.innerwidth/2;
+    let documentCenter = document.documentElement.clientWidth;
+
+    //loop through the slides and check which one is the closest to the middle
+    // something like this from: https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
+    // var bounding = elem.getBoundingClientRect();
+    // return (
+    //     bounding.top >= 0 &&
+    //     bounding.left >= 0 &&
+    //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+    // );
+    //return the element in the middle
+
+    //figure out how to debounce calling this function
+
+    return "item that is the closest the middle";
 }
 function addNavButton() {
     var navMenu = document.getElementById('nav-menu');

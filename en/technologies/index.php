@@ -18,17 +18,17 @@
         </div>
         <div class="slider-container relative">
             <ul class="slider">
-                <li class="slide active">
+                <li class="slide active" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Navigation</h3>
                 </li>
-                <li class="slide">
+                <li class="slide" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Ships</h3>
                 </li>
-                <li class="slide">
+                <li class="slide" tabindex="0">
                     <figure>
                         <img src="/images/sextant.jpg" alt="brass sextant">
                         <figcaption>
@@ -37,7 +37,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide">
+                <li class="slide" tabindex="0">
                     <figure>
                         <img src="/images/telescope.jpg" alt="brass telescope">
                         <figcaption>
@@ -46,7 +46,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide">
+                <li class="slide" tabindex="0">
                     <figure>
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>
@@ -56,7 +56,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide">
+                <li class="slide" tabindex="0">
                     <figure>
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>

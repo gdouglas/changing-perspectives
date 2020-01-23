@@ -1,8 +1,3 @@
-// import smoothscroll from 'smoothscroll-polyfill';
-
-// // kick off the polyfill!
-// smoothscroll.polyfill();
-
 window.onload = function () {
     addNavButton();
     if (document.querySelector(".slider")) {
@@ -18,8 +13,9 @@ function addSlider() {
     let scrollLeft;
 
     slider.addEventListener('scroll', (e) => {
-        console.log("scroll");
-
+        // TODO debounce this, scroll event is messing up vimeo posting
+        let centerItem = getCenterItem();
+        setActive(centerItem);
     });
 
     slider.addEventListener('mousedown', (e) => {
@@ -94,6 +90,8 @@ function addSlideListeners() {
     );
 }
 function slide(e, direction, slider, width) {
+    console.log("slide");
+    
     e.preventDefault();
     document.querySelectorAll("iframe").forEach((video) => {
         stopVideo(video);
@@ -116,32 +114,27 @@ function slide(e, direction, slider, width) {
     }
 }
 function setActive(el) {
+    console.log(el);
     // if there is no element or the element is already active abort
-    if (!el) {
+    if (!el || !el.nodeType) {
         return;
     }
     if (el.classList.contains("active")) {
         return;
     }
-    // let slideId = el.querySelector('a')
-    // if (!slideId) {
-    //     return;
-    // }
-    // slideId = slideId.hash.replace('#', '');
-    // const slideContent = document.getElementById(slideId);
+    //remove all active slides
     document.querySelectorAll('.active').forEach((item) => {
         item.classList.remove("active");
     });
-    // slideContent.classList.add("active");
-    // el.classList.add("active");
-    
+
+
     // set the slide in the middle of the screen to active
     let centerItem = getCenterItem();
-    console.log(centerItem+ " add the active class here");
-
+    centerItem.classList.add("active");
 
     const slides = document.getElementsByClassName("slide");
 
+    //toggle the previous and next buttons
     for (let i = 0; i < slides.length; i++) {
         if (slides[i].classList.contains('active')) {
             if (i === slides.length - 1) {
@@ -163,24 +156,35 @@ function setActive(el) {
     }
 }
 function getCenterItem(){
-    // get the middle of the screen
-    let screenCenter = window.innerwidth/2;
-    let documentCenter = document.documentElement.clientWidth;
+    // called on scroll or when navigation occurs
+    // get the middle of the screen, then all the slides then the active slide
+    // go through the slides and return the one that has the smallest distance to the center
+    let screenCenter = window.innerWidth/2 - 50,
+    slides = document.querySelectorAll('.slide'),
+    activeSlide = document.querySelector('.slide.active');
+    if (!activeSlide) {
+        activeSlide = slides[0];
+    }
+    let activeSlidePos = activeSlide.getBoundingClientRect();
 
-    //loop through the slides and check which one is the closest to the middle
-    // something like this from: https://gomakethings.com/how-to-test-if-an-element-is-in-the-viewport-with-vanilla-javascript/
-    // var bounding = elem.getBoundingClientRect();
-    // return (
-    //     bounding.top >= 0 &&
-    //     bounding.left >= 0 &&
-    //     bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    //     bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
-    // );
-    //return the element in the middle
+    slides.forEach(
+        function(slide){
+            let slidePos = slide.getBoundingClientRect(),
+            distanceFromCenter = Math.abs(slidePos.left - screenCenter),
+            activeDistanceFromCenter = Math.abs(activeSlidePos.left - screenCenter);
 
-    //figure out how to debounce calling this function
+            if(distanceFromCenter < activeDistanceFromCenter) {
+                //update the active slide and position
+                activeSlide = slide;
+                activeSlidePos = activeSlide.getBoundingClientRect();
+                return;
+            } else {
+                return
+            }
+        }
+    );
 
-    return "item that is the closest the middle";
+    return activeSlide;
 }
 function addNavButton() {
     var navMenu = document.getElementById('nav-menu');

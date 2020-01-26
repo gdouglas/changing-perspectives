@@ -29,14 +29,36 @@ window.onload = function () {
         addSlideListeners();
     }
 };
+window.addEventListener("hashchange", function(e){
+    slideToItem(e.newURL);
+}, true);
+
+let sliderNav = document.querySelectorAll('.slider-navigation a');
+sliderNav.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        e.preventDefault();
+        slideToItem(link.href);
+    });
+});
+
 function addSlider() {
     const slider = document.querySelector('.slider');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
+    let isDown = false,
+    startX,
+    scrollLeft,
+    activeItem = document.querySelector('.active');
 
+
+    if (window.location.hash) {
+        if (activeItem.id !== window.location.hash) {
+            activeItem = document.querySelector(window.location.hash);
+            activeItem.scrollIntoView();
+            setActive(activeItem);
+            console.log("go", document.querySelector('.active'), document.querySelector(window.location.hash));
+            
+        }
+    }
     slider.addEventListener('scroll', (e) => {
-        // TODO debounce this, scroll event is messing up vimeo posting
         let centerItem = getCenterItem();
         setActive(centerItem);
     });
@@ -57,7 +79,6 @@ function addSlider() {
     });
     slider.addEventListener('mousemove', (e) => {
         if (!isDown) return;
-        // TODO get scroll drag working
         e.preventDefault();
         const x = e.pageX - slider.offsetLeft;
         const walk = (x - startX) * 1;
@@ -102,23 +123,20 @@ function addSlideListeners() {
     let slides = document.getElementsByClassName("slide");
     Object.keys(slides).forEach(slide => 
         slides[slide].addEventListener('focusin', (event) => {
-            console.log(slides);
             for (let i = 0; i < slides.length; i++) {
                 if ( slides[i].classList.contains('active') ) {
-                    console.log(i)
+                    console.log("focusin", i);
                 }
             }
             setActive(event.target);
           })
     );
 }
+// scroll to the previous or next slide, call setActive on next element
 function slide(e, direction, slider, width) {
-    console.log("slide");
     
     e.preventDefault();
-    document.querySelectorAll("iframe").forEach((video) => {
-        stopVideo(video);
-    })
+    
     let activeSlide = "";
 
     if (direction === "next") {
@@ -137,7 +155,6 @@ function slide(e, direction, slider, width) {
     }
 }
 function setActive(el) {
-    console.log(el);
     // if there is no element or the element is already active abort
     if (!el || !el.nodeType) {
         return;
@@ -154,6 +171,7 @@ function setActive(el) {
     // set the slide in the middle of the screen to active
     let centerItem = getCenterItem();
     centerItem.classList.add("active");
+    document.querySelector(`a[href*="${centerItem.id}"]`).classList.add("active");
 
     const slides = document.getElementsByClassName("slide");
 
@@ -173,8 +191,12 @@ function setActive(el) {
             }
         }
     }
-    // check for iframe video and play it
-    if (el.querySelector('iframe')){
+    //pause all Vimeo videos
+    document.querySelectorAll("iframe").forEach((video) => {
+        stopVideo(video);
+    })
+    // check for iframe video and play it, only when scroll is done
+    if (el.querySelector('iframe') && el.classList.contains('active')){
         el.querySelector('iframe').contentWindow.postMessage('{"method":"play"}', '*');
     }
 }
@@ -229,3 +251,17 @@ function offset(el) {
 var stopVideo = function ( iframe ) {
     iframe.contentWindow.postMessage('{"method":"pause"}', '*');
 };
+
+//move to slider to the selected item
+function slideToItem(url) {
+    let hash = "#"+url.split("#")[1],
+    slide = document.querySelector(hash);
+    if(history.pushState) {
+        history.pushState(null, null, hash);
+        slide.scrollIntoView({behavior: "smooth", inline: "center"});
+    }
+    else {
+        location.hash = hash;
+    };
+
+}

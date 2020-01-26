@@ -97,6 +97,13 @@
     background: radial-gradient(var(--secondary), #6dd5ed);
     background-repeat: no-repeat;
 }
+.slider-navigation .active {
+    background: gold;
+    box-shadow: 0 6px 12px -4px coral
+}
+.slider-navigation > li > a * {
+    pointer-events: none;;
+}
 .slide-icon {
     width: 45px;
     margin: 2px 8px;

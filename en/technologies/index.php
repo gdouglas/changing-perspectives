@@ -18,17 +18,17 @@
         </div>
         <div class="slider-container relative">
             <ul class="slider">
-                <li class="slide active" tabindex="0">
+                <li id="article-1" class="slide active" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Navigation</h3>
                 </li>
-                <li class="slide" tabindex="0">
+                <li id="article-2" class="slide" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Ships</h3>
                 </li>
-                <li class="slide" tabindex="0">
+                <li id="article-3" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/sextant.jpg" alt="brass sextant">
                         <figcaption>
@@ -37,7 +37,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide" tabindex="0">
+                <li id="article-4" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/telescope.jpg" alt="brass telescope">
                         <figcaption>
@@ -46,7 +46,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide" tabindex="0">
+                <li id="article-5" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>
@@ -56,12 +56,11 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li class="slide" tabindex="0">
+                <li id="article-6" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>
                             <h3 class="gold">Sailing Game</h3>
-                            <!-- todo let link work -->
                             <a href="./game">Plan Game</a>
                         </figcaption>
                     </figure>
@@ -72,27 +71,32 @@
                 <button id="next" type="button" class="btn">Next</button>
             </div>
             <ol class="slider-navigation">
-                <li><a href="#1">
+                <li><a href="#article-1">
                         <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#2">
+                    <a href="#article-2">
                         <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#3">
+                    <a href="#article-3">
                         <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#4">
+                    <a href="#article-4">
                         <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
                     </a>
                 </li>
                 <li>
-                    <a href="#5">
+                    <a href="#article-5">
+                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#article-6">
                         <img class="slide-icon" src="/images/icons/gamepad-solid.svg" alt="game icon">
                     </a>
                 </li>

@@ -12,13 +12,13 @@
   scrollbar-width: none;
 }
 .slider::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.slide:first-of-type{
+.slide:first-of-type {
   margin-left: 15%;
 }
 .slide:last-of-type:after {
-  content: '';
+  content: "";
   display: block;
   width: 200%;
   height: 1px;
@@ -36,25 +36,25 @@
   transition: all ease 0.3s;
 }
 .slide figure {
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 1rem 5rem;
-    display: flex;
-    align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
 }
 .slide figcaption {
   padding: 0 2rem;
   text-align: center;
 }
-.slide figcaption p{
-    max-width: 750px;
-    text-align: left;
-    color: rgba(255,255,255,0.85);
-    font-weight: lighter;
-    margin-left: auto;
-    margin-right: auto;
+.slide figcaption p {
+  max-width: 750px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: lighter;
+  margin-left: auto;
+  margin-right: auto;
 }
 .slider-controls {
   position: absolute;
@@ -69,55 +69,55 @@
   pointer-events: none;
 }
 .slider-controls .btn {
-    background: var(--secondary);
-    transition: all .2s ease-out;
-    color: #303030;
-    border: none;
-    font-size: 22px;
-    width: 150px;
-    pointer-events: all;
+  background: var(--secondary);
+  transition: all 0.2s ease-out;
+  color: #303030;
+  border: none;
+  font-size: 22px;
+  width: 150px;
+  pointer-events: all;
 }
 .slider-navigation {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    justify-content: center;
-    list-style: none;
-    padding-bottom: 50px;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: center;
+  list-style: none;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 .slider-navigation > li {
-    display: inline-block;
-    border: 1px solid var(--main-text-color);
-    border-radius: 5px;
-    margin: 2px 8px;
+  display: inline-block;
+  border: 1px solid var(--main-text-color);
+  border-radius: 5px;
+  margin: 2px 8px;
 }
 .slider-navigation > li > a {
-    display: flex;
-    height: 100%;
-    background: radial-gradient(var(--secondary), #6dd5ed);
-    background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  background: radial-gradient(var(--secondary), #6dd5ed);
+  background-repeat: no-repeat;
 }
 .slider-navigation .active {
-    background: gold;
-    box-shadow: 0 6px 12px -4px coral
+  background: gold;
+  box-shadow: 0 6px 12px -4px coral;
 }
 .slider-navigation > li > a * {
-    pointer-events: none;;
+  pointer-events: none;
 }
 .slide-icon {
-    width: 45px;
-    margin: 2px 8px;
+  width: 45px;
+  margin: 2px 8px;
 }
 @media (pointer) {
   .slider-controls .btn:hover {
-    box-shadow:0px 0px 15px 0px var(--primary) inset;
+    box-shadow: 0px 0px 15px 0px var(--primary) inset;
   }
   .slider-controls .btn:disabled:hover {
     box-shadow: none;
   }
 }
 .slider-controls .btn:disabled {
-  
   /*background: #4F4F4F; */
   opacity: 30%;
   transform: scale(0.8);
@@ -153,8 +153,39 @@
   .slider .slide {
     width: 80%;
   }
+  .slide figcaption h3 {
+    position: sticky;
+    top: 0;
+    color: var(--gold);
+    z-index: 1;
+    transform: translateZ(1);
+    -webkit-text-fill-color: unset;
+    padding-bottom: 10px;
+    box-shadow: 0px -7px 11px 9px black;
+  }
+  .slide figcaption h3:before {
+    content: "";
+    display: block;
+    background: #282828;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: -1rem;
+    margin: -1rem;
+    right: 0;
+    padding: 1rem;
+    z-index: -1;
+  }
 }
 @media screen and (max-width: 960px) {
+  .slide {
+    min-width: 69vw;
+    max-height: 70vh;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .slider-controls {
     position: static;
     width: 100%;
@@ -163,11 +194,39 @@
   .slider-controls #next {
     margin-left: 8px;
   }
-
+  .slide > figure {
+    max-height: none;
+    overflow: auto;
+    display: block;
+    padding: 1rem;
+  }
+  .slide figcaption {
+    background: rgba(50, 50, 50, 0.8);
+    padding: 0 1rem 1rem 1rem;
+    border-radius: 8px;
+  }
+  .slide > div {
+    width: 100%;
+  }
+  .slide figure img {
+    max-height: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .slider-navigation {
+    padding: 0;
+    flex-wrap: wrap;
+  }
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

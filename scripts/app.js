@@ -31,7 +31,6 @@ function addSlider() {
             activeItem = document.querySelector(window.location.hash);
             activeItem.scrollIntoView();
             setActive(activeItem);
-            console.log("go", document.querySelector('.active'), document.querySelector(window.location.hash));
             
         }
     }
@@ -233,11 +232,14 @@ var stopVideo = function ( iframe ) {
 function slideToItem(url) {
     let hash = "#"+url.split("#")[1],
     slide = document.querySelector(hash);
+    console.log(hash);
     if(history.pushState) {
         history.pushState(null, null, hash);
-        slide.scrollIntoView({behavior: "smooth", inline: "center"});
+        slide.scrollIntoView({inline: "center"});
+        console.log(slide);
     }
     else {
+        console.log("no history");
         location.hash = hash;
     };
 

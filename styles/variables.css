@@ -4,11 +4,13 @@
     --main-text-color: #222;
     --primary: #000;
     --secondary: #01A9B2;
-    --gold: #FCDF8B;
+    --gold: #d4af37;
+    --light-gold: #FCDF8B;
     --paper: #E8DEC8;
 
     --title-font: "Beth Ellen", cursive;
     --serif-font: "Libre Baskerville", serif;
 
     --margin-top: 8px;
+    --margin-bottom: 20px;
 }

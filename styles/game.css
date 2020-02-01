@@ -6,3 +6,22 @@
     max-width: 980px;
     margin: 0 auto;
 }
+.question h3 {
+    font-family: var(--serif-font);
+}
+#play {
+    display: none;  
+}
+#game:target #play {
+    display: inline;
+}
+#game:target > a {
+    display: none;
+}
+
+.question:nth-child(0) {
+    display: block;
+}
+.question {
+    display: none;
+}

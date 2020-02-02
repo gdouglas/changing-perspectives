@@ -4,6 +4,16 @@
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Changing Perspectives | Context</title>
+    <noscript>
+        <style>
+        .question {
+            display: block;
+        }
+        .needjs {
+            display: none;
+        }
+        </style>
+    </noscript>
 </head>
 
 <body class="splash">
@@ -24,7 +34,7 @@
                             <legend>
                                 <h2>Learn The Language of Sailing</h2>
                             </legend>
-                            <div class="question">
+                            <div class="question active">
                                 <h3>Question 1: Lorem Ipsum Dolor Sit Amet</h3>
                                 <div class="tile">
                                     <label class="tile" for="a1">
@@ -47,7 +57,6 @@
                                     </label>
                                     <input type="radio" name="question1" id="c1" value="c1">
                                 </div>
-                                <label>Next Question <input type="checkbox"></label>
                             </div>
                             <div class="question">
                                 <h3>Question 2: Lorem Ipsum Dolor Sit Amet</h3>
@@ -98,7 +107,7 @@
                                 </div>
                             </div>
                         </fieldset>
-
+                        <button onclick="nextQuestion()" class="needjs btn">Next Question</button>
                     </form>
                 </div>
             </div>

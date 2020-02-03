@@ -107,7 +107,7 @@
                                 </div>
                             </div>
                         </fieldset>
-                        <button onclick="nextQuestion()" class="needjs btn">Next Question</button>
+                        <button type="button" onclick="nextQuestion()" class="needjs btn">Next Question</button>
                     </form>
                 </div>
             </div>

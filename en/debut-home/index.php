@@ -12,34 +12,9 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <div class="pull-quote text-center">
-            <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
-            <nav class="tiles">
-                <a href="/en/context" class="tile">
-                    <figure>
-                        <img src="/images/context.jpg" alt="Whale illustrated in Haida style">
-                        <figcaption>The Context</figcaption>
-                    </figure>
-                </a>
-                <a href="/en/expedition" class="tile">
-                    <figure>
-                        <img src="/images/expedition.jpg" alt="A painting of a sailing galleon">
-                        <figcaption>The Expedition</figcaption>
-                    </figure>
-                </a>
-                <a href="/en/legacies/" class="tile">
-                    <figure>
-                        <img src="/images/legacies-landscape.jpg" alt="A wooden statue facing the sun set on a grassy shore">
-                        <figcaption>The Legacies</figcaption>
-                    </figure>
-                </a>
-                <a href="/en/technologies/" class="tile">
-                    <figure>
-                        <img src="/images/technology-navigation.png" alt="A chronometer">
-                        <figcaption>European Navigation and Ship Technology</figcaption>
-                    </figure>
-                </a>
-            </nav>
+        <div class="text-center">
+            <p>This online virtual exhibit is hosted by the Vancouver Maritime Museum which is fortunate to be located on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada</p>
+            <p>The Pacific North West Coast was in the midst of great changes when George Vancouver arrived at the Straits of Juan de Fuca in 1792. The Indigenous Communities were engaged in a turbulent fur trade with the Europeans and the Americans. At the same time the Spanish, Russian and British colonial empires were competing to take “possession” of the region.  What were the initial meetings like between the First Nations people and these foreigners? What was it like to be a member of Vancouver’s crew and what technology did they need to get to their destination? What was life like for Indigenous People on the Northwest coast before the arrival of the newcomers? What is life like now for the Mowachaht/Muchalaht people after 200 years of colonization?</p>
         </div>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>

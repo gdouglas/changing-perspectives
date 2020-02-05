@@ -1,3 +1,4 @@
+<?php session_start(); ?>    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +27,6 @@
         <div class="text-center">
             <div id="game">
                 <p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>
-                <a href="#game" class="btn btn-action">Ready to play?</a>
                 <?php include "./tech-game.php"?>
             </div>
         </div>

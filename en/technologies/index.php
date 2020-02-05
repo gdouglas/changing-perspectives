@@ -61,7 +61,7 @@
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>
                             <h3 class="gold">Sailing Game</h3>
-                            <a href="./game">Plan Game</a>
+                            <a href="./game">Play Game</a>
                         </figcaption>
                     </figure>
                 </li>

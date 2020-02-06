@@ -1,10 +1,18 @@
 <?php
-if ($_SESSION["correctCount"] == null){
+//Check if you've answered enough quiz questions correctly
+if ($_POST["restart"] == "restart") {
+    session_destroy();
     $_SESSION["correctCount"] = 0;
+    $_SESSION["answered"] = array();
+    $_SESSION["quiz_complete"] = false;
 }
-// print_r($_SESSION);
-// TODO get the questions asking randomly, ommiting correct ones
+if ($_SESSION["quiz_complete"] == false) {
+    print '<p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>';
+}
+
+// TODO get the questions asking randomly, omiting correct ones
 // TODO go to next phase when answered goal number
+$targetCorrect = 3;
 $questionNum = 1;
 $questions = [
     1 =>  array(
@@ -51,8 +59,8 @@ $questions = [
             )
         )
     ),
-    "answered" => false,
     3 =>  array(
+        "answered" => false,
         "image" => "http://placehold.jp/150x100.png",
         "question" => "Dogs need to be fed with:",
         "options" => array(
@@ -74,57 +82,56 @@ $questions = [
         )
     ),
 ];
+//take the question number and answer, check for correct
 function checkAnswer($q, $a) {
-    global $answers;
-    if ($answers[$q] == $a) {
+    global $questions;
+    $a = substr($a,0,1);
+    if ($questions[$q]["options"][$a]["correct"]) {
         return true;
     } else {
         return false;
     }
 }
-$answers = [
-    "question1" => "a1",
-    "question2" => "a2",
-    "question3" => "a3",
-    "question4" => "a4",
-    "question5" => "a5",
-    "question6" => "a6"
-];
-$correctCount = 0;
-$targetCorrect = 3;
+
 if (count($_POST) > 0) {
     $q = array_keys($_POST)[0];
     $a = $_POST[$q];
     $answeredQ = (int) filter_var($q, FILTER_SANITIZE_NUMBER_INT);
-    if ( checkAnswer($q, $a) ){
+    if ( checkAnswer($answeredQ, $a) ){
         echo "Correct! ";
         $_SESSION["correctCount"] ++;
+        if ($_SESSION["correctCount"] >= $targetCorrect) {
+            $_SESSION["quiz_complete"] = true;
+            $_SESSION["correctCount"] = $targetCorrect;
+        }
         $questions[$answeredQ]["answered"] = true;
-    } else {
+        $_SESSION["answered"][] = $answeredQ;
+    } elseif ($_POST["restart"]) {
+        // do nothing
+    } else  {
         echo "Incorrect! ";
     };
-    if ($correctCount == $targetCorrect) {
-        echo 'You\'ve learned the lingo now let\'s <a href=".\sail\">Set Sail!</a>';
-        return;
-    }
     echo 
-    "For <strong>$q</strong>, you answered <strong>$a</strong>
-    <div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
-    getNextQuestion($answeredQ);
-    
+        "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
+    if ($_SESSION["correctCount"] < $targetCorrect) {
+        getNextQuestion($answeredQ);
+    }
 }
+
 function getNextQuestion() {
+    echo "GET NEXT";
     global $questions;
     global $questionNum;
-    $questionNum = count($questions) - 1;
+
+    $questionNum = count($questions);
+    $availableQuestions = range(1, $questionNum);
+    array_diff($availableQuestions, $_SESSION["answered"]);
+    //todo use array dif here
     $questionNum = mt_rand(1, $questionNum);
-    if ($questions[$questionNum]["answered"]) {
-        echo "answered already!";
-        getNextQuestion();
+    if (in_array($questionNum, $_SESSION["answered"])) {
+        echo "ALREADY ANSWERED!";
     }
-    echo $questionNum;
 }
-echo $questionNum;
 foreach ($questions[$questionNum]["options"] as $key => $option) {
     $id = $key . $questionNum;
     $options .= '<div class="tile">
@@ -149,6 +156,19 @@ $questionForm = '
         </div>
         <button class="btn">Submit</button>
 </form>
+<form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
+    <input type="hidden" name="restart" value="restart">
+    <button class="btn">Restart</button>
+</form>
 ';
-
-print($questionForm);
+if ($_SESSION["correctCount"] >= $targetCorrect) {
+    print 'You\'ve learned the lingo now let\'s <a href=".\game">Set Sail!</a>
+    <p>
+        <form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
+        <input type="hidden" name="restart" value="restart">
+        <button class="btn">Restart</button>
+        </form>
+    </p>';
+} else {
+    print($questionForm);
+}

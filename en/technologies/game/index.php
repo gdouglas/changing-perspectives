@@ -26,8 +26,13 @@
         <h1>Game Title Goes Here</h1>
         <div class="text-center">
             <div id="game">
-                <p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>
-                <?php include "./tech-game.php"?>
+                <?php
+                    if ($_SESSION["quiz_complete"] == false) { 
+                        include "./tech-game.php";
+                    } elseif ($_SESSION["quiz_complete"] == true) { 
+                        include "./sail.php";
+                    }
+                ?>
             </div>
         </div>
     </main>

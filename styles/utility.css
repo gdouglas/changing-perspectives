@@ -103,3 +103,14 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
+
+.debug {
+    text-align: left;
+    font-weight: bold;
+    background: rosybrown;
+    padding: 4px;
+    border: 1px solid lightgrey;
+    line-height: 1.9;
+    font-family: monospace;
+    font-size: 16px;
+}

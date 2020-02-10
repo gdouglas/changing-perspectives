@@ -1,4 +1,4 @@
-<?php session_start(); ?>    
+<?php include "./game-session.php";?>
 <!DOCTYPE html>
 <html lang="en">
 

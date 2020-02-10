@@ -1,11 +1,5 @@
 <?php
 //Check if you've answered enough quiz questions correctly
-if ($_POST["restart"] == "restart") {
-    session_destroy();
-    $_SESSION["correctCount"] = 0;
-    $_SESSION["answered"] = array();
-    $_SESSION["quiz_complete"] = false;
-}
 if ($_SESSION["quiz_complete"] == false) {
     print '<p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>';
 }
@@ -92,7 +86,6 @@ function checkAnswer($q, $a) {
         return false;
     }
 }
-
 if (count($_POST) > 0) {
     $q = array_keys($_POST)[0];
     $a = $_POST[$q];
@@ -109,28 +102,25 @@ if (count($_POST) > 0) {
     } elseif ($_POST["restart"]) {
         // do nothing
     } else  {
-        echo "Incorrect! ";
+        print "Incorrect! ";
     };
-    echo 
-        "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
-    if ($_SESSION["correctCount"] < $targetCorrect) {
-        getNextQuestion($answeredQ);
-    }
-}
 
+    print 
+        "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
+}
+if ($_SESSION["correctCount"] < $targetCorrect) {
+    getNextQuestion();
+}
 function getNextQuestion() {
-    echo "GET NEXT";
     global $questions;
     global $questionNum;
-
-    $questionNum = count($questions);
-    $availableQuestions = range(1, $questionNum);
-    array_diff($availableQuestions, $_SESSION["answered"]);
-    //todo use array dif here
-    $questionNum = mt_rand(1, $questionNum);
-    if (in_array($questionNum, $_SESSION["answered"])) {
-        echo "ALREADY ANSWERED!";
-    }
+    //create an array of all possible questions
+    //compare against answered
+    $availableQuestions = array_keys($questions);
+    $availableQuestions = array_diff($availableQuestions, $_SESSION["answered"]);
+    $question = array_rand($availableQuestions);
+    $questionNum = $availableQuestions[$question];
+    // echo "got question $questions";
 }
 foreach ($questions[$questionNum]["options"] as $key => $option) {
     $id = $key . $questionNum;
@@ -140,7 +130,7 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
             <img src="' . $option["image"] . '">
             <p>' . $option["option"] . '</p>
         </label>
-        <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '">
+        <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
     </div>';
 }
 $questionForm = '
@@ -161,6 +151,7 @@ $questionForm = '
     <button class="btn">Restart</button>
 </form>
 ';
+
 if ($_SESSION["correctCount"] >= $targetCorrect) {
     print 'You\'ve learned the lingo now let\'s <a href=".\game">Set Sail!</a>
     <p>

@@ -22,6 +22,15 @@
 .z2 {
     z-index: 2;
 }
+.block {
+    display: block;
+}
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
 .flex {
     display: -webkit-box;
     display: -ms-flexbox;

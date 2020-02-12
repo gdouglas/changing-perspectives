@@ -1,18 +1,142 @@
-<?php print '
+<?php
+
+$complete = $_SESSION["sailing_status"]["complete"];
+$day = $_SESSION["sailing_status"]["day"];
+$supplies = $_SESSION["sailing_status"]["supplies"];
+$challenge_results = $_SESSION["sailing_status"]["challenge_results"];
+
+
+$challenges = [
+    1 =>  array(
+        "answered" => false,
+        "image" => "http://placehold.jp/150x100.png",
+        "question" => "What do you call a fish with legs?",
+        "options" => array(
+            "a" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "fishy",
+                "correct" => true
+            ),
+            "b" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "not fishy",
+                "correct" => false
+            ),
+            "c" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "Rodney",
+                "correct" => false
+            )
+        )
+    ),
+    2 =>  array(
+        "answered" => false,
+        "image" => "http://placehold.jp/150x100.png",
+        "question" => "Open a jar of pickles",
+        "options" => array(
+            "a" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "Left loosey",
+                "correct" => true
+            ),
+            "b" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "Righty tighty",
+                "correct" => false
+            ),
+            "c" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "Smashy Bashy",
+                "correct" => false
+            )
+        )
+    ),
+    3 =>  array(
+        "answered" => false,
+        "image" => "http://placehold.jp/150x100.png",
+        "question" => "Dogs need to be fed with:",
+        "options" => array(
+            "a" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "cheese",
+                "correct" => true
+            ),
+            "b" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "grapes",
+                "correct" => false
+            ),
+            "c" => array(
+                "image" => "http://placehold.jp/150x100.png",
+                "option" => "chocolate",
+                "correct" => false
+            )
+        )
+    ),
+];
+function answerQuestion(){
+    // if ($_POST[])
+    var_dump($_POST);
+    $value = (bool)random_int(0, 1);
+    if ($value) {
+        print "you got it right!";
+    } else {
+        print "you got it wrong";
+    }
+}
+echo "<pre class='debug'>";
+var_dump($_SESSION);
+echo "</pre>";
+function getQuestion() {
+    //get the question to ask from the challenges array
+    return 1;
+}
+function createQuestion($q) {
+    //create a question based on the content of the array
+    $question = 
+    '<h3>Choose the right answer for the image</h3>
+    <div>
+        <img src="http://placehold.jp/150x100.png" alt="Some really good alt text">
+    </div>';
+    
+    for ($i = 1; $i < 4; $i++){
+        $question .= 
+        '<div class="tile">
+            <label class="tile" for="item'.$q.$i.'">                
+                <p>Answer '.$i.'</p>
+            </label>
+            <input type="radio" name="item'.$q.'" id="item'.$q.$i.'" value="bar" required>
+        </div>';
+    };
+    return '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">'.$question.'<button>Submit</button></form>';
+
+}
+function askQuestion() {
+    $q = getQuestion();
+    $qp = createQuestion($q);
+    print $qp;
+}
+
+$game = '
 <h1>Sailing to Hawaii</h1>
-<div id="game" class="flex">
+<div id="game" class="flex flex-wrap">
     <div class="status">
-        <div id="status"><span>0% complete</span></div>
+        <div id="status"><span>'.$complete.'% complete</span></div>
     </div>
     <div class="map relative">
         <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <line x1="0" y1="0" x2="80" y2="60" stroke="#765373" stroke-width="1"/>
+        <line 
+            x1="48" y1="40" x2="68" y2="18" 
+            stroke="#765373"
+            stroke-linecap="round"
+            stroke-width="1"/>
         </svg>
         <img src="/images/pacific-map.jpg">
+        <button class="nojs btn">Next</button>
     </div>
     <div class="counters">
-        <div id="counter">Day 0</div>
-        <div id="supplies">Supplies: 100</div>
+        <div id="counter">Day '.$day.'</div>
+        <div id="supplies">Supplies: '.$supplies.'</div>
         <ol class="challenges">
             <li>Challenge 1</li>
             <li>Challenge 2</li>
@@ -29,11 +153,11 @@
             <li>Bronze 200</li>
         </ol>
     </div>   
-</div>
+</div>';
 
 
 
-<hr>
+$reset = '<hr>
 <h3>Start Over?</h3>
 <p>
     <form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
@@ -46,4 +170,8 @@ if ($_POST["restart"] == "restart") {
     $_SESSION["correctCount"] = 0;
     $_SESSION["quiz_complete"] = false;
 }
+print $game;
+answerQuestion();
+askQuestion();
+print $reset;
 ?>

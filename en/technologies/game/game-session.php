@@ -13,6 +13,14 @@ function startSession(){
         if (empty($_SESSION["quiz_complete"])) {
             $_SESSION["quiz_complete"] = false;
         }
+        if (empty($_SESSION["sailing_status"])) {
+            $_SESSION["sailing_status"] = array(
+                "complete" => 0,
+                "day" => 0,
+                "supplies" => 100,
+                "challenge_results" => array(),
+            );
+        }
     }
 }
 startSession();
@@ -22,5 +30,11 @@ if ($_POST["restart"] == "restart") {
     $_SESSION["correctCount"] = 0;
     $_SESSION["answered"] = array();
     $_SESSION["quiz_complete"] = false;
+    $_SESSION["sailing_status"] = array(
+        "complete" => 0,
+        "day" => 0,
+        "supplies" => 100,
+        "challenge_results" => array(),
+    );
 }
 ?>

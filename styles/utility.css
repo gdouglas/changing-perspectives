@@ -37,6 +37,9 @@
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 .pull-right {
     float: right;
 }

@@ -1,5 +1,4 @@
 <?php
-
 $complete = $_SESSION["sailing_status"]["complete"];
 $day = $_SESSION["sailing_status"]["day"];
 $supplies = $_SESSION["sailing_status"]["supplies"];
@@ -121,7 +120,7 @@ $game = '
 <h1>Sailing to Hawaii</h1>
 <div id="game" class="flex flex-wrap">
     <div class="status">
-        <div id="status"><span>'.$complete.'% complete</span></div>
+        <div id="status" style="--complete: '.$complete.'%"><span>'.$complete.'% complete</span></div>
     </div>
     <div class="map relative">
         <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">

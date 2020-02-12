@@ -36,7 +36,30 @@
 }
 .status {
     width: 10%;
+    position: relative;
 }
 .counters {
     width: 20%;
+}
+
+#status {
+    height: 100%;
+    width: 4px;
+    background: gray;
+    margin: 0 auto;
+}
+#status:before {
+    display: block;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    /* background: blue; */
+    border: 1px solid blue;
+
+    /*this needs to be incremented to show progress*/
+    top: var(--complete);
 }

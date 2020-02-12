@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" type="text/css" href="/styles/main.css">
 <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans|Special+Elite|PT+Sans|Special+Elite&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Libre+Baskerville|Roboto+Slab|Slabo+27px&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Libre+Baskerville|Roboto+Slab|Slabo|Nothing+You+Could+Do|+27px&display=swap" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>

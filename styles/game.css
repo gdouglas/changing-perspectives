@@ -63,3 +63,32 @@
     /*this needs to be incremented to show progress*/
     top: var(--complete);
 }
+#sail-game .question{
+    position: absolute;
+    z-index: 1;
+    background: rgba(0,0,0,0.9);
+    padding: 25px;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    color: var(--gold);
+    font-size: 2rem;
+}
+
+.tile > input[type="radio"]{
+    display:none;
+}
+.tile > input[type="radio"]:checked+label{
+    border: 2px solid var(--secondary);
+    border-radius: 5px;
+}
+.question label p {
+    margin: 0;
+}
+
+.question .btn {
+    border-radius: 5px;
+    background: var(--secondary);
+    font-size: 1rem;
+    margin-top: 3rem;
+}

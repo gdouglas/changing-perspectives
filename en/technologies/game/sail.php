@@ -2,9 +2,10 @@
 $complete = $_SESSION["sailing_status"]["complete"];
 $day = $_SESSION["sailing_status"]["day"];
 $supplies = $_SESSION["sailing_status"]["supplies"];
-$challenge_results = $_SESSION["sailing_status"]["challenge_results"];
-
-
+// $challenge_results = $_SESSION["sailing_status"]["challenge_results"];
+$question = "";
+$_SESSION["sailing_status"]["complete"] = 0;
+debug($_SESSION, "Session");
 $challenges = [
     1 =>  array(
         "answered" => false,
@@ -75,7 +76,8 @@ $challenges = [
 ];
 function answerQuestion(){
     // if ($_POST[])
-    var_dump($_POST);
+    // randomly choose right or rong for testing
+    debug($_POST, "answerQuestion POST");
     $value = (bool)random_int(0, 1);
     if ($value) {
         print "you got it right!";
@@ -83,42 +85,47 @@ function answerQuestion(){
         print "you got it wrong";
     }
 }
-echo "<pre class='debug'>";
-var_dump($_SESSION);
-echo "</pre>";
+debug($_SESSION, "Session");
 function getQuestion() {
     //get the question to ask from the challenges array
     return 1;
 }
 function createQuestion($q) {
+    global $question;
     //create a question based on the content of the array
     $question = 
-    '<h3>Choose the right answer for the image</h3>
-    <div>
-        <img src="http://placehold.jp/150x100.png" alt="Some really good alt text">
-    </div>';
-    
-    for ($i = 1; $i < 4; $i++){
-        $question .= 
-        '<div class="tile">
-            <label class="tile" for="item'.$q.$i.'">                
-                <p>Answer '.$i.'</p>
-            </label>
-            <input type="radio" name="item'.$q.'" id="item'.$q.$i.'" value="bar" required>
+    '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
+        <h3>Choose the right answer for the image</h3>
+        <div>
+            <img src="http://placehold.jp/150x100.png" alt="Some really good alt text">
         </div>';
-    };
-    return '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">'.$question.'<button>Submit</button></form>';
+    
+        for ($i = 1; $i < 4; $i++){
+            $question .= 
+            '<div class="tile">
+                <input type="radio" name="item'.$q.'" id="item'.$q.$i.'" value="bar" required>
+                <label class="tile" for="item'.$q.$i.'">                
+                    <p>Answer '.$i.'</p>
+                </label>
+            </div>';
+        };
+    $question .= '<button class="btn">Submit</button></form>';
+    return $question;
 
 }
 function askQuestion() {
     $q = getQuestion();
-    $qp = createQuestion($q);
-    print $qp;
+    $question = createQuestion($q);
+    return $question;
 }
+
+$question = answerQuestion();
+askQuestion();
 
 $game = '
 <h1>Sailing to Hawaii</h1>
-<div id="game" class="flex flex-wrap">
+<div id="sail-game" class="flex flex-wrap relative">
+    '.$question.'
     <div class="status">
         <div id="status" style="--complete: '.$complete.'%"><span>'.$complete.'% complete</span></div>
     </div>
@@ -170,7 +177,5 @@ if ($_POST["restart"] == "restart") {
     $_SESSION["quiz_complete"] = false;
 }
 print $game;
-answerQuestion();
-askQuestion();
 print $reset;
 ?>

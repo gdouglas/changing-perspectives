@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
     <title>Changing Perspectives Feedback Form</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>

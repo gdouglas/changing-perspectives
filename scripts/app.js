@@ -1,4 +1,5 @@
 window.onload = function () {
+    document.querySelector("html").classList.remove("no-js");
     addNavButton();
     if (document.querySelector(".slider")) {
         addSlider();

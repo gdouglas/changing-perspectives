@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fra">
+<html class="no-js" lang="fra">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"?>

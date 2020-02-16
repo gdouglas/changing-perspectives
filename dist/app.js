@@ -22,6 +22,7 @@ if(!tmp){alert(error_message);}
 if(to_focus.length>0){document.getElementById(to_focus).focus();}
 return tmp;},checkit:function(cvalue,ctype,cform){if(ctype=="NOT_EMPTY"){if(this.trim($$(cvalue)).length<1){return false;}else{return true;}}else if(ctype=="EMAIL"){exp=/^[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;if($$(cvalue).match(exp)==null){return false;}else{return true;}}},trim:function(s){if(s.length>0){return s.replace(/^\s+/,'').replace(/\s+$/,'');}else{return s;}}};
 window.onload = function () {
+    document.querySelector("html").classList.remove("no-js");
     addNavButton();
     if (document.querySelector(".slider")) {
         addSlider();

@@ -1,6 +1,6 @@
 <?php include "./game-session.php";?>
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>

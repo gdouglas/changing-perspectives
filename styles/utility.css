@@ -115,7 +115,13 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-
+.debug-header {
+    color: #eee;
+    background: #111;
+    margin-bottom: -16px;
+    padding: 8px;
+    text-align: left;
+}
 .debug {
     text-align: left;
     font-weight: bold;

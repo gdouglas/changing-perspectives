@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 <head>
 <title>Sitemap | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>

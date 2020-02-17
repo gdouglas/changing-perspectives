@@ -64,7 +64,6 @@
     top: var(--complete);
 }
 #sail-game .question{
-    position: absolute;
     z-index: 1;
     background: rgba(0,0,0,0.9);
     padding: 25px;
@@ -74,12 +73,16 @@
     color: var(--gold);
     font-size: 2rem;
 }
-
+.question label {
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
 .tile > input[type="radio"]{
-    display:none;
+    transform: scale(10);
+    opacity: 0;
 }
 .tile > input[type="radio"]:checked+label{
-    border: 2px solid var(--secondary);
+   border-color: var(--secondary);
     border-radius: 5px;
 }
 .question label p {

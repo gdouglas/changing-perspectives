@@ -6,6 +6,9 @@
 @import "footer.css";
 @import "tiles.css";
 @import "game.css";
+.no-js {
+    display: none;
+}
 body {
     margin: 0 auto;
     color: var(--main-text-color);

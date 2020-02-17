@@ -5,7 +5,6 @@ $supplies = $_SESSION["sailing_status"]["supplies"];
 // $challenge_results = $_SESSION["sailing_status"]["challenge_results"];
 $question = "";
 $_SESSION["sailing_status"]["complete"] = 0;
-debug($_SESSION, "Session");
 $challenges = [
     1 =>  array(
         "answered" => false,
@@ -77,7 +76,6 @@ $challenges = [
 function answerQuestion(){
     // if ($_POST[])
     // randomly choose right or rong for testing
-    debug($_POST, "answerQuestion POST");
     $value = (bool)random_int(0, 1);
     if ($value) {
         print "you got it right!";
@@ -85,7 +83,6 @@ function answerQuestion(){
         print "you got it wrong";
     }
 }
-debug($_SESSION, "Session");
 function getQuestion() {
     //get the question to ask from the challenges array
     return 1;
@@ -125,7 +122,6 @@ askQuestion();
 $game = '
 <h1>Sailing to Hawaii</h1>
 <div id="sail-game" class="flex flex-wrap relative">
-    '.$question.'
     <div class="status">
         <div id="status" style="--complete: '.$complete.'%"><span>'.$complete.'% complete</span></div>
     </div>
@@ -138,7 +134,7 @@ $game = '
             stroke-width="1"/>
         </svg>
         <img src="/images/pacific-map.jpg">
-        <button class="nojs btn">Next</button>
+        <button class="no-js btn">Next</button>
     </div>
     <div class="counters">
         <div id="counter">Day '.$day.'</div>
@@ -158,7 +154,8 @@ $game = '
             <li>Silver 150</li>
             <li>Bronze 200</li>
         </ol>
-    </div>   
+    </div>
+    '.$question.'  
 </div>';
 
 

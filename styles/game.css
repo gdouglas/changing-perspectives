@@ -78,20 +78,28 @@
     border: 2px solid transparent;
 }
 .tile > input[type="radio"]{
-    transform: scale(10);
     opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }
 .tile > input[type="radio"]:checked+label{
-   border-color: var(--secondary);
+    border-color: var(--secondary);
     border-radius: 5px;
+    background: var(--gold);
 }
 .question label p {
     margin: 0;
 }
-
 .question .btn {
     border-radius: 5px;
     background: var(--secondary);
     font-size: 1rem;
     margin-top: 3rem;
+}
+.tile .btn {
+    margin-top: 0;
+    padding: 10px;
 }

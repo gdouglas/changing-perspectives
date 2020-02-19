@@ -8,21 +8,21 @@ $_SESSION["sailing_status"]["complete"] = 0;
 $challenges = [
     1 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
+        "image" => "<img src='https://loremflickr.com/150/150/fish' alt='alt text goes here'>",
         "question" => "What do you call a fish with legs?",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/shark/all' alt='alt text goes here'>",
                 "option" => "fishy",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/legs' alt='alt text goes here'>",
                 "option" => "not fishy",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/man,face/all' alt='alt text goes here'>",
                 "option" => "Rodney",
                 "correct" => false
             )
@@ -30,21 +30,21 @@ $challenges = [
     ),
     2 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
+        "image" => "<img src='https://loremflickr.com/150/150/jarofpickles' alt='alt text goes here'>",
         "question" => "Open a jar of pickles",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/go,left/all' alt='alt text goes here'>",
                 "option" => "Left loosey",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/twist,right/all' alt='alt text goes here'>",
                 "option" => "Righty tighty",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/smash' alt='alt text goes here'>",
                 "option" => "Smashy Bashy",
                 "correct" => false
             )
@@ -52,21 +52,21 @@ $challenges = [
     ),
     3 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
+        "image" => "<img src='https://loremflickr.com/150/150/dog' alt='alt text goes here'>",
         "question" => "Dogs need to be fed with:",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/cheese' alt='alt text goes here'>",
                 "option" => "cheese",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/grapes' alt='alt text goes here'>",
                 "option" => "grapes",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
+                "image" => "<img src='https://loremflickr.com/150/100/chocolate' alt='alt text goes here'>",
                 "option" => "chocolate",
                 "correct" => false
             )
@@ -74,8 +74,9 @@ $challenges = [
     ),
 ];
 function answerQuestion(){
-    // if ($_POST[])
-    // randomly choose right or rong for testing
+    $answer = $_POST;
+    global $challenges;
+    debug($answer);
     $value = (bool)random_int(0, 1);
     if ($value) {
         print "you got it right!";
@@ -85,24 +86,32 @@ function answerQuestion(){
 }
 function getQuestion() {
     //get the question to ask from the challenges array
-    return 1;
+    global $challenges;
+    $rand = mt_rand(1, count($challenges));
+    $question = $challenges[$rand];
+    return array($question, $rand);
 }
-function createQuestion($q) {
+function createQuestion($questionArray) {
     global $question;
+    $q = $questionArray[0];
+    $qKey = $questionArray[1];
     //create a question based on the content of the array
     $question = 
     '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            <img src="http://placehold.jp/150x100.png" alt="Some really good alt text">
+            '.$q["image"].'
         </div>';
-    
-        for ($i = 1; $i < 4; $i++){
+        debug($q, "crteate");
+        for ($i = 1; $i < count($q); $i++){
+            static $letter = "a";
+            $option = $q["options"][$letter]["option"];
+            $letter ++;
             $question .= 
             '<div class="tile">
-                <input type="radio" name="item'.$q.'" id="item'.$q.$i.'" value="bar" required>
-                <label class="tile" for="item'.$q.$i.'">                
-                    <p>Answer '.$i.'</p>
+                <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
+                <label class="tile btn" for="'.$qKey.$i.'">                
+                    <p>'.$option.'</p>
                 </label>
             </div>';
         };

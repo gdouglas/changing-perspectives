@@ -1,4 +1,6 @@
 <?php
+$game_started = $_SESSION["sailing_status"]["start_time"];
+debug($game_started);
 $complete = $_SESSION["sailing_status"]["complete"];
 $day = $_SESSION["sailing_status"]["day"];
 $supplies = $_SESSION["sailing_status"]["supplies"];
@@ -74,11 +76,13 @@ $challenges = [
     ),
 ];
 function answerQuestion(){
-    $answer = $_POST;
+    $response = $_POST;
     global $challenges;
-    debug($answer);
-    $value = (bool)random_int(0, 1);
-    if ($value) {
+    $question = array_keys($response);
+    $answer = $response[$question[0]];
+    $correct = $challenges[$question[0]]["options"][$answer]["correct"];
+    if ($correct) {
+        global $complete;
         print "you got it right!";
     } else {
         print "you got it wrong";
@@ -102,18 +106,18 @@ function createQuestion($questionArray) {
         <div>
             '.$q["image"].'
         </div>';
-        debug($q, "crteate");
+        // debug($q, "crteate");
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
-            $letter ++;
             $question .= 
             '<div class="tile">
-                <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
-                <label class="tile btn" for="'.$qKey.$i.'">                
-                    <p>'.$option.'</p>
-                </label>
+            <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
+            <label class="tile btn" for="'.$qKey.$i.'">                
+            <p>'.$letter.') '.$option.'</p>
+            </label>
             </div>';
+            $letter ++;
         };
     $question .= '<button class="btn">Submit</button></form>';
     return $question;
@@ -125,7 +129,7 @@ function askQuestion() {
     return $question;
 }
 
-$question = answerQuestion();
+answerQuestion();
 askQuestion();
 
 $game = '

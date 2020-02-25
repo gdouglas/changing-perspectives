@@ -1,7 +1,18 @@
 <?php
-$game_started = $_SESSION["sailing_status"]["start_time"];
+$game_started = &$_SESSION["sailing_status"]["start_time"];
 debug($game_started);
-$complete = $_SESSION["sailing_status"]["complete"];
+debug($_SESSION,"session");
+$complete = &$_SESSION["sailing_status"]["complete"];
+if ($complete === 0) {
+    // first answered question
+    updateComplete("start");
+}
+
+function updateComplete($amount){
+    if ($amount === "start") {
+        $complete = 0;
+    }
+}
 $day = $_SESSION["sailing_status"]["day"];
 $supplies = $_SESSION["sailing_status"]["supplies"];
 // $challenge_results = $_SESSION["sailing_status"]["challenge_results"];

@@ -1,4 +1,7 @@
 <?php
+$game_started = $_SESSION["sailing_status"]["start_time"];
+debug($game_started, "Game started");
+
 //Check if you've answered enough quiz questions correctly
 if ($_SESSION["quiz_complete"] == false) {
     print '<p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>';
@@ -105,7 +108,7 @@ if (count($_POST) > 0) {
         print "Incorrect! ";
     };
 
-    print 
+    print
         "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
 }
 if ($_SESSION["correctCount"] < $targetCorrect) {
@@ -125,12 +128,12 @@ function getNextQuestion() {
 foreach ($questions[$questionNum]["options"] as $key => $option) {
     $id = $key . $questionNum;
     $options .= '<div class="tile">
+        <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
         <label class="tile" for="' . $id . '">
             <div>' . strtoupper($key) . '</div>
             <img src="' . $option["image"] . '">
             <p>' . $option["option"] . '</p>
         </label>
-        <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
     </div>';
 }
 $questionForm = '

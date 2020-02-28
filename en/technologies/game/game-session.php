@@ -4,7 +4,9 @@ $sailingArray = array(
     "day" => 0,
     "supplies" => 100,
     "challenge_results" => array(),
-    "start_time" => time()
+    "start_time" => time(),
+    "boat_speed" => 10,
+    "supply_rate" => 1
 );
 
 //set session if null 

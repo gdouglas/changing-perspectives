@@ -1,14 +1,10 @@
 <?php
-$game_started = $_SESSION["sailing_status"]["start_time"];
-debug($game_started, "Game started");
 
 //Check if you've answered enough quiz questions correctly
 if ($_SESSION["quiz_complete"] == false) {
     print '<p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>';
 }
 
-// TODO get the questions asking randomly, omiting correct ones
-// TODO go to next phase when answered goal number
 $targetCorrect = 3;
 $questionNum = 1;
 $questions = [

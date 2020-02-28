@@ -1,10 +1,14 @@
 <?php
 $game_started = &$_SESSION["sailing_status"]["start_time"];
-// debug($_SESSION,"session");
 $complete = &$_SESSION["sailing_status"]["complete"];
-$speed = 10;//&$_SESSION["sailing_status"]["boat_speed"];
+$speed = &$_SESSION["sailing_status"]["boat_speed"];
 $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
-
+$day = &$_SESSION["sailing_status"]["day"];
+$day_rate = &$_SESSION["sailing_status"]["day_rate"];
+$supplies = &$_SESSION["sailing_status"]["supplies"];
+// debug($_SESSION, "session");
+// debug($speed, "speed");
+// $complete = 0;
 $message = "";
 
 if ($complete === 0) {
@@ -13,7 +17,7 @@ if ($complete === 0) {
 }
 
 function updateComplete($increment){
-    global $complete, $speed, $game_started, $message;
+    global $complete, $speed, $game_started, $message, $supplies;
     $time = time();
 
     $time = $time - $game_started;
@@ -23,47 +27,62 @@ function updateComplete($increment){
             $complete = 1;
             break;
         case 'increase':
-            $speed ++;
-            $complete += $speed;
+            $speed += 2;
+
             if ($speed > 15) {
                 $speed = 15;
                 $message .= "<p>You have max speed!</p>";
             } else {
                 $message .= "<p>Increase Speed!</p>";
             }
-            checkComplete();
+
+            $supply_rate -= 2;
+            if ($supply_rate < 4) {
+                $supply_rate = 4;
+            }
+
+            incrementValues();
             break;
         case 'decrease':
-            debug($complete, "decrease");
-            $speed --;
-            $complete += $speed;
-            if ($speed < -5) {
-                $speed = 15;
-                $message .= "<p>You have max speed!</p>";
-            } else {
-                $message .= "<p>Increase Speed!</p>";
+            $speed -= 2;
+
+            if ($speed < -10) {
+                $speed = -10;
             }
             $message .= "<p>Decrease Speed!</p>";
-            checkComplete();
+
+            $supply_rate += 2;
+            if ($supply_rate > 14) {
+                $supply_rate = 14;
+            }
+
+            incrementValues();
             break;
+
         default:
-        checkComplete();
+            incrementValues();
             break;
     }
 }
-function checkComplete() {
-    global $message, $complete;
+function incrementValues() {
+    global $message, $complete, $supplies, $supply_rate, $day, $day_rate, $speed;
+
+    $supplies -= $supply_rate;
+    $complete += $speed;
+    $day += $day_rate;
+
+    // TODO create random events
+
+    // TODO create victory event
     if ($complete >= 100) {
         // overwrite message with victory condition
-        $message = "<p>Congratulations! You made it yo Yuquot!";
+        $message = "<p>Congratulations! You made it to Yuquot!";
         $complete = 100;
     } elseif ($complete <= 1) {
         $complete = 1;
     }
 }
-// $_SESSION["sailing_status"]["challenge_results"] = [];
-$day = $_SESSION["sailing_status"]["day"];
-$supplies = $_SESSION["sailing_status"]["supplies"];
+
 $challenge_results = &$_SESSION["sailing_status"]["challenge_results"];
 $question = "";
 $challenges = [
@@ -137,18 +156,22 @@ $challenges = [
 function answerQuestion(){
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
+    debug($response);
+    if (empty($response)){
+        return;
+    }
     global $challenges, $message;
     $question = array_keys($response);
     $answer = $response[$question[0]];
     $correct = $challenges[$question[0]]["options"][$answer]["correct"];
-    global $complete, $challenge_results;
+    global $challenge_results;
     if ($correct) {
         array_push($challenge_results, "correct");
         updateComplete("increase");
     } else {
         //todo start aray at 1
         array_push($challenge_results, "incorrect");
-        debug($challenge_results, "challenge_results");
+        // debug($challenge_results, "challenge_results");
         updateComplete("decrease");
     }
     print $message;
@@ -196,8 +219,9 @@ function askQuestion() {
 answerQuestion();
 askQuestion();
 $challengeList = "";
-for ($i=1; $i < 11; $i++) { 
-    $challengeList .= "<li class=\"". $challenge_results[$i] ."\">Challenge $i</li>";
+for ($i=0; $i < 10; $i++) { 
+    $n = $i + 1;
+    $challengeList .= "<li class=\"". $challenge_results[$n] ."\">Challenge $n</li>";
 }
 $game = '
 <h1>Sailing to Hawaii</h1>

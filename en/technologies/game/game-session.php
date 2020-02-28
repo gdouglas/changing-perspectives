@@ -2,11 +2,11 @@
 $sailingArray = array(
     "complete" => 0,
     "day" => 0,
-    "supplies" => 100,
+    "day_rate" => 12,
+    "supplies" => 500,
+    "supply_rate" => 16,
     "challenge_results" => array(),
-    "start_time" => time(),
-    "boat_speed" => 10,
-    "supply_rate" => 1
+    "boat_speed" => 6
 );
 
 //set session if null 

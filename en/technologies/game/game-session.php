@@ -29,6 +29,7 @@ function startSession($sailingArray){
     }
 }
 
+// todo set session expiry
 startSession($sailingArray);
 
 //User has pressed restart button, clear progress

@@ -2,74 +2,146 @@
 
 //Check if you've answered enough quiz questions correctly
 if ($_SESSION["quiz_complete"] == false) {
-    print '<p id="game-intro">Want to sail a ship? Take this quiz then take the wheel!</p>';
+    print '<p id="game-intro"See if you can Sail your Brig from Hawaii to Yuquot. </p>
+    <p>Before you can take command you’ll to know the right orders to give your crew.</p>
+    <p>Match the right order to the image:</p>';
+
+    print "<img src='".$_SERVER["DOCUMENT_ROOT"]."images\\test.png'>";
+    
+    // print "<img src='D:\Code\changing-perspectives\\en\\technologies\game\images\\test.png'>";
 }
 
-$targetCorrect = 3;
+$targetCorrect = 6;
 $questionNum = 1;
 $questions = [
     1 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
-        "question" => "What do you call a fish with legs?",
+        "image" => "./images/bow-of-ship.png",
+        "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "fishy",
-                "correct" => true
+                "image" => "./images/bow-of-ship.png",
+                "option" => "",
+                "correct" => false
             ),
             "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "not fishy",
+                "image" => "./images/wind-top-ship.png",
+                "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "Rodney",
-                "correct" => false
+                "image" => "./images/wind-bottom-ship.png",
+                "option" => "",
+                "correct" => true
             )
         )
     ),
     2 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
-        "question" => "Open a jar of pickles",
+        "image" => "./images/wind-bottom-ship.png",
+        "question" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "Left loosey",
-                "correct" => true
-            ),
-            "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "Righty tighty",
+                "image" => "./images/bow-of-ship.png",
+                "option" => "",
                 "correct" => false
             ),
+            "b" => array(
+                "image" => "./images/wind-top-ship.png",
+                "option" => "",
+                "correct" => true
+            ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "Smashy Bashy",
+                "image" => "./images/wind-bottom-ship.png",
+                "option" => "",
                 "correct" => false
             )
         )
     ),
     3 =>  array(
         "answered" => false,
-        "image" => "http://placehold.jp/150x100.png",
-        "question" => "Dogs need to be fed with:",
+        "image" => "./images/people-pushing-gear.png",
+        "question" => "Haul away on the windlass",
         "options" => array(
             "a" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "cheese",
+                "image" => "./images/people-pushing-gear.png",
+                "option" => "",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "grapes",
+                "image" => "./images/ship-mast.png",
+                "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "http://placehold.jp/150x100.png",
-                "option" => "chocolate",
+                "image" => "./images/galley-view.png",
+                "option" => "",
+                "correct" => false
+            )
+        )
+    ),
+    4 =>  array(
+        "answered" => false,
+        "image" => "./images/ship-mast.png",
+        "question" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
+        "options" => array(
+            "a" => array(
+                "image" => "./images/people-pushing-gear.png",
+                "option" => "",
+                "correct" => false
+            ),
+            "b" => array(
+                "image" => "./images/ship-mast.png",
+                "option" => "",
+                "correct" => true
+            ),
+            "c" => array(
+                "image" => "./images/galley-view.png",
+                "option" => "",
+                "correct" => false
+            )
+        )
+    ),
+    5 =>  array(
+        "answered" => false,
+        "image" => "./images/bow-of-ship.png",
+        "question" => "Hands to set the jib. Haul your halyard, tend your sheets",
+        "options" => array(
+            "a" => array(
+                "image" => "./images/bow-of-ship.png",
+                "option" => "",
+                "correct" => true
+            ),
+            "b" => array(
+                "image" => "./images/wind-bottom-ship.png",
+                "option" => "",
+                "correct" => false
+            ),
+            "c" => array(
+                "image" => "./images/galley-view.png",
+                "option" => "",
+                "correct" => false
+            )
+        )
+    ),
+    6 =>  array(
+        "answered" => false,
+        "image" => "./images/people-pushing-gear.png",
+        "question" => "Hands to set the spanker",
+        "options" => array(
+            "a" => array(
+                "image" => "./images/galley-view.png",
+                "option" => "",
+                "correct" => true
+            ),
+            "b" => array(
+                "image" => "./images/ship-mast.png",
+                "option" => "",
+                "correct" => false
+            ),
+            "c" => array(
+                "image" => "./images/bow-of-ship.png",
+                "option" => "",
                 "correct" => false
             )
         )

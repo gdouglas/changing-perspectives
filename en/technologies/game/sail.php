@@ -88,22 +88,22 @@ $question = "";
 $challenges = [
     1 =>  array(
         "answered" => false,
-        "image" => "<img src='https://loremflickr.com/150/150/fish' alt='alt text goes here'>",
-        "question" => "What do you call a fish with legs?",
+        "image" => "<img src=\"./images/bow-of-ship.png\" alt='alt text goes here'>",
+        "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/shark/all' alt='alt text goes here'>",
-                "option" => "fishy",
+                "image" => "<img src=\"./images/bow-of-ship.png\" alt='alt text goes here'>",
+                "option" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/legs' alt='alt text goes here'>",
-                "option" => "not fishy",
+                "image" => "<img src='./images/wind-bottom-ship.png' alt='alt text goes here'>",
+                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/man,face/all' alt='alt text goes here'>",
-                "option" => "Rodney",
+                "image" => "<img src='./images/people-pushing-gear.png' alt='alt text goes here'>",
+                "option" => "Haul away on the windlass",
                 "correct" => false
             )
         )
@@ -192,15 +192,17 @@ function createQuestion($questionArray) {
     '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            '.$q["image"].'
-        </div>';
+            '.$q["image"]
+            ."<img src='".realpath("./images/bow-of-ship.png")."'>
+
+        </div>";
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
             $question .= 
             '<div class="tile">
             <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
-            <label class="tile btn" for="'.$qKey.$i.'">                
+            <label class="tile btn" for="'.$qKey.$i.'">
             <p>'.$letter.') '.$option.'</p>
             </label>
             </div>';

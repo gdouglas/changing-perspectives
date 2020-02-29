@@ -1,4 +1,5 @@
 <?php
+$imagePath = "/en/technologies/game/images/";
 $game_started = &$_SESSION["sailing_status"]["start_time"];
 $complete = &$_SESSION["sailing_status"]["complete"];
 $speed = &$_SESSION["sailing_status"]["boat_speed"];
@@ -88,21 +89,21 @@ $question = "";
 $challenges = [
     1 =>  array(
         "answered" => false,
-        "image" => "<img src=\"./images/bow-of-ship.png\" alt='alt text goes here'>",
+        "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
         "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "<img src=\"./images/bow-of-ship.png\" alt='alt text goes here'>",
+                "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
                 "option" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "<img src='./images/wind-bottom-ship.png' alt='alt text goes here'>",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
                 "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "<img src='./images/people-pushing-gear.png' alt='alt text goes here'>",
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
                 "option" => "Haul away on the windlass",
                 "correct" => false
             )
@@ -110,44 +111,98 @@ $challenges = [
     ),
     2 =>  array(
         "answered" => false,
-        "image" => "<img src='https://loremflickr.com/150/150/jarofpickles' alt='alt text goes here'>",
-        "question" => "Open a jar of pickles",
+        "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
+        "question" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/go,left/all' alt='alt text goes here'>",
-                "option" => "Left loosey",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
+                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/twist,right/all' alt='alt text goes here'>",
-                "option" => "Righty tighty",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
+                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/smash' alt='alt text goes here'>",
-                "option" => "Smashy Bashy",
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
+                "option" => "Haul away on the windlass",
                 "correct" => false
             )
         )
     ),
     3 =>  array(
         "answered" => false,
-        "image" => "<img src='https://loremflickr.com/150/150/dog' alt='alt text goes here'>",
-        "question" => "Dogs need to be fed with:",
+        "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
+        "question" => "Haul away on the windlass",
         "options" => array(
             "a" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/cheese' alt='alt text goes here'>",
-                "option" => "cheese",
+                "option" => "Haul away on the windlass",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/grapes' alt='alt text goes here'>",
-                "option" => "grapes",
+                "option" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "<img src='https://loremflickr.com/150/100/chocolate' alt='alt text goes here'>",
-                "option" => "chocolate",
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
+                "correct" => false
+            )
+        )
+    ),
+    4 =>  array(
+        "answered" => false,
+        "image" => "<img src=\"".$imagePath."ship-mast.png\" alt='alt text goes here'>",
+        "question" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
+        "options" => array(
+            "a" => array(
+                "option" => "Haul away on the windlass",
+                "correct" => true
+            ),
+            "b" => array(
+                "option" => "Hands to set the spanker",
+                "correct" => false
+            ),
+            "c" => array(
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
+                "correct" => false
+            )
+        )
+    ),
+    5 =>  array(
+        "answered" => false,
+        "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
+        "question" => "Hands to set the jib. Haul your halyard, tend your sheets",
+        "options" => array(
+            "a" => array(
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
+                "correct" => true
+            ),
+            "b" => array(
+                "option" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
+                "correct" => false
+            ),
+            "c" => array(
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
+                "correct" => false
+            )
+        )
+    ),
+    3 =>  array(
+        "answered" => false,
+        "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
+        "question" => "Hands to set the spanker",
+        "options" => array(
+            "a" => array(
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
+                "correct" => false
+            ),
+            "b" => array(
+                "option" => "Hands to set the spanker",
+                "correct" => true
+            ),
+            "c" => array(
+                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
                 "correct" => false
             )
         )
@@ -156,7 +211,7 @@ $challenges = [
 function answerQuestion(){
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
-    debug($response);
+    // debug($response);
     if (empty($response)){
         return;
     }

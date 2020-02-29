@@ -1,13 +1,11 @@
 <?php
-
+$imagePath = "/en/technologies/game/images/";
 //Check if you've answered enough quiz questions correctly
 if ($_SESSION["quiz_complete"] == false) {
     print '<p id="game-intro"See if you can Sail your Brig from Hawaii to Yuquot. </p>
     <p>Before you can take command you’ll to know the right orders to give your crew.</p>
     <p>Match the right order to the image:</p>';
-
-    print "<img src='".$_SERVER["DOCUMENT_ROOT"]."images\\test.png'>";
-    
+    // print '<img src="/images/logos/vmc_eng_col_rev.svg">';
     // print "<img src='D:\Code\changing-perspectives\\en\\technologies\game\images\\test.png'>";
 }
 
@@ -20,17 +18,17 @@ $questions = [
         "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "./images/bow-of-ship.png",
+                "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "b" => array(
-                "image" => "./images/wind-top-ship.png",
+                "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "./images/wind-bottom-ship.png",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             )
@@ -38,21 +36,21 @@ $questions = [
     ),
     2 =>  array(
         "answered" => false,
-        "image" => "./images/wind-bottom-ship.png",
+        "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
         "question" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
-                "image" => "./images/bow-of-ship.png",
+                "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "b" => array(
-                "image" => "./images/wind-top-ship.png",
+                "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             ),
             "c" => array(
-                "image" => "./images/wind-bottom-ship.png",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             )
@@ -60,21 +58,21 @@ $questions = [
     ),
     3 =>  array(
         "answered" => false,
-        "image" => "./images/people-pushing-gear.png",
+        "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
         "question" => "Haul away on the windlass",
         "options" => array(
             "a" => array(
-                "image" => "./images/people-pushing-gear.png",
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "./images/ship-mast.png",
+                "image" => "<img src=\"".$imagePath."ship-mast.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "./images/galley-view.png",
+                "image" => "<img src=\"".$imagePath."galley-view.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             )
@@ -82,21 +80,21 @@ $questions = [
     ),
     4 =>  array(
         "answered" => false,
-        "image" => "./images/ship-mast.png",
+        "image" => "<img src=\"".$imagePath."ship-mast.png\" alt='alt text goes here'>",
         "question" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
         "options" => array(
             "a" => array(
-                "image" => "./images/people-pushing-gear.png",
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "b" => array(
-                "image" => "./images/ship-mast.png",
+                "image" => "<img src=\"".$imagePath."ship-mast.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             ),
             "c" => array(
-                "image" => "./images/galley-view.png",
+                "image" => "<img src=\"".$imagePath."galley-view.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             )
@@ -104,21 +102,21 @@ $questions = [
     ),
     5 =>  array(
         "answered" => false,
-        "image" => "./images/bow-of-ship.png",
+        "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
         "question" => "Hands to set the jib. Haul your halyard, tend your sheets",
         "options" => array(
             "a" => array(
-                "image" => "./images/bow-of-ship.png",
+                "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             ),
             "b" => array(
-                "image" => "./images/wind-bottom-ship.png",
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "./images/galley-view.png",
+                "image" => "<img src=\"".$imagePath."galley-view.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             )
@@ -126,23 +124,23 @@ $questions = [
     ),
     6 =>  array(
         "answered" => false,
-        "image" => "./images/people-pushing-gear.png",
+        "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
         "question" => "Hands to set the spanker",
         "options" => array(
             "a" => array(
-                "image" => "./images/galley-view.png",
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
                 "option" => "",
-                "correct" => true
+                "correct" => false
             ),
             "b" => array(
-                "image" => "./images/ship-mast.png",
+                "image" => "<img src=\"".$imagePath."ship-mast.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => false
             ),
             "c" => array(
-                "image" => "./images/bow-of-ship.png",
+                "image" => "<img src=\"".$imagePath."bow-of-ship.png\" alt='alt text goes here'>",
                 "option" => "",
-                "correct" => false
+                "correct" => true
             )
         )
     ),
@@ -199,7 +197,7 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
         <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
         <label class="tile" for="' . $id . '">
             <div>' . strtoupper($key) . '</div>
-            <img src="' . $option["image"] . '">
+            '.$option["image"].'
             <p>' . $option["option"] . '</p>
         </label>
     </div>';

@@ -12,23 +12,29 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1>Navigation and Ship Technology</h1>
+        <h1>European Sailing Technology</h1>
         <div class="pull-quote text-center">
-            <h2 class="subtitle">What did the Vancouver's Crew have available?</h2>
+            <h2 class="subtitle">What technologies did the Europeans need to get to the Pacific Northwest Coast?</h2>
         </div>
         <div class="slider-container relative">
             <ul class="slider">
-                <li id="article-1" class="slide active" tabindex="0">
+                <li id="article-1" class="slide active heading" tabindex="0">
+                    <h3 class="gold">How did European navigate the oceans?</h3>
+                </li>
+                <li id="article-2" class="slide" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Navigation</h3>
                 </li>
-                <li id="article-2" class="slide" tabindex="0">
+                <li id="article-3" class="slide heading" tabindex="0">
+                    <h3 class="gold">What were the ships like the Europeans sailed in?</h3>
+                </li>
+                <li id="article-4" class="slide" tabindex="0">
                     <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Ships</h3>
                 </li>
-                <li id="article-3" class="slide" tabindex="0">
+                <li id="article-5" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/sextant.jpg" alt="brass sextant">
                         <figcaption>
@@ -37,7 +43,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li id="article-4" class="slide" tabindex="0">
+                <li id="article-6" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/telescope.jpg" alt="brass telescope">
                         <figcaption>
@@ -46,7 +52,7 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li id="article-5" class="slide" tabindex="0">
+                <li id="article-7" class="slide" tabindex="0">
                     <figure>
                         <img src="/images/chronometer.jpg" alt="brass chronometer">
                         <figcaption>
@@ -56,9 +62,12 @@
                         </figcaption>
                     </figure>
                 </li>
-                <li id="article-6" class="slide" tabindex="0">
+                <li id="article-8" class="slide heading" tabindex="0">
+                    <h3 class="gold">Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
+                </li>
+                <li id="article-9" class="slide" tabindex="0">
                     <figure>
-                        <img src="/images/chronometer.jpg" alt="brass chronometer">
+                        <img src="/images/ships-battle.jpg" height="400px" alt="brass chronometer">
                         <figcaption>
                             <h3 class="gold">Sailing Game</h3>
                             <a href="./game">Play Game</a>
@@ -72,22 +81,21 @@
             </div>
             <ol class="slider-navigation">
                 <li><a href="#article-1">
-                        <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
+                        <img class="slide-icon" src="/images/icons/question-circle.svg" alt="question icon">
                     </a>
                 </li>
-                <li>
-                    <a href="#article-2">
+                <li><a href="#article-2">
                         <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                     </a>
                 </li>
                 <li>
                     <a href="#article-3">
-                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                        <img class="slide-icon" src="/images/icons/question-circle.svg" alt="question icon">
                     </a>
                 </li>
                 <li>
                     <a href="#article-4">
-                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    <img class="slide-icon" src="/images/icons/video-solid.svg" alt="video icon">
                     </a>
                 </li>
                 <li>
@@ -97,6 +105,21 @@
                 </li>
                 <li>
                     <a href="#article-6">
+                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#article-7">
+                        <img class="slide-icon" src="/images/icons/newspaper-regular.svg" alt="article icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#article-8">
+                        <img class="slide-icon" src="/images/icons/question-circle.svg" alt="question icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="#article-9">
                         <img class="slide-icon" src="/images/icons/gamepad-solid.svg" alt="game icon">
                     </a>
                 </li>

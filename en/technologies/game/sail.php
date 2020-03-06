@@ -236,6 +236,7 @@ function getQuestion() {
     global $challenges;
     $rand = mt_rand(1, count($challenges));
     $question = $challenges[$rand];
+    $_SESSION['random'] = time();
     return array($question, $rand);
 }
 function createQuestion($questionArray) {
@@ -243,18 +244,17 @@ function createQuestion($questionArray) {
     $q = $questionArray[0];
     $qKey = $questionArray[1];
     //create a question based on the content of the array
-    $question = 
+    $question =
     '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            '.$q["image"]
-            ."<img src='".realpath("./images/bow-of-ship.png")."'>
-
-        </div>";
+            <input type="hidden" id="questionID" name="questionID" value="'.time().'">
+            '.$q["image"].'
+        </div>';
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
-            $question .= 
+            $question .=
             '<div class="tile">
             <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
             <label class="tile btn" for="'.$qKey.$i.'">
@@ -276,7 +276,7 @@ function askQuestion() {
 answerQuestion();
 askQuestion();
 $challengeList = "";
-for ($i=0; $i < 10; $i++) { 
+for ($i=0; $i < 10; $i++) {
     $n = $i + 1;
     $challengeList .= "<li class=\"". $challenge_results[$n] ."\">Challenge $n</li>";
 }
@@ -288,8 +288,8 @@ $game = '
     </div>
     <div class="map relative">
         <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <line 
-            x1="48" y1="40" x2="68" y2="18" 
+        <line
+            x1="48" y1="40" x2="68" y2="18"
             stroke="#765373"
             stroke-linecap="round"
             stroke-width="1"/>
@@ -311,7 +311,7 @@ $game = '
             <li>Bronze 200</li>
         </ol>
     </div>
-    '.$question.'  
+    '.$question.'
 </div>';
 
 

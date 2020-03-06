@@ -35,6 +35,16 @@
   transform: scale(0.9);
   transition: all ease 0.3s;
 }
+.slide.heading {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide.heading h3 {
+  max-width: 600px;
+  text-align: center;;
+}
 .slide figure {
   margin: 0;
   height: 100%;
@@ -47,6 +57,7 @@
 .slide figcaption {
   padding: 0 2rem;
   text-align: center;
+  width: 100%;
 }
 .slide figcaption p {
   max-width: 750px;

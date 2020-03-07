@@ -247,10 +247,9 @@ function createQuestion($questionArray) {
     '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            '.$q["image"]
-            ."<img src='".realpath("./images/bow-of-ship.png")."'>
+            '.$q["image"].'
 
-        </div>";
+        </div>';
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
@@ -283,8 +282,9 @@ for ($i=0; $i < 10; $i++) {
 $game = '
 <h1>Sailing to Hawaii</h1>
 <div id="sail-game" class="flex flex-wrap relative">
-    <div class="status">
-        <div id="status" style="--complete: '.$complete.'%"><span>'.$complete.'% complete</span></div>
+<div class="status">
+    <span>Amount Complete</span>
+    <div id="status"><span style="--complete: '.$complete.'%">'.$complete.'</span></div>
     </div>
     <div class="map relative">
         <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">

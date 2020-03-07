@@ -44,14 +44,15 @@
 
 #status {
     height: 100%;
-    width: 4px;
+    width: 3px;
     background: gray;
     margin: 0 auto;
+    text-align: center;
 }
-#status:before {
+#status > span {
     display: block;
-    transform: translate(-50%, -50%);
-    content: '';
+    transform: translate(-50%, -35%);
+    /* content: ''; */
     width: 25px;
     height: 25px;
     position: absolute;
@@ -59,9 +60,16 @@
     left: 50%;
     /* background: blue; */
     border: 1px solid blue;
+    background: var(--secondary);
 
     /*this needs to be incremented to show progress*/
     top: var(--complete);
+}
+#status > span {
+    font-size: 11px;
+    /* left: 10px;
+    top: 3px; */
+    /* display: inline-block; */
 }
 #sail-game .question{
     z-index: 1;

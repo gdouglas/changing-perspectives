@@ -1,5 +1,8 @@
 header {
   background: var(--main-bg-color);
+  background-image: url(../images/native-view.jpg);
+  background-size: cover;
+  background-position-y: 67%;
   color: #eee;
   font-weight: 100;
   margin: 0;
@@ -13,7 +16,10 @@ header {
   max-height: 185px;
   transition: all 0.2s;
 }
-header:after,
+header:before {
+
+}
+/* header:after,
 header:before {
   content: "";
   top: 0;
@@ -32,7 +38,7 @@ header:before {
 header:after {
   background-image: url(../images/header-ship.png);
   background-position: right;
-}
+} */
 .super-nav {
   position: absolute;
   top: 16px;

@@ -2,9 +2,12 @@
 $imagePath = "/en/technologies/game/images/";
 //Check if you've answered enough quiz questions correctly
 if ($_SESSION["quiz_complete"] == false) {
-    print '<p id="game-intro"See if you can Sail your Brig from Hawaii to Yuquot. </p>
-    <p>Before you can take command you’ll to know the right orders to give your crew.</p>
-    <p>Match the right order to the image:</p>';
+    print '
+    <div id="game-intro">
+        <p>See if you can Sail your Brig from Hawaii to Yuquot.<br>
+        Before you can take command you’ll to know the right orders to give your crew.<br>
+        Match the right order to the image:</p>
+    </div>';
     // print '<img src="/images/logos/vmc_eng_col_rev.svg">';
     // print "<img src='D:\Code\changing-perspectives\\en\\technologies\game\images\\test.png'>";
 }

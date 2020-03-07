@@ -6,6 +6,10 @@
     max-width: 980px;
     margin: 0 auto;
 }
+#game-intro {
+    max-width: 600px;
+    margin: 0 auto;
+}
 .question h3 {
     font-family: var(--serif-font);
 }

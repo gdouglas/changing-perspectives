@@ -250,20 +250,21 @@ function createQuestion($questionArray) {
         <div>
             <input type="hidden" id="questionID" name="questionID" value="'.time().'">
             '.$q["image"].'
-        </div>';
+        </div>
+        <div class="tiles">';
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
             $question .=
             '<div class="tile">
             <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
-            <label class="tile btn" for="'.$qKey.$i.'">
+            <label for="'.$qKey.$i.'">
             <p>'.$letter.') '.$option.'</p>
             </label>
             </div>';
             $letter ++;
         };
-    $question .= '<button class="btn">Submit</button></form>';
+    $question .= '</div><button class="btn">Submit</button></form>';
     return $question;
 
 }

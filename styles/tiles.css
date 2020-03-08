@@ -8,20 +8,20 @@
     flex-wrap: wrap;
 }
 .tile {
+    text-align: center;
+    font-family: var(--title-font);
+    min-width: 150px;
     width: 300px;
     max-width: 300px;
-    box-sizing: border-box;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
     padding: 0;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    min-width: 150px;
     margin: 0 5px;
     line-height: 1.7;
-    font-family: var(--title-font);
+    display: flex;
+    box-sizing: border-box;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    flex-direction: column;
 }
 .tile figure {
     margin: 0;

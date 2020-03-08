@@ -16,9 +16,6 @@ header {
   max-height: 185px;
   transition: all 0.2s;
 }
-header:before {
-
-}
 /* header:after,
 header:before {
   content: "";
@@ -48,6 +45,11 @@ header:after {
 }
 .super-nav .lang-link {
   margin: 4px 16px;
+  color: #222;
+  text-shadow: 1px 1px 1px #fff;
+  /* background: rgba(255, 255, 255, 0.3); */
+  padding: 0 4px;
+  font-weight: bold;
 }
 .vmc-logo {
   height: 50px;
@@ -108,7 +110,7 @@ nav li {
   margin-left: 4px;
   text-align: center;
   box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   width: calc(20%);
   align-items: center;
   border-bottom: 2px solid transparent;
@@ -164,18 +166,31 @@ nav .current {
     padding: 4px;
   }
 }
-@media screen and (max-width: 561px) {
+@media screen and (max-width: 883px) {
+  header:before {
+    content: '';
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 68%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
   header {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 70px;
+    padding-top: 55px;
   }
   .site-title {
-    font-size: 3rem;
+    font-size: 2.7rem;
     line-height: 1.4;
     max-width: 100%;
-    padding: 0 0 20px 0;
+    padding: 3px 0 20px 0;
+    position: relative;
+    z-index: 2;
   }
   header nav {
     visibility: hidden;
@@ -243,6 +258,9 @@ nav .current {
     margin-left: auto;
     margin-top: 8px;
     align-self: start;
+    color: #fff;
+    font-weight: normal;
+    text-shadow: unset;
   }
   .logo {
     margin-right: auto;

@@ -14,7 +14,7 @@
     font-family: var(--serif-font);
 }
 #play {
-    display: none;  
+    display: none;
 }
 #game:target #play {
     display: inline;
@@ -109,7 +109,7 @@
     color: #000;
     font-family: var(--serif-font);
     border-radius: 5px;
-    background: var(--secondary);
+    /* background: var(--secondary); */
     font-size: 1rem;
     display: flex;
     flex-grow: 1;

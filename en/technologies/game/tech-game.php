@@ -213,8 +213,9 @@ $questionForm = '
         </legend>
         <div class="question">
             <h3>'.$questions[$questionNum]["question"] . '</h3>
-             ' . $options . '
-
+             <div class="tiles">
+                ' . $options . '
+            </div>
         </div>
         <button class="btn">Submit</button>
 </form>

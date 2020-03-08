@@ -22,7 +22,9 @@
                     <h3 class="gold">How did European navigate the oceans?</h3>
                 </li>
                 <li id="article-2" class="slide" tabindex="0">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="vimeo1" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe id="vimeo1" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Navigation</h3>
                 </li>
@@ -30,7 +32,9 @@
                     <h3 class="gold">What were the ships like the Europeans sailed in?</h3>
                 </li>
                 <li id="article-4" class="slide" tabindex="0">
-                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                    <div style="padding:56.25% 0 0 0;position:relative;">
+                        <iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <h3 class="gold">Ships</h3>
                 </li>
@@ -66,12 +70,9 @@
                     <h3 class="gold">Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                 </li>
                 <li id="article-9" class="slide" tabindex="0">
-                    <figure>
+                    <figure class="text-center large">
                         <img src="/images/ships-battle.jpg" height="400px" alt="brass chronometer">
-                        <figcaption>
-                            <h3 class="gold">Sailing Game</h3>
-                            <a href="./game">Play Game</a>
-                        </figcaption>
+                        <a href="./game">Play Game</a>
                     </figure>
                 </li>
             </ul>

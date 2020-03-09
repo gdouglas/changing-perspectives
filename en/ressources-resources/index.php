@@ -3,7 +3,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Resources</title>
+    <title>Changing Perspectives | Teacher Resources</title>
 </head>
 
 <body>
@@ -11,7 +11,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1" class="text-center">
-        <h1>Insructor Resources</h1>
+        <h1>Teacher Resources</h1>
         <section class="intructor-resources text-left inline-block">
             <h2>Navigation and Ship technology</h2>
             <a href="/files/technology/navigation-learning-activity.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation learning activity</a>

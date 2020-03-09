@@ -16,26 +16,18 @@ header {
   max-height: 185px;
   transition: all 0.2s;
 }
-/* header:after,
 header:before {
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  opacity: 0.3;
-  z-index: -1;
-  background-repeat: no-repeat;
-}
-header:before {
-  background-image: url(../images/header-nootka.png);
-  background-position: left;
-}
-header:after {
-  background-image: url(../images/header-ship.png);
-  background-position: right;
-} */
+    content: '';
+    background: rgb(34,34,34);
+    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 68%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+  }
 .super-nav {
   position: absolute;
   top: 16px;
@@ -80,14 +72,18 @@ header nav {
 .site-title {
   text-align: left;
   max-width: 500px;
-  font-size: 4rem;
+  font-size: 5rem;
   line-height: 6rem;
   font-family: "Beth Ellen", sans-serif;
+  font-family: var(--title-font);
   display: flex;
 }
 .site-title a {
-  font-size: inherit;
-  line-height: inherit;
+    z-index: 2;
+    position: relative;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: bold;
 }
 header .btn {
   display: none;
@@ -167,17 +163,6 @@ nav .current {
   }
 }
 @media screen and (max-width: 883px) {
-  header:before {
-    content: '';
-    background: rgb(34,34,34);
-    background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(34,34,34,0) 68%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-  }
   header {
     display: flex;
     align-items: flex-start;
@@ -190,7 +175,6 @@ nav .current {
     max-width: 100%;
     padding: 3px 0 20px 0;
     position: relative;
-    z-index: 2;
   }
   header nav {
     visibility: hidden;

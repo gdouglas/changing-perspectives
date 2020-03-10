@@ -1,4 +1,7 @@
-<?php include "./game-session.php";?>
+<?php 
+    include "./game-session.php";
+    // unset($_POST);
+?>
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">

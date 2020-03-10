@@ -89,6 +89,9 @@
     box-sizing: border-box;
     border: 2px solid transparent;
 }
+.tile {
+    display: block;
+}
 .tile > input[type="radio"]{
     opacity: 0;
     position: absolute;
@@ -104,6 +107,7 @@
 }
 .question label p {
     margin: 0;
+    padding: 0 1rem;
 }
 .question label {
     color: #000;
@@ -124,4 +128,9 @@
 .tile .btn {
     margin-top: 0;
     padding: 10px;
+}
+.option-letter {
+    font-size: 1.4rem;
+    padding:0 8px;
+    display: none;
 }

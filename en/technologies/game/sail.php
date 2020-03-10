@@ -217,8 +217,8 @@ function answerQuestion(){
     }
     global $challenges, $message;
     $question = array_keys($response);
-    $answer = $response[$question[0]];
-    $correct = $challenges[$question[0]]["options"][$answer]["correct"];
+    $answer = $response[$question[1]];
+    $correct = $challenges[$question[1]]["options"][$answer]["correct"];
     global $challenge_results;
     if ($correct) {
         array_push($challenge_results, "correct");
@@ -259,7 +259,7 @@ function createQuestion($questionArray) {
             '<div class="tile">
             <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
             <label for="'.$qKey.$i.'">
-            <p>'.$letter.') '.$option.'</p>
+            <p class="flex-center text-left"><span class="option-letter">'.$letter.')</span> '.$option.'</p>
             </label>
             </div>';
             $letter ++;

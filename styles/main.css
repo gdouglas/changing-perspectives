@@ -6,6 +6,8 @@
 @import "footer.css";
 @import "tiles.css";
 @import "game.css";
+@import "card.css";
+@import "gallery.css";
 .no-js {
     display: none;
 }

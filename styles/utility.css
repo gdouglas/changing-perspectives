@@ -19,6 +19,9 @@
 .relative {
     position: relative;
 }
+.absolute {
+    position: absolute;
+}
 .z2 {
     z-index: 2;
 }
@@ -48,6 +51,12 @@
 }
 .flex-wrap {
     flex-wrap: wrap;
+}
+.top {
+    top: 0;
+}
+.right {
+    right: 0;
 }
 .pull-right {
     float: right;

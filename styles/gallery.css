@@ -1,0 +1,77 @@
+.gallery ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery li {
+    display: inline;
+    margin: 0 1rem;
+}
+.gallery img {
+    max-width: 150px;
+    max-height: 200px;
+}
+.gallery figure {
+    display: inline-flex;
+    padding: 1rem;
+    overflow: auto;
+    margin: 0;
+    box-sizing: border-box;
+    width: 150px;
+}
+.gallery .close,
+.gallery img,
+.gallery figcaption {
+    transform: scale(0);
+}
+.gallery figcaption {
+    max-width: 450px;
+    padding: 1rem;
+}
+.gallery figure .open,
+.gallery figure .open img {
+    display: inline;
+    height: auto;
+    width: auto;
+    transform: scale(1);
+}
+.gallery figure img,
+.gallery figure figcaption {
+    transition: all 600ms ease-in-out;
+    height: 0;
+    width: 0;
+}
+.gallery figure:target {
+    display: flex;
+    width: 100%;
+    background: #222;
+    color: #eee;
+}
+.gallery figure:target .close,
+.gallery figure:target img,
+.gallery figure:target figcaption  {
+    transform: scale(1);
+    width: auto;
+    height: auto;
+}
+.gallery figure:target img {
+    display: block;
+}
+.gallery figure:target > .open {
+    display: none;
+}
+.gallery :target .close,
+.gallery :target figcaption {
+    display: block;
+}
+.gallery :target img{
+    max-width: none;
+    max-height: none;
+}
+.gallery .close {
+    background: #eee;
+    z-index: 1;
+}

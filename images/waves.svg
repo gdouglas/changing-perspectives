@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#ffffff;display:block;z-index:1;position:relative" width="1084" height="322" preserveAspectRatio="xMidYMid" viewBox="0 0 1084 322">
+<defs>
+  <pattern id="pid-0.7005390506954527" x="0" y="0" width="76.80000000000001" height="76.80000000000001" patternUnits="userSpaceOnUse">
+    <g transform="scale(0.30000000000000004)"><path d="M -256 19.066666666666666 C -192 19.066666666666666 -192 2 -128 2 C -64 2 -64 19.066666666666666 2 19.066666666666666 C 64 19.066666666666666 64 2 128 2 C 192 2 192 19.066666666666666 256 19.066666666666666 L 384 384 L -384 384 L -384 19.066666666666666 Z" fill="#0077ff" stroke="#0077ff" stroke-width="1" transform="translate(227.539 -85.3333)">
+  <animateTransform attributeName="transform" type="translate" values="256 -85.33333333333333;0 -85.33333333333333;256 -85.33333333333333" keyTimes="0;0.5;1" dur="3.3333333333333335s" repeatCount="indefinite" calcMode="spline" begin="0s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
+</path><path d="M -256 19.066666666666666 C -192 19.066666666666666 -192 2 -128 2 C -64 2 -64 19.066666666666666 2 19.066666666666666 C 64 19.066666666666666 64 2 128 2 C 192 2 192 19.066666666666666 256 19.066666666666666 L 384 384 L -384 384 L -384 19.066666666666666 Z" fill="#0099f8" stroke="#0099f8" stroke-width="1" transform="translate(171.858 0)">
+  <animateTransform attributeName="transform" type="translate" values="0 0;256 0;0 0" keyTimes="0;0.5;1" dur="3.3333333333333335s" repeatCount="indefinite" calcMode="spline" begin="-0.5555555555555556s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
+</path><path d="M -256 19.066666666666666 C -192 19.066666666666666 -192 2 -128 2 C -64 2 -64 19.066666666666666 2 19.066666666666666 C 64 19.066666666666666 64 2 128 2 C 192 2 192 19.066666666666666 256 19.066666666666666 L 384 384 L -384 384 L -384 19.066666666666666 Z" fill="#35beed" stroke="#35beed" stroke-width="1" transform="translate(2.22203 85.3333)">
+  <animateTransform attributeName="transform" type="translate" values="256 85.33333333333333;0 85.33333333333333;256 85.33333333333333" keyTimes="0;0.5;1" dur="3.3333333333333335s" repeatCount="indefinite" calcMode="spline" begin="-1.1111111111111112s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
+</path><path d="M -256 19.066666666666666 C -192 19.066666666666666 -192 2 -128 2 C -64 2 -64 19.066666666666666 2 19.066666666666666 C 64 19.066666666666666 64 2 128 2 C 192 2 192 19.066666666666666 256 19.066666666666666 L 384 384 L -384 384 L -384 19.066666666666666 Z" fill="#0077ff" stroke="#0077ff" stroke-width="1" transform="translate(28.4614 170.667)">
+  <animateTransform attributeName="transform" type="translate" values="0 170.66666666666666;256 170.66666666666666;0 170.66666666666666" keyTimes="0;0.5;1" dur="3.3333333333333335s" repeatCount="indefinite" calcMode="spline" begin="0s" keySplines="0.5 0 0.5 1;0.5 0 0.5 1"></animateTransform>
+</path></g>
+  </pattern>
+</defs>
+<rect x="0" y="0" width="1084" height="322" fill="url(#pid-0.7005390506954527)"></rect>
+</svg>

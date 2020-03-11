@@ -7,7 +7,6 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
-// debug($_SESSION, "session");
 // debug($speed, "speed");
 // $complete = 0;
 $message = "";
@@ -277,44 +276,47 @@ function askQuestion() {
 answerQuestion();
 askQuestion();
 $challengeList = "";
-for ($i=0; $i < 10; $i++) {
+for ($i=0; $i < COUNT($challenge_results); $i++) {
     $n = $i + 1;
-    $challengeList .= "<li class=\"". $challenge_results[$n] ."\">Challenge $n</li>";
+    $challengeList .= "<li class=\"challenge-results ". $challenge_results[$n] ."\"><img src=\"/images/icons/$challenge_results[$n].svg\"/></li>";
 }
 $game = '
 <h1>Sailing to Hawaii</h1>
-<div id="sail-game" class="flex flex-wrap relative">
-<div class="status">
-    <span>Amount Complete</span>
-    <div id="status"><span style="--complete: '.$complete.'%">'.$complete.'</span></div>
-    </div>
-    <div class="map relative">
-        <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <line
-            x1="48" y1="40" x2="68" y2="18"
-            stroke="#765373"
-            stroke-linecap="round"
-            stroke-width="1"/>
-        </svg>
-        <img src="/images/pacific-map.jpg">
-        <button class="no-js btn">Next</button>
+<div id="sail-game">
+    <div class="status">
+        <div class="status-wrapper">
+            <span>Amount Complete</span>
+            <div id="status"><span style="--complete: '.$complete.'%">'.$complete.'</span></div>
+        </div>
     </div>
     <div class="counters">
-        <div id="counter">Day '.$day.'</div>
-        <div id="supplies">Supplies: '.$supplies.'</div>
+        <div class="flex"> 
+            <div id="counter">
+                Day '.$day.' Gold: 100 days, Silver 150 days, Bronze 200 days
+            </div>
+            <div id="supplies">Supplies: '.$supplies.'</div>
+        </div>
         <ol class="challenges">
             '.
                 $challengeList
             .'
-        </ol>
-        <ol>
-            <li>Gold 100</li>
-            <li>Silver 150</li>
-            <li>Bronze 200</li>
+            <li class="challenge-results"><img src="/images/icons/question-circle.svg"></li>
         </ol>
     </div>
-    '.$question.'
-</div>';
+    <div class="map-question flex relative">
+        '.$question.'
+        <div class="map">
+            <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <line
+                    x1="48" y1="40" x2="68" y2="18"
+                    stroke="#765373"
+                    stroke-linecap="round"
+                    stroke-width="1"/>
+            </svg>
+            <img src="/images/pacific-map.jpg">
+        </div>
+        
+    </div>';
 
 
 

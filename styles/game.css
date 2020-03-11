@@ -23,15 +23,14 @@
     display: none;
 }
 
-/* .question {
-    display: none;
-}
-.question.active {
-    display: block;
-} */
-
 .map {
-    width: 70%;
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    box-sizing: border-box;
 }
 .map svg {
     position: absolute;
@@ -39,51 +38,108 @@
     height: 100%;
 }
 .status {
-    width: 10%;
+    width: 100%;
+    position: relative;
+    height: 110px;
+    background-image: url(../images/waves.svg);
+}
+.status-wrapper {
+    overflow-y: hidden;
+    height: 100%;
     position: relative;
 }
+.status:before {
+    content: "";
+    display: block;
+    background: gray;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: -100px;
+    bottom: -11px;
+    background:url(../images/icons/mountain.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.status:after {
+    content: "";
+    display: block;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: -100px;
+    bottom: -4px;
+    background:url(../images/icons/island.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
 .counters {
-    width: 20%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#counter {
+    justify-self: flex-start;
+}
+#supplies {
+    justify-self: flex-end;
+    margin-left: auto;
+}
+.challenges {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.challenge-results {
+    display: inline-block;
+    margin: 2px;
+    width: 25px;
+    height: 25px;
 }
 
 #status {
-    height: 100%;
-    width: 3px;
-    background: gray;
+    height: 3px;
+    background: #7fc0fe;
     margin: 0 auto;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 0 50px;
+    box-sizing: border-box;
+    left: 100px;
+    right: 100px;
+    border-radius: 5px;
 }
 #status > span {
     display: block;
-    transform: translate(-50%, -35%);
-    /* content: ''; */
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    border-radius: 50%;
-    left: 50%;
-    /* background: blue; */
-    border: 1px solid blue;
-    background: var(--secondary);
-
+    bottom: -5px;
+    background-image: url(../images/ship.png);
+    background-size: contain;
     /*this needs to be incremented to show progress*/
-    top: var(--complete);
+    left: var(--complete);
+    z-index: 2;
+    animation: rock-boat 3s linear infinite;
+    transform-origin: bottom center;
 }
 #status > span {
     font-size: 11px;
-    /* left: 10px;
-    top: 3px; */
-    /* display: inline-block; */
 }
-#sail-game .question{
+#sail-game .question {
+    box-sizing: border-box;
     z-index: 1;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0, 0, 0, 0.9);
     padding: 25px;
     border-radius: 5px;
     height: 100%;
-    width: 100%;
+    width: 75%;
     color: var(--gold);
     font-size: 2rem;
+    margin-right: 1rem;
 }
 .question label {
     box-sizing: border-box;
@@ -92,7 +148,7 @@
 .tile {
     display: block;
 }
-.tile > input[type="radio"]{
+.tile > input[type="radio"] {
     opacity: 0;
     position: absolute;
     top: 0;
@@ -100,7 +156,7 @@
     height: 100%;
     width: 100%;
 }
-.tile > input[type="radio"]:checked+label{
+.tile > input[type="radio"]:checked + label {
     border-color: var(--secondary);
     border-radius: 5px;
     background: var(--gold);
@@ -131,6 +187,55 @@
 }
 .option-letter {
     font-size: 1.4rem;
-    padding:0 8px;
+    padding: 0 8px;
     display: none;
 }
+
+@keyframes rock-boat {
+    0% {
+        transform: rotate(0) translateY(0) translateX(0);
+    }
+    25% {
+        transform: rotate(-2deg) translateY(-5%) translateX(-4%);
+    }
+    50% {
+        transform: rotate(0deg) translateY(0) translateX(0);
+    }
+    75% {
+        transform: rotate(3deg) translateY(-3%) translateX(4%);
+    }
+    to {
+        transform: rotate(0) translateY(0) translateX(0);
+    }
+    /* 0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(-8deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(16deg);
+    }
+    to {
+        transform: rotate(0);
+    } */
+}
+
+/* 0% {
+    transform: rotate(0) translateY(-90%) translateX(-50%);
+}
+25% {
+    transform: rotate(-8deg) translateY(-90%) translateX(-50%);
+}
+50% {
+    transform: rotate(0deg) translateY(-90%) translateX(-50%);
+}
+75% {
+    transform: rotate(16deg) translateY(-90%) translateX(-50%);
+}
+to {
+    transform: rotate(0) translateY(-90%) translateX(-50%);
+} */

@@ -7,7 +7,7 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
-// debug($_SESSION);
+debug($_SESSION);
 // debug($speed, "speed");
 // $complete = 0;
 $message = "";
@@ -243,6 +243,7 @@ function createQuestion($questionArray) {
     $q = $questionArray[0];
     $qKey = $questionArray[1];
     //create a question based on the content of the array
+   
     $question =
     '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
         <h3>Choose the right answer for the image</h3>
@@ -291,9 +292,25 @@ $game = '
     <div class="counters">
         <div class="flex"> 
             <div id="counter">
-                <span class="day-count">'.$day.'</span> Gold: 100 days, Silver 150 days, Bronze 200 days
+                <span class="day-count">'.$day.'</span> 
+                <ol class="awards-counter text-left inline-block no-list no-pad">
+                    <li>Gold: 100 days</li>
+                    <li>Silver 150 days</li>
+                    <li>Bronze 200 days</li>
+                </ol>
             </div>
-            <div id="supplies">Supplies: '.$supplies.'</div>
+            <div id="supplies">
+                <strong>Supplies</strong>
+                <img 
+                    width="50px" 
+                    height="50px" 
+                    src="/images/icons/resources.svg" 
+                    alt="a barrel and basket of items representing food"
+                />
+                <div class="supply-count">
+                    '.$supplies.'
+                </div>
+            </div>
         </div>
         <ol class="challenges">
             '.
@@ -306,11 +323,19 @@ $game = '
         '.$question.'
         <div class="map">
             <svg height="100%" width="100%" viewBox="0 0 100 100"  preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <line
-                    x1="48" y1="40" x2="68" y2="18"
-                    stroke="#765373"
+                <path 
+                    fill="none"
+                    stroke="black"
+                    stroke-width="1"
                     stroke-linecap="round"
-                    stroke-width="1"/>
+                    d="
+                        m 65,17.5
+                        a .5,.5 90 1,0 0,0.1
+                        M 64,18
+                        L 45,35.5
+                        m 0,.4
+                        a .5,.5 1 1,0 0,.1"
+                />
             </svg>
             <img src="/images/pacific-map.jpg">
         </div>

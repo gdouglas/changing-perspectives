@@ -8,6 +8,9 @@
 .no-list {
     list-style-type: none;
 }
+.no-pad {
+    padding: 0;
+}
 .inline {
     display: inline;
 }

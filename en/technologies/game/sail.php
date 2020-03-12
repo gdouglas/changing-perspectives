@@ -7,6 +7,7 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
+// debug($_SESSION);
 // debug($speed, "speed");
 // $complete = 0;
 $message = "";
@@ -84,6 +85,7 @@ function incrementValues() {
 }
 
 $challenge_results = &$_SESSION["sailing_status"]["challenge_results"];
+$challenge_results = [];
 $question = "";
 $challenges = [
     1 =>  array(
@@ -223,9 +225,7 @@ function answerQuestion(){
         array_push($challenge_results, "correct");
         updateComplete("increase");
     } else {
-        //todo start aray at 1
         array_push($challenge_results, "incorrect");
-        // debug($challenge_results, "challenge_results");
         updateComplete("decrease");
     }
     print $message;
@@ -277,8 +277,7 @@ answerQuestion();
 askQuestion();
 $challengeList = "";
 for ($i=0; $i < COUNT($challenge_results); $i++) {
-    $n = $i + 1;
-    $challengeList .= "<li class=\"challenge-results ". $challenge_results[$n] ."\"><img src=\"/images/icons/$challenge_results[$n].svg\"/></li>";
+    $challengeList .= "<li class=\"challenge-results ". $challenge_results[$i] ."\"><img src=\"/images/icons/$challenge_results[$i].svg\"/></li>";
 }
 $game = '
 <h1>Sailing to Hawaii</h1>
@@ -286,13 +285,13 @@ $game = '
     <div class="status">
         <div class="status-wrapper">
             <span>Amount Complete</span>
-            <div id="status"><span style="--complete: '.$complete.'%">'.$complete.'</span></div>
+            <div id="status"><span style="--complete: '.$complete.'%">'.$complete.'%</span></div>
         </div>
     </div>
     <div class="counters">
         <div class="flex"> 
             <div id="counter">
-                Day '.$day.' Gold: 100 days, Silver 150 days, Bronze 200 days
+                <span class="day-count">'.$day.'</span> Gold: 100 days, Silver 150 days, Bronze 200 days
             </div>
             <div id="supplies">Supplies: '.$supplies.'</div>
         </div>

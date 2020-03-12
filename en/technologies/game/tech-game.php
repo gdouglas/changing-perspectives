@@ -226,7 +226,7 @@ $questionForm = '
 ';
 
 if ($_SESSION["correctCount"] >= $targetCorrect) {
-    print 'You\'ve learned the lingo now let\'s <a href=".\game">Set Sail!</a>
+    print 'You\'ve learned the lingo now let\'s <a href=".\">Set Sail!</a>
     <p>
         <form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
         <input type="hidden" name="restart" value="restart">

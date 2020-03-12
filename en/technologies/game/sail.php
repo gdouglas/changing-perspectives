@@ -7,11 +7,22 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
-debug($_SESSION);
-// debug($speed, "speed");
+$game_end_message = "";
 // $complete = 0;
 $message = "";
-
+// check if page is refreshed, reset post if so
+function checkPost() {
+    //is the form id the same as one stored in $_SESSION
+    if (isset($_POST['formid']) && isset($_SESSION['formid']) && $_POST["formid"] == $_SESSION["formid"]){
+        // echo 'Process form';
+        $_SESSION["formid"] = '';
+    } else {
+        // echo "new form"; 
+        $_POST = array();
+        $_SESSION["formid"] = md5(rand(0,10000000));
+    }
+}
+checkPost();
 if ($complete === 0) {
     // first answered question
     updateComplete("reset");
@@ -66,7 +77,7 @@ function updateComplete($increment){
     }
 }
 function incrementValues() {
-    global $message, $complete, $supplies, $supply_rate, $day, $day_rate, $speed;
+    global $game_end_message, $complete, $supplies, $supply_rate, $day, $day_rate, $speed;
 
     $supplies -= $supply_rate;
     $complete += $speed;
@@ -77,15 +88,23 @@ function incrementValues() {
     // TODO create victory event
     if ($complete >= 100) {
         // overwrite message with victory condition
-        $message = "<p>Congratulations! You made it to Yuquot!";
+        $game_end_message = "<p>Congratulations! You made it to Yuquot!</p>";
         $complete = 100;
     } elseif ($complete <= 1) {
         $complete = 1;
     }
+
+    if ($supplies < 1) {
+        $game_end_message = "
+        <div class='game-end fail'>
+            <p>You have run out of supplies! Your crew has mutinied and thrown you overboard.</p>
+            <p>You maid it $complete% of the way to Hawaii</p>
+        </div>
+        ";
+    }
 }
 
 $challenge_results = &$_SESSION["sailing_status"]["challenge_results"];
-$challenge_results = [];
 $question = "";
 $challenges = [
     1 =>  array(
@@ -212,8 +231,7 @@ $challenges = [
 function answerQuestion(){
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
-    // debug($response);
-    if (empty($response)){
+    if (empty($response) || strlen($_POST["formid"]) === 0){
         return;
     }
     global $challenges, $message;
@@ -243,12 +261,11 @@ function createQuestion($questionArray) {
     $q = $questionArray[0];
     $qKey = $questionArray[1];
     //create a question based on the content of the array
-   
     $question =
-    '<form method="POST" action=' . $_SERVER["PHP_SELF"] . ' class="question">
+    '<form method="POST" action="./" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            <input type="hidden" id="questionID" name="questionID" value="'.time().'">
+            <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
             '.$q["image"].'
         </div>
         <div class="tiles">';
@@ -347,7 +364,7 @@ $game = '
 $reset = '<hr>
 <h3>Start Over?</h3>
 <p>
-    <form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
+    <form method="POST" action="./">
     <input type="hidden" name="restart" value="restart">
     <button class="btn">Restart</button>
     </form>
@@ -357,6 +374,10 @@ if ($_POST["restart"] == "restart") {
     $_SESSION["correctCount"] = 0;
     $_SESSION["quiz_complete"] = false;
 }
-print $game;
-print $reset;
-?>
+if (strlen($game_end_message) > 0) {
+    print $game_end_message;
+    print $reset;
+} else {
+    print $game;
+    print $reset;
+}

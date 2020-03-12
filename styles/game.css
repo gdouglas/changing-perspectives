@@ -1,10 +1,11 @@
 #game {
-    border: 1px solid gray;
     padding: 2rem 1rem;
-    box-shadow: 3px 3px 7px #989898;
-    border-radius: 3px;
     max-width: 980px;
     margin: 0 auto;
+}
+#game h1 {
+    margin-top: 0;
+    margin-bottom: 3rem;
 }
 #game-intro {
     max-width: 600px;
@@ -43,6 +44,7 @@
     position: relative;
     height: 110px;
     background-image: url(../images/waves.svg);
+    border-radius: 50% 50% 0 0;
 }
 .status-wrapper {
     overflow-y: hidden;
@@ -86,7 +88,7 @@
 }
 .day-count {
     display: inline-block;
-    min-width: 50px;
+    min-width: 75px;
     height: 2.5rem;
     line-height: 2.5rem;
     text-align: center;
@@ -133,7 +135,6 @@
     flex-shrink: 1;
     flex-basis: auto;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     align-content: flex-start;
     justify-content: left;
     max-width: 120px;
@@ -143,6 +144,12 @@
 #supplies > strong {
     width: 100%;
     font-size: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #666;
+    background: coral;
+    border-radius: 5px 5px 0 0;
+    display: block;
+    padding: 0 10px;
 }
 .supply-count {
     /* width: 100%; */
@@ -182,6 +189,7 @@
     background-size: contain;
     /*this needs to be incremented to show progress*/
     left: var(--complete);
+    transition: all 2s ease-in-out;
     z-index: 2;
     animation: rock-boat 3s linear infinite;
     transform-origin: bottom center;
@@ -204,6 +212,7 @@
 .question label {
     box-sizing: border-box;
     border: 2px solid transparent;
+    cursor: pointer;
 }
 .tile {
     display: block;
@@ -215,6 +224,7 @@
     left: 0;
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 .tile > input[type="radio"]:checked + label {
     border-color: var(--secondary);

@@ -1,6 +1,5 @@
 <?php 
     include "./game-session.php";
-    // unset($_POST);
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +26,6 @@
     </header>
     <main id="main" tabindex="-1">
         <div class="breadcrumb"><a href="../">Navigation and Ship Technology</a>&nbsp;>&nbsp;Game Title goes here</div>
-        <h1>Game Title Goes Here</h1>
         <div class="text-center">
             <div id="game">
                 <?php

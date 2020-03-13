@@ -11,18 +11,6 @@ $game_end_message = "";
 // $complete = 0;
 $message = "";
 // check if page is refreshed, reset post if so
-function checkPost() {
-    //is the form id the same as one stored in $_SESSION
-    if (isset($_POST['formid']) && isset($_SESSION['formid']) && $_POST["formid"] == $_SESSION["formid"]){
-        // echo 'Process form';
-        $_SESSION["formid"] = '';
-    } else {
-        // echo "new form"; 
-        $_POST = array();
-        $_SESSION["formid"] = md5(rand(0,10000000));
-    }
-}
-checkPost();
 if ($complete === 0) {
     // first answered question
     updateComplete("reset");
@@ -262,7 +250,7 @@ function createQuestion($questionArray) {
     $qKey = $questionArray[1];
     //create a question based on the content of the array
     $question =
-    '<form method="POST" action="./" class="question">
+    '<form method="POST" action="./#game" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
             <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
@@ -316,6 +304,12 @@ $game = '
                     <li>Bronze 200 days</li>
                 </ol>
             </div>
+            <ol class="challenges">
+            '.
+                $challengeList
+            .'
+            <li class="challenge-results"><img src="/images/icons/question-circle.svg"></li>
+        </ol>
             <div id="supplies">
                 <strong>Supplies</strong>
                 <img 
@@ -329,12 +323,6 @@ $game = '
                 </div>
             </div>
         </div>
-        <ol class="challenges">
-            '.
-                $challengeList
-            .'
-            <li class="challenge-results"><img src="/images/icons/question-circle.svg"></li>
-        </ol>
     </div>
     <div class="map-question flex relative">
         '.$question.'
@@ -364,15 +352,13 @@ $game = '
 $reset = '<hr>
 <h3>Start Over?</h3>
 <p>
-    <form method="POST" action="./">
+    <form method="POST" action="./#game">
     <input type="hidden" name="restart" value="restart">
     <button class="btn">Restart</button>
     </form>
 </p>';
 if ($_POST["restart"] == "restart") {
     session_destroy();
-    $_SESSION["correctCount"] = 0;
-    $_SESSION["quiz_complete"] = false;
 }
 if (strlen($game_end_message) > 0) {
     print $game_end_message;

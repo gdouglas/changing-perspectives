@@ -5,13 +5,12 @@ if ($_SESSION["quiz_complete"] == false) {
     print '
     <div id="game-intro">
         <p>See if you can Sail your Brig from Hawaii to Yuquot.<br>
-        Before you can take command you’ll to know the right orders to give your crew.<br>
-        Match the right order to the image:</p>
-    </div>';
-    // print '<img src="/images/logos/vmc_eng_col_rev.svg">';
-    // print "<img src='D:\Code\changing-perspectives\\en\\technologies\game\images\\test.png'>";
+        Before you can take command you’ll to know the right orders to give your crew.</p>
+        <h2>Learn The Language of Sailing</h2>
+        <p>Match the right order to the image:</p>
+        </div>';
+    print '';
 }
-
 $targetCorrect = 6;
 $questionNum = 1;
 $questions = [
@@ -158,12 +157,15 @@ function checkAnswer($q, $a) {
         return false;
     }
 }
-if (count($_POST) > 0) {
-    $q = array_keys($_POST)[0];
+//true if page isn't refreshed
+$answered = checkPost();
+if ((bool)$_POST["restart"] == false && $answered) {
+    $q = array_keys($_POST)[1];
     $a = $_POST[$q];
     $answeredQ = (int) filter_var($q, FILTER_SANITIZE_NUMBER_INT);
+    $message = "You answered ".$questions[$answeredQ]["question"]." with ".$questions[$answeredQ]['image'];
     if ( checkAnswer($answeredQ, $a) ){
-        echo "Correct! ";
+        $message = "<div class='answer right'><div class='success'>You correctly answered! </div>".$message."</div>";
         $_SESSION["correctCount"] ++;
         if ($_SESSION["correctCount"] >= $targetCorrect) {
             $_SESSION["quiz_complete"] = true;
@@ -171,15 +173,14 @@ if (count($_POST) > 0) {
         }
         $questions[$answeredQ]["answered"] = true;
         $_SESSION["answered"][] = $answeredQ;
-    } elseif ($_POST["restart"]) {
-        // do nothing
     } else  {
-        print "Incorrect! ";
+        $message = "<div class='answer wrong'><div class='success'>Sorry Wrong answer! </div>".$message."</div>";
     };
-
-    print
-        "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
+    print $message;
 }
+//display answer count
+print
+    "<div class='sign question-counter'>$_SESSION[correctCount]/$targetCorrect Correct</div>";
 if ($_SESSION["correctCount"] < $targetCorrect) {
     getNextQuestion();
 }
@@ -206,21 +207,19 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
     </div>';
 }
 $questionForm = '
-<form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
-    <fieldset>
-        <legend>
-            <h2>Learn The Language of Sailing</h2>
-        </legend>
-        <div class="question">
-            <h3>'.$questions[$questionNum]["question"] . '</h3>
-             <div class="tiles">
-                ' . $options . '
-            </div>
+<form method="POST" action="./#game">
+    <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
+    <div class="question">
+        <h3>'.$questions[$questionNum]["question"] . '</h3>
+            <div class="tiles">
+            ' . $options . '
         </div>
-        <button class="btn">Submit</button>
+    </div>
+    <input type="hidden" name="restart" value=0>
+    <button class="btn">Submit</button>
 </form>
-<form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
-    <input type="hidden" name="restart" value="restart">
+<form method="POST" action="./#game">
+    <input type="hidden" name="restart" value=1>
     <button class="btn">Restart</button>
 </form>
 ';
@@ -228,7 +227,7 @@ $questionForm = '
 if ($_SESSION["correctCount"] >= $targetCorrect) {
     print 'You\'ve learned the lingo now let\'s <a href=".\">Set Sail!</a>
     <p>
-        <form method="POST" action=' . $_SERVER["PHP_SELF"] . '>
+        <form method="POST" action="./#game">
         <input type="hidden" name="restart" value="restart">
         <button class="btn">Restart</button>
         </form>

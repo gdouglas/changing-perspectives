@@ -15,7 +15,6 @@ if ($complete === 0) {
     // first answered question
     updateComplete("reset");
 }
-
 function updateComplete($increment){
     global $complete, $speed, $game_started, $message, $supplies;
     $time = time();
@@ -217,9 +216,11 @@ $challenges = [
     ),
 ];
 function answerQuestion(){
+    debug($_POST);
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
-    if (empty($response) || strlen($_POST["formid"]) === 0){
+    $refresh = checkPost();
+    if (empty($response) || $refresh === false){
         return;
     }
     global $challenges, $message;
@@ -250,10 +251,10 @@ function createQuestion($questionArray) {
     $qKey = $questionArray[1];
     //create a question based on the content of the array
     $question =
-    '<form method="POST" action="./#game" class="question">
+    '<form method="POST" action="./game#game" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
+            <input type="text" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
             '.$q["image"].'
         </div>
         <div class="tiles">';
@@ -352,7 +353,7 @@ $game = '
 $reset = '<hr>
 <h3>Start Over?</h3>
 <p>
-    <form method="POST" action="./#game">
+    <form method="POST" action="./game#game">
     <input type="hidden" name="restart" value="restart">
     <button class="btn">Restart</button>
     </form>

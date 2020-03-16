@@ -1,22 +1,37 @@
 const gulp = require('gulp');
 const { series } = require('gulp');
 const concat = require('gulp-concat');
+var concatCss = require('gulp-concat-css');
 const uglify = require('gulp-uglify');
+const uglifycss = require('gulp-uglifycss');
 const rename = require("gulp-rename");
 const babel = require('gulp-babel');
-var php = require('gulp-connect-php');
+const php = require('gulp-connect-php');
 var browserSync = require('browser-sync');
+const autoprefixer = require('gulp-autoprefixer');
 
 // concat and minify site js
 function scripts() {
     return gulp.src(["./scripts/validation.js", "./scripts/app.js"])
         .pipe(concat('app.js'))
+        .pipe(autoprefixer({
+            cascade: false,
+            env: [">0.2%","not dead"]
+        }))
         .pipe(gulp.dest('./dist'))
         .pipe(babel({
             presets: ['@babel/preset-env']
         }))
         .pipe(rename("app.min.js"))
         .pipe(uglify())
+        .pipe(gulp.dest('./dist'))
+};
+function styles() {
+    return gulp.src(["styles/main.css"])
+        .pipe(concatCss('app.css'))
+        .pipe(gulp.dest('./dist'))
+        .pipe(rename("app.min.css"))
+        .pipe(uglifycss())
         .pipe(gulp.dest('./dist'))
 };
 
@@ -53,9 +68,11 @@ function browserSyncReload(done) {
 // tasks run when files are changed
 function watchFiles() {
     gulp.watch('scripts/**/*', gulp.series(scripts, browserSyncReload));
+    gulp.watch('styles/**/*.css', styles);
     gulp.watch('**/*.css', browserSyncReload);
     gulp.watch('**/*.php', browserSyncReload);
 }
 
 const watch = gulp.parallel([watchFiles, connectSync]);
 exports.default = watch;
+exports.style = styles;

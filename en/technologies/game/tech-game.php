@@ -207,7 +207,7 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
     </div>';
 }
 $questionForm = '
-<form method="POST" action="./#game">
+<form method="POST" action="./game#game">
     <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
     <div class="question">
         <h3>'.$questions[$questionNum]["question"] . '</h3>
@@ -218,16 +218,16 @@ $questionForm = '
     <input type="hidden" name="restart" value=0>
     <button class="btn">Submit</button>
 </form>
-<form method="POST" action="./#game">
+<form method="POST" action="./game#game">
     <input type="hidden" name="restart" value=1>
     <button class="btn">Restart</button>
 </form>
 ';
 
 if ($_SESSION["correctCount"] >= $targetCorrect) {
-    print 'You\'ve learned the lingo now let\'s <a href=".\">Set Sail!</a>
+    print 'You\'ve learned the lingo now let\'s <a href="./game#game">Set Sail!</a>
     <p>
-        <form method="POST" action="./#game">
+        <form method="POST" action="./game#game">
         <input type="hidden" name="restart" value="restart">
         <button class="btn">Restart</button>
         </form>

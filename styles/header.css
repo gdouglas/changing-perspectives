@@ -44,7 +44,9 @@ header:before {
   font-weight: bold;
 }
 .vmc-logo {
-  height: 50px;
+  height: auto;
+  min-width: 120px;
+  max-height: 50px;
 }
 
 header nav {
@@ -74,8 +76,8 @@ header nav {
   max-width: 500px;
   font-size: 5rem;
   line-height: 6rem;
-  font-family: "Beth Ellen", sans-serif;
-  font-family: var(--title-font);
+  font-family: serif;
+  font-family: var(--title-font), script;
   display: flex;
 }
 .site-title a {

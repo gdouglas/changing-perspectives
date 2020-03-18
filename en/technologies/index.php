@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<script src="https://player.vimeo.com/api/player.js"></script>
+<!-- <script src="https://player.vimeo.com/api/player.js"></script> -->
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Changing Perspectives | Context</title>
 </head>
 
-<body class="splash">
+<body>
     <a class="skip-main" href="#main">Skip to main content</a>
     <header class="">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
@@ -26,6 +26,7 @@
                     </div>
                     <div class="back">
                         <div style="position:relative;">
+                            <iframe src="https://player.vimeo.com/video/398394152" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                             <iframe id="vimeo1" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                         </div>
                     </div>

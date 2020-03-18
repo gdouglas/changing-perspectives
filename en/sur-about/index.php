@@ -7,11 +7,14 @@
 </head>
 
 <body>
-    <header>
+<body class="splash">
+    <a class="skip-main" href="#main">Skip to main content</a>
+    <header class="">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
-        <h1>About this website</h1>
     </header>
-    <main id="main" tabindex="-1" class="text-center">
+    <main id="main" tabindex="-1">
+        <h1>European Sailing Technology</h1>
+
         <p>This website was built in collaboration with multiple partners. Thank you.</p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>

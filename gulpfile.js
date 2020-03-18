@@ -14,10 +14,6 @@ const autoprefixer = require('gulp-autoprefixer');
 function scripts() {
     return gulp.src(["./scripts/validation.js", "./scripts/app.js"])
         .pipe(concat('app.js'))
-        .pipe(autoprefixer({
-            cascade: false,
-            env: [">0.2%","not dead"]
-        }))
         .pipe(gulp.dest('./dist'))
         .pipe(babel({
             presets: ['@babel/preset-env']
@@ -25,10 +21,14 @@ function scripts() {
         .pipe(rename("app.min.js"))
         .pipe(uglify())
         .pipe(gulp.dest('./dist'))
-};
-function styles() {
-    return gulp.src(["styles/main.css"])
+    };
+    function styles() {
+        return gulp.src(["styles/main.css"])
         .pipe(concatCss('app.css'))
+        // .pipe(autoprefixer({
+        //     cascade: false,
+        //     env: [">0.2%","not dead"]
+        // }))
         .pipe(gulp.dest('./dist'))
         .pipe(rename("app.min.css"))
         .pipe(uglifycss())
@@ -75,3 +75,4 @@ function watchFiles() {
 const watch = gulp.parallel([watchFiles, connectSync]);
 exports.default = watch;
 exports.style = styles;
+exports.script = scripts;

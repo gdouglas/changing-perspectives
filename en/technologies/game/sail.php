@@ -127,7 +127,7 @@ $challenges = [
                 "correct" => true
             ),
             "b" => array(
-                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
+                "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
                 "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
@@ -144,16 +144,19 @@ $challenges = [
         "question" => "Haul away on the windlass",
         "options" => array(
             "a" => array(
-                "option" => "Haul away on the windlass",
-                "correct" => true
+                "image" => "<img src=\"".$imagePath."wind-bottom-ship.png\" alt='alt text goes here'>",
+                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
+                "correct" => false
             ),
             "b" => array(
-                "option" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
+                "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
+                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(
-                "option" => "Hands to set the jib. Haul your halyard, tend your sheets",
-                "correct" => false
+                "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
+                "option" => "Haul away on the windlass",
+                "correct" => true
             )
         )
     ),
@@ -163,7 +166,7 @@ $challenges = [
         "question" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
         "options" => array(
             "a" => array(
-                "option" => "Haul away on the windlass",
+                "option" => "Hand aloft to loose out Fore and Main Tops'ls and T'gallants",
                 "correct" => true
             ),
             "b" => array(
@@ -195,9 +198,9 @@ $challenges = [
             )
         )
     ),
-    3 =>  array(
+    6 =>  array(
         "answered" => false,
-        "image" => "<img src=\"".$imagePath."people-pushing-gear.png\" alt='alt text goes here'>",
+        "image" => "<img src=\"".$imagePath."galley-view.png\" alt='alt text goes here'>",
         "question" => "Hands to set the spanker",
         "options" => array(
             "a" => array(

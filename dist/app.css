@@ -1350,7 +1350,7 @@ to {
 }
 
 .cards label:after {
-  content: url("/images/icons/flip-white.svg");
+  content: url("../../images/icons/flip-white.svg");
   transition: all 400ms ease-in-out;
   transform: rotate(270deg);
   color: #fff;
@@ -1443,96 +1443,60 @@ label:hover :checked + .card:hover {
   transform: rotateX(180deg);
 }
 
-.gallery ul {
-  list-style-type: none;
+#gallery ul {
+  display: inline;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 0 auto;
 }
 
-.gallery li {
-  display: inline;
-  margin: 0 1rem;
+#gallery li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1rem;
+  vertical-align: top;
 }
 
-.gallery img {
+.gallery li img {
   max-width: 150px;
-  max-height: 200px;
-}
-
-.gallery figure {
-  display: inline-flex;
-  padding: 1rem;
-  overflow: auto;
-  margin: 0;
-  box-sizing: border-box;
-  width: 150px;
-}
-
-.gallery .close,
-.gallery img,
-.gallery figcaption {
-  transform: scale(0);
-}
-
-.gallery figcaption {
-  max-width: 450px;
-  padding: 1rem;
-}
-
-.gallery figure .open,
-.gallery figure .open img {
-  display: inline;
   height: auto;
-  width: auto;
-  transform: scale(1);
+  float: left;
 }
 
-.gallery figure img,
-.gallery figure figcaption {
-  transition: all 600ms ease-in-out;
-  height: 0;
-  width: 0;
+.gallery li:target img {
+  max-width: none;
 }
 
-.gallery figure:target {
-  display: flex;
-  width: 100%;
+.gallery .description {
+  box-sizing: border-box;
   background: #222;
+  padding: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: all 600ms ease-in-out;
+}
+
+.gallery .description:target {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
   color: #eee;
 }
 
-.gallery figure:target .close,
-.gallery figure:target img,
-.gallery figure:target figcaption {
-  transform: scale(1);
-  width: auto;
-  height: auto;
-}
-
-.gallery figure:target img {
-  display: block;
-}
-
-.gallery figure:target > .open {
-  display: none;
-}
-
-.gallery :target .close,
-.gallery :target figcaption {
-  display: block;
-}
-
-.gallery :target img {
-  max-width: none;
-  max-height: none;
-}
-
 .gallery .close {
+  position: absolute;
   background: #eee;
-  z-index: 1;
+  box-shadow: 2px 2px 1px 0px #888;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.gallery figcaption {
+  float: left;
+  margin-right: 1rem;
+  max-width: 780px;
+  transition: all 600ms ease-in-out;
 }
 
 .no-js {

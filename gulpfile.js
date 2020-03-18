@@ -68,8 +68,7 @@ function browserSyncReload(done) {
 // tasks run when files are changed
 function watchFiles() {
     gulp.watch('scripts/**/*', gulp.series(scripts, browserSyncReload));
-    gulp.watch('styles/**/*.css', styles);
-    gulp.watch('**/*.css', browserSyncReload);
+    gulp.watch('styles/**/*.css', gulp.series(styles, browserSyncReload));
     gulp.watch('**/*.php', browserSyncReload);
 }
 

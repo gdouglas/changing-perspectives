@@ -1443,13 +1443,19 @@ label:hover :checked + .card:hover {
   transform: rotateX(180deg);
 }
 
-#gallery ul {
-  display: inline;
+.gallery {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery ul {
+  display: inline-block;
   padding: 0;
   margin: 0 auto;
 }
 
-#gallery li {
+.gallery li {
   list-style-type: none;
   display: inline-block;
   padding: 1rem;
@@ -1467,21 +1473,27 @@ label:hover :checked + .card:hover {
 }
 
 .gallery .description {
+  text-align: left;
   box-sizing: border-box;
   background: #222;
   padding: 0;
-  width: 0;
-  height: 0;
+  width: 100%;
+  max-height: 0;
   overflow: hidden;
   position: relative;
-  transition: all 600ms ease-in-out;
+  transition: all 400ms;
+  color: #eee;
+  opacity: 0;
+}
+
+.gallery .description * {
+  transition: none;
 }
 
 .gallery .description:target {
-  width: 100%;
+  max-height: 1500px;
+  opacity: 1;
   height: auto;
-  padding: 1rem;
-  color: #eee;
 }
 
 .gallery .close {
@@ -1496,7 +1508,7 @@ label:hover :checked + .card:hover {
   float: left;
   margin-right: 1rem;
   max-width: 780px;
-  transition: all 600ms ease-in-out;
+  /* transition: all 600ms ease-in-out; */
 }
 
 .no-js {

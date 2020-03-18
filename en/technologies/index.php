@@ -53,7 +53,7 @@
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
                     <div class="back">
-                        <a href="./game">Play Game</a>
+                        <a href="./technologies/game">Play Game</a>
                     </div>
                 </div>
             </label>

@@ -166,6 +166,7 @@ if ((bool) $_POST["restart"] == false && $answered) {
     $q = array_keys($_POST)[1];
     $a = $_POST[$q];
     $answeredQ = (int) filter_var($q, FILTER_SANITIZE_NUMBER_INT);
+    // todo this is showing the wrong answer
     $message = "You answered " . $questions[$answeredQ]["question"] . " with " . $questions[$answeredQ]['image'];
     if (checkAnswer($answeredQ, $a)) {
         $message = "<div class='answer right'><div class='success'>You correctly answered! </div>" . $message . "</div>";
@@ -222,46 +223,55 @@ $questionForm = '
     <input type="hidden" name="restart" value=0>
     <button class="btn">Submit</button>
 </form>
-<section>
-<ul class="gallery">
-    <li>
-        <figure id="sails" class="relative">
+<section id="gallery" class="gallery">
+    <h2>Use these images to help answer the questionsn</h2>
+    <ul>
+        <li>
             <a href="#sails" class="open">
                 <img src="' . $imagePath . 'sails.jpg" alt="alt text goes here">
             </a>
-            <img src="' . $imagePath . 'sails.jpg" alt="alt text goes here">
-            <figcaption>
-                <a href="#gallery" class="close btn absolute top right">Close</a>
-                <p>Use these descriptions to help you understand what these questions are asking.</p>
-            </figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure id="port-starboard" class="relative">
+        </li>
+        <li>
             <a href="#port-starboard" class="open">
+            <img src="' . $imagePath . 'port-starboard.jpg" alt="The right side of a ship is shown in green and the left side is shown as red. Orientation is created from facing the bow.">
+            </a>
+        </li>
+        <li>
+            <a href="#tack">
+            <img src="' . $imagePath . 'port-starboard-tack.png" alt="A boat is shown waining into the wind, turn right or Port for port tack and left or starboard for starboard">
+            </a>
+        </li>
+        </ul>
+        <div id="sails" class="description">
+            <a href="#gallery" class="close btn absolute top right">Close</a>
+            <h3 class="gold">Sails and Masts</h3>
+            <figure>
+                <img src="' . $imagePath . 'sails.jpg" alt="alt text goes here">
+                <figcaption>
+                    <p>There are many types of masts. The one at the front is the Fore Mast, the tallest is the Main Mast and the third or shortest is a Mizzen Mast. The sail at the back of the ship is the Spanker, at the front are the Jibs. On a mast there are three sails, the Top Gallant, Top and Main. Each sail needs to be adjusted differently to maximize wind capture.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="port-starboard" class="description">
+            <a href="#gallery" class="close btn absolute top right">Close</a>
+            <h3 class="gold">Port and Starboard orientations</h3>
+            <figure>
                 <img src="' . $imagePath . 'port-starboard.jpg" alt="The right side of a ship is shown in green and the left side is shown as red. Orientation is created from facing the bow.">
-            </a>
-            <img src="' . $imagePath . 'port-starboard.jpg" alt="The right side of a ship is shown in green and the left side is shown as red. Orientation is created from facing the bow.">
-            <figcaption>
-                <a href="#gallery" class="close btn absolute top right">Close</a>
-                <p>Use these descriptions to help you understand what these questions are asking.</p>
-            </figcaption>
-        </figure>
-    </li>
-    <li>
-        <figure id="tack" class="relative">
-            <a href="#tack" class="open">
-                <img src="' . $imagePath . 'port-starboard-tack.png" alt="A boat is shown waining into the wind, turn right or Port for port tack and left or starboard for starboard">
-            </a>
-            <img src="' . $imagePath . 'port-starboard.jpg" alt="The right side of a ship is shown in green and the left side is shown as red. Orientation is created from facing the bow.">
-            <figcaption>
-                <a href="#gallery" class="close btn absolute top right">Close</a>
-                <p>Use these descriptions to help you understand what these questions are asking.</p>
-            </figcaption>
-        </figure>
-    </li>
-</ul>
-</div>
+                <figcaption>
+                    <p>Facing the front of the ship or the bow, Starboard will be on right side and Port will be on the left side.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <div id="tack" class="description">
+            <a href="#gallery" class="close btn absolute top right">Close</a>
+            <h3 class="gold">Tacking</h3>
+            <figure>
+            <img src="' . $imagePath . 'port-starboard-tack.png" alt="A boat is shown waining into the wind, turn right or Port for port tack and left or starboard for starboard">
+                <figcaption>
+                    <p>When sailing into the wind ships will need to tack. This means changing their angle to capture some of the wind and pull the boat forward. Port tack means to turn the boat towards the Port or left side and Starboard tack means to turn the boat to the Starboard or left side.</p>
+                </figcaption>
+            </figure>
+        </div>
 </section>
 <form method="POST" action="./game#game">
     <input type="hidden" name="restart" value=1>

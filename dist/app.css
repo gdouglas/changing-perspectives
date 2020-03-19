@@ -46,7 +46,6 @@ h2 {
 
 .subtitle {
   font-size: 1.5rem;
-  line-height: 1;
   font-family: var(--serif-font), serif;
 }
 
@@ -661,7 +660,6 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  line-height: 1.5;
   display: flex;
   margin-left: 4px;
   text-align: center;
@@ -671,6 +669,7 @@ nav li {
   align-items: center;
   border-bottom: 2px solid transparent;
   border-radius: 4px 4px 0 0;
+  z-index: 1;
 }
 
 header .open {
@@ -1363,62 +1362,56 @@ to {
         .card
             .front
             .back
-    ... 
+    ...
 */
 
 .cards {
   display: flex;
   flex: 1;
   justify-content: center;
+  flex-direction: column;
 }
 
-.cards label {
-  perspective: 1000px;
-  transform-style: preserve-3d;
-  display: block;
-  width: 345px;
-  height: 200px;
-  cursor: pointer;
-  padding: 2rem;
-  border: 1px solid #222;
-  border-radius: 5px;
-  margin: 0 1rem;
+.back {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
 }
 
-.cards label:first-of-type {
-  margin-left: 0;
+.card iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.cards label:last-of-type {
-  margin-right: 0;
-}
-
-@supports (transform-style: preserve-3d) {
-  .cards label:after {
-    content: url("../../images/icons/flip-white.svg");
-    transition: all 400ms ease-in-out;
-    transform: rotate(270deg);
-    color: #fff;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    pointer-events: none;
-    background: #222;
-    color: #fff;
-    border-radius: 50%;
-    height: 1.5rem;
-    width: 1.5rem;
-    line-height: 1.4rem;
-    font-size: 1.2rem;
-    text-align: center;
+@media screen and (min-width: 756px) {
+  .cards {
+    flex-direction: row;
   }
 
-  .cards label:hover:after {
-    transform: rotate(-90deg);
+  .cards label {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: block;
+    width: 345px;
+    height: 200px;
+    cursor: pointer;
+    padding: 1rem;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 0 1rem;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
-  .cards label:after svg path {
-    fill: #fff;
+  .cards label:first-of-type {
+    margin-left: 0;
+  }
+
+  .cards label:last-of-type {
+    margin-right: 0;
   }
 
   .card {
@@ -1427,67 +1420,136 @@ to {
     width: 100%;
     transform-style: preserve-3d;
     transition: all 600ms;
-    z-index: 20;
+    z-index: 1;
     border-radius: 3px;
   }
 
-  .card .front,
-  .card .back {
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
+  .back a,
+  .back a:focus,
+  .back a:visited {
+    color: #01a9b2;
   }
 
-  .card div {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #fff;
-    text-align: center;
-    line-height: 200px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border-radius: 3px;
+  .card h3 {
+    margin: 0;
   }
 
-  .card .back {
-    background: #222;
-    color: #fff;
-    transform: rotateX(180deg);
+  .close {
     display: none;
   }
 
-  .card .back a {
-    font-size: 3rem;
-  }
+@supports (transform-style: preserve-3d) {
+    .cards label:after {
+      content: url("../../images/icons/flip-white.svg");
+      transform-style: preserve-3d;
+      z-index: 2;
+      transition: all 400ms ease-in-out;
+      transform: rotate(270deg);
+      color: #fff;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      pointer-events: none;
+      background: #222;
+      color: #fff;
+      border-radius: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1.4rem;
+      font-size: 1.2rem;
+      text-align: center;
+    }
 
-  label:focus-within .card,
-  label:hover .card {
-    transform: rotateX(20deg);
-    box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
-  }
+    .cards label:hover:after {
+      transform: rotate(-90deg);
+    }
 
-  input {
-    opacity: 0;
-    position: absolute;
-  }
+    .cards label:after svg path {
+      fill: #fff;
+    }
 
-  label:focus-within :checked + .card,
-  :checked + .card {
-    transform: rotateX(180deg);
-  }
+    .card .front,
+    .card .back {
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
 
-  :checked + .card .back {
-    display: block;
-  }
+    .card .back {
+      background: #222;
+      color: #fff;
+      transform: rotateX(180deg);
+      display: none;
+      bottom: 0;
+    }
 
-  label:hover :checked + .card {
-    transform: rotateX(160deg);
-    box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
-  }
+    .card .back a {
+      font-size: 3rem;
+    }
 
-  label:hover :checked + .card:hover {
-    transform: rotateX(180deg);
-  }
+    label:focus-within .card,
+    label:hover .card {
+      transform: rotateX(20deg);
+      box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+    }
+
+    input {
+      opacity: 0;
+      position: absolute;
+    }
+
+    label:focus-within :checked + .card,
+    :checked + .card {
+      transform: rotateX(180deg);
+    }
+
+    :checked + .card .back {
+      display: block;
+    }
+
+    label:hover :checked + .card {
+      transform: rotateX(160deg);
+      box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
+    }
+
+    label:hover :checked + .card:hover {
+      transform: rotateX(180deg);
+    }
+
+    /* todo set tab index to -1 with js, set to 0 when open */
+
+    .close {
+      display: block;
+      visibility: hidden;
+      margin-top: 1rem;
+      line-height: 40px;
+      overflow: hidden;
+      text-align: center;
+      height: 0;
+      transition: height 600ms ease-out;
+      background: #222;
+      border-radius: 0 0 5px 5px;
+      color: #eee;
+      box-sizing: border-box;
+      border-top: 1px solid #fff;
+    }
+
+    .close input {
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      top: 0;
+      left: 0;
+    }
+
+    input:checked + .card + .close {
+      height: 40px;
+      visibility: visible;
+    }
+}
 }
 
 .gallery {
@@ -1690,4 +1752,10 @@ a.skip-main:active {
 
 a:visited {
   color: var(--secondary);
+}
+
+@media screen and (max-width: 900px) {
+  :root {
+    font-size: 13px;
+  }
 }

@@ -137,3 +137,9 @@ a.skip-main:active {
 a:visited {
     color: var(--secondary);
 }
+
+@media screen and (max-width: 900px) {
+    :root {
+        font-size: 13px;
+    }
+}

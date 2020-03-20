@@ -103,7 +103,6 @@ nav ul {
 }
 nav li {
   list-style-type: none;
-  line-height: 1.5;
   display: flex;
   margin-left: 4px;
   text-align: center;
@@ -113,6 +112,7 @@ nav li {
   align-items: center;
   border-bottom: 2px solid transparent;
   border-radius: 4px 4px 0 0;
+        z-index: 1;
 }
 header .open {
   visibility: visible;

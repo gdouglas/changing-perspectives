@@ -13,7 +13,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1>European Sailing Technology</h1>
+        <h1>About this website</h1>
 
         <p>This website was built in collaboration with multiple partners. Thank you.</p>
     </main>

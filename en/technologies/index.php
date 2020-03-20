@@ -14,9 +14,6 @@
     </header>
     <main id="main" tabindex="-1">
         <h1>European Sailing Technology</h1>
-        <label>
-                        <div class="back"><iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-                        </label>
         <div class="pull-quote text-center">
             <h2 class="subtitle">What technologies did the Europeans need to get to the Pacific Northwest Coast?</h2>
         </div>
@@ -28,11 +25,19 @@
                         <h3>How did European navigate the oceans?</h3>
                     </div>
                     <div class="back">
-                        <iframe id="vimeo1" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo1" class="no-js-hide" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="relative close"><input type="radio" name="cards"/>Close</div>
+                <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
+            <noscript>
+                <h3>How did European navigate the oceans?</h3>
+                <video preload="none" src="/videos/placeholder-example.mp4">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
+                </video>
+                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
+            </noscript>
 
             <label>
                 <input type="radio" name="cards" />
@@ -41,11 +46,19 @@
                         <h3>What were the ships like the Europeans sailed in?</h3>
                     </div>
                     <div class="back">
-                        <iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
+            <noscript>
+                <h3>What were the ships like the Europeans sailed in?</h3>
+                <video preload="none" src="/videos/placeholder-example.mp4">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
+                </video>
+                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
+            </noscript>
 
             <label>
                 <input type="radio" name="cards" />
@@ -59,7 +72,14 @@
                 </div>
                 <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
-            <div class="relative"><input type="radio" name="cards"/>Close</div>
+            <noscript>
+                <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
+                <a href="/en/technologies/game/">Play Game</a>
+            </noscript>
+        </div>
+        <div class="close-all relative text-center">
+            <input type="radio" name="cards" checked />
+            <div class="btn">Close Card</div>
         </div>
         <section id="gallery" class="gallery">
             <h2>Artifacts of exploration</h2>

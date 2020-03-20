@@ -26,7 +26,6 @@
                     </div>
                     <div class="back">
                         <div style="position:relative;">
-                            <iframe src="https://player.vimeo.com/video/398394152" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                             <iframe id="vimeo1" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -54,7 +53,7 @@
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
                     <div class="back">
-                        <a href="./technologies/game">Play Game</a>
+                        <a href="./game">Play Game</a>
                     </div>
                 </div>
             </label>

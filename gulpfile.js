@@ -21,19 +21,26 @@ function scripts() {
         .pipe(rename("app.min.js"))
         .pipe(uglify())
         .pipe(gulp.dest('./dist'))
-    };
-    function styles() {
-        return gulp.src(["styles/main.css"])
-        .pipe(concatCss('app.css'))
-        // .pipe(autoprefixer({
-        //     cascade: false,
-        //     env: [">0.2%","not dead"]
-        // }))
-        .pipe(gulp.dest('./dist'))
-        .pipe(rename("app.min.css"))
-        .pipe(uglifycss())
-        .pipe(gulp.dest('./dist'))
 };
+function styles() {
+    return gulp.src(["styles/main.css"])
+    .pipe(concatCss('app.css'))
+    .pipe(autoprefixer({
+        cascade: false,
+        env: ["ie9"]
+    }))
+    .pipe(gulp.dest('./dist'))
+    .pipe(rename("app.min.css"))
+    .pipe(uglifycss())
+    .pipe(gulp.dest('./dist'))
+};
+function prefix() {
+    return gulp.src(["dist/app.css"])
+    .pipe(autoprefixer({
+        cascade: false,
+        env: ["ie9"]
+    }))
+}
 
 // start php server
 function connectSync() {
@@ -76,3 +83,4 @@ const watch = gulp.parallel([watchFiles, connectSync]);
 exports.default = watch;
 exports.style = styles;
 exports.script = scripts;
+exports.prefix = prefix;

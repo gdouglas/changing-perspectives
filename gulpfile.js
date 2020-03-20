@@ -38,7 +38,7 @@ function prefix() {
     return gulp.src(["dist/app.css"])
     .pipe(autoprefixer({
         cascade: false,
-        env: ["ie9"]
+        supports: true
     }))
 }
 

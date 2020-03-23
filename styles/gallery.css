@@ -47,7 +47,6 @@
     opacity: 1;
     height: auto;
 }
-
 .gallery .close {
     position: absolute;
     background: #eee;
@@ -55,6 +54,7 @@
     top: 0.5rem;
     right: 0.5rem;
 }
+
 .gallery figcaption {
     float: left;
     margin-right: 1rem;

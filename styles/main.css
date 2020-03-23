@@ -52,11 +52,12 @@ img {
 .pull-quote p {
     max-width: none;
 }
-body :focus-visible {
+body :focus-visible         ,
+body :focus {
     outline: 2px solid #9ecaed;
     outline-offset: 4px;
+    box-shadow: 1px 6px 14px -2px blue
 }
-
 label {
     display: block;
     margin: 5px 0;

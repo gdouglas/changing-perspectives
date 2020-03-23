@@ -18,17 +18,16 @@
             <h2 class="subtitle">What technologies did the Europeans need to get to the Pacific Northwest Coast?</h2>
         </div>
         <div class="cards">
-            <label>
-                <input type="radio" name="cards" />
+            <label class="label">
+                <input type="radio" name="cards" value="vimeo1"/>
                 <div class="card">
                     <div class="front">
                         <h3>How did European navigate the oceans?</h3>
                     </div>
                     <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
             <noscript>
                 <h3>How did European navigate the oceans?</h3>
@@ -39,17 +38,16 @@
                 <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
             </noscript>
 
-            <label>
-                <input type="radio" name="cards" />
+            <label class="label">
+                <input type="radio" name="cards" value="vimeo2"/>
                 <div class="card">
                     <div class="front">
                         <h3>What were the ships like the Europeans sailed in?</h3>
                     </div>
                     <div class="back">
-                        <iframe src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
             <noscript>
                 <h3>What were the ships like the Europeans sailed in?</h3>
@@ -60,8 +58,8 @@
                 <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
             </noscript>
 
-            <label>
-                <input type="radio" name="cards" />
+            <label class="label">
+                <input type="radio" name="cards" value="game"/>
                 <div class="card">
                     <div class="front">
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
@@ -70,7 +68,6 @@
                         <a href="/en/technologies/game/">Play Game</a>
                     </div>
                 </div>
-                <div class="relative close"><input type="radio" name="cards" />Close</div>
             </label>
             <noscript>
                 <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>

@@ -1,6 +1,6 @@
 /* expects:
 .cards
-    label
+    .label
         input
         .card
             .front
@@ -29,45 +29,44 @@
     .cards {
         flex-direction: row;
     }
-    .cards label {
+    .cards .label {
         perspective: 1000px;
         transform-style: preserve-3d;
         display: block;
         width: 345px;
         height: 200px;
         cursor: pointer;
-        padding: 1rem;
-        border: 1px solid #222;
         border-radius: 5px;
-        margin: 0 1rem;
         max-width: 100%;
-        box-sizing: border-box;
+        margin: 0 0.5rem;
+        padding: 1rem;
     }
-    .cards label:first-of-type {
+    .cards .card:first-of-type {
         margin-left: 0;
     }
-    .cards label:last-of-type {
+    .cards .label:last-of-type {
         margin-right: 0;
     }
     .card {
         position: relative;
         height: 100%;
         width: 100%;
+        min-height: 56.25%;
         transform-style: preserve-3d;
         transition: all 600ms;
         z-index: 1;
         border-radius: 3px;
+        border: 1px solid #222;
     }
     .back a,
-    .back a:focus,
+    /* .back a:focus, */
     .back a:visited {
         color: #01a9b2
     }
     .card h3 {
         margin: 0;
-    }
-    .close {
-        display: none;
+        font-size: 1.6rem;
+        padding: 0.5rem;
     }
     @supports (transform-style: preserve-3d) {
         .card .front,
@@ -77,8 +76,12 @@
             position: absolute;
             top: 0;
             left: 0;
+            display: flex;
+            align-items: center;
         }
-
+        .card .front {
+            height: 100%;
+        }
         .card .back {
             background: #222;
             color: #fff;
@@ -88,11 +91,19 @@
         }
         .card .back a{
             font-size: 3rem;
+            display: block;
+            height: 100%;
+            text-align: center;
+            margin-top: 2rem;
         }
 
-        label:focus-within .card,
-        label:hover .card {
+        /* .label:focus-within .card, */
+        .label:hover .card {
             transform: rotateX(20deg);
+            box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+        }
+        .label:hover :checked + .card {
+            transform: rotateX(180deg);
             box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
         }
         .close-all {
@@ -100,7 +111,7 @@
         }
         .close-all .btn {
             padding: 0.5rem 5rem;
-            margin: 2rem 0 4rem 0;
+            margin: 0 0 1rem 0;
             display: inline-block;
         }
         .close-all input,
@@ -118,52 +129,22 @@
             color: #666;
             background: #ccc;
         }
-        label:focus-within :checked + .card,
+        /* .label:focus-within :checked + .card, */
         :checked + .card {
             transform: rotateX(180deg);
+        }
+        .cards input {
+            pointer-events: all;
+        }
+        .cards input:checked {
+            pointer-events: none;
         }
         :checked + .card .back {
             display: block;
         }
-        label:hover :checked + .card {
-            transform: rotateX(160deg);
-            box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2);
-        }
-        label:hover :checked + .card:hover {
-            transform: rotateX(180deg);
-        }
-        /* todo set tab index to -1 with js, set to 0 when open */
-        .close {
-            display: block;
-            visibility: hidden;
-            margin-top: 1rem;
-            line-height: 40px;
-            overflow: hidden;
-            text-align: center;
-            height: 0;
-            transition: height 600ms ease-out;
-            background: #222;
-            border-radius: 0 0 5px 5px;
-            color: #eee;
-            box-sizing: border-box;
-            border-top: 1px solid #fff;
-        }
-        .close input {
-            cursor: pointer;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            top: 0;
-            left: 0;
-        }
-        input:checked + .card + .close {
-            height: 40px;
-            visibility: visible;
-        }
     }
 }
-.no-js .cards label,
-.no-js .cards .close,
+.no-js .cards .label,
 .no-js .cards + .close-all{
     display: none;
 }
@@ -173,12 +154,12 @@
     display: block;
     position: static;
 }
-.no-js .cards label {
+.no-js .cards .label {
     height: auto;
     cursor: initial;
     perspective: unset;
 }
-.no-js label:hover .card {
+.no-js .label:hover .card {
     box-shadow: none;
 }
 .no-js #main .front,

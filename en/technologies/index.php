@@ -78,7 +78,7 @@
             </noscript>
         </div>
         <div class="close-all relative text-center">
-            <input type="radio" name="cards" checked />
+            <input type="radio" name="cards"/>
             <div class="btn">Close Card</div>
         </div>
         <section id="gallery" class="gallery">

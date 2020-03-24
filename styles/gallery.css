@@ -43,6 +43,7 @@
     transition: all 400ms;
     color: #eee;
     opacity: 0;
+    visibility: hidden;
 }
 .gallery .description * {
     transition: none;
@@ -51,6 +52,16 @@
     max-height: 1500px;
     opacity: 1;
     height: auto;
+    visibility: visible;
+    max-width: none;
+}
+.gallery .description:target figure {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+.gallery .description:target img {
+    max-width: none;;
 }
 .gallery .close {
     position: absolute;

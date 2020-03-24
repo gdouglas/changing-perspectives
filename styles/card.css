@@ -76,7 +76,6 @@
         .card .front,
         .card .back {
             backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
             position: absolute;
             top: 0;
             left: 0;
@@ -101,7 +100,11 @@
             margin-top: 2rem;
         }
 
-        /* .label:focus-within .card, */
+        .label:focus-within {
+            outline: 2px solid #9ecaed;
+            outline-offset: 0;
+            box-shadow: 1px 6px 14px -2px blue
+        }
         .label:hover .card {
             transform: rotateX(20deg);
             box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
@@ -112,38 +115,39 @@
         }
         .close-all input,
         .cards input {
-            opacity:0;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            margin: 0;
+            margin: 0.5rem auto;
             cursor: pointer;
             display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -1rem;
+            transform: translateX(-50%);
         }
         .close-all {
             margin: 1rem 0 3rem 0;
             display: block;
         }
         .close-all input {
-            width:250px;
-            left: 50%;
-            transform:translateX(-50%);
+            bottom: -2rem;
         }
         .close-all .btn {
             padding: 0.5rem 5rem;
             display: inline-block;
+            transition: all 400ms;
+            overflow: hidden;
         }
         .close-all input:checked + div{
             color: #666;
             background: #ccc;
             cursor: not-allowed;
+            height: 0;
+            padding: 0 1rem;
         }
         .close-all input:checked {
             cursor: not-allowed;
+            display: none;
         }
-        /* .label:focus-within :checked + .card, */
+        .label:focus-within + .card,
         :checked + .card {
             transform: rotateX(180deg);
         }

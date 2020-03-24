@@ -551,7 +551,7 @@ header {
   background: var(--main-bg-color);
   background-image: url("../images/native-view.jpg");
   background-size: cover;
-  background-position-y: 67%;
+  background-position-y: 62%;
   color: #eee;
   font-weight: 100;
   margin: 0;
@@ -681,10 +681,10 @@ nav li {
   z-index: 1;
 }
 
-header .open {
-  visibility: visible;
-  transform: scaleY(1);
-}
+/* header .open {
+    visibility: visible;
+    transform: scaleY(1);
+} */
 
 @media screen and (min-width: 1591px) {
   nav .link {
@@ -747,8 +747,15 @@ nav .current {
     align-items: flex-start;
     flex-wrap: wrap;
     padding-top: 55px;
-    justify-content: center;
-    flex-direction: column;
+    overflow: hidden;
+    box-sizing: content-box;
+    transition: all 600ms ease-out;
+    max-height: 140px;
+  }
+
+  header.open {
+    padding-bottom: 250px;
+    background-position: bottom;
   }
 
   .site-title {
@@ -759,8 +766,8 @@ nav .current {
   }
 
   header nav {
-    visibility: hidden;
-    transform: scaleY(0);
+    /* visibility: hidden;
+        transform: scaleY(0); */
   }
 
   .no-js header {
@@ -816,8 +823,9 @@ nav .current {
   }
 
   header .link a {
-    margin: 0 0 0 16px;
-    padding: 10px;
+    text-align: left;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
     background: rgba(0, 0, 0, 0.7);
     -webkit-background-clip: text;
     background-clip: text;

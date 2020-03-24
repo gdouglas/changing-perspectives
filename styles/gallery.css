@@ -3,6 +3,11 @@
     position: relative;
     z-index: 1;
 }
+.gallery h2 {
+    text-align: left;
+    transform: translateX(15%);
+    width:85%
+}
 .gallery ul {
     display: inline-block;
     padding: 0;

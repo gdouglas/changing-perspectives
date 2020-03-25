@@ -152,8 +152,11 @@ $questions = [
 //take the question number and answer, check for correct
 function checkAnswer($q, $a)
 {
+    // debug($q, "q");
+    // debug($a, "a");
     global $questions;
-    $a = substr($a, 0, 1);
+    // debug($a, "a");
+    // debug($questions[$q]["options"], "question");
     if ($questions[$q]["options"][$a]["correct"]) {
         return true;
     } else {
@@ -165,9 +168,10 @@ $answered = checkPost();
 if ((bool) $_POST["restart"] == false && $answered) {
     $q = array_keys($_POST)[1];
     $a = $_POST[$q];
+    $a = substr($a, 0, 1);
     $answeredQ = (int) filter_var($q, FILTER_SANITIZE_NUMBER_INT);
     // todo this is showing the wrong answer
-    $message = "You answered " . $questions[$answeredQ]["question"] . " with " . $questions[$answeredQ]['image'];
+    $message = "You answered \"" . $questions[$answeredQ]["question"] . "\" with " .$questions[$answeredQ]["options"][$a]["image"]."<br> The correct answer is ". $questions[$answeredQ]['image'];
     if (checkAnswer($answeredQ, $a)) {
         $message = "<div class='answer right'><div class='success'>You correctly answered! </div>" . $message . "</div>";
         $_SESSION["correctCount"]++;
@@ -203,9 +207,10 @@ function getNextQuestion()
 foreach ($questions[$questionNum]["options"] as $key => $option) {
     $id = $key . $questionNum;
     $options .= '<div class="tile">
-        <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
         <label class="tile" for="' . $id . '">
-            <div>' . strtoupper($key) . '</div>
+            <div>' . strtoupper($key) . '
+                <input type="radio" name="question' . $questionNum . '" id="' . $id . '" value="' . $id . '" required>
+            </div>
             ' . $option["image"] . '
             <p>' . $option["option"] . '</p>
         </label>

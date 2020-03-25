@@ -949,7 +949,7 @@ nav .current {
 }
 
 #game:after {
-  content: '';
+  content: "";
   background-image: url("../images/ship-wheel.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -958,7 +958,7 @@ nav .current {
   left: 0;
   height: 100%;
   width: 100%;
-  opacity: .2;
+  opacity: 0.05;
 }
 
 #game form {
@@ -1010,12 +1010,17 @@ nav .current {
   line-height: 2;
 }
 
+.answer:after {
+  width: 50px;
+  height: 50px;
+}
+
 .answer.right:after {
-  content: "&#10004;";
+  content: url("../images/icons/correct.svg");
 }
 
 .answer.wrong:after {
-  content: "X";
+  content: url("../images/icons/incorrect.svg");
 }
 
 .answer img {
@@ -1127,7 +1132,7 @@ nav .current {
 }
 
 .day-count:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1135,7 +1140,7 @@ nav .current {
   border-style: solid;
   border-color: #ccc #ddd;
   border-radius: 2px 0 0 0;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 #supplies {
@@ -1242,13 +1247,14 @@ nav .current {
   display: block;
 }
 
-.tile > input[type="radio"] {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+.tile img {
+  pointer-events: none;
+  height: auto;
   width: 100%;
+  flex-shrink: 0;
+}
+
+.tile > input[type="radio"] {
   cursor: pointer;
 }
 
@@ -1445,24 +1451,27 @@ to {
     flex-shrink: 1;
   }
 
+@supports (transform-style: preserve-3d) {
+    .cards .label {
+      perspective: 1000px;
+      transform-style: preserve-3d;
+      display: block;
+      width: 345px;
+      height: 200px;
+      cursor: pointer;
+      border-radius: 5px;
+      max-width: 100%;
+      margin: 0 0.5rem;
+      padding: 1rem;
+    }
+}
+
   .cards .card:first-of-type {
     margin-left: 0;
   }
 
   .cards .label:last-of-type {
     margin-right: 0;
-  }
-
-  .card {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    min-height: 56.25%;
-    transform-style: preserve-3d;
-    transition: all 600ms;
-    z-index: 1;
-    border-radius: 3px;
-    border: 1px solid #222;
   }
 
   .back a,
@@ -1692,18 +1701,30 @@ to {
   transition: none;
 }
 
+.gallery .description h3 {
+  margin: 0;
+  margin-right: 100px;
+  padding-top: 1rem;
+}
+
 .gallery .description:target {
-  max-height: 1500px;
+  max-height: none;
   opacity: 1;
   height: auto;
   visibility: visible;
   max-width: none;
+  overflow: visible;
 }
 
 .gallery .description:target figure {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   flex-grow: 1;
+  margin: 0;
+  padding: 1rem;
+  background: inherit;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 0px #999;
 }
 
 .gallery .description:target img {
@@ -1713,7 +1734,7 @@ to {
 .gallery .close {
   position: absolute;
   background: #eee;
-  box-shadow: 2px 2px 1px 0px #888;
+  box-shadow: 2px 2px 1px 0px #999;
   top: 0.5rem;
   right: 0.5rem;
 }

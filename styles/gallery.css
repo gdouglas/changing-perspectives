@@ -51,17 +51,28 @@
 .gallery .description * {
     transition: none;
 }
+.gallery .description h3 {
+    margin: 0;
+    margin-right: 100px;
+    padding-top: 1rem;
+}
 .gallery .description:target {
-    max-height: 1500px;
+    max-height: none;
     opacity: 1;
     height: auto;
     visibility: visible;
     max-width: none;
+    overflow: visible;
 }
 .gallery .description:target figure {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-grow: 1;
+    margin: 0;
+    padding: 1rem;
+    background: inherit;
+    border-radius:5px;
+    box-shadow: 2px 2px 1px 0px #999;
 }
 .gallery .description:target img {
     max-width: none;
@@ -69,7 +80,7 @@
 .gallery .close {
     position: absolute;
     background: #eee;
-    box-shadow: 2px 2px 1px 0px #888;
+    box-shadow: 2px 2px 1px 0px #999;
     top: 0.5rem;
     right: 0.5rem;
 }

@@ -90,7 +90,6 @@ function incrementValues() {
         ";
     }
 }
-
 $challenge_results = &$_SESSION["sailing_status"]["challenge_results"];
 $question = "";
 $challenges = [
@@ -231,6 +230,7 @@ function answerQuestion(){
     $answer = $response[$question[1]];
     $correct = $challenges[$question[1]]["options"][$answer]["correct"];
     global $challenge_results;
+    // $message .= "You answered ". $challenges[q]["image"] with $challenges[a]["option"]
     if ($correct) {
         array_push($challenge_results, "correct");
         updateComplete("increase");
@@ -238,6 +238,8 @@ function answerQuestion(){
         array_push($challenge_results, "incorrect");
         updateComplete("decrease");
     }
+    // debug($question);
+    // $message = "You answered \"" . $questions[$answeredQ]["question"] . "\" with " .$questions[$answeredQ]["options"][$a]["image"]."<br> The correct answer is ". $questions[$answeredQ]['image'];
     print $message;
 }
 function getQuestion() {
@@ -257,7 +259,7 @@ function createQuestion($questionArray) {
     '<form method="POST" action="./game#game" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            <input type="text" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
+            <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
             '.$q["image"].'
         </div>
         <div class="tiles">';

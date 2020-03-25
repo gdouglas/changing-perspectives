@@ -34,33 +34,29 @@
         flex-direction: row;
     }
     .cards .label {
-        perspective: 1000px;
-        transform-style: preserve-3d;
-        display: block;
         width: 345px;
-        height: 200px;
-        cursor: pointer;
-        border-radius: 5px;
-        max-width: 100%;
         margin: 0 0.5rem;
         padding: 1rem;
+    }
+    @supports (transform-style: preserve-3d) {
+        .cards .label {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            display: block;
+            width: 345px;
+            height: 200px;
+            cursor: pointer;
+            border-radius: 5px;
+            max-width: 100%;
+            margin: 0 0.5rem;
+            padding: 1rem;
+        }
     }
     .cards .card:first-of-type {
         margin-left: 0;
     }
     .cards .label:last-of-type {
         margin-right: 0;
-    }
-    .card {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        min-height: 56.25%;
-        transform-style: preserve-3d;
-        transition: all 600ms;
-        z-index: 1;
-        border-radius: 3px;
-        border: 1px solid #222;
     }
     .back a,
     /* .back a:focus, */
@@ -73,6 +69,17 @@
         padding: 0.5rem;
     }
     @supports (transform-style: preserve-3d) {
+        .card {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            min-height: 56.25%;
+            transform-style: preserve-3d;
+            transition: all 600ms;
+            z-index: 1;
+            border-radius: 3px;
+            border: 1px solid #222;
+        }        
         .card .front,
         .card .back {
             backface-visibility: hidden;

@@ -40,7 +40,7 @@ $questions = [
     ),
     2 =>  array(
         "answered" => false,
-        "image" => "<img src=\"" . $imagePath . "wind-bottom-ship.png\" alt='alt text goes here'>",
+        "image" => "<img src=\"" . $imagePath . "wind-top-ship.png\" alt='alt text goes here'>",
         "question" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
@@ -128,7 +128,7 @@ $questions = [
     ),
     6 =>  array(
         "answered" => false,
-        "image" => "<img src=\"" . $imagePath . "people-pushing-gear.png\" alt='alt text goes here'>",
+        "image" => "<img src=\"" . $imagePath . "galley-view.png\" alt='alt text goes here'>",
         "question" => "Hands to set the spanker",
         "options" => array(
             "a" => array(
@@ -142,7 +142,7 @@ $questions = [
                 "correct" => false
             ),
             "c" => array(
-                "image" => "<img src=\"" . $imagePath . "bow-of-ship.png\" alt='alt text goes here'>",
+                "image" => "<img src=\"" . $imagePath . "galley-view.png\" alt='alt text goes here'>",
                 "option" => "",
                 "correct" => true
             )

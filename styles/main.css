@@ -8,6 +8,7 @@
 @import "game.css";
 @import "card.css";
 @import "gallery.css";
+@import "site-advisory.css";
 .no-js {
     display: none;
 }

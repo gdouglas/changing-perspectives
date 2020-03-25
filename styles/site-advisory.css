@@ -1,0 +1,24 @@
+.site-advisory {
+    padding: 2rem;
+    box-sizing:border-box;
+    width: 100%;
+    background: var(--paper);
+    border-radius: 0 0 5px 5px;
+    transform-origin: top;
+    transform: scaleY(0);
+    animation: 900ms ease-out 1 normal forwards scale-down 1s;
+    box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+}
+.site-advisory p {
+    font-size: 1.1rem;
+    margin: 0 auto;
+    text-align: left;
+}
+@keyframes scale-down {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}

@@ -64,7 +64,7 @@
                     <div class="front">
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
-                    <div class="back">
+                    <div class="back no-pad">
                         <div class="flex">
                             <img height="150px" src="/images/ships-battle.jpg" alt="Two galleons are sailing in dark water with a stormy sky. One ship is on fire">
                             <a href="/en/technologies/game/">Play Game</a>
@@ -78,8 +78,8 @@
             </noscript>
         </div>
         <div class="close-all relative text-center">
-            <input type="radio" name="cards"/>
-            <div class="btn">Close Card</div>
+            <input type="radio" id="close-cards" name="cards"/>
+            <label class="btn" for="close-cards">Close Card</label>
         </div>
         <section id="gallery" class="gallery">
             <h2>Artifacts of exploration</h2>

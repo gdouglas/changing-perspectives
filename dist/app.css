@@ -1397,12 +1397,17 @@ to {
   flex: 1;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .back {
   width: 100%;
   position: relative;
   padding-bottom: 56.25%;
+}
+
+.back.no-pad {
+  padding-bottom: 0;
 }
 
 .card iframe {
@@ -1426,14 +1431,18 @@ to {
   .cards .label {
     perspective: 1000px;
     transform-style: preserve-3d;
-    display: block;
-    width: 345px;
-    height: 200px;
+    display: inline-flex;
+    min-width: 300px;
+    min-height: 200px;
     cursor: pointer;
     border-radius: 5px;
-    max-width: 100%;
+    max-width: none;
     margin: 0 0.5rem;
-    padding: 1rem;
+    padding: 0;
+    max-height: none;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
   }
 
   .cards .card:first-of-type {
@@ -1468,27 +1477,39 @@ to {
   }
 
 @supports (transform-style: preserve-3d) {
+    .card {
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: auto;
+    }
+
     .card .front,
     .card .back {
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
-      position: absolute;
-      top: 0;
-      left: 0;
+      position: relative;
       display: flex;
       align-items: center;
+      max-width: 25vw;
+      transition: all 600ms;
+      width: 100vw;
     }
 
     .card .front {
       height: 100%;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
     }
 
     .card .back {
       background: #222;
       color: #fff;
       transform: rotateX(180deg);
-      display: none;
-      bottom: 0;
+      visibility: hidden;
     }
 
     .card .back a {
@@ -1517,13 +1538,12 @@ to {
 
     .close-all input,
     .cards input {
-      margin: 0.5rem auto;
       cursor: pointer;
       display: block;
       position: absolute;
       left: 50%;
-      bottom: -1rem;
-      transform: translateX(-50%);
+      bottom: 50%;
+      opacity: 0;
     }
 
     .close-all {
@@ -1532,7 +1552,7 @@ to {
     }
 
     .close-all input {
-      bottom: -2rem;
+      bottom: -0.5rem;
     }
 
     .close-all .btn {
@@ -1542,18 +1562,18 @@ to {
       overflow: hidden;
     }
 
-    .close-all input:checked + div {
-      color: #666;
-      background: #ccc;
-      cursor: not-allowed;
-      height: 0;
-      padding: 0 1rem;
-    }
+    /* .close-all input:checked + div{
+            color: #666;
+            background: #ccc;
+            cursor: not-allowed;
+            height: 0;
+            padding: 0 1rem;
+        } */
 
-    .close-all input:checked {
-      cursor: not-allowed;
-      display: none;
-    }
+    /* .close-all input:checked {
+            cursor: not-allowed;
+            display: none;
+        } */
 
     .label:focus-within + .card,
     :checked + .card {
@@ -1569,7 +1589,9 @@ to {
     }
 
     :checked + .card .back {
-      display: block;
+      display: flex;
+      visibility: visible;
+      max-width: 60vw;
     }
 }
 }
@@ -1623,6 +1645,8 @@ to {
   text-align: left;
   transform: translateX(15%);
   width: 85%;
+  box-shadow: 0 5px 5px -5px #333;
+  padding: 0 1rem;
 }
 
 .gallery ul {
@@ -1661,6 +1685,7 @@ to {
   color: #eee;
   opacity: 0;
   visibility: hidden;
+  transition: all 600ms ease-in-out;
 }
 
 .gallery .description * {
@@ -1695,9 +1720,47 @@ to {
 
 .gallery figcaption {
   float: left;
-  margin-right: 1rem;
+  margin: 0 1rem;
   max-width: 780px;
-  /* transition: all 600ms ease-in-out; */
+}
+
+.site-advisory {
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--paper);
+  border-radius: 0 0 5px 5px;
+  transform-origin: top;
+  transform: scaleY(0);
+  -webkit-animation: 900ms ease-out 1 normal forwards scale-down 1s;
+  animation: 900ms ease-out 1 normal forwards scale-down 1s;
+  box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+}
+
+.site-advisory p {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@-webkit-keyframes scale-down {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale-down {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
 }
 
 .no-js {

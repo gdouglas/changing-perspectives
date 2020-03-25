@@ -6,7 +6,9 @@
 .gallery h2 {
     text-align: left;
     transform: translateX(15%);
-    width:85%
+    width:85%;
+    box-shadow: 0 5px 5px -5px #333;;
+    padding: 0 1rem;
 }
 .gallery ul {
     display: inline-block;
@@ -44,6 +46,7 @@
     color: #eee;
     opacity: 0;
     visibility: hidden;
+    transition: all 600ms ease-in-out;
 }
 .gallery .description * {
     transition: none;
@@ -61,7 +64,7 @@
     flex-grow: 1;
 }
 .gallery .description:target img {
-    max-width: none;;
+    max-width: none;
 }
 .gallery .close {
     position: absolute;
@@ -73,7 +76,6 @@
 
 .gallery figcaption {
     float: left;
-    margin-right: 1rem;
+    margin: 0 1rem;
     max-width: 780px;
-    /* transition: all 600ms ease-in-out; */
 }

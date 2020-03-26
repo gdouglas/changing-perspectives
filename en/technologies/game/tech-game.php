@@ -217,7 +217,7 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
     </div>';
 }
 $questionForm = '
-<form method="POST" action="./game#game">
+<form method="POST" action="./#game">
     <input type="hidden" name="formid" value="' . htmlspecialchars($_SESSION["formid"]) . '" />
     <div class="question">
         <h3>' . $questions[$questionNum]["question"] . '</h3>
@@ -278,7 +278,7 @@ $questionForm = '
             </figure>
         </div>
 </section>
-<form method="POST" action="./game#game">
+<form method="POST" action="./#game">
     <input type="hidden" name="restart" value=1>
     <button class="btn">Restart</button>
 </form>

@@ -256,7 +256,7 @@ function createQuestion($questionArray) {
     $qKey = $questionArray[1];
     //create a question based on the content of the array
     $question =
-    '<form method="POST" action="./game#game" class="question">
+    '<form method="POST" action="./#game" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
             <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
@@ -358,7 +358,7 @@ $game = '
 $reset = '<hr>
 <h3>Start Over?</h3>
 <p>
-    <form method="POST" action="./game#game">
+    <form method="POST" action="./#game">
     <input type="hidden" name="restart" value="restart">
     <button class="btn">Restart</button>
     </form>

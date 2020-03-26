@@ -5,6 +5,9 @@
 .large {
     font-size: 1.5rem;
 }
+.extra-large {
+    font-size: 3rem;
+}
 .no-list {
     list-style-type: none;
 }

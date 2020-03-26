@@ -78,6 +78,36 @@ h3 {
   }
 }
 
+.welcome-header {
+  font-size: 3rem;
+  background-image: url("../images/banner.svg");
+  background-size: contain;
+  /* height: 18rem; */
+  width: 900px;
+  background-repeat: no-repeat;
+  height: 80px;
+  background-position: center;
+  padding-top: 70px;
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .welcome-header {
+    height: 65px;
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 460px) {
+  .welcome-header {
+    background: none;
+    margin: 2.5rem 0 0 0;
+    padding: 0;
+    text-align: left;
+    height: auto;
+  }
+}
+
 @media (max-width: 320px) {
   :root {
     font-size: 12px;
@@ -91,6 +121,10 @@ h3 {
 
 .large {
   font-size: 1.5rem;
+}
+
+.extra-large {
+  font-size: 3rem;
 }
 
 .no-list {
@@ -1743,41 +1777,63 @@ to {
 }
 
 .site-advisory {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 120%);
   padding: 2rem;
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   background: var(--paper);
   border-radius: 0 0 5px 5px;
-  transform-origin: top;
-  transform: scaleY(0);
-  -webkit-animation: 900ms ease-out 1 normal forwards scale-down 1s;
-  animation: 900ms ease-out 1 normal forwards scale-down 1s;
+  transform-origin: bottom;
+  -webkit-animation: 600ms 1 normal forwards scale-up 1s;
+  animation: 600ms 1 normal forwards scale-up 1s;
+  -webkit-animation-timing-function: cubic-bezier(0,.82,.83,1.31);
+  animation-timing-function: cubic-bezier(0,.82,.83,1.31);
   box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+  z-index: 0;
 }
 
+/* 
+.site-advisory {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%), scaleY(0);
+    padding: 2rem;
+    box-sizing:border-box;
+    width: 100%;
+    background: var(--paper);
+    border-radius: 0 0 5px 5px;
+    transform-origin: top;
+    animation: 600ms ease-out 1 normal forwards scale-down 1s;
+    box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+}
 .site-advisory p {
-  font-size: 1.1rem;
-  margin: 0 auto;
-  text-align: left;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    text-align: left;
 }
+*/
 
-@-webkit-keyframes scale-down {
+@-webkit-keyframes scale-up {
   from {
-    transform: scaleY(0);
+    transform: translate(-50%, 110%);
   }
 
   to {
-    transform: scaleY(1);
+    transform: translate(-50%, 1rem);
   }
 }
 
-@keyframes scale-down {
+@keyframes scale-up {
   from {
-    transform: scaleY(0);
+    transform: translate(-50%, 110%);
   }
 
   to {
-    transform: scaleY(1);
+    transform: translate(-50%, 1rem);
   }
 }
 
@@ -1808,9 +1864,13 @@ main {
 }
 
 #main {
+  position: relative;
   max-width: 1600px;
   flex-grow: 1;
   outline: 0;
+  padding-bottom: 240px;
+  background: transparent;
+  overflow: hidden;
 }
 
 p {

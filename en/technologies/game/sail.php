@@ -358,7 +358,7 @@ $game = '
 $reset = '<hr>
 <h3>Start Over?</h3>
 <p>
-    <form method="POST" action="./#game">
+    <form method="POST" action=".#game">
     <input type="hidden" name="restart" value="restart">
     <button class="btn">Restart</button>
     </form>

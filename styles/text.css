@@ -55,6 +55,33 @@ h3 {
         line-height: 1.4;
     }
 }
+.welcome-header {
+    font-size: 3rem;
+    background-image: url(../images/banner.svg);
+    background-size: contain;
+    /* height: 18rem; */
+    width: 900px;
+    background-repeat: no-repeat;
+    height: 80px;
+    background-position: center;
+    padding-top: 70px;
+    max-width: 100%;
+}
+@media (max-width: 900px) {
+    .welcome-header {
+        height: 65px;
+        padding-top: 65px;
+    }
+}
+@media (max-width: 460px) {
+    .welcome-header {
+        background: none;
+        margin: 2.5rem 0 0 0;
+        padding: 0;
+        text-align: left;
+        height: auto;
+    }
+}
 @media (max-width: 320px) {
     :root {
         font-size: 12px;

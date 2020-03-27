@@ -4,7 +4,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Context</title>
+    <title>Changing Perspectives | European Sailing Technology</title>
 </head>
 
 <body>

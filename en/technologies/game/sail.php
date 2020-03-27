@@ -7,21 +7,21 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
-
-$refresh = checkPost();
+$answered = checkPost();
 $game_end_message = "";
 // $complete = 0;
 $message = "";
 // check if page is refreshed, reset post if so
 if ($complete === 0) {
     // first answered question
+    $_SESSION["formid"] = md5(rand(1,10000000));
     updateComplete("reset");
 }
 
 function updateComplete($increment){
 
-    global $complete, $speed, $game_started, $message, $supplies, $refresh;
-    if ($refresh){
+    global $complete, $speed, $game_started, $message, $supplies, $answered;
+    if (!$answered){
         return;
     }
     switch ($increment) {
@@ -226,12 +226,10 @@ $challenges = [
     ),
 ];
 function answerQuestion(){
-    debug($_POST);
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
-    $refresh = checkPost();
-    debug($refresh);
-    if (empty($response) || $refresh === true){
+    global $answered;
+    if (empty($response) || $answered === false){
         return;
     }
     global $challenges, $message;
@@ -268,7 +266,7 @@ function createQuestion($questionArray) {
     '<form method="POST" action="./#game" class="question">
         <h3>Choose the right answer for the image</h3>
         <div>
-            <input type="hidden" name="formid" value="'. htmlspecialchars($_SESSION["formid"]) .'" />
+            <input type="hidden" name="formid" value="' . htmlspecialchars($_SESSION["formid"]) . '" />
             '.$q["image"].'
         </div>
         <div class="tiles">';

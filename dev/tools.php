@@ -17,9 +17,9 @@ function checkPost() {
         $_SESSION["formid"] = '';
         return true;
     } else {
-        // echo "new form";
+        // echo "page was reloaded, new form";
         $_POST = array();
-        $_SESSION["formid"] = md5(rand(0,10000000));
+        $_SESSION["formid"] = md5(rand(1,10000000));
         return false;
     }
 }

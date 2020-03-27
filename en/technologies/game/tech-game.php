@@ -13,7 +13,7 @@ if ($_SESSION["quiz_complete"] == false) {
         </div>';
     print '';
 }
-$targetCorrect = 6;
+$targetCorrect = 1;
 $questionNum = 1;
 $questions = [
     1 =>  array(
@@ -152,11 +152,7 @@ $questions = [
 //take the question number and answer, check for correct
 function checkAnswer($q, $a)
 {
-    // debug($q, "q");
-    // debug($a, "a");
     global $questions;
-    // debug($a, "a");
-    // debug($questions[$q]["options"], "question");
     if ($questions[$q]["options"][$a]["correct"]) {
         return true;
     } else {

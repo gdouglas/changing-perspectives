@@ -121,6 +121,11 @@ a.skip-main:active {
     font-size: 1.2em;
     z-index: 999;
 }
+#main:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 .icon {
     width: 20px;
     padding: 0 5px;

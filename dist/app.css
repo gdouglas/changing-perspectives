@@ -1000,6 +1000,7 @@ nav .current {
   background: #fff;
   position: relative;
   z-index: 1;
+  margin: 1rem;
 }
 
 #game h1 {
@@ -1967,6 +1968,12 @@ a.skip-main:active {
   text-align: center;
   font-size: 1.2em;
   z-index: 999;
+}
+
+#main:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
 }
 
 .icon {

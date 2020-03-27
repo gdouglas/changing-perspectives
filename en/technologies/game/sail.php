@@ -7,6 +7,8 @@ $supply_rate = &$_SESSION["sailing_status"]["supply_rate"];
 $day = &$_SESSION["sailing_status"]["day"];
 $day_rate = &$_SESSION["sailing_status"]["day_rate"];
 $supplies = &$_SESSION["sailing_status"]["supplies"];
+
+$refresh = checkPost();
 $game_end_message = "";
 // $complete = 0;
 $message = "";
@@ -15,12 +17,13 @@ if ($complete === 0) {
     // first answered question
     updateComplete("reset");
 }
+
 function updateComplete($increment){
-    global $complete, $speed, $game_started, $message, $supplies;
-    $time = time();
 
-    $time = $time - $game_started;
-
+    global $complete, $speed, $game_started, $message, $supplies, $refresh;
+    if ($refresh){
+        return;
+    }
     switch ($increment) {
         case 'reset':
             $complete = 1;
@@ -283,7 +286,6 @@ function createQuestion($questionArray) {
         };
     $question .= '</div><button class="btn">Submit</button></form>';
     return $question;
-
 }
 function askQuestion() {
     $q = getQuestion();

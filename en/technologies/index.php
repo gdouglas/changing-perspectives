@@ -25,7 +25,7 @@
                         <h3>How did Captain Vancouver navigate the oceans?</h3>
                     </div>
                     <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
             </label>
@@ -65,7 +65,7 @@
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
                     <div class="back no-pad">
-                        <div class="flex">
+                        <div class="flex flex-center">
                             <img height="150px" src="/images/ships-battle.jpg" alt="Two galleons are sailing in dark water with a stormy sky. One ship is on fire">
                             <a href="/en/technologies/game/">Play Game</a>
                         </div>
@@ -135,5 +135,4 @@
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
 </body>
-
 </html>

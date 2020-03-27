@@ -55,11 +55,16 @@ h3 {
         line-height: 1.4;
     }
 }
+.home-intro {
+    max-width: 900px;
+    margin: 2rem auto 1rem auto;
+    text-align: center;
+}
 .welcome-header {
     font-size: 3rem;
     background-image: url(../images/banner.svg);
     background-size: contain;
-    /* height: 18rem; */
+    margin: 2rem auto 0 auto;
     width: 900px;
     background-repeat: no-repeat;
     height: 80px;

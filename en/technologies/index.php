@@ -22,7 +22,7 @@
                 <input type="radio" name="cards" value="vimeo1"/>
                 <div class="card">
                     <div class="front">
-                        <h3>How did European navigate the oceans?</h3>
+                        <h3>How did Captain Vancouver navigate the oceans?</h3>
                     </div>
                     <div class="back">
                         <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -30,7 +30,7 @@
                 </div>
             </label>
             <noscript>
-                <h3>How did European navigate the oceans?</h3>
+                <h3>How did Captain Vancouver navigate the oceans?</h3>
                 <video preload="none" src="/videos/placeholder-example.mp4">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">

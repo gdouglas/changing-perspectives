@@ -78,11 +78,17 @@ h3 {
   }
 }
 
+.home-intro {
+  max-width: 900px;
+  margin: 2rem auto 1rem auto;
+  text-align: center;
+}
+
 .welcome-header {
   font-size: 3rem;
   background-image: url("../images/banner.svg");
   background-size: contain;
-  /* height: 18rem; */
+  margin: 2rem auto 0 auto;
   width: 900px;
   background-repeat: no-repeat;
   height: 80px;
@@ -213,6 +219,10 @@ h3 {
 .text-center p {
   margin-left: auto;
   margin-right: auto;
+}
+
+.margin {
+  margin: 1rem;
 }
 
 .btn {
@@ -980,22 +990,13 @@ nav .current {
   max-width: 980px;
   margin: 0 auto;
   position: relative;
-}
-
-#game:after {
-  content: "";
   background-image: url("../images/ship-wheel.svg");
   background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0.05;
+  background-position: center;
+  background-size: cover;
 }
 
-#game form {
+#game .btn {
   background: #fff;
   position: relative;
   z-index: 1;
@@ -1038,22 +1039,34 @@ nav .current {
   flex-wrap: wrap;
 }
 
+.answer > div {
+  width: 50%;
+  min-width: 250px;
+}
+
 .answer .success {
   width: 100%;
   font-size: 1.3rem;
   line-height: 2;
+  border-bottom: 1px solid gray;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-.answer:after {
-  width: 50px;
-  height: 50px;
+.success:after {
+  width: 2rem;
+  position: absolute;
 }
 
-.answer.right:after {
+.success:after {
+  margin-left: 0.5rem;
+}
+
+.right .success:after {
   content: url("../images/icons/correct.svg");
 }
 
-.answer.wrong:after {
+.wrong .success:after {
   content: url("../images/icons/incorrect.svg");
 }
 
@@ -1541,8 +1554,9 @@ to {
       height: 100%;
       position: absolute;
       width: 100%;
-      left: 0;
+      left: 50%;
       top: 0;
+      transform: translate(-50%, 0);
     }
 
     .card .back {
@@ -1795,6 +1809,11 @@ to {
   z-index: 0;
 }
 
+.site-advisory > p {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
 /* 
 .site-advisory {
     position: absolute;
@@ -1868,7 +1887,7 @@ main {
   max-width: 1600px;
   flex-grow: 1;
   outline: 0;
-  padding-bottom: 240px;
+  padding-bottom: 150px;
   background: transparent;
   overflow: hidden;
 }

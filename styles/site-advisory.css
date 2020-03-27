@@ -14,7 +14,10 @@
     box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
     z-index: 0;
 }
-
+.site-advisory > p {
+    margin: 0 auto;
+    max-width: 900px
+}
 
 /* 
 .site-advisory {

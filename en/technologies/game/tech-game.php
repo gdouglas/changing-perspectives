@@ -18,7 +18,7 @@ $questionNum = 1;
 $questions = [
     1 =>  array(
         "answered" => false,
-        "image" => "./images/bow-of-ship.png",
+        "image" => "<img src=\"" . $imagePath . "bow-of-ship.png\" alt='alt text goes here'>",
         "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
@@ -171,7 +171,12 @@ if ((bool) $_POST["restart"] == false && $answered) {
     $a = substr($a, 0, 1);
     $answeredQ = (int) filter_var($q, FILTER_SANITIZE_NUMBER_INT);
     // todo this is showing the wrong answer
-    $message = "You answered \"" . $questions[$answeredQ]["question"] . "\" with " .$questions[$answeredQ]["options"][$a]["image"]."<br> The correct answer is ". $questions[$answeredQ]['image'];
+    $message = "
+    <div class='flex'>
+        <p class='text-left'>You answered <strong class='block margin'>\"" . $questions[$answeredQ]["question"] . "\"</strong> with: </p>" .$questions[$answeredQ]["options"][$a]["image"]."</div>
+    <div class='flex'>
+        <p class='text-left'>The correct answer is: </p>". $questions[$answeredQ]['image']. 
+    "</div>";
     if (checkAnswer($answeredQ, $a)) {
         $message = "<div class='answer right'><div class='success'>You correctly answered! </div>" . $message . "</div>";
         $_SESSION["correctCount"]++;

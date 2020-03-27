@@ -75,7 +75,12 @@ function incrementValues() {
     // TODO create victory event
     if ($complete >= 100) {
         // overwrite message with victory condition
-        $game_end_message = "<p>Congratulations! You made it to Yuquot!</p>";
+        $game_end_message = '
+            <p>Congratulations! You made it to Yuquot!</p>
+            <p>Now you can watch immersive video of people fullfilling your orders!</p>
+            <iframe src="https://player.vimeo.com/video/117316626?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/117316626">360-video-example</a> from <a href="https://vimeo.com/crowdzilla">Crowdzilla Interactive</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            ';
         $complete = 100;
     } elseif ($complete <= 1) {
         $complete = 1;
@@ -222,7 +227,8 @@ function answerQuestion(){
     // todo check if page has just been reloaded or a new question
     $response = $_POST;
     $refresh = checkPost();
-    if (empty($response) || $refresh === false){
+    debug($refresh);
+    if (empty($response) || $refresh === true){
         return;
     }
     global $challenges, $message;

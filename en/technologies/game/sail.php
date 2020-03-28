@@ -269,15 +269,16 @@ function createQuestion($questionArray) {
             <input type="hidden" name="formid" value="' . htmlspecialchars($_SESSION["formid"]) . '" />
             '.$q["image"].'
         </div>
-        <div class="tiles">';
+        <div class="options">';
         for ($i = 1; $i < count($q); $i++){
             static $letter = "a";
             $option = $q["options"][$letter]["option"];
             $question .=
-            '<div class="tile">
-            <input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
+            '<input type="radio" name="'.$qKey.'" id="'.$qKey.$i.'" value="'.$letter.'" required>
+            <div class="flex option">
             <label for="'.$qKey.$i.'">
-            <p class="flex-center text-left"><span class="option-letter">'.$letter.')</span> '.$option.'</p>
+            <span class="option-letter">'.$letter.')&nbsp;</span>
+            <p class="flex-center text-left">'.$option.'</p>
             </label>
             </div>';
             $letter ++;

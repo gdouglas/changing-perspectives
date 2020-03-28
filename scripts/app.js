@@ -34,6 +34,9 @@ function addCardListeners(){
 
 function getVideos(){
     var players = document.querySelectorAll('.vimeo');
+    if (players.length <1) {
+        return;
+    }
     let index = 0;
     bufferVideos(players, index);
 

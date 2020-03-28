@@ -993,7 +993,7 @@ nav .current {
   background-image: url("../images/ship-wheel.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 #game .btn {
@@ -1298,11 +1298,11 @@ nav .current {
   flex-shrink: 0;
 }
 
-.tile > input[type="radio"] {
+.options > input[type="radio"] {
   cursor: pointer;
 }
 
-.tile > input[type="radio"]:checked + label {
+.options > input[type="radio"]:checked + .option {
   border-color: var(--secondary);
   border-radius: 5px;
   background: var(--gold);
@@ -1339,7 +1339,18 @@ nav .current {
 .option-letter {
   font-size: 1.4rem;
   padding: 0 8px;
-  display: none;
+  text-transform: uppercase;
+}
+
+.options input {
+  height: 0;
+}
+
+.option {
+  background: var(--paper);
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 0 0 .5rem 0;
 }
 
 @-webkit-keyframes rock-boat {

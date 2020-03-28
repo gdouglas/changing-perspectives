@@ -1692,12 +1692,16 @@ to {
   z-index: 1;
 }
 
+.gallery > p {
+  margin: 1rem auto;
+}
+
 .gallery h2 {
   text-align: left;
   transform: translateX(15%);
   width: 85%;
   box-shadow: 0 5px 5px -5px #333;
-  padding: 0 1rem;
+  padding: 0 0 0 4rem;
 }
 
 .gallery ul {
@@ -1749,6 +1753,23 @@ to {
   padding-top: 1rem;
 }
 
+.gallery .open {
+  position: relative;
+}
+
+.gallery .open:after {
+  content: url("../images/icons/expand.svg");
+  position: absolute;
+  width: 20px;
+  display: block;
+  right: 5px;
+  top: 5px;
+  background: white;
+  border-radius: 50%;
+  height: 20px;
+  border: 1px solid black;
+}
+
 .gallery .description:target {
   max-height: none;
   opacity: 1;
@@ -1766,7 +1787,7 @@ to {
   padding: 1rem;
   background: inherit;
   border-radius: 5px;
-  box-shadow: 2px 2px 1px 0px #999;
+  /* box-shadow: 2px 2px 1px 0px #999; */
 }
 
 .gallery .description:target img {
@@ -1787,49 +1808,10 @@ to {
   max-width: 780px;
 }
 
-/* .site-advisory {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 120%);
-    padding: 2rem;
-    box-sizing:border-box;
-    width: 90%;
-    background: var(--paper);
-    border-radius: 0 0 5px 5px;
-    transform-origin: bottom;
-    animation: 600ms 1 normal forwards scale-up 1s;
-    animation-timing-function: cubic-bezier(0,.82,.83,1.31);
-    box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
-    z-index: 0;
-} */
-
 .site-advisory > p {
   margin: 0 auto;
   max-width: 900px;
 }
-
-/* 
-.site-advisory {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%), scaleY(0);
-    padding: 2rem;
-    box-sizing:border-box;
-    width: 100%;
-    background: var(--paper);
-    border-radius: 0 0 5px 5px;
-    transform-origin: top;
-    animation: 600ms ease-out 1 normal forwards scale-down 1s;
-    box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
-}
-.site-advisory p {
-    font-size: 1.1rem;
-    margin: 0 auto;
-    text-align: left;
-}
-*/
 
 .site-advisory {
   position: relative;

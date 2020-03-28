@@ -81,8 +81,7 @@ function incrementValues() {
         $game_end_message = '
             <p>Congratulations! You made it to Yuquot!</p>
             <p>Now you can watch immersive video of people fullfilling your orders!</p>
-            <iframe src="https://player.vimeo.com/video/117316626?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/117316626">360-video-example</a> from <a href="https://vimeo.com/crowdzilla">Crowdzilla Interactive</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TkSgdGDpg7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             ';
         $complete = 100;
     } elseif ($complete <= 1) {
@@ -135,7 +134,7 @@ $challenges = [
             ),
             "b" => array(
                 "image" => "<img src=\"".$imagePath."wind-top-ship.png\" alt='alt text goes here'>",
-                "option" => "Ready about! Starboard Tack, spanker to weather, ease heads'l sheets",
+                "option" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
                 "correct" => false
             ),
             "c" => array(

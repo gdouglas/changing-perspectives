@@ -290,7 +290,7 @@ if ($_SESSION["correctCount"] >= $targetCorrect) {
         <div class="quiz-win">
         <strong>Congratulations! You have learned the language of sailing.</strong>
         <p>After you raise the anchor and set you sails, make sure your vessel stays on the right tack to get you to Yuquot before you run out of supplies.</p>
-        <a class="btn" href="./game#game">Set Sail!</a>
+        <a class="btn" href="./#game">Set Sail!</a>
     <p>
         <form method="POST" action="./game#game">
         <input type="hidden" name="restart" value="restart">

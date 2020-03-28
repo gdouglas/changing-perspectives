@@ -1787,24 +1787,22 @@ to {
   max-width: 780px;
 }
 
-.site-advisory {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 120%);
-  padding: 2rem;
-  box-sizing: border-box;
-  width: 90%;
-  background: var(--paper);
-  border-radius: 0 0 5px 5px;
-  transform-origin: bottom;
-  -webkit-animation: 600ms 1 normal forwards scale-up 1s;
-  animation: 600ms 1 normal forwards scale-up 1s;
-  -webkit-animation-timing-function: cubic-bezier(0,.82,.83,1.31);
-  animation-timing-function: cubic-bezier(0,.82,.83,1.31);
-  box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
-  z-index: 0;
-}
+/* .site-advisory {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    padding: 2rem;
+    box-sizing:border-box;
+    width: 90%;
+    background: var(--paper);
+    border-radius: 0 0 5px 5px;
+    transform-origin: bottom;
+    animation: 600ms 1 normal forwards scale-up 1s;
+    animation-timing-function: cubic-bezier(0,.82,.83,1.31);
+    box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+    z-index: 0;
+} */
 
 .site-advisory > p {
   margin: 0 auto;
@@ -1833,23 +1831,41 @@ to {
 }
 */
 
-@-webkit-keyframes scale-up {
+.site-advisory {
+  position: relative;
+  margin: 0 auto;
+  transform: translate(0, -100%);
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 90%;
+  background: var(--paper);
+  border-radius: 0 0 5px 5px;
+  transform-origin: bottom;
+  -webkit-animation: 600ms 1 normal forwards slide-down 1s;
+  animation: 600ms 1 normal forwards slide-down 1s;
+  -webkit-animation-timing-function: cubic-bezier(0,.82,.83,1.31);
+  animation-timing-function: cubic-bezier(0,.82,.83,1.31);
+  box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
+  z-index: 0;
+}
+
+@-webkit-keyframes slide-down {
   from {
-    transform: translate(-50%, 110%);
+    transform: translate(0, -100%);
   }
 
   to {
-    transform: translate(-50%, 1rem);
+    transform: translate(0, -10%);
   }
 }
 
-@keyframes scale-up {
+@keyframes slide-down {
   from {
-    transform: translate(-50%, 110%);
+    transform: translate(0, -100%);
   }
 
   to {
-    transform: translate(-50%, 1rem);
+    transform: translate(0, -10%);
   }
 }
 

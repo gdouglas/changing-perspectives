@@ -12,10 +12,10 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" tabindex="-1">
-        <h1 class="welcome-header">Welcome</h1>
         <div class="site-advisory">
             <p>This online virtual exhibit is hosted by the <a href="https://vanmaritime.com/" target="_blank" rel="noopener">Vancouver Maritime Museum</a> which is fortunate to be located on the traditional territories of the <a href="https://www.musqueam.bc.ca/" target="_blank" rel="noopener">xʷməθkwəy̓əm (Musqueam)</a>, <a href="https://www.squamish.net/" target="_blank" rel="noopener">Skwxwú7mesh (Squamish)</a>, and <a href="https://twnation.ca/" target="_blank" rel="noopener">Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh)</a> Nations in Vancouver British Columbia, Canada.</p>                
-        </div>
+            </div>
+        <h1 class="welcome-header">Welcome</h1>
         <div class="home-intro">
             <p class="text-left">
                 This exhibit tells the story of the early arrival of European people to the Pacific

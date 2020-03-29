@@ -1,32 +1,52 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 
 <head>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | European Sailing Technology</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
+    <title>Panolens.js panorama video</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #000;
+        }
+
+        a:link,
+        a:visited {
+            color: #bdc3c7;
+        }
+
+        .credit {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            padding: 20px 0;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-    <a class="skip-main" href="#main">Skip to main content</a>
-    <header class="">
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
-    </header>
-    <main id="main" tabindex="-1">
-        <h1>Example 360</h1>
-        <div id='vrview'></div>
-    </main>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
+
+
+    <script src="/libs/three.js"></script>
+    <script src="/libs/panolens.js"></script>
+
     <script>
-        window.addEventListener('load', onVrViewLoad);
+        var panorama, viewer;
 
-function onVrViewLoad() {
-  // Selector '#vrview' finds element with id 'vrview'.
-  var vrView = new VRView.Player('#vrview', {
-    video: '/videos/360-example.mp4',
-    is_stereo: true
-  });
-}
+        panorama = new PANOLENS.VideoPanorama('/videos/AllSkippersInvited.mp4', {
+            autoplay: true
+        });
 
+        viewer = new PANOLENS.Viewer();
+        viewer.add(panorama);
     </script>
+
 </body>
+
 </html>

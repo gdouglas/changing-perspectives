@@ -31,7 +31,6 @@ function addCardListeners(){
         });
     });
 }
-
 function getVideos(){
     var players = document.querySelectorAll('.vimeo');
     if (players.length <1) {

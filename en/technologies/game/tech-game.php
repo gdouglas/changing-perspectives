@@ -13,12 +13,12 @@ if ($_SESSION["quiz_complete"] == false) {
         </div>';
     print '';
 }
-$targetCorrect = 1;
+$targetCorrect = 6;
 $questionNum = 1;
 $questions = [
     1 =>  array(
         "answered" => false,
-        "image" => "<img src=\"" . $imagePath . "bow-of-ship.png\" alt='alt text goes here'>",
+        "image" => "<img src=\"" . $imagePath . "wind-bottom-ship.png\" alt='alt text goes here'>",
         "question" => "Ready about! Port Tack, spanker to weather, ease heads'l sheets",
         "options" => array(
             "a" => array(
@@ -169,7 +169,7 @@ if ((bool) $_POST["restart"] == false && $answered) {
     // todo this is showing the wrong answer
     $message = "
     <div class='flex'>
-        <p class='text-left'>You answered <strong class='block margin'>\"" . $questions[$answeredQ]["question"] . "\"</strong> with: </p>" .$questions[$answeredQ]["options"][$a]["image"]."</div>
+        <p class='text-left'>You answered <strong class='block margin'>\"" . $questions[$answeredQ]["question"] . "\"</strong></p>" .$questions[$answeredQ]["options"][$a]["image"]."</div>
     <div class='flex'>
         <p class='text-left'>The correct answer is: </p>". $questions[$answeredQ]['image']. 
     "</div>";
@@ -218,7 +218,7 @@ foreach ($questions[$questionNum]["options"] as $key => $option) {
     </div>';
 }
 $questionForm = '
-<form method="POST" action="./#game">
+<form method="POST" action="./?#game">
     <input type="hidden" name="formid" value="' . htmlspecialchars($_SESSION["formid"]) . '" />
     <div class="question">
         <h3>' . $questions[$questionNum]["question"] . '</h3>
@@ -289,7 +289,7 @@ if ($_SESSION["correctCount"] >= $targetCorrect) {
     print '
         <div class="quiz-win">
         <strong>Congratulations! You have learned the language of sailing.</strong>
-        <p>After you raise the anchor and set you sails, make sure your vessel stays on the right tack to get you to Yuquot before you run out of supplies.</p>
+        <p class="pad-bottom">After you raise the anchor and set you sails, make sure your vessel stays on the right tack to get you to Yuquot before you run out of supplies.</p>
         <a class="btn" href="./#game">Set Sail!</a>
     <p>
         <form method="POST" action="./game#game">

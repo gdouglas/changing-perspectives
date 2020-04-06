@@ -79,10 +79,9 @@ function incrementValues() {
     if ($complete >= 100) {
         // overwrite message with victory condition
         $game_end_message = '
-            <p>Congratulations! You made it to Yuquot!</p>
+            <p>Congratulations! You made it to Yuquot! It took you '.$day.' days!</p>
             <p>Now you can watch immersive video of people fullfilling your orders!</p>
-            <iframe src="https://player.vimeo.com/video/117316626?title=0&byline=0&portrait=0" width="640" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/117316626">360-video-example</a> from <a href="https://vimeo.com/crowdzilla">Crowdzilla Interactive</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            <iframe src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
             ';
         $complete = 100;
     } elseif ($complete <= 1) {

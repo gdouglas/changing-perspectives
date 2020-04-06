@@ -25,7 +25,7 @@
                         <h3>What did Vancouver’s expedition actually achieve?</h3>
                     </div>
                     <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
             </label>
@@ -45,7 +45,7 @@
                         <h3>What was it like to be a member of Vancouver’s crew?</h3>
                     </div>
                     <div class="back">
-                        <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
             </label>
@@ -64,17 +64,18 @@
                     <div class="front">
                         <h3>What were the initial meetings like between the First Nations people and these foreigners?</h3>
                     </div>
-                    <div class="back no-pad">
-                        <div class="flex">
-                            <img height="150px" src="/images/ships-battle.jpg" alt="Two galleons are sailing in dark water with a stormy sky. One ship is on fire">
-                            <a href="/en/technologies/game/">Play Game</a>
-                        </div>
+                    <div class="back">
+                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                     </div>
                 </div>
             </label>
             <noscript>
                 <h3>What were the initial meetings like between the First Nations people and these foreigners?</h3>
-                <a href="/en/technologies/game/">Play Game</a>
+                <video preload="none" src="/videos/placeholder-example.mp4">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
+                </video>
+                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
             </noscript>
         </div>
         <div class="close-all relative text-center">

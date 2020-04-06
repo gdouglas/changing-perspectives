@@ -64,7 +64,7 @@
                     <div class="front">
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
-                    <div class="back no-pad">
+                    <div class="back game-card">
                         <div class="flex flex-center">
                             <img height="150px" src="/images/ships-battle.jpg" alt="Two galleons are sailing in dark water with a stormy sky. One ship is on fire">
                             <a href="/en/technologies/game/">Play Game</a>

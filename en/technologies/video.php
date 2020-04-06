@@ -12,41 +12,42 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background-color: #000;
-        }
-
-        a:link,
-        a:visited {
-            color: #bdc3c7;
-        }
-
-        .credit {
-            position: absolute;
-            text-align: center;
-            width: 100%;
-            padding: 20px 0;
-            color: #fff;
+            background-color: #222;
         }
     </style>
+    <script src="https://player.vimeo.com/api/player.js"></script>
 </head>
 
 <body>
 
 
-    <script src="/libs/three.js"></script>
-    <script src="/libs/panolens.js"></script>
+    <p>Congratulations! You made it to Yuquot!</p>
+    <p>Now you can watch immersive video of people fullfilling your orders!</p>
+    <iframe class="vimeo" src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
+
+
 
     <script>
-        var panorama, viewer;
+        getVideos();
 
-        panorama = new PANOLENS.VideoPanorama('/videos/AllSkippersInvited.mp4', {
-            autoplay: true
-        });
+        function getVideos() {
+            var players = document.querySelectorAll('.vimeo');
+            if (players.length < 1) {
+                return;
+            }
+            let index = 0;
+            let vim = new Vimeo.Player(players[0]);
+            vim.play().catch(error);
+            // vim.on('error', error);
+            // console.log(players);
 
-        viewer = new PANOLENS.Viewer();
-        viewer.add(panorama);
+        }
+
+        function error (data) {
+            // Function logic goes here
+            console.log('error?',data);
+        };
     </script>
-
 </body>
 
 </html>

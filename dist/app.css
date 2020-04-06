@@ -9,6 +9,7 @@
   --paper: #E8DEC8;
   --title-font: 'Nothing You Could Do', "Beth Ellen", cursive;
   --serif-font: "Libre Baskerville", serif;
+  --sans-serif-font: 'Open Sans', sans-serif;
   --margin-top: 8px;
   --margin-bottom: 20px;
 }
@@ -46,7 +47,7 @@ h2 {
 
 .subtitle {
   font-size: 1.5rem;
-  font-family: var(--serif-font), serif;
+  font-family: var(--sans-serif-font), serif;
 }
 
 h3 {
@@ -139,6 +140,10 @@ h3 {
 
 .no-pad {
   padding: 0;
+}
+
+.pad-bottom {
+  padding-bottom: 1rem;
 }
 
 .inline {
@@ -1014,7 +1019,7 @@ nav .current {
 }
 
 .question h3 {
-  font-family: var(--serif-font);
+  font-family: var(--sans-serif-font);
 }
 
 #play {
@@ -1302,6 +1307,12 @@ nav .current {
   cursor: pointer;
 }
 
+#sail-game input[type="radio"]:focused + .option {
+  outline: 2px solid #9ecaed;
+  outline-offset: 0;
+  box-shadow: 1px 6px 14px -5px #185281;
+}
+
 .options > input[type="radio"]:checked + .option {
   border-color: var(--secondary);
   border-radius: 5px;
@@ -1315,7 +1326,7 @@ nav .current {
 
 .question label {
   color: #000;
-  font-family: var(--serif-font);
+  font-family: var(--sans-serif-font);
   border-radius: 5px;
   /* background: var(--secondary); */
   font-size: 1rem;
@@ -1467,7 +1478,7 @@ to {
   padding-bottom: 56.25%;
 }
 
-.back.no-pad {
+.back.game-card {
   padding-bottom: 0;
 }
 
@@ -1654,6 +1665,17 @@ to {
       display: flex;
       visibility: visible;
       max-width: 60vw;
+      min-height: 50%;
+    }
+
+    .back.game-card a {
+      margin: 0 0 0 1rem;
+    }
+
+    :checked + .card .back.game-card:after {
+      content: '';
+      padding-bottom: 35%;
+      display: block;
     }
 }
 }
@@ -1870,7 +1892,7 @@ body {
   margin: 0 auto;
   color: var(--main-text-color);
   background: var(--main-bg-color);
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--sans-serif-font);
   font-size: 16px;
   min-height: 100vh;
   display: flex;

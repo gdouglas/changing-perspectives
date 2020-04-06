@@ -19,7 +19,7 @@
     position: relative;
     padding-bottom: 56.25%;
 }
-.back.no-pad {
+.back.game-card {
     padding-bottom: 0;
 }
 .card iframe {
@@ -179,6 +179,15 @@
             display: flex;
             visibility: visible;
             max-width: 60vw;
+            min-height: 50%;
+        }
+        .back.game-card a {
+            margin: 0 0 0 1rem;
+        }
+        :checked + .card .back.game-card:after {
+            content: '';
+            padding-bottom: 35%;
+            display: block;
         }
     }
 }

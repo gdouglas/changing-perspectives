@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     color: var(--main-text-color);
     background: var(--main-bg-color);
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--sans-serif-font);
     font-size: 16px;
     min-height: 100vh;
     display: -webkit-box;

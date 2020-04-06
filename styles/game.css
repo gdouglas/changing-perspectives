@@ -23,7 +23,7 @@
     margin: 0 auto;
 }
 .question h3 {
-    font-family: var(--serif-font);
+    font-family: var(--sans-serif-font);
 }
 #play {
     display: none;
@@ -277,6 +277,11 @@
 .options > input[type="radio"] {
     cursor: pointer;
 }
+#sail-game input[type="radio"]:focused + .option {
+    outline: 2px solid #9ecaed;
+    outline-offset: 0;
+    box-shadow: 1px 6px 14px -5px #185281;    
+}
 .options > input[type="radio"]:checked + .option {
     border-color: var(--secondary);
     border-radius: 5px;
@@ -288,7 +293,7 @@
 }
 .question label {
     color: #000;
-    font-family: var(--serif-font);
+    font-family: var(--sans-serif-font);
     border-radius: 5px;
     /* background: var(--secondary); */
     font-size: 1rem;

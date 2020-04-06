@@ -77,7 +77,6 @@ function bufferVideos(players, index) {
             });
         }
     );
-
 }
 function stopVimeo(vim) {
     console.log("stop");

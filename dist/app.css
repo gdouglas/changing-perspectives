@@ -1533,8 +1533,6 @@ to {
     transform-style: preserve-3d;
     transition: all 600ms;
     z-index: 1;
-    border-radius: 3px;
-    border: 1px solid #222;
   }
 
   .back a,
@@ -1544,10 +1542,10 @@ to {
 
   .card h3 {
     margin: 0;
-    font-size: 1.6rem;
     padding: 0.5rem;
-    text-shadow: 1px 1px orange, -1px -1px orange;
+    text-shadow: 0px 0px 4px rosybrown;
     font-size: 2rem;
+    line-height: 1.2;
   }
 
 @supports (transform-style: preserve-3d) {
@@ -1578,7 +1576,7 @@ to {
       left: 50%;
       top: 0;
       transform: translate(-50%, 0);
-      background: url("../images/wood-12.jpg");
+      background: url("../images/wood-light.jpg");
       background-size: cover;
     }
 

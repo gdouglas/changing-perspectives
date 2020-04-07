@@ -1578,6 +1578,7 @@ to {
       transform: translate(-50%, 0);
       background: url("../images/wood-light.jpg");
       background-size: cover;
+      max-width: 100%;
     }
 
     .card .back {

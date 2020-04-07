@@ -12,11 +12,17 @@
     </header>
     <main id="main" tabindex="-1" class="text-left">
         <ul>
-            <li><a href="/en/home/" rel="noopener">Home</a></li>
-            <li><a href="/en/context/" rel="noopener">Context</a></li>
-            <li><a href="/en/expedition/" rel="noopener">Vancouver Expedition</a></li>
-            <li><a href="/en/legacies/" rel="noopener">Vancouver Legacies</a></li>
-            <li><a href="/en/technologies/" rel="noopener">Navigation and Ship Technology</a></li>
+            <li><a href="/en/debut-home/" rel="noopener">Home</a></li>
+            <li><a href="/en/contexte-context/" rel="noopener">The Story Before Vancouver</a></li>
+            <li><a href="/en/expedition/" rel="noopener">Vancouver's Story</a></li>
+            <li><a href="/en/heritage-legacies/" rel="noopener">Stories from Yuquot</a></li>
+            <li><a href="/en/technologies/" rel="noopener">European Navigation and Ship Technology</a></li>
+            <li><a href="/en/sur-about/" rel="noopener">About</a></li>
+            <li><a href="/en/ressources-resources/" rel="noopener">Teacher Resources</a></li>
+            <li><a href="/en/credits/" rel="noopener">Credits</a></li>
+            <li><a href="/en/plan_du_site-sitemap/" rel="noopener">Sitemap</a></li>
+            <li><a href="/en/droit_dauteur-copyright/" rel="noopener">Copyright</a></li>
+            <li><a href="/en/commentaires-feedback/" rel="noopener">Send us feedback</a></li>
         </ul>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>

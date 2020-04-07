@@ -179,7 +179,6 @@
             display: flex;
             visibility: visible;
             max-width: 60vw;
-            min-height: 50%;
         }
         .back.game-card a {
             margin: 0 0 0 1rem;

@@ -1665,7 +1665,6 @@ to {
       display: flex;
       visibility: visible;
       max-width: 60vw;
-      min-height: 50%;
     }
 
     .back.game-card a {
@@ -1847,41 +1846,12 @@ to {
 }
 
 .site-advisory {
-  position: relative;
-  margin: 0 auto;
-  transform: translate(0, -100%);
-  padding: 2rem;
-  box-sizing: border-box;
-  width: 90%;
+  margin: 4rem auto 0 auto;
+  padding: 2rem 2rem 4rem 2rem;
+  /* width: 90%; */
   background: var(--paper);
-  border-radius: 0 0 5px 5px;
-  transform-origin: bottom;
-  -webkit-animation: 600ms 1 normal forwards slide-down 1s;
-  animation: 600ms 1 normal forwards slide-down 1s;
-  -webkit-animation-timing-function: cubic-bezier(0,.82,.83,1.31);
-  animation-timing-function: cubic-bezier(0,.82,.83,1.31);
-  box-shadow: 4px 12px 6px -12px black inset, 0px -4px 12px 1px #000;
-  z-index: 0;
-}
-
-@-webkit-keyframes slide-down {
-  from {
-    transform: translate(0, -100%);
-  }
-
-  to {
-    transform: translate(0, -10%);
-  }
-}
-
-@keyframes slide-down {
-  from {
-    transform: translate(0, -100%);
-  }
-
-  to {
-    transform: translate(0, -10%);
-  }
+  /* border-radius: 5px; */
+  /* box-shadow: 1px 1px 4px 0px #222; */
 }
 
 .no-js {

@@ -19,7 +19,7 @@
         </div>
         <div class="cards">
             <label class="label">
-                <input type="radio" name="cards" value="vimeo1"/>
+                <input type="radio" name="cards" value="vimeo1" />
                 <div class="card">
                     <div class="front">
                         <h3>How did Captain Vancouver navigate the oceans?</h3>
@@ -39,7 +39,7 @@
             </noscript>
 
             <label class="label">
-                <input type="radio" name="cards" value="vimeo2"/>
+                <input type="radio" name="cards" value="vimeo2" />
                 <div class="card">
                     <div class="front">
                         <h3>What were the ships like the Europeans sailed in?</h3>
@@ -59,26 +59,26 @@
             </noscript>
 
             <label class="label">
-                <input type="radio" name="cards" value="game"/>
+                <input type="radio" name="cards" value="game" />
                 <div class="card">
                     <div class="front">
                         <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
                     </div>
                     <div class="back game-card">
                         <div class="flex flex-center">
-                            <img height="150px" src="/images/ships-battle.jpg" alt="Two galleons are sailing in dark water with a stormy sky. One ship is on fire">
-                            <a href="/en/technologies/game/">Play Game</a>
+                            <h3>Want to see what it's like on one of Vancouver’s ships?</h3>
+                            <iframe src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
             </label>
             <noscript>
-                <h3>Can you help Captain Vancouver Sail his ship to Yuquot?</h3>
-                <a href="/en/technologies/game/">Play Game</a>
+                <h3>Want to see what it's like on one of Vancouver’s ships?</h3>
+                <iframe src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
             </noscript>
         </div>
         <div class="close-all relative text-center">
-            <input type="radio" id="close-cards" name="cards"/>
+            <input type="radio" id="close-cards" name="cards" />
             <label class="btn" for="close-cards">Close Card</label>
         </div>
         <section id="gallery" class="gallery">
@@ -136,4 +136,5 @@
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
 </body>
+
 </html>

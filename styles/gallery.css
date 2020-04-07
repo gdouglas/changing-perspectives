@@ -80,7 +80,7 @@
     height: auto;
     visibility: visible;
     max-width: none;
-    overflow: visible;
+    overflow: auto;
 }
 .gallery .description:target figure {
     display: inline-flex;
@@ -107,4 +107,13 @@
     float: left;
     margin: 0 1rem;
     max-width: 780px;
+}
+
+@media (max-width:580px) {
+    #gallery figure {
+        margin-top: 1rem;
+    }
+    .gallery .description h3 {
+        padding-top: 2rem;
+    }
 }

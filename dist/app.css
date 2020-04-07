@@ -1512,7 +1512,7 @@ to {
     margin: 0 0.5rem;
     padding: 0;
     max-height: none;
-    flex-grow: 1;
+    flex-grow: 0;
     flex-basis: auto;
     flex-shrink: 1;
   }
@@ -1546,6 +1546,8 @@ to {
     margin: 0;
     font-size: 1.6rem;
     padding: 0.5rem;
+    text-shadow: 1px 1px orange, -1px -1px orange;
+    font-size: 2rem;
   }
 
 @supports (transform-style: preserve-3d) {
@@ -1576,6 +1578,8 @@ to {
       left: 50%;
       top: 0;
       transform: translate(-50%, 0);
+      background: url("../images/wood-12.jpg");
+      background-size: cover;
     }
 
     .card .back {
@@ -1635,18 +1639,12 @@ to {
       overflow: hidden;
     }
 
-    /* .close-all input:checked + div{
-            color: #666;
-            background: #ccc;
-            cursor: not-allowed;
-            height: 0;
-            padding: 0 1rem;
-        } */
-
-    /* .close-all input:checked {
-            cursor: not-allowed;
-            display: none;
-        } */
+    .close-all input:checked + label {
+      color: #666;
+      background: #ccc;
+      cursor: not-allowed;
+      padding: 0 1rem;
+    }
 
     .label:focus-within + .card,
     :checked + .card {

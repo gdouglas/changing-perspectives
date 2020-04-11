@@ -14,6 +14,11 @@
     flex-direction: column;
     margin-bottom: 2rem;
 }
+.cards-wrapper:focus-within {
+    outline: 2px solid #9ecaed;
+    outline-offset: 0;
+    box-shadow: 1px 6px 14px -5px #185281;
+}
 .back {
     width: 100%;
     position: relative;
@@ -72,12 +77,68 @@
     .back a:visited {
         color: #01a9b2;
     }
+    .back .card-button {
+        position: absolute;
+        bottom: -2rem;
+        height: 2rem;
+        background: var(--paper);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .transcripts {
+        flex-direction: column;
+    }
+    .transcript {
+        transition: all 600ms ease-in;
+        max-width: 650px;
+        margin: 0 auto;
+        height: 350px;
+        overflow: auto;
+        border: 1px solid #222;
+        padding: 1rem;
+        box-sizing: border-box;
+        box-shadow: 0px -12px 14px -14px inset #222;
+        scrollbar-color: blue;
+        scrollbar-shadow-color: #01a9b2;
+        scrollbar-width: 50px;
+    }
+    /* width */
+    .transcript::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    .transcript::-webkit-scrollbar-track {
+        border:1px solid #ddd;
+    }
+    /* Handle */
+    .transcript::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 10px;
+    }
+    /* Handle on hover */
+    .transcript::-webkit-scrollbar-thumb:hover {
+        background: #b30000;
+    }
+    .transcript.closed {
+        height: 0;
+        padding: 0;
+        border-color: transparent;
+    }
+    .transcript h3 {
+        margin-top: 0;
+    }
+    .transcript .close {
+        position: sticky;
+        top: 0;
+        float: right;
+    }
     .card h3 {
         margin: 0;
         padding: 0.5rem;
         text-shadow: 0px 0px 4px rosybrown;
         font-size: 2rem;
-        line-height:1.2;
+        line-height: 1.2;
     }
     @supports (transform-style: preserve-3d) {
         .card {
@@ -106,7 +167,7 @@
             transform: translate(-50%, 0);
             background: url(../images/wood-light.jpg);
             background-size: cover;
-            max-width:100%;
+            max-width: 100%;
         }
         .card .back {
             background: #222;
@@ -156,8 +217,15 @@
             display: inline-block;
             transition: all 400ms;
             overflow: hidden;
+            cursor: pointer;
         }
-        .close-all input:checked + label{
+        .cards-wrapper:focus-within .close-all input + label {
+            padding: 0.5rem 5rem;
+            background: #fff;
+            color:#222;
+            cursor: pointer;
+        }
+        .cards-wrapper .close-all input:checked + label {
             color: #666;
             background: #ccc;
             cursor: not-allowed;
@@ -182,7 +250,7 @@
             margin: 0 0 0 1rem;
         }
         :checked + .card .back.game-card:after {
-            content: '';
+            content: "";
             padding-bottom: 35%;
             display: block;
         }

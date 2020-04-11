@@ -2,7 +2,8 @@ window.onload = function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
-    getVideos();
+    // getVideos();
+    addTranscripts();
 };
 
 // stop playing video
@@ -82,6 +83,16 @@ function stopVimeo(vim) {
     console.log("stop");
     vim.pause();
     // vim.setCurrentTime(100);
+}
+
+function addTranscripts() {
+    let buttons = document.querySelectorAll(".card-button");
+    console.log(buttons);
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].addEventListener("click", function(e){
+            console.log(e.currentTarget.closest("iframe"));
+        });
+    }
 }
 (function() {
 	'use strict';

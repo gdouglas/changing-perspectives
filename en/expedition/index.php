@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<script src="https://player.vimeo.com/api/player.js"></script>
 
 <head>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Changing Perspectives | Vancouver's Story</title>
 </head>
@@ -19,7 +19,7 @@
         </div>
         <div class="cards">
             <label class="label">
-                <input type="radio" name="cards" value="vimeo1"/>
+                <input type="radio" name="cards" value="vimeo1" />
                 <div class="card">
                     <div class="front">
                         <h3>What did Vancouver’s expedition actually achieve?</h3>
@@ -39,7 +39,7 @@
             </noscript>
 
             <label class="label">
-                <input type="radio" name="cards" value="vimeo2"/>
+                <input type="radio" name="cards" value="vimeo2" />
                 <div class="card">
                     <div class="front">
                         <h3>What was it like to be a member of Vancouver’s crew?</h3>
@@ -59,7 +59,7 @@
             </noscript>
 
             <label class="label">
-                <input type="radio" name="cards" value="game"/>
+                <input type="radio" name="cards" value="game" />
                 <div class="card">
                     <div class="front">
                         <h3>What were the initial meetings like between the First Nations people and these foreigners?</h3>
@@ -79,7 +79,7 @@
             </noscript>
         </div>
         <div class="close-all relative text-center">
-            <input type="radio" id="close-cards" name="cards"/>
+            <input type="radio" id="close-cards" name="cards" />
             <label class="btn" for="close-cards">Close Card</label>
         </div>
         <section id="gallery" class="gallery">

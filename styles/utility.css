@@ -136,6 +136,16 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
+.no-style {
+    color: #222;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.no-style:visited {
+    color: #222;
+}
+
 .debug-header {
     color: #eee;
     background: #111;

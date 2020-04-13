@@ -15,7 +15,7 @@
     <main id="main" tabindex="-1">
         <h1>Vancouver's Story</h1>
         <div class="pull-quote text-center">
-            <h2 class="subtitle">Why did the British send Vancouver to Yuquot</h2>
+            <h2 class="subtitle">Why did the British send Vancouver to Yuquot?</h2>
         </div>
         <div class="cards">
             <label class="label">

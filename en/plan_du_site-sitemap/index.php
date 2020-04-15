@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
 <title>Sitemap | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
@@ -7,7 +7,6 @@
 <body>
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
     </header>
     <main id="main" tabindex="-1">
         <h1>Sitemap</h1>

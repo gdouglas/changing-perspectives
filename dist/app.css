@@ -7,7 +7,7 @@
   --gold: #d4af37;
   --light-gold: #FCDF8B;
   --paper: #E8DEC8;
-  --title-font: 'Nothing You Could Do', "Beth Ellen", cursive;
+  --title-font: 'Nothing You Could Do', cursive;
   --serif-font: "Libre Baskerville", serif;
   --sans-serif-font: 'Open Sans', sans-serif;
   --margin-top: 8px;
@@ -626,13 +626,31 @@ header {
 }
 
 header:before {
-  content: "";
+  /* content: ""; */
   background: rgb(34, 34, 34, 0.7);
   background: linear-gradient(
         90deg,
         rgba(34, 34, 34, 1) 0%,
         rgba(34, 34, 34, 0.5) 65%,
-        rgba(34, 34, 34, 0) 100%
+        rgba(34, 34, 34, 0.5) 100%
+    );
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+header:after {
+  content: "";
+  background: rgb(34, 34, 34, 0.7);
+  background: linear-gradient(
+        -90deg,
+        rgba(34, 34, 34, 1) 0%,
+        rgba(34, 34, 34, 0.5) 30%,
+        rgba(34, 34, 34, 0.5) 100%
     );
   position: absolute;
   top: 0;
@@ -657,8 +675,8 @@ header * {
 
 .super-nav .lang-link {
   margin: 4px 16px;
-  color: #222;
-  text-shadow: 1px 1px 1px #fff;
+  color: #fff;
+  /* text-shadow: 1px 1px 1px #fff; */
   /* background: rgba(255, 255, 255, 0.3); */
   padding: 0 4px;
   font-weight: bold;
@@ -811,6 +829,7 @@ nav .current {
     box-sizing: content-box;
     transition: all 600ms ease-out;
     max-height: 140px;
+    box-shadow: inset 0 -10px 10px -10px #000000;
   }
 
   header.open {
@@ -886,7 +905,7 @@ nav .current {
     text-align: left;
     width: 100%;
     padding: 10px 10px 10px 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: #000;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1514,7 +1533,7 @@ to {
   display: none;
 }
 
-@media screen and (max-width:980px) and (min-width: 756px) {
+@media screen and (max-width: 980px) and (min-width: 756px) {
   .cards-wrapper .cards {
     flex-direction: column;
   }
@@ -1772,10 +1791,11 @@ to {
     }
 
     .cards-wrapper .close-all input:checked + label {
-      color: #666;
-      background: #ccc;
+      color: #dbdbdb;
+      background: #424242;
       cursor: not-allowed;
       padding: 0 1rem;
+      line-height: 0;
     }
 
     .label:focus-within + .card,
@@ -1968,6 +1988,8 @@ to {
   float: left;
   margin: 0 1rem;
   max-width: 780px;
+  color: #222;
+  background: #eee;
 }
 
 @media (max-width:580px) {

@@ -107,6 +107,8 @@
     float: left;
     margin: 0 1rem;
     max-width: 780px;
+    color: #222;
+    background: #eee;
 }
 
 @media (max-width:580px) {

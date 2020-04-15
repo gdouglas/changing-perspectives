@@ -40,7 +40,7 @@
 .cards input {
     display: none;
 }
-@media screen and (max-width:980px) and (min-width: 756px) {
+@media screen and (max-width: 980px) and (min-width: 756px) {
     .cards-wrapper .cards {
         flex-direction: column;
     }
@@ -164,7 +164,7 @@
         float: right;
     }
     .card h3 {
-        max-width:100%;
+        max-width: 100%;
         margin: 0;
         padding: 0.5rem;
         text-shadow: 0px 0px 4px rosybrown;
@@ -258,10 +258,11 @@
             cursor: pointer;
         }
         .cards-wrapper .close-all input:checked + label {
-            color: #666;
-            background: #ccc;
+            color: #dbdbdb;
+            background: #424242;
             cursor: not-allowed;
             padding: 0 1rem;
+            line-height: 0;
         }
         .label:focus-within + .card,
         :checked + .card {

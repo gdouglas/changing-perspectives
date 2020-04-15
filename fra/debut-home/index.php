@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fra">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php"?>

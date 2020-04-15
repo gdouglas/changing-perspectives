@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
     <script src="https://player.vimeo.com/api/player.js"></script>

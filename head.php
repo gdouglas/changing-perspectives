@@ -8,8 +8,7 @@
 <noscript>
     <link rel="stylesheet" type="text/css" href="/styles/no-script.css">
 </noscript>
-<link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans|Special+Elite|PT+Sans|Special+Elite&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Beth+Ellen|Libre+Baskerville|Roboto+Slab|Slabo|Nothing+You+Could+Do|+27px&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>

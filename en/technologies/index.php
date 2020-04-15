@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <script src="https://player.vimeo.com/api/player.js"></script>
 
 <head>
@@ -48,7 +48,7 @@
                         <div class="back">
                             <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                             <button class="card-button">
-                                <a href="#vimeo1-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span>/<span>Hide</span> Transcript</a>
+                                <a href="#vimeo1-transcript" name="transcripts"><span>Show</span>/<span>Hide</span> Transcript</a>
                             </button>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                     </video>
                     <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
                     <button class="card-button">
-                        <a href="#vimeo1-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span>/<span>Hide</span> Transcript</a>
+                        <a href="#vimeo1-transcript" name="transcripts"><span>Show</span>/<span>Hide</span> Transcript</a>
                     </button>
                 </noscript>
 
@@ -74,7 +74,7 @@
                         <div class="back">
                             <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                             <button class="card-button">
-                                <a href="#vimeo2-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span>/<span>Hide</span> Transcript</a>
+                                <a href="#vimeo2-transcript" name="transcripts"><span>Show</span>/<span>Hide</span> Transcript</a>
                             </button>
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                     </video>
                     <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
                     <button class="card-button">
-                        <a href="#vimeo2-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span><span>Hide</span> Transcript</a>
+                        <a href="#vimeo2-transcript" name="transcripts"><span>Show</span><span>Hide</span> Transcript</a>
                     </button>
                 </noscript>
 
@@ -100,7 +100,7 @@
                         <div class="back">
                             <iframe id="vimeo3" src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
                             <button class="card-button">
-                                <a href="#vimeo3-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span><span>Hide</span> Transcript</a>
+                                <a href="#vimeo3-transcript" name="transcripts"><span>Show</span><span>Hide</span> Transcript</a>
                             </button>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                     <h3>Want to see what it's like on one of Vancouver’s ships?</h3>
                     <iframe src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
                     <button class="card-button">
-                        <a href="#vimeo3-transcript" name="transcripts" role="switch" aria-checked="false" aria-labelledby="Transcript"><span>Show</span><span>Hide</span> Transcript</a>
+                        <a href="#vimeo3-transcript" name="transcripts"><span>Show</span><span>Hide</span> Transcript</a>
                     </button>
                 </noscript>
             </div>

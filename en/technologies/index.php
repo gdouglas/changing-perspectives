@@ -6,11 +6,23 @@
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Changing Perspectives | European Sailing Technology</title>
     <style>
-        #main {
-            background-image: url(/images/anchor.png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
+        @media (min-width:768px) {
+            #main:after {
+                content: '';
+                display: block;
+                pointer-events: none;
+                background-image: url(/images/anchor.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+                opacity: 0.1;
+            }
         }
     </style>
 </head>

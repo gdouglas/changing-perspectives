@@ -62,7 +62,7 @@
                 <input type="radio" name="cards" value="game" />
                 <div class="card">
                     <div class="front">
-                        <h3>What were the initial meetings like between the First Nations people and these foreigners?</h3>
+                        <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
                     </div>
                     <div class="back">
                         <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -70,7 +70,7 @@
                 </div>
             </label>
             <noscript>
-                <h3>What were the initial meetings like between the First Nations people and these foreigners?</h3>
+                <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
                 <video preload="none" src="/videos/placeholder-example.mp4">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">

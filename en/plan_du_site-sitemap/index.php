@@ -8,9 +8,9 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
-        <h1>Site Map</h1>
     </header>
-    <main id="main" tabindex="-1" class="text-left">
+    <main id="main" tabindex="-1">
+        <h1>Sitemap</h1>
         <ul>
             <li><a href="/en/debut-home/" rel="noopener">Home</a></li>
             <li><a href="/en/contexte-context/" rel="noopener">The Story Before Vancouver</a></li>

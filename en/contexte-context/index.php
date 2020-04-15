@@ -22,7 +22,7 @@
                 <input type="radio" name="cards" value="vimeo1" />
                 <div class="card">
                     <div class="front">
-                        <h3>What was life like for people living on the Pacific Northwest (PNW) coast prior to European contact?</h3>
+                        <h3>What was life on the Pacific Northwest Coast like before the newcomers came?</h3>
                     </div>
                     <div class="back">
                         <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -30,7 +30,7 @@
                 </div>
             </label>
             <noscript>
-                <h3>What was life like for people living on the Pacific Northwest (PNW) coast prior to European contact?</h3>
+                <h3>What was life on the Pacific Northwest Coast like before the newcomers came?</h3>
                 <video preload="none" src="/videos/placeholder-example.mp4">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
@@ -42,7 +42,7 @@
                 <input type="radio" name="cards" value="vimeo2" />
                 <div class="card">
                     <div class="front">
-                        <h3>What were the world events that led up to Vancouver’s arrival?</h3>
+                        <h3>How were the Europeans changing global trade?</h3>
                     </div>
                     <div class="back">
                         <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -50,7 +50,7 @@
                 </div>
             </label>
             <noscript>
-                <h3>What were the world events that led up to Vancouver’s arrival?</h3>
+                <h3>How were the Europeans changing global trade?</h3>
                 <video preload="none" src="/videos/placeholder-example.mp4">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
@@ -62,7 +62,7 @@
                 <input type="radio" name="cards" value="game" />
                 <div class="card">
                     <div class="front">
-                        <h3>How was the European search for the North West Passage and the fur trade changing the Pacific Northwest Coast?</h3>
+                        <h3>What attracted the Europeans to the Pacific Northwest Coast?</h3>
                     </div>
                     <div class="back">
                         <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -70,7 +70,7 @@
                 </div>
             </label>
             <noscript>
-                <h3>How was the European search for the North West Passage and the fur trade changing the Pacific Northwest Coast?</h3>
+                <h3>What attracted the Europeans to the Pacific Northwest Coast?</h3>
                 <video preload="none" src="/videos/placeholder-example.mp4">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">

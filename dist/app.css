@@ -284,6 +284,13 @@ h3 {
   color: #222;
 }
 
+.responsive-wrapper {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: absolute;
+  top: 0;
+}
+
 .debug-header {
   color: #eee;
   background: #111;
@@ -1500,6 +1507,7 @@ to {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 2rem;
+  align-items: flex-start;
 }
 
 .cards-wrapper:focus-within {
@@ -1524,13 +1532,41 @@ to {
   left: 0;
   width: 100%;
   height: 100%;
-  padding-bottom: 3rem;
   box-sizing: border-box;
 }
 
 .close-all,
 .cards input {
   display: none;
+}
+
+.transcript .close {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0.5rem;
+  background: var(--paper);
+  color: var(--secondary);
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+}
+
+.transcript {
+  display: none;
+}
+
+.transcript:target {
+  display: block;
+}
+
+.card .responsive-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5rem;
+}
+
+.card .back {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 980px) and (min-width: 756px) {
@@ -1602,6 +1638,7 @@ to {
     z-index: 5;
     margin: 0.5rem;
     padding: 0.75rem;
+    align-self: flex-start;
   }
 
   .back .card-button:hover {
@@ -1613,6 +1650,11 @@ to {
     font-size: 1rem;
     color: #222;
     margin: 0;
+  }
+
+  .card .responsive-wrapper {
+    position: relative;
+    top: 0;
   }
 
   .transcripts {
@@ -1632,6 +1674,7 @@ to {
     scrollbar-color: blue;
     scrollbar-shadow-color: #01a9b2;
     scrollbar-width: 50px;
+    color: #222;
   }
 
   /* width */
@@ -1665,21 +1708,39 @@ to {
     border-color: transparent;
   }
 
-  .transcript:target {
+  :checked + .card .transcript:target {
     height: 350px;
     padding: 1rem;
     border-color: #222;
+    background: #eee;
+    visibility: visible;
   }
 
   .transcript h3 {
     margin-top: 0;
   }
 
-  .transcript .close {
+  .card .transcript {
+    visibility: inherit;
+  }
+
+  .card .transcript .close a,
+  .card .transcript .close {
+    visibility: hidden;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     float: right;
+    font-size: 1rem;
+    background: #222;
+    margin: 0;
+    color: var(--secondary);
+    padding: 0 .15rem;
+  }
+
+  .card .transcript .close a,
+  :checked + .card .transcript:target .close {
+    visibility: visible;
   }
 
   .card h3 {
@@ -1711,6 +1772,7 @@ to {
       max-width: 25vw;
       transition: all 600ms;
       width: 100vw;
+      flex-wrap: wrap;
     }
 
     .card .front {
@@ -1730,14 +1792,6 @@ to {
       color: #fff;
       transform: rotateX(180deg);
       visibility: hidden;
-    }
-
-    .card .back a {
-      font-size: 3rem;
-      display: block;
-      height: 100%;
-      text-align: center;
-      margin-top: 2rem;
     }
 
     .label:focus-within {
@@ -1781,6 +1835,7 @@ to {
       transition: all 400ms;
       overflow: hidden;
       cursor: pointer;
+      background: #fff;
     }
 
     .cards-wrapper:focus-within .close-all input + label {
@@ -1937,6 +1992,7 @@ to {
 
 .gallery .open {
   position: relative;
+  display: block;
 }
 
 .gallery .open:after {
@@ -1963,17 +2019,18 @@ to {
 
 .gallery .description:target figure {
   display: inline-flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   flex-grow: 1;
   margin: 0;
   padding: 1rem;
   background: inherit;
   border-radius: 5px;
-  /* box-shadow: 2px 2px 1px 0px #999; */
 }
 
 .gallery .description:target img {
   max-width: none;
+  margin-bottom: 1rem;
 }
 
 .gallery .close {
@@ -1987,6 +2044,7 @@ to {
 .gallery figcaption {
   float: left;
   margin: 0 1rem;
+  padding: 1rem;
   max-width: 780px;
   color: #222;
   background: #eee;
@@ -2050,7 +2108,6 @@ main {
   outline: 0;
   padding-bottom: 3rem;
   background: transparent;
-  overflow: hidden;
 }
 
 p {

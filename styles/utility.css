@@ -145,7 +145,12 @@
 .no-style:visited {
     color: #222;
 }
-
+.responsive-wrapper {
+    width: 100%;
+    padding-bottom: 56.25%;
+    position: absolute;
+    top: 0;
+}
 .debug-header {
     color: #eee;
     background: #111;

@@ -13,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     margin-bottom: 2rem;
+    align-items: flex-start;
 }
 .cards-wrapper:focus-within {
     outline: 2px solid #9ecaed;
@@ -33,12 +34,33 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding-bottom: 3rem;
     box-sizing: border-box;
 }
 .close-all,
 .cards input {
     display: none;
+}
+.transcript .close {
+    position: sticky;
+    top: 0.5rem;
+    background: var(--paper);
+    color: var(--secondary);
+    padding: 1rem;
+    border-radius: 5px;
+    border:1px solid rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+}
+.transcript {
+    display: none;
+}
+.transcript:target {
+    display: block;
+}
+.card .responsive-wrapper {
+    position: sticky;
+    top: 5rem;
+}
+.card .back {
+    padding-top: 0;
 }
 @media screen and (max-width: 980px) and (min-width: 756px) {
     .cards-wrapper .cards {
@@ -100,6 +122,7 @@
         z-index: 5;
         margin: 0.5rem;
         padding: 0.75rem;
+        align-self: flex-start;
     }
     .back .card-button:hover {
         background: var(--secondary);
@@ -109,6 +132,10 @@
         font-size: 1rem;
         color: #222;
         margin: 0;
+    }
+    .card .responsive-wrapper {
+        position: relative;
+        top: 0;
     }
     .transcripts {
         flex-direction: column;
@@ -126,6 +153,7 @@
         scrollbar-color: blue;
         scrollbar-shadow-color: #01a9b2;
         scrollbar-width: 50px;
+        color: #222
     }
     /* width */
     .transcript::-webkit-scrollbar {
@@ -150,18 +178,34 @@
         padding: 0;
         border-color: transparent;
     }
-    .transcript:target {
+    :checked + .card .transcript:target {
         height: 350px;
         padding: 1rem;
         border-color: #222;
+        background: #eee;
+        visibility: visible;
     }
     .transcript h3 {
         margin-top: 0;
     }
-    .transcript .close {
+    .card .transcript {
+        visibility: inherit;
+    }
+    .card .transcript .close a,
+    .card .transcript .close {
+        visibility: hidden;
         position: sticky;
         top: 0;
         float: right;
+        font-size: 1rem;
+        background: #222;
+        margin: 0;
+        color: var(--secondary);
+        padding: 0 .15rem;
+    }
+    .card .transcript .close a,
+    :checked + .card .transcript:target .close {
+        visibility: visible;
     }
     .card h3 {
         max-width: 100%;
@@ -189,6 +233,7 @@
             max-width: 25vw;
             transition: all 600ms;
             width: 100vw;
+            flex-wrap: wrap;
         }
         .card .front {
             min-height: 100%;
@@ -207,14 +252,6 @@
             transform: rotateX(180deg);
             visibility: hidden;
         }
-        .card .back a {
-            font-size: 3rem;
-            display: block;
-            height: 100%;
-            text-align: center;
-            margin-top: 2rem;
-        }
-
         .label:focus-within {
             outline: 2px solid #9ecaed;
             outline-offset: 0;
@@ -250,6 +287,7 @@
             transition: all 400ms;
             overflow: hidden;
             cursor: pointer;
+            background: #fff;
         }
         .cards-wrapper:focus-within .close-all input + label {
             padding: 0.5rem 5rem;

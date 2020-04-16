@@ -47,7 +47,6 @@ main {
     outline: 0;
     padding-bottom: 3rem;
     background: transparent;
-    overflow: hidden;
 }
 p {
     max-width: 1048px;

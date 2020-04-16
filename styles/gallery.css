@@ -61,6 +61,7 @@
 }
 .gallery .open {
     position: relative;
+    display: block;
 }
 .gallery .open:after {
     content: url(../images/icons/expand.svg);
@@ -84,16 +85,17 @@
 }
 .gallery .description:target figure {
     display: inline-flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 1;
     margin: 0;
     padding: 1rem;
     background: inherit;
     border-radius:5px;
-    /* box-shadow: 2px 2px 1px 0px #999; */
 }
 .gallery .description:target img {
     max-width: none;
+    margin-bottom: 1rem;
 }
 .gallery .close {
     position: absolute;
@@ -106,6 +108,7 @@
 .gallery figcaption {
     float: left;
     margin: 0 1rem;
+    padding: 1rem;
     max-width: 780px;
     color: #222;
     background: #eee;

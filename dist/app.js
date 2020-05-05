@@ -1,7 +1,7 @@
 window.onload = function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
-    // addCardListeners();
+    addCardListeners();
     getVideos();
     // addTranscripts();
 };
@@ -22,15 +22,46 @@ function addNavListener() {
 
 function addCardListeners() {
     let vimeos = document.querySelectorAll(".vimeo");
-    let inputs = document.querySelectorAll("input[name=cards]");
-
-    [...inputs].forEach((radio) => {
-        radio.addEventListener("change", function () {
+    let cards = document.querySelectorAll(".card");
+    
+    console.log(cards);
+    [...cards].forEach((card) => {
+        card.setAttribute('tabindex','0');
+        card.addEventListener("keydown", (e) => {
+            if (e.key == "Enter") {
+                setActive(card);
+            } else if (e.key == "Escape") {
+                setActive();
+            }
+        })
+        card.addEventListener("click", function (e) {
+            setActive(card);
             [...vimeos].forEach((vid) => {
-                stopVideo(vid);
+                // stopVideo(vid);
             });
         });
     });
+}
+//remove all other active class and add to element
+function setActive(element) {
+    let active = document.querySelectorAll(".active");
+    [...active].forEach((el) => {
+        el.classList.remove("active");
+    });
+    if (element) {
+        let wrapper = document.querySelectorAll(".no-active");
+        [...wrapper].forEach((el) => {
+            el.classList.remove("no-active");
+            el.classList.add("has-active");
+        });
+    } else {
+        let wrapper = document.querySelectorAll(".has-active");
+        [...wrapper].forEach((el) => {
+            el.classList.remove("has-active");
+            el.classList.add("no-active");
+        });
+    }
+    element.classList.add("active");
 }
 function getVideos() {
     var players = document.querySelectorAll(".vimeo");

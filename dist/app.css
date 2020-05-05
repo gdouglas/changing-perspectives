@@ -1493,11 +1493,9 @@ to {
 
 /* expects:
 .cards
-    .label
-        input
-        .card
-            .front
-            .back
+    .card
+        .front
+        .back
     ...
 */
 
@@ -1574,11 +1572,11 @@ to {
     flex-direction: column;
   }
 
-  .cards-wrapper .card {
+  .cards-wrapper .card .content {
     max-width: 60vw;
   }
 
-  :checked + .card .back {
+  .card.active .back {
     max-width: 100%;
   }
 }
@@ -1586,10 +1584,9 @@ to {
 @media screen and (min-width: 756px) {
   .cards {
     flex-direction: row;
-    /* flex-wrap: wrap; */
   }
 
-  .cards .label {
+  .cards .card {
     perspective: 1000px;
     transform-style: preserve-3d;
     display: inline-flex;
@@ -1611,11 +1608,11 @@ to {
     margin-left: 0;
   }
 
-  .cards .label:last-of-type {
+  .cards .card:last-of-type {
     margin-right: 0;
   }
 
-  .card {
+  .card .content {
     position: relative;
     height: 100%;
     width: 100%;
@@ -1708,7 +1705,7 @@ to {
     border-color: transparent;
   }
 
-  :checked + .card .transcript:target {
+  .card.active .transcript:target {
     height: 350px;
     padding: 1rem;
     border-color: #222;
@@ -1739,7 +1736,7 @@ to {
   }
 
   .card .transcript .close a,
-  :checked + .card .transcript:target .close {
+  :active + .card .transcript:target .close {
     visibility: visible;
   }
 
@@ -1750,11 +1747,10 @@ to {
     text-shadow: 0px 0px 4px rosybrown;
     font-size: 2rem;
     line-height: 1.2;
-    /* word-break: break; */
   }
 
 @supports (transform-style: preserve-3d) {
-    .card {
+    .card .content {
       display: inline-flex;
       flex-wrap: wrap;
       flex-grow: 1;
@@ -1794,18 +1790,19 @@ to {
       visibility: hidden;
     }
 
-    .label:focus-within {
+    .card:focus-within {
       outline: 2px solid #9ecaed;
       outline-offset: 0;
       box-shadow: 1px 6px 14px -2px blue;
     }
 
-    .label:hover .card {
+    .card:focus-within .content,
+    .card:hover .content {
       transform: rotateX(20deg);
       box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
     }
 
-    .label:hover :checked + .card {
+    .card.active .content {
       transform: rotateX(180deg);
       box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
     }
@@ -1838,14 +1835,14 @@ to {
       background: #fff;
     }
 
-    .cards-wrapper:focus-within .close-all input + label {
+    .cards-wrapper .close-all button {
       padding: 0.5rem 5rem;
       background: #fff;
       color: #222;
       cursor: pointer;
     }
 
-    .cards-wrapper .close-all input:checked + label {
+    .cards-wrapper.no-active .close-all button {
       color: #dbdbdb;
       background: #424242;
       cursor: not-allowed;
@@ -1853,20 +1850,7 @@ to {
       line-height: 0;
     }
 
-    .label:focus-within + .card,
-    :checked + .card {
-      transform: rotateX(180deg);
-    }
-
-    .cards input {
-      pointer-events: all;
-    }
-
-    .cards input:checked {
-      pointer-events: none;
-    }
-
-    :checked + .card .back {
+    .card.active .back {
       display: flex;
       visibility: visible;
       max-width: 60vw;
@@ -1876,7 +1860,7 @@ to {
       margin: 0 0 0 1rem;
     }
 
-    :checked + .card .back.game-card:after {
+    .card.active .back.game-card:after {
       content: "";
       padding-bottom: 35%;
       display: block;
@@ -1884,7 +1868,7 @@ to {
 }
 }
 
-.no-js .cards .label,
+.no-js .cards .card,
 .no-js .cards + .close-all {
   display: none;
 }
@@ -1895,19 +1879,19 @@ to {
   position: static;
 }
 
-.no-js .cards .label {
+.no-js .cards .card {
   height: auto;
   cursor: initial;
   perspective: unset;
 }
 
-.no-js .label:hover .card {
+.no-js .card:hover {
   box-shadow: none;
 }
 
 .no-js #main .front,
 .no-js #main .back,
-.no-js #main .card {
+.no-js #main .card .content {
   transform: rotateX(0);
 }
 

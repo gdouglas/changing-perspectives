@@ -37,16 +37,18 @@
         <div class="pull-quote text-center">
             <h2 class="subtitle">What technologies did the Europeans need to get to the Pacific Northwest Coast?</h2>
         </div>
-        <div class="cards-wrapper">
+        <div class="cards-wrapper no-active">
             <div class="cards">
-                <label class="label">
-                    <input type="radio" name="cards" value="vimeo1" />
-                    <div class="card">
+                <div id="card1" class="card">
+                    <div class="content">
                         <div class="front">
                             <h3>How did Captain Vancouver navigate the oceans?</h3>
                         </div>
                         <div class="back">
-                            <div class="responsive-wrapper"><iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                            <a class="skip-card" href="#card2">Skip to next card</a>
+                            <div class="responsive-wrapper">
+                                <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                            </div>
                             <noscript>
                                 <video preload="none" src="/videos/placeholder-example.mp4">
                                     <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -66,14 +68,14 @@
                             </div>
                         </div>
                     </div>
-                </label>
-                <label class="label">
-                    <input type="radio" name="cards" value="vimeo2" />
-                    <div class="card">
+                </div>
+                <div id="card2" class="card">
+                    <div class="content">
                         <div class="front">
                             <h3>What were the vessels like that Captain Vancouver sailed in?</h3>
                         </div>
                         <div class="back">
+                            <a class="skip-card" href="#card3">Skip to next card</a>
                             <div class="responsive-wrapper"><iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
                             <noscript>
                                 <video preload="none" src="/videos/placeholder-example.mp4">
@@ -94,14 +96,14 @@
                             </div>
                         </div>
                     </div>
-                </label>
-                <label class="label">
-                    <input type="radio" name="cards" value="game" />
-                    <div class="card">
+                </div>
+                <div id="card3" class="card">
+                    <div class="content">
                         <div class="front">
                             <h3>Come on board a sailing Brig from Captain Vancouver’s time.</h3>
                         </div>
                         <div class="back">
+                            <a class="skip-card" href="#card1">Skip to first card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="vimeo3" class="vimeo" src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0" width="640" height="274" frameborder="0" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
                                 <noscript>
@@ -120,11 +122,10 @@
                             </div>
                         </div>
                     </div>
-                </label>
+                </div>
             </div>
             <div class="close-all relative text-center">
-                <input type="radio" id="close-cards" name="cards" checked />
-                <label class="btn" for="close-cards">Close Card</label>
+                <button class="btn" onClick="setActive()">Close Card</button>
             </div>
         </div>
         <div class="transcripts flex">

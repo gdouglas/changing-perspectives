@@ -10,7 +10,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT']."/fra-nav.php" ?>
         <h1>Thank You</h1>
     </header>
-    <main id="main" tabindex="-1" class="text-center">
+    <main id="main" role="main" tabindex="-1" class="text-center">
         Thank you for your message.
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/fra-footer.php" ?>

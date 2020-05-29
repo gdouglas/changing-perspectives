@@ -11,7 +11,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <div class="pull-quote text-center">
             <p>Exploring Knowledge and Encounters in the time of Captain George Vancouver's Expedition</p>
             <nav class="tiles">

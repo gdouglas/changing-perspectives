@@ -8,10 +8,10 @@
 
 <body class="splash">
     <a class="skip-main" href="#main">Skip to main content</a>
-    <header class="">
+    <header role="banner">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h1>Technologie européenne de voile</h1>
         <div class="pull-quote text-center">
             <h2 class="subtitle">De quelles technologies les Européens avaient-ils besoin pour se rendre sur la côte nord-ouest du Pacifique?</h2>

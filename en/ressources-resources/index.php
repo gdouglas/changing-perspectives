@@ -10,7 +10,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h1 class="text-center">Teacher Resources</h1>
         <section class="intructor-resources text-left inline-block">
             <h2>The Story Before Vancouver</h2>

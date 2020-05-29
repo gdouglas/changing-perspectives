@@ -11,7 +11,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
-    <main id="main" tabindex="-1" class="text-center">
+    <main id="main" role="main" tabindex="-1" class="text-center">
         <h1>Changing Perspectives Copyright <?php echo date("Y") ?> </h1><div class="text-left">
         <p>Copyright <a href="http://www.virtualmuseum.ca/ic/" target="_blank" rel="no-oppener">The Virtural Museum of Canada</a>.</p> 
         <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>

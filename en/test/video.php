@@ -18,10 +18,10 @@
 
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
-    <header class="">
+    <header role="banner">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h3>What did Vancouver’s expedition actually achieve?</h3>
         <video id="video" width="500" height="300" controls>
             <source src="/videos/placeholder-example.mp4" type="video/mp4">

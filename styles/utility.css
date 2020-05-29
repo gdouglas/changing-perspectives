@@ -1,3 +1,14 @@
+.accessible-hide {
+    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+.container {
+    max-width: 1600px;;
+}
 .medium-large {
     font-size: 1.25rem;
     line-height: 1.45rem;

@@ -8,8 +8,7 @@
 <noscript>
     <link rel="stylesheet" type="text/css" href="/styles/no-script.css">
 </noscript>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato&family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>
 <script>
@@ -21,7 +20,6 @@
 </script>
 
 
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1 ">
 <meta name="description" content="Learn about the explorations and times of George Vancouver" />
 <meta name="robots" content="index, follow" />
 

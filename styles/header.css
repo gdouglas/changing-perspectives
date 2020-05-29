@@ -13,7 +13,7 @@ header {
     position: relative;
     z-index: 2;
     background-color: #111;
-    max-height: 185px;
+    max-height: 250px;
     transition: all 0.2s;
 }
 header:before {
@@ -99,18 +99,19 @@ header nav {
 .site-title {
     text-align: left;
     max-width: 500px;
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 6rem;
     font-family: serif;
-    font-family: var(--title-font), script;
+    font-family: var(--header-font), script;
     display: flex;
+    margin: 1rem;
 }
 .site-title a {
     z-index: 2;
     position: relative;
     font-size: inherit;
-    line-height: inherit;
-    font-weight: bold;
+    line-height: 5.5rem;
+    /* font-weight: bold; */
 }
 header .btn {
     display: none;

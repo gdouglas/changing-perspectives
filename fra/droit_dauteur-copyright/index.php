@@ -10,7 +10,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT']."/fra-header.php" ?>
         <h1>Copyright information</h1>
     </header>
-    <main id="main" tabindex="-1" class="text-center">
+    <main id="main" role="main" tabindex="-1" class="text-center">
         <p>Placeholder for Copyright</p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/fra-footer.php" ?>

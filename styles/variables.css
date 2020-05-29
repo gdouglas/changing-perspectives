@@ -8,9 +8,12 @@
     --light-gold: #FCDF8B;
     --paper: #E8DEC8;
 
-    --title-font: 'Nothing You Could Do', cursive;
+    /* --header-font: 'Nothing You Could Do', cursive; */
+    --title-font: 'IM Fell English SC', serif;
+    --header-font: 'IM Fell English SC', serif;
     --serif-font: "Libre Baskerville", serif;
-    --sans-serif-font: 'Open Sans', sans-serif;
+    /* --sans-serif-font: 'Open Sans', sans-serif; */
+    --sans-serif-font: 'Lato', sans-serif;
 
     --margin-top: 8px;
     --margin-bottom: 20px;

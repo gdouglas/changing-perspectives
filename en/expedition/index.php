@@ -9,10 +9,10 @@
 
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
-    <header class="">
+    <header role="banner">
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h1>Vancouver's Story</h1>
         <div class="pull-quote text-center">
             <h2 class="subtitle">Why did the British send Vancouver to Yuquot?</h2>

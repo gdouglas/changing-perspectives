@@ -11,7 +11,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h1 class="site-title">Changing Perspectives</h1>
         <div class="pull-quote text-center">
             <p>Learn about the the explorations of George Vancouver</p>

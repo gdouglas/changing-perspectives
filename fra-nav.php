@@ -1,5 +1,6 @@
 <nav id="top-nav">
-    <ul>
+    <button id="nav-menu" class="btn" type="button">Menu</button>
+    <ul role="navigation" aria-label="Site Navigation">
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'home') ? '"current link"' : "link" ?>><a class="gold" href="/fra/debut-home/" rel="noopener noreferrer">Debut</a></li>
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'context') ? '"current link"' : "link" ?>><a class="gold" href="/fra/contexte-context/" rel="noopener noreferrer">Contexte</a></li>
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'expedition') ? '"current link"' : "link" ?>><a class="gold" href="/fra/expedition/" rel="noopener noreferrer">Vancouver Expedition</a></li>

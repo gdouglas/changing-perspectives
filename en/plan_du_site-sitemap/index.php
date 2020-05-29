@@ -8,7 +8,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
     </header>
-    <main id="main" tabindex="-1">
+    <main id="main" role="main" tabindex="-1">
         <h1>Sitemap</h1>
         <ul>
             <li><a href="/en/debut-home/" rel="noopener">Home</a></li>

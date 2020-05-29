@@ -18,7 +18,7 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
     </header>
-    <main id="main">
+    <main id="main" role="main" tabindex="-1">
         <h1>Comments and Feedback</h1>
         <form class="contact-form" name="contactform" method="post" action="send.php" onsubmit="return validate.check(this)">
             <fieldset>

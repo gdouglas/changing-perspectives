@@ -47,9 +47,6 @@
     border-radius: 5px;
     border:1px solid rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
 }
-.transcript {
-    display: none;
-}
 .transcript:target {
     display: block;
 }
@@ -174,6 +171,7 @@
         height: 0;
         padding: 0;
         border-color: transparent;
+        display: none;
     }
     .card.active .transcript:target {
         height: 350px;
@@ -209,7 +207,7 @@
         margin: 0;
         padding: 0.5rem;
         text-shadow: 0px 0px 4px rosybrown;
-        font-size: 3rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
     @supports (transform-style: preserve-3d) {

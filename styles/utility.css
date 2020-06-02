@@ -6,6 +6,14 @@
     position: absolute;
     width: 1px;
 }
+.offScreen {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    left: -99999px;
+    top: -99999px;
+
+}
 .container {
     max-width: 1600px;;
 }

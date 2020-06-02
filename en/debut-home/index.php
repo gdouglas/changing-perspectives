@@ -24,17 +24,7 @@
                 <p>The images in this website are by non-Indigenous artists from the past and the present. They are based on their perspectives of early contact and not on Indigenous knowledge traditions. It is important to remember that they tell us as much about the artists themselves as they do about what actually happened in the late eighteenth and early nineteenth centuries.</p>
                 <div class="site-advisory"><p><em>This online virtual exhibit is hosted by the Vancouver Maritime Museum which is fortunate to be located on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada.</em></p></div>
             </div>
-            <!-- <p class="text-left">
-                This exhibit tells the story of the early arrival of European people to the Pacific
-                Northwest Coast and their encounters with First Nations people there. You will also
-                learn about life on the Northwest Coast <a href="/en/contexte-context/">before the arrival of the newcomers</a>. Why
-                Europeans were motivated to travel to this part of the world. Focusing on Captain
-                <a href="/en/expedition/">George Vancouver expedition</a>, you will see what <a href="/en/technologies/">technology the Europeans needed</a>
-                to get them to their destination. You’ll also discover the difficulties Vancouver
-                experienced in completing his mission. Finally, the exhibit explores the legacies of
-                Vancouver’s journey specifically regarding the <a href="/en/heritage-legacies/">impact it has</a> on the lives of
-                Mowachaht/Muchalaht people today.
-            </p> -->
+
         </div>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>

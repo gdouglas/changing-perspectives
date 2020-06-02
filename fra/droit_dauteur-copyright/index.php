@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 <head>
-    <title>Copyright | Changing Perspectives</title>
+    <title>Copyright | Changer de Perspective</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
-    <title>Changing Perspectives | Copyright</title>
+    <title>Changer de Perspective | Copyright</title>
 </head>
 <body>
     <header>

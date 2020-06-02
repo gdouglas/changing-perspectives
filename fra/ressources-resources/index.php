@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="en" xml:lang="fra" dir="ltr">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Teacher Resources | Changing Perspectives</title>
+    <title>Changer de Perspective | Teacher Resources</title>
 </head>
 
 <body>

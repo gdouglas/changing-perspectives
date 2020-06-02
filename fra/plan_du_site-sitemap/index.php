@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 <head>
-<title>Sitemap | Changing Perspectives</title>
+<title>Sitemap | Changer de Perspective</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

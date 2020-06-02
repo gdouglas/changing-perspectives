@@ -2,9 +2,9 @@
 <html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
-    <title>Changing Perspectives Feedback Form</title>
+    <title>Changer de Perspective Feedback Form</title>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Feedback</title>
+    <title>Changer de Perspective | Feedback</title>
     <script src="/scripts/validation.js"></script>
     <script>
         required.add('email_sender_name', 'NOT_EMPTY', 'Full Name');

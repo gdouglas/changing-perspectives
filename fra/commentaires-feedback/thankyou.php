@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 <head>
-    <title>Thank You | Changing Perspectives</title>
+    <title>Thank You | Changer de Perspective</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

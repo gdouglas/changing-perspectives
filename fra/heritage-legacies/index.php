@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Legacies</title>
+    <title>Changer de Perspective | Legacies</title>
 </head>
 
 <body class="splash">
@@ -12,7 +12,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/fra-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1 class="site-title">Changing Perspectives</h1>
+        <h1 class="site-title">Changer de Perspective</h1>
         <div class="pull-quote text-center">
             <p>Learn about the the explorations of George Vancouver</p>
         </div>

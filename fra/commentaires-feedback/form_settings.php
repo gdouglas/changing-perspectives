@@ -2,7 +2,7 @@
 
 $email_to = "infovmc@historymuseum.ca";
 // $email_to = "infovmc@historymuseum.ca"; // your email address
-$email_subject = "Changing Perspectives"; // email subject line
+$email_subject = "Changer de Perspective"; // email subject line
 $thankyou = "thankyou.php"; // thank you page
 
 // If you update the question on the form -

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
-    <title>Changing Perspectives Feedback Form</title>
+    <title>Feedback | Changing Perspectives</title>
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
-    <title>Changing Perspectives | Feedback</title>
     <script src="/scripts/validation.js"></script>
 	<script>
 	required.add('email_sender_name','NOT_EMPTY','Full Name');

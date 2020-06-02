@@ -4,7 +4,7 @@
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <title>Changing Perspectives | European Sailing Technology</title>
+    <title>European Sailing Technology | Changing Perspectives</title>
     <style>
         @media (min-width:768px) {
             #main:after {

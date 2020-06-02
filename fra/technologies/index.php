@@ -3,7 +3,7 @@
 
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Context</title>
+    <title>Changer de Perspective | Context</title>
 </head>
 
 <body class="splash">

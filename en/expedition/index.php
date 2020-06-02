@@ -2,9 +2,9 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
+    <title>Vancouver's Story | Changing Perspectives</title>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <title>Changing Perspectives | Vancouver's Story</title>
 </head>
 
 <body>
@@ -17,72 +17,11 @@
         <div class="pull-quote text-center">
             <h2 class="subtitle">Why did the British send Vancouver to Yuquot?</h2>
         </div>
-        <div class="cards">
-            <label class="label">
-                <input type="radio" name="cards" value="vimeo1" />
-                <div class="card">
-                    <div class="front">
-                        <h3>What did Vancouver’s expedition actually achieve?</h3>
-                    </div>
-                    <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </label>
-            <noscript>
-                <h3>What did Vancouver’s expedition actually achieve?</h3>
-                <video preload="none" src="/videos/placeholder-example.mp4">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
-                </video>
-                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
-            </noscript>
-
-            <label class="label">
-                <input type="radio" name="cards" value="vimeo2" />
-                <div class="card">
-                    <div class="front">
-                        <h3>What was it like to be a member of Vancouver’s crew?</h3>
-                    </div>
-                    <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </label>
-            <noscript>
-                <h3>What was it like to be a member of Vancouver’s crew?</h3>
-                <video preload="none" src="/videos/placeholder-example.mp4">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
-                </video>
-                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
-            </noscript>
-
-            <label class="label">
-                <input type="radio" name="cards" value="game" />
-                <div class="card">
-                    <div class="front">
-                        <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
-                    </div>
-                    <div class="back">
-                        <iframe id="vimeo1" class="no-js-hide vimeo" title="Placeholder video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </label>
-            <noscript>
-                <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
-                <video preload="none" src="/videos/placeholder-example.mp4">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                    <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fra" label="French">
-                </video>
-                <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
-            </noscript>
-        </div>
-        <div class="close-all relative text-center">
-            <input type="radio" id="close-cards" name="cards" />
-            <label class="btn" for="close-cards">Close Card</label>
-        </div>
-        <section id="gallery" class="gallery">
+        <h3>What did Vancouver’s expedition actually achieve?</h3>
+        <h3>What did Vancouver’s expedition actually achieve?</h3>
+        <h3>What was it like to be a member of Vancouver’s crew?</h3>
+        <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
+        <section>
             <h2>Trade Artifacts</h2>
             <ul>
                 <li>

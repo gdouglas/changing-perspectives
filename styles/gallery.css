@@ -8,15 +8,15 @@
 }
 .gallery h2 {
     text-align: left;
-    transform: translateX(15%);
+    margin-left: 12%;
     width:85%;
     box-shadow: 0 5px 5px -5px #333;;
-    padding: 0 0 0 4rem;
+    padding: 0 0 0 3%;
 }
 .gallery ul {
-    display: inline-block;
+    display: flex;
     padding: 0;
-    margin: 0 auto;
+    justify-content: center;
 }
 
 .gallery li {
@@ -24,12 +24,12 @@
     display: inline-block;
     padding: 1rem;
     vertical-align: top;
+    width: 150px;
+    height: 150px;
 }
-
 .gallery li img {
-    max-width: 150px;
-    height: auto;
-    float: left;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .gallery li:target img {
@@ -61,7 +61,13 @@
 }
 .gallery .open {
     position: relative;
-    display: block;
+    display: flex;
+    align-items:center;
+    height: 100%;
+    background: var(--paper);
+    border-radius: 5px;
+    padding: 0.2rem;
+    justify-content: center;
 }
 .gallery .open:after {
     content: url(../images/icons/expand.svg);

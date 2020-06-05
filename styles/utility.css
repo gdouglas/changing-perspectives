@@ -11,8 +11,15 @@
     height: 1px;
     width: 1px;
     left: -99999px;
-    top: -99999px;
-
+}
+.offScreen:focus {
+    left: unset;
+    top: unset;
+    height: unset;
+    width: unset;
+    z-index: 9;
+    background: #222;
+    color: #eee;
 }
 .container {
     max-width: 1600px;;

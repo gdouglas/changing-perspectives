@@ -7,9 +7,8 @@
 	<script>
 	required.add('email_sender_name','NOT_EMPTY','Full Name');
 	required.add('email_sender_email','EMAIL','Email Address');
-	required.add('email_subject','NOT_EMPTY','Your Subject');
+	required.add('subject','NOT_EMPTY','Your Subject');
 	required.add('email_body','NOT_EMPTY','Your Message');
-	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
     </script>
     <link rel="stylesheet" type="text/css" href="/styles/form.css">
 </head>
@@ -21,11 +20,11 @@
         <h1>Comments and Feedback</h1>
         <form class="contact-form" name="contactform" method="post" action="send.php" onsubmit="return validate.check(this)">
             <fieldset>
-                <legend>Contact information and message</legend>
+                <legend>Please enter your contact information and message</legend>
                 <label class="required">Name:<span class="required_star">*</span> <br> <input id="email_sender_name" name="email_sender_name" type="text" placeholder="Firstname, lastname" class="required" autocomplete="name" required></label>
                 <label class="required">Email:<span class="required_star">*</span> <br> <input id="email_sender_email" name="email_sender_email" type="email" class="required" required autocomplete="email" placeholder="example@email.com"></label>
                 <hr>
-                <label class="required">Subject:<span class="required_star">*</span> <br> <input id="email_subject" name="email_subject" type="subject" required placeholder="Message Subject" maxlength="78"></label>
+                <label class="required">Subject:<span class="required_star">*</span> <br> <input id="subject" name="subject" type="text" required placeholder="Message Subject" maxlength="78"></label>
                 <label class="required">Message:<span class="required_star">*</span> <br> <textarea id="email_body" name="email_body" id="email-body" cols="30" rows="10" class="required" required placeholder="Lorem ipsum dolor sit amet..."></textarea></label>
                 <button type="reset" class="reset-btn" value="Reset">Reset</button>
                 <button type="submit" value="Submit">Submit</button>

@@ -29,6 +29,7 @@
 	 include 'form_settings.php';
 
 	function died($error) {
+        var_dump($_POST);
 		echo "Sorry, but there were error(s) found with the form you submitted. ";
 		echo "These errors appear below.<br /><br />";
 		echo $error."<br /><br />";
@@ -38,16 +39,15 @@
 
 	if(!isset($_POST['email_sender_name']) ||
 	!isset($_POST['email_sender_email']) ||
-		!isset($_POST['email_subject']) ||
-		!isset($_POST['email_body']) ||
-		!isset($_POST['AntiSpam'])
+		!isset($_POST['subject']) ||
+		!isset($_POST['email_body'])
 		) {
-		died('Sorry, there appears to be a problem with your form submission.');
+		$error_message .= "Something went wrong with the submission. Please try again.";
 	}
 
 	$full_name = $_POST['email_sender_name']; // required
 	$email_from = $_POST['email_sender_email']; // required
-	$subject = "Changing Perspectives feedback | ".$_POST['email_subject']; // required
+	$subject = "Changing Perspectives feedback | ".$_POST['subject']; // required
 	$comments = $_POST['email_body']; // required
 	$antispam = $_POST['AntiSpam']; // required
 
@@ -64,10 +64,6 @@
   	$error_message .= 'The Comments you entered do not appear to be valid.<br />';
   }
 
-  if($antispam <> $antispam_answer) {
-	$error_message .= 'The Anti-Spam answer you entered is not correct.<br />';
-  }
-
   if(strlen($error_message) > 0) {
   	died($error_message);
   }
@@ -81,12 +77,12 @@
 	$email_message .= "Full Name: ".clean_string($full_name)."\r\n";
 	$email_message .= "Email: ".clean_string($email_from)."\r\n";
 	$email_message .= "Telephone: ".clean_string($telephone)."\r\n";
-	$email_message .= "Message: ".clean_string($comments)."\r\n\r\n".base64_decode($base)."\r\n";
-
+	$email_message .= "Message: ".clean_string($comments);
+    var_dump($email_message);
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-mail($email_to, $email_subject, $email_message, $headers);
+mail($email_to, $subject, $email_message, $headers);
 header("Location: $thankyou");
 echo "<script>location.replace('$thankyou')</script>";
 }

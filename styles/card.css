@@ -18,13 +18,88 @@
     outline-offset: 0;
     box-shadow: 1px 6px 14px -5px #185281;
 }
+.card {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto 1rem 0;
+    position: static;
+}
+.card:focus-within {
+    position: relative;
+}
+.card-skip-link:focus,
+.play-video:focus {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 .back {
     width: 100%;
     position: relative;
     padding-top: 56.25%;
 }
-.back.game-card {
-    padding-bottom: 0;
+.show-status,
+.hide-status {
+    display: none;
+}
+.transcript-toggle[aria-expanded=false] .show-status {
+    display: block;
+}
+.transcript-toggle[aria-expanded=true] .hide-status {
+    display: block;
+}
+.transcripts {
+    flex-direction: column;
+}
+.transcript {
+    transition: all 600ms ease-in;
+    max-width: 650px;
+    margin: 0 auto;
+    height: 350px;
+    overflow: auto;
+    border: 1px solid #222;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px -12px 14px -14px inset #222;
+    scrollbar-color: blue;
+    scrollbar-shadow-color: #01a9b2;
+    scrollbar-width: 50px;
+    color: #eee;
+
+}
+/* width */
+.transcript::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.transcript::-webkit-scrollbar-track {
+    border: 1px solid #ddd;
+}
+/* Handle */
+.transcript::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: 10px;
+}
+/* Handle on hover */
+.transcript::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+.transcript.closed {
+    height: 0;
+    padding: 0;
+    border-color: transparent;
+    display: none;
+}
+.transcript h4 {
+    margin-top: 0;
+}
+.card .transcript {
+    visibility: inherit;
+}
+.card .transcript .close a,
+:active + .card .transcript:target .close {
+    visibility: visible;
 }
 .card iframe {
     position: absolute;
@@ -38,28 +113,15 @@
 .cards input {
     display: none;
 }
-.transcript .close {
-    position: sticky;
-    top: 0.5rem;
-    background: var(--paper);
-    color: var(--secondary);
-    padding: 1rem;
-    border-radius: 5px;
-    border:1px solid rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
-}
-.transcript:target {
-    display: block;
-}
-.card .responsive-wrapper {
-    position: sticky;
-    top: 5rem;
-}
-.card .back {
-    padding-top: 0;
-}
-@media screen and (max-width: 980px) and (min-width: 756px) {
+@media (min-width: 756px) and (max-width: 980px){
     .cards-wrapper .cards {
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cards div.card {
+        width: 45vw;
+        margin: 0.5rem;
+        min-height: auto;
     }
     .cards-wrapper .card .content{
         max-width: 60vw;
@@ -76,6 +138,7 @@
         perspective: 1000px;
         transform-style: preserve-3d;
         display: inline-flex;
+        width: auto;
         min-width: 300px;
         min-height: 200px;
         cursor: pointer;
@@ -127,87 +190,12 @@
         color: #222;
         margin: 0;
     }
-    .card .responsive-wrapper {
-        position: relative;
-        top: 0;
-    }
-    .transcripts {
-        flex-direction: column;
-    }
-    .transcript {
-        transition: all 600ms ease-in;
-        max-width: 650px;
-        margin: 0 auto;
-        height: 350px;
-        overflow: auto;
-        border: 1px solid #222;
-        padding: 1rem;
-        box-sizing: border-box;
-        box-shadow: 0px -12px 14px -14px inset #222;
-        scrollbar-color: blue;
-        scrollbar-shadow-color: #01a9b2;
-        scrollbar-width: 50px;
-        color: #222
-    }
-    /* width */
-    .transcript::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    /* Track */
-    .transcript::-webkit-scrollbar-track {
-        border: 1px solid #ddd;
-    }
-    /* Handle */
-    .transcript::-webkit-scrollbar-thumb {
-        background: #222;
-        border-radius: 10px;
-    }
-    /* Handle on hover */
-    .transcript::-webkit-scrollbar-thumb:hover {
-        background: #b30000;
-    }
-    .transcript.closed {
-        height: 0;
-        padding: 0;
-        border-color: transparent;
-        display: none;
-    }
-    .card.active .transcript:target {
-        height: 350px;
-        padding: 1rem;
-        border-color: #222;
-        background: #eee;
-        visibility: visible;
-    }
-    .transcript h4 {
-        margin-top: 0;
-    }
-    .card .transcript {
-        visibility: inherit;
-    }
-    .card .transcript .close a,
-    .card .transcript .close {
-        visibility: hidden;
-        position: sticky;
-        top: 0;
-        float: right;
-        font-size: 1rem;
-        background: #222;
-        margin: 0;
-        color: var(--secondary);
-        padding: 0 .15rem;
-    }
-    .card .transcript .close a,
-    :active + .card .transcript:target .close {
-        visibility: visible;
-    }
     .card h3 {
         max-width: 100%;
         margin: 0;
         padding: 0.5rem;
         text-shadow: 0px 0px 4px rosybrown;
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1.2;
     }
     @supports (transform-style: preserve-3d) {
@@ -312,15 +300,45 @@
         }
     }
 }
-.no-js .cards .card,
 .no-js .cards + .close-all {
     display: none;
 }
-
+.no-js .cards {
+    display: block;
+}
+.no-js .cards .card {
+    display: block;
+    width: 100%;
+}
 .no-js .front,
 .no-js .back {
     display: block;
     position: static;
+    width: 100%;
+    padding: 0;
+}
+.no-js .back {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+}
+.no-js .responsive-wrapper {
+    position: static;
+    max-width: 55%;
+    display: block;
+    padding: 0;
+}
+.no-js .cards .back noscript {
+    /* display: block;
+    padding-bottom: 56.25%; */
+}
+.no-js .transcript-toggle {
+    display: none;
+}
+.no-js .transcript {
+    display: block;
+    height: 350px;
+    width: 40%;
 }
 .no-js .cards .card {
     height: auto;
@@ -334,14 +352,14 @@
 .no-js #main .back,
 .no-js #main .card .content{
     transform: rotateX(0);
+    visibility: initial;
 }
-
 .no-js .no-js-hide {
     display: none;
 }
 .no-js video {
-    max-width: 100%;
-}
-.no-js .cards noscript {
-    width: 30%;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
 }

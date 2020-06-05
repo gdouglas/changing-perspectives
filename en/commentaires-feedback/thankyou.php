@@ -8,9 +8,9 @@
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
-        <h1>Thank You</h1>
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
+        <h1>Thank You</h1>
         Thank you for your feedback.
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>

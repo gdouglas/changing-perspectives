@@ -5,22 +5,30 @@
  * @param {function} goal
  */
 function a11yActivate(target, goal) {
-    target.addEventListener('click', goal);
-    target.addEventListener('keyup', function(e) {
-        if (e.key == "Enter" || e.key == " ") {
+    let keys = ["Enter", " "];
+    if (target.tagName === "BUTTON") {
+        keys = [" "];
+    }
+    target.addEventListener("click", goal);
+    target.addEventListener("keyup", function (e) {
+        if (keys.indexOf(e.key) > -1) {
             goal(e);
         }
     });
 }
 
-
 window.onload = function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
-    getVideos();
     addTranscripts();
 };
+// let space open the card without scrolling
+window.addEventListener("keydown", function(e){
+    if (this.document.activeElement.classList.contains('card') && e.key == " ") {
+        e.preventDefault();
+    }
+});
 
 function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
@@ -45,11 +53,10 @@ function addCardListeners() {
     [...skipLinks].forEach((link) => {
         a11yActivate(link, skipCard);
     });
-    [...playButtons].forEach((button)=>{
+    [...playButtons].forEach((button) => {
         a11yActivate(button, playVimeo);
     });
 }
-
 
 /**
  *  Get the vimeo player closest to the event and start playing it
@@ -58,13 +65,12 @@ function addCardListeners() {
  */
 function playVimeo(event) {
     event.stopPropagation();
-    // target vimeo player 
-    let selected = event.target.parentElement.querySelector('.vimeo');
+    // target vimeo player
+    let selected = event.target.parentElement.querySelector(".vimeo");
 
     //loop through players for a match then play
     for (let player in vimeoPlayers) {
         if (vimeoPlayers[player].element == selected) {
-            console.log(vimeoPlayers[player]);
             vimeoPlayers[player].play();
         }
     }
@@ -77,6 +83,7 @@ function addCardKeyboardControls(card, cards) {
             case " ":
                 e.preventDefault();
                 setActive(card);
+                console.log("space pressed");
                 break;
             case "Escape":
                 setActive();
@@ -150,13 +157,6 @@ function setActive(element) {
         closeButton.tabIndex = -1;
     }
 }
-function getVideos() {
-    var players = document.querySelectorAll(".vimeo");
-    if (players.length < 1) {
-        return;
-    }
-    let index = 0;
-}
 
 let vimeoPlayers = createVimeoPlayers();
 function createVimeoPlayers() {
@@ -168,19 +168,20 @@ function createVimeoPlayers() {
     }
     return vimeoPlayers;
 }
-console.log(vimeoPlayers);
 function stopAllVimeo() {
     vimeoPlayers.forEach((vim) => vim.pause());
 }
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
-    console.log(buttons);
     for (let i = 0; i < buttons.length; i++) {
         a11yActivate(buttons[i], toggleTranscript);
     }
 }
 function toggleTranscript(e) {
     e.stopPropagation();
+    e.preventDefault();
+    console.log("toggle");
+
     let expanded = e.target.getAttribute("aria-expanded");
     if (expanded == "true") {
         expanded = "false";
@@ -188,7 +189,5 @@ function toggleTranscript(e) {
         expanded = "true";
     }
     e.target.setAttribute("aria-expanded", expanded);
-
-    e.target.nextElementSibling.classList.toggle('closed');
-    
+    e.target.nextElementSibling.classList.toggle("closed");
 }

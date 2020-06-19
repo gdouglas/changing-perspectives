@@ -2,6 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
     <title>Feedback | Changing Perspectives</title>
+    <meta name="description" content="Leave feedback about the Changing Perspectives website.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
     <script src="/scripts/validation.js"></script>
 	<script>
@@ -18,7 +19,8 @@
     </header>
     <main id="main" role="main" tabindex="-1">
         <h1>Comments and Feedback</h1>
-        <form class="contact-form" name="contactform" method="post" action="send.php" onsubmit="return validate.check(this)">
+        <?php include "send.php" ?>
+        <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> onsubmit="return validate.check(this)">
             <fieldset>
                 <legend>Please enter your contact information and message</legend>
                 <label class="required">Name:<span class="required_star">*</span> <br> <input id="email_sender_name" name="email_sender_name" type="text" placeholder="Firstname, lastname" class="required" autocomplete="name" required></label>

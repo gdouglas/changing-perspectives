@@ -5,6 +5,7 @@
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Stories from Yuquot | Changing Perspectives</title>
+    <meta name="description" content="Content to come">
 </head>
 
 <body>

@@ -5,6 +5,7 @@
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>The story before Vancouver | Changing Perspectives</title>
+    <meta name="description" content="Description to go here.">
 </head>
 
 <body>

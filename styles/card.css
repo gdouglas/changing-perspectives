@@ -42,6 +42,12 @@
 .hide-status {
     display: none;
 }
+.transcript-toggle {
+    align-self: start;
+}
+.transcript-toggle span {
+    pointer-events: none;
+}
 .transcript-toggle[aria-expanded=false] .show-status {
     display: block;
 }
@@ -75,15 +81,17 @@
 /* Track */
 .transcript::-webkit-scrollbar-track {
     border: 1px solid #ddd;
+    border-top: 0;
+    border-bottom: 0;
 }
 /* Handle */
 .transcript::-webkit-scrollbar-thumb {
-    background: #222;
+    background: #eee;
     border-radius: 10px;
 }
 /* Handle on hover */
 .transcript::-webkit-scrollbar-thumb:hover {
-    background: #b30000;
+    background: var(--secondary);
 }
 .transcript.closed {
     height: 0;

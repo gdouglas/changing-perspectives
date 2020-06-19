@@ -2,9 +2,10 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
+    <title>European Sailing Technology | Changing Perspectives</title>
+    <meta name="description" content="Learn about the technology and techniques that Europeans used to explore the world in the late 1700's.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <title>European Sailing Technology | Changing Perspectives</title>
     <style>
         @media (min-width:768px) {
             #main:after {

@@ -2,8 +2,9 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Teacher Resources | Changing Perspectives</title>
+    <meta name="description" content="Instructor resources for education about exploration in the late 1790's.">
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
 
 <body>

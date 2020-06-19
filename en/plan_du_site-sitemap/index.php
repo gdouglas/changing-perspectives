@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
-<title>Sitemap | Changing Perspectives</title>
+    <title>Sitemap | Changing Perspectives</title>
+    <meta name="description" content="Listing of all site pages.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

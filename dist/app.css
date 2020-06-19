@@ -1579,6 +1579,14 @@ to {
   display: none;
 }
 
+.transcript-toggle {
+  align-self: start;
+}
+
+.transcript-toggle span {
+  pointer-events: none;
+}
+
 .transcript-toggle[aria-expanded=false] .show-status {
   display: block;
 }
@@ -1617,19 +1625,21 @@ to {
 
 .transcript::-webkit-scrollbar-track {
   border: 1px solid #ddd;
+  border-top: 0;
+  border-bottom: 0;
 }
 
 /* Handle */
 
 .transcript::-webkit-scrollbar-thumb {
-  background: #222;
+  background: #eee;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 
 .transcript::-webkit-scrollbar-thumb:hover {
-  background: #b30000;
+  background: var(--secondary);
 }
 
 .transcript.closed {
@@ -1980,9 +1990,21 @@ to {
 }
 
 .gallery ul {
-  display: flex;
+  display: inline-flex;
   padding: 0;
   justify-content: center;
+}
+
+.gallery li {
+  transition: all .2s;
+}
+
+.gallery ul:hover li {
+  opacity: 0.8;
+}
+
+.gallery ul:hover li:hover {
+  opacity: 1;
 }
 
 .gallery li {

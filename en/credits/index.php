@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
-    <title>Credits | Changinge Perspectives</title>
+    <title>Credits | Changing Perspectives</title>
+    <meta name="description" content="Partners and organizations that helped create the Changing Perspectives website.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

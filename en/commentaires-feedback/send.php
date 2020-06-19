@@ -23,17 +23,18 @@
  *  please purchase an unbranded version from: https://www.freecontactform.com/unbranded_form.php
  *  Or upgrade to the more professional version at: https://www.freecontactform.com/responsive_form.php
  */
-
+$return_error = "";
  if(isset($_POST['email_sender_email'])) {
 
 	 include 'form_settings.php';
 
 	function died($error) {
-        var_dump($_POST);
-		echo "Sorry, but there were error(s) found with the form you submitted. ";
-		echo "These errors appear below.<br /><br />";
-		echo $error."<br /><br />";
-		echo "Please go back and fix these errors.<br /><br />";
+        global $return_error;
+        $return_error = "Sorry, but there were error(s) found with the form you submitted. ";
+		$return_error = "These errors appear below.<br /><br />";
+		$return_error = $error."<br /><br />";
+        $return_error = "Please go back and fix these errors.<br /><br />";
+        header("Location: ".$_SERVER['HTTP_REFERER']);
 		die();
 	}
 
@@ -49,7 +50,6 @@
 	$email_from = $_POST['email_sender_email']; // required
 	$subject = "Changing Perspectives feedback | ".$_POST['subject']; // required
 	$comments = $_POST['email_body']; // required
-	$antispam = $_POST['AntiSpam']; // required
 
 	$error_message = "";
 
@@ -76,9 +76,7 @@
 
 	$email_message .= "Full Name: ".clean_string($full_name)."\r\n";
 	$email_message .= "Email: ".clean_string($email_from)."\r\n";
-	$email_message .= "Telephone: ".clean_string($telephone)."\r\n";
 	$email_message .= "Message: ".clean_string($comments);
-    var_dump($email_message);
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();

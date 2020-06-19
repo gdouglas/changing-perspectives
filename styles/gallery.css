@@ -14,9 +14,18 @@
     padding: 0 0 0 3%;
 }
 .gallery ul {
-    display: flex;
+    display: inline-flex;
     padding: 0;
     justify-content: center;
+}
+.gallery li {
+    transition: all .2s;
+}
+.gallery ul:hover li {
+    opacity: 0.8;
+}
+.gallery ul:hover li:hover {
+    opacity: 1;
 }
 
 .gallery li {

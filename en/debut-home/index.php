@@ -4,6 +4,7 @@
 <head>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <title>Home | Changing Perspectives</title>
+    <meta name="description" content="Learn about the expedition and legacies of George Vancouver in 1790 exploring the Pacific Northwest.">
 </head>
 
 <body class="splash">

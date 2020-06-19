@@ -2,6 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
     <title>Thank You | Changing Perspectives</title>
+    <meta name="description" content="Thank you for leaving your feedback about the Changing Perspectives website.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

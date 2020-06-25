@@ -58,6 +58,16 @@ function addCardListeners() {
     });
 }
 
+function closeTranscripts() {
+    //close all transcripts before switching active
+    document.querySelectorAll('.transcript').forEach((transcript)=>{
+        transcript.classList.add('closed');
+    });
+    document.querySelectorAll('.transcript-toggle').forEach((transcriptToggle) => {
+        transcriptToggle.setAttribute("aria-expanded", "false");
+    });
+}
+
 /**
  *  Get the vimeo player closest to the event and start playing it
  *
@@ -83,7 +93,7 @@ function addCardKeyboardControls(card, cards) {
             case " ":
                 e.preventDefault();
                 setActive(card);
-                console.log("space pressed");
+                // console.log("space pressed");
                 break;
             case "Escape":
                 setActive();
@@ -132,6 +142,7 @@ function skipCard(e) {
 }
 //remove all other active class and add to element
 function setActive(element) {
+    closeTranscripts();
     stopAllVimeo();
     let closeButton = document.getElementById("close-cards-button");
     let active = document.querySelectorAll(".active");
@@ -180,7 +191,6 @@ function addTranscripts() {
 function toggleTranscript(e) {
     e.stopPropagation();
     e.preventDefault();
-    console.log("toggle");
 
     let expanded = e.target.getAttribute("aria-expanded");
     if (expanded == "true") {

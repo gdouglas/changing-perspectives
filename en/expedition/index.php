@@ -3,6 +3,7 @@
 
 <head>
     <title>Vancouver's Story | Changing Perspectives</title>
+    <meta name="description" content="Content to come"></meta>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
@@ -17,9 +18,8 @@
         <div class="pull-quote text-center">
             <h2 class="subtitle">Why did the British send Vancouver to Yuquot?</h2>
         </div>
-        <h3>What did Vancouver’s expedition actually achieve?</h3>
-        <h3>What did Vancouver’s expedition actually achieve?</h3>
-        <h3>What was it like to be a member of Vancouver’s crew?</h3>
+        <h3>What did Vancouver's expedition actually achieve?</h3>
+        <h3>What was it like to be a member of Vancouver's crew?</h3>
         <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
         <section>
             <h2>Trade Artifacts</h2>

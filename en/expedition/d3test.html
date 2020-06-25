@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script>
+        [{
+            "name": "FOM User",
+            "types": [
+                {
+                    "Type": "Faculty",
+                    "tasks": [
+                        {
+                            "task": "teach",
+                            "relates_to": ["students", "accreditation"],
+                            "systems_used": ["entrada"]
+                        },
+                        {
+                            "task": "get payed",
+                            "relates_to": ["admin"],
+                            "systems_used": ["ttp"]
+                        }
+                    ]
+                },
+                {
+                    "Type": "Student",
+                    "tasks": [
+                        {
+                            "task": "learn",
+                            "relates_to": ["faculty", "accreditation"],
+                            "systems_used": ["entrada"]
+                        },
+                        {
+                            "task": "exam",
+                            "relates_to": ["faculty","accreditation"],
+                            "systems_used": ["entrada"]
+                        }
+                    ]
+                }
+            ]
+        }]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+
+</html>

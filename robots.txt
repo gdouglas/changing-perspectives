@@ -1,0 +1,3 @@
+Sitemap: https://changing-perspectives.grmdgs.com/sitemap.xml
+User-agent:*
+Disallow:

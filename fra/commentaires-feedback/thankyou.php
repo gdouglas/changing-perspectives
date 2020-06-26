@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
+<html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
-    <title>Thank You | Changer de Perspective</title>
+    <title>Thank You | Changing Perspectives</title>
+    <meta name="description" content="Thank you for leaving your feedback about the Changing Perspectives website.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>
     <header>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/fra-header.php" ?>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/fra-nav.php" ?>
-        <h1>Thank You</h1>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/en-header.php" ?>
+        <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
-        Thank you for your message.
+        <h1>Thank You</h1>
+        Thank you for your feedback.
     </main>
-    <?php include $_SERVER['DOCUMENT_ROOT']."/fra-footer.php" ?>
+    <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
 </body>
 </html>

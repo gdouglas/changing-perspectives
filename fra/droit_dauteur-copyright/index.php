@@ -8,10 +8,10 @@
 <body>
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/fra-header.php" ?>
-        <h1>Copyright information</h1>
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
-        <p>Placeholder for Copyright</p>
+        <h1>Copyright information</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tempore sed magnam aperiam atque perferendis consectetur dolores. Laborum quo iste sint, soluta delectus harum in.</p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/fra-footer.php" ?>
 </body>

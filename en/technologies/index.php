@@ -8,7 +8,7 @@
     <script src="https://player.vimeo.com/api/player.js"></script>
     <style>
         @media (min-width:768px) {
-            #main:after {
+            #main:before {
                 content: '';
                 display: block;
                 pointer-events: none;
@@ -20,7 +20,8 @@
                 left: 0;
                 top: 0;
                 width: 100%;
-                height: 100%;
+                height: 200vh;
+                max-height: 100%;
                 z-index: -1;
                 opacity: 0.1;
             }
@@ -41,7 +42,7 @@
         <section class="cards-wrapper no-active" aria-label="Videos about European sailing technologies">
             <div class="offScreen">
                 <p>
-                    Click or press enter to flip cards and watch video.
+                    Click or press enter to flip cards and watch a video.
                 </p>
             </div>
             <div class="cards">

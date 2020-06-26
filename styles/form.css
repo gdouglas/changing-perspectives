@@ -63,6 +63,9 @@
     font-size: 1rem;
     display: inline;
 }
+.contact-form button[type="reset"] {
+    float: right;
+} 
 
 .contact-form label {
     font-weight: bold;

@@ -94,7 +94,7 @@ header nav {
     position: relative;
     font-size: inherit;
     line-height: 5.5rem;
-    /* font-weight: bold; */
+    border-bottom: 1px solid #d4af37;
 }
 header .btn {
     display: none;

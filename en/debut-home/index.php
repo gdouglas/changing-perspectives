@@ -13,10 +13,6 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <!-- <div class="site-advisory">
-            <p>This online virtual exhibit is hosted by the <a href="https://vanmaritime.com/" target="_blank" rel="noopener">Vancouver Maritime Museum</a> which is fortunate to be located on the traditional territories of the <a href="https://www.musqueam.bc.ca/" target="_blank" rel="noopener">xʷməθkwəy̓əm (Musqueam)</a>, <a href="https://www.squamish.net/" target="_blank" rel="noopener">Skwxwú7mesh (Squamish)</a>, and <a href="https://twnation.ca/" target="_blank" rel="noopener">Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh)</a> Nations in Vancouver British Columbia, Canada.</p>                
-            </div>
-        <h1 class="welcome-header">Welcome</h1> -->
         <div class="home-intro">
             <h1>Exploring Knowledge and Encounters in the time of the George Vancouver Expedition</h1>
 
@@ -25,7 +21,6 @@
                 <p>The images in this website are by non-Indigenous artists from the past and the present. They are based on their perspectives of early contact and not on Indigenous knowledge traditions. It is important to remember that they tell us as much about the artists themselves as they do about what actually happened in the late eighteenth and early nineteenth centuries.</p>
                 <div class="site-advisory"><p><em>This online virtual exhibit is hosted by the Vancouver Maritime Museum which is fortunate to be located on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada.</em></p></div>
             </div>
-
         </div>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>

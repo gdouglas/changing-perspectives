@@ -63,6 +63,10 @@ h3 {
   margin-top: var(--margin-top);
 }
 
+.small-text {
+  font-size: 0.75rem;
+}
+
 @media (max-width: 620px) {
   :root {
     font-size: 14px;
@@ -177,6 +181,14 @@ h3 {
 
 .pad-bottom {
   padding-bottom: 1rem;
+}
+
+.pad-top {
+  padding-top: 1rem;
+}
+
+.margin-down {
+  margin-bottom: -1rem;
 }
 
 .inline {
@@ -2140,6 +2152,12 @@ to {
   background: var(--paper);
   /* border-radius: 5px; */
   /* box-shadow: 1px 1px 4px 0px #222; */
+}
+
+.home-advisory {
+  font-size: 0.7rem;
+  padding-top: 3rem;
+  margin-bottom: -2rem;
 }
 
 .no-js {

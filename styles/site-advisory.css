@@ -11,3 +11,9 @@
     /* border-radius: 5px; */
     /* box-shadow: 1px 1px 4px 0px #222; */
 }
+
+.home-advisory {
+    font-size: 0.7rem;
+    padding-top: 3rem;
+    margin-bottom: -2rem;
+}

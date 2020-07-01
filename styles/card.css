@@ -44,6 +44,7 @@
 }
 .transcript-toggle {
     align-self: start;
+    -webkit-appearance: none;
 }
 .transcript-toggle span {
     pointer-events: none;

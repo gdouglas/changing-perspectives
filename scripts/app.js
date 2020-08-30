@@ -5,7 +5,7 @@
  * @param {function} goal
  */
 function a11yActivate(target, goal) {
-    let keys = ["Enter", " "];
+    let keys = [" "];
     if (target.tagName === "BUTTON") {
         keys = [" "];
     }
@@ -13,6 +13,7 @@ function a11yActivate(target, goal) {
     target.addEventListener("keyup", function (e) {
         if (keys.indexOf(e.key) > -1) {
             goal(e);
+            console.log(e);
         }
     });
 }
@@ -90,6 +91,9 @@ function addCardKeyboardControls(card, cards) {
     card.addEventListener("keyup", (e) => {
         switch (e.key) {
             case "Enter":
+                if (e.target.classList.contains('transcript-toggle')){
+                    break;
+                }
             case " ":
                 e.preventDefault();
                 setActive(card);
@@ -142,6 +146,7 @@ function skipCard(e) {
 }
 //remove all other active class and add to element
 function setActive(element) {
+    console.log('setActive');
     closeTranscripts();
     stopAllVimeo();
     let closeButton = document.getElementById("close-cards-button");
@@ -185,10 +190,12 @@ function stopAllVimeo() {
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
     for (let i = 0; i < buttons.length; i++) {
+        console.log("add transcripts");
         a11yActivate(buttons[i], toggleTranscript);
     }
 }
 function toggleTranscript(e) {
+    console.log(e);
     e.stopPropagation();
     e.preventDefault();
 

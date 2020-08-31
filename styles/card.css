@@ -71,8 +71,7 @@
     scrollbar-color: blue;
     scrollbar-shadow-color: #01a9b2;
     scrollbar-width: 50px;
-    color: #eee;
-
+    color: unset;
 }
 /* width */
 .transcript::-webkit-scrollbar {
@@ -206,6 +205,9 @@
         text-shadow: 0px 0px 4px rosybrown;
         font-size: 2rem;
         line-height: 1.2;
+    }
+    .transcript {
+        color: #eee;
     }
     @supports (transform-style: preserve-3d) {
         .card .content{

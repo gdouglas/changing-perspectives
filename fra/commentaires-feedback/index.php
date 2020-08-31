@@ -19,7 +19,7 @@
     </header>
     <main id="main" role="main" tabindex="-1">
         <h1>Commentaires et rétroaction</h1>
-        <p>Vos commentaires seront également acheminés au Musée canadien de l’histoire (MCH), qui a la responsabilité globale du Musée virtuel du Canada (MVC). Ils seront utilisés à des fins de recherche sur le public. Veuillez consulter la <a href="http://www.museevirtuel.ca/avis-importants/" rel=noopener>Politique du MVC</a> sur la protection des renseignements personnels pour de plus amples renseignements.</p>
+        <p class="narrow-container centered-margin pad-bottom">Vos commentaires seront également acheminés au Musée canadien de l'histoire (MCH), qui a la responsabilité globale du Musée virtuel du Canada (MVC). Ils seront utilisés à des fins de recherche sur le public. Veuillez consulter la <a href="http://www.museevirtuel.ca/avis-importants/" rel=noopener>Politique du MVC</a> sur la protection des renseignements personnels pour de plus amples renseignements.</p>
         <?php include "send.php" ?>
         <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> onsubmit="return validate.check(this)">
             <fieldset>

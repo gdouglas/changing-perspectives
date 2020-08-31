@@ -15,8 +15,22 @@
     </header>
     <main id="main" role="main" tabindex="-1">
         <h1>About this website</h1>
-
-        <p>This website was built in collaboration with multiple partners. Thank you.</p>
+        <p>Some of the content on this site was provided by the following contributors.
+        <div>Icons were provided by
+            <ul>
+                <li><a href="https://fontawesome.com/license" target="_blank">fontawesome</a></li>
+                <li><a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    <ul>
+                    <li><a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a></li>
+                    <li><a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> </li>
+                    <li><a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a></li>
+                    <li><a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://www.vecteezy.com/free-vector/ornament">Ornament Vectors by Vecteezy</a></li>
+            </ul>
+        </div>
+        </div>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
 </body>

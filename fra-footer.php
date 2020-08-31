@@ -6,6 +6,6 @@
     <div class="block"><a href="/fra/droit_dauteur-copyright/">
             Droits d'auteur</a></div>
     <div class="block"><a href="/fra/commentaires-feedback/">Commentaires</a></div>
-    <div class="block"><a href="http://www.virtualmuseum.ca/important-notices/" target="_blank" rel="noopener">Politique de confidentialité du MVC</a></div>
+    <div class="block"><a href="http://www.museevirtuel.ca/avis-importants/" target="_blank" rel="noopener">Politique de confidentialité du MVC</a></div>
     <script async src="/dist/app.min.js"></script>
 </footer>

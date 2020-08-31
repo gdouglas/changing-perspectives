@@ -63,13 +63,12 @@
     font-size: 1rem;
     display: inline;
 }
-.contact-form button[type="reset"] {
-    float: right;
-} 
-
 .contact-form label {
     font-weight: bold;
     font-family: var(--sans-serif-font);
     margin-bottom: 1rem;;
     width: 100%;
+}
+.form-controls {
+    text-align: right;
 }

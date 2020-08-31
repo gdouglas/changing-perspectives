@@ -2051,7 +2051,7 @@ to {
 }
 
 .gallery li:target img {
-  max-width: none;
+  /* max-width: none; */
 }
 
 .gallery .description {
@@ -2109,7 +2109,7 @@ to {
   opacity: 1;
   height: auto;
   visibility: visible;
-  max-width: none;
+  /* max-width: none; */
   overflow: auto;
 }
 
@@ -2125,7 +2125,7 @@ to {
 }
 
 .gallery .description:target img {
-  max-width: none;
+  /* max-width: none; */
   margin-bottom: 1rem;
 }
 

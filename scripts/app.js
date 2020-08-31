@@ -13,7 +13,6 @@ function a11yActivate(target, goal) {
     target.addEventListener("keyup", function (e) {
         if (keys.indexOf(e.key) > -1) {
             goal(e);
-            console.log(e);
         }
     });
 }
@@ -97,7 +96,6 @@ function addCardKeyboardControls(card, cards) {
             case " ":
                 e.preventDefault();
                 setActive(card);
-                // console.log("space pressed");
                 break;
             case "Escape":
                 setActive();
@@ -125,7 +123,6 @@ function addCardKeyboardControls(card, cards) {
                 }
                 break;
             default:
-                // console.log(e.key);
                 break;
         }
     });
@@ -146,7 +143,6 @@ function skipCard(e) {
 }
 //remove all other active class and add to element
 function setActive(element) {
-    console.log('setActive');
     closeTranscripts();
     stopAllVimeo();
     let closeButton = document.getElementById("close-cards-button");
@@ -190,12 +186,10 @@ function stopAllVimeo() {
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
     for (let i = 0; i < buttons.length; i++) {
-        console.log("add transcripts");
         a11yActivate(buttons[i], toggleTranscript);
     }
 }
 function toggleTranscript(e) {
-    console.log(e);
     e.stopPropagation();
     e.preventDefault();
 

@@ -2050,10 +2050,6 @@ to {
   max-width: 100%;
 }
 
-.gallery li:target img {
-  /* max-width: none; */
-}
-
 .gallery .description {
   text-align: left;
   box-sizing: border-box;

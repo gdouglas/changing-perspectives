@@ -56,11 +56,11 @@
                             <div class="responsive-wrapper">
                                 <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
-                                    <video preload="none" src="/videos/placeholder-example.mp4">
+                                    <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
                                     </video>
-                                    <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
+                                    <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Download Video</a>
                                 </noscript>
                             </div>
                             <button id="vimeo1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
@@ -85,11 +85,11 @@
                             <div class="responsive-wrapper">
                                 <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
-                                    <video preload="none" src="/videos/placeholder-example.mp4">
+                                    <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
                                     </video>
-                                    <a class="download_video" href="/videos/placeholder-example.mp4" download="/videos/placeholder-example.mp4">Download Video</a>
+                                    <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Download Video</a>
                                 </noscript>
                             </div>
                             <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
@@ -113,8 +113,12 @@
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="vimeo3" class="vimeo" src="https://player.vimeo.com/video/285512274?color=ADC70C&title=0&byline=0&portrait=0&speed=1&playsinline=true" width="640" height="274" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
-                                <noscript>
-                                    Javascript is required to play this content.
+                                    <noscript>
+                                    <video preload="none" src="/videos/on-board-ship.mp4">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
+                                    </video>
+                                    <a class="download_video" href="/videos/on-board.mp4" download="/videos/on-board-ship.mp4">Download Video</a>
                                 </noscript>
                             </div>
                             <button id="vimeo3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>

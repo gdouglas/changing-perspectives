@@ -20,7 +20,7 @@
                 <p><em>Welcome</em>, this exhibit tells the story of the early arrival of European people to the Pacific Northwest Coast and their encounters with First Nations people there.<br> You will learn about:</p>
                 <ul>
                     <li>What life was like on the Northwest Coast before the arrival of the newcomers.</li>
-                    <li>Why Europeans were motivated to travel to this part of the world.</li>
+                    <li>Why were Europeans were motivated to travel to this part of the world?</li>
                     <li>The technologies the Europeans needed to get them to their destination</li>
                     <li>The difficulties Vancouver experienced in completing his mission</li>
                 </ul>

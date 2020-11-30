@@ -51,6 +51,9 @@ header * {
     padding: 0 4px;
     font-weight: bold;
 }
+.super-nav .lang-link small {
+    font-weight: normal;
+}
 .vmc-logo {
     height: auto;
     min-width: 120px;

@@ -63,7 +63,7 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/483195238?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -92,7 +92,7 @@
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo3" class="vimeo" src="https://player.vimeo.com/video/463155099?color=ADC70C&title=0&byline=0&portrait=0&speed=1&playsinline=true" width="640" height="274" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
+                                <iframe id="vimeo3" class="vimeo" src="https://player.vimeo.com/video/87110435?color=ADC70C&title=0&byline=0&portrait=0&speed=1&playsinline=true" width="640" height="274" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
                                     <noscript>
                                     <video preload="none" src="/videos/on-board-ship.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

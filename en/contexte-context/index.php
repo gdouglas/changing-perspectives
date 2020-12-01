@@ -34,7 +34,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

@@ -1703,6 +1703,18 @@ to {
   display: none;
 }
 
+.nautical-language {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.nautical-language .video-wrapper iframe {
+  border: 0;
+  min-width: 400px;
+}
+
 @media (min-width: 756px) and (max-width: 980px) {
   .cards-wrapper .cards {
     flex-wrap: wrap;

@@ -48,11 +48,6 @@ h2 {
   font-size: 2.2rem;
 }
 
-.subtitle {
-  font-size: 1.5rem;
-  font-family: var(--sans-serif-font), serif;
-}
-
 h3 {
   font-size: 2rem;
   line-height: 1.4;
@@ -158,6 +153,10 @@ h3 {
   max-width: 1600px;
 }
 
+.width-100 {
+  width: 100%;
+}
+
 .narrow-container {
   max-width: 100%;
   width: 650px;
@@ -194,6 +193,14 @@ h3 {
 
 .margin-down {
   margin-bottom: -1rem;
+}
+
+.margin-top-none {
+  margin-top: 0;
+}
+
+.margin-bottom-none {
+  margin-bottom: 0;
 }
 
 .inline {
@@ -344,6 +351,21 @@ h3 {
   padding-bottom: 56.25%;
   position: absolute;
   top: 0;
+}
+
+.responsive-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.responsive-container > * {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .debug-header {
@@ -1806,6 +1828,7 @@ to {
   }
 
   .card h3 {
+    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0.5rem;

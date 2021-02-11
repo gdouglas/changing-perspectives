@@ -197,20 +197,117 @@
                 <button id="close-cards-button" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Close Card</button>
             </div>
         </section>
-        <section class="nautical-language">
-            <div id="card3" class="card">
+        <div class="pull-quote text-center">
+            <h2 class="subtitle">Come on board a sailing brig and learn how sailors speak.</h2>
+        </div>
+        <section class="cards-wrapper no-active" aria-label="Videos describing some particularieties of language in sailing.">
+            <div class="offScreen">
+                <p>
+                    Click or press enter to flip cards and watch a video.
+                </p>
+            </div>
+            <div class="cards">
+                <div id="card1_1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>Come on board a sailing brig and learn how sailor&rsquo;s speak.</h3>
+                            <h3>Hands aloft!</h3>
                         </div>
                         <div class="back">
-                            <div class="video-wrapper"><iframe id="vimeo1" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-                            <div class="video-wrapper"><iframe id="vimeo1" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
-                            <div class="video-wrapper"><iframe id="vimeo1" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+                            <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
+                            <div class="responsive-wrapper">
+                                <iframe id="vimeo4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <noscript>
+                                    <video preload="none" src="/videos/navigation.mp4">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
+                                    </video>
+                                    <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Download Video</a>
+                                </noscript>
+                            </div>
+                            <button id="vimeo4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <div id="vimeo4-transcript" class="transcript closed">
+                                <p>Setting foot on a sailing ship could leave you a little puzzled about what everyone is talking about. The orders a Captains gives the crew, even today, can almost sound like a different language.</p>
+                                <p>See If you can learn a few words and phrases. It will go a long way in helping you understand how sailing a ship works.&nbsp; Maybe one day you&rsquo;ll get to join the crew!</p>
+                                <p>Let's start here, on this square rigged Brig very similar to one used by Captain Vancouver hundreds of years ago.</p>
+                                <p>All boats have a bow, stern, port and starboard sides. The sails are attached to masts and yards and are identified by their position on the boat (fore and main), and their position on the mast (top sails and top gallant sails).&nbsp;</p>
+                                <p>A captain might call, <em>"Hand aloft to loose out the fore and main tops'ls and t'gallants."</em></p>
+                                <p>Hand refers to crew.</p>
+                                <p>Aloft, well, that means climb on up the rigging.</p>
+                                <p>Tops'ls and T'gallants is a bit of nautical slang for Top Sails and Top Gallant Sails.</p>
+                                <p>So, "Hand aloft to loose out the fore and main tops'ls and t'gallants," is the Captain&rsquo;s order for the crew to climb up the fore and main masts, and let down the top and top gallant sails.</p>
+                                <p><em>&ldquo;Let fall!&rdquo;</em></p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div id="card2_2" class="card">
+                    <div class="content">
+                        <div class="front">
+                            <h3>That&rsquo;s well halyard</h3>
+                        </div>
+                        <div class="back">
+                            <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
+                            <div class="responsive-wrapper">
+                                <iframe id="vimeo5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <noscript>
+                                    <video preload="none" src="/videos/ship-tech.mp4">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
+                                    </video>
+                                    <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Download Video</a>
+                                </noscript>
+                            </div>
+                            <button id="vimeo5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <div id="vimeo5-transcript" class="transcript closed">
+                                <p>Once the sails are 'loosed', most of the work sailing the ship happens down on the decking<br />using ropes. Ropes used to maneuver the sails are called halyards and braces, depending on<br />what they are attached to.<br />The captain may now call, "Hands to halyard. Haul away Halyard!&rdquo;<br />And the crew would go about pulling those halyard ropes to hoist up the yard, which is the<br />horizontal pole above the sail.<br />Those sails need to be good and tight to get the most out of the wind.<br />&ldquo;That&rsquo;s well halyard!&rdquo;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="card3_3" class="card">
+                    <div class="content">
+                        <div class="front">
+                            <h3>That&rsquo;s well braces</h3>
+                        </div>
+                        <div class="back">
+                            <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>
+                            <div class="responsive-wrapper">
+                                <iframe id="vimeo6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <noscript>
+                                    <video preload="none" src="/videos/on-board-ship.mp4">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
+                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
+                                    </video>
+                                    <a class="download_video" href="/videos/on-board.mp4" download="/videos/on-board-ship.mp4">Download Video</a>
+                                </noscript>
+                            </div>
+                            <button id="vimeo6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <div id="vimeo6-transcript" class="transcript closed">
+                                <p>Now that the sails are up, the Captain can steer the ship using the rudder and the wind. Something he calls tacking.</p>
+                                <p>He uses the Helm which moves the rudder at the stern. And that moves the boat left or right.</p>
+                                <p>At the same time the captain orders the crew to move the sails to make sure they catch the wind</p>
+                                <p>The Captain shouts:</p>
+                                <p><em>"Hands to main braces. Brace up sharp, port tack."</em></p>
+                                <p>Braces are ropes attached to the yard. They are used for rotating the yard around the mast. "Brace up sharp, port tack" means to rotate hard towards the wind, which happens to be coming from the port side.&nbsp;</p>
+                                <p>And from there, you can determine the full command given by the captain. If you were talking to your friend you might say, "Hey buddy, grab that rope attached to the spinny part of that horizontal pole there, about halfway up, and pull it hard until it's facing the left and catching that wind." But, that's a mouthful!</p>
+                                <p><em>&ldquo;That&rsquo;s well braces!&rdquo;</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="close-all relative text-center">
+                <button id="close-cards-button" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Close Card</button>
+            </div>
         </section>
+        <!-- <section>
+            <h2>Come on board a sailing brig and learn how sailor&rsquo;s speak.</h2>
+            <div class="videos nautical-language">
+                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
+                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
+                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
+            </div>
+        </section> -->
         <section id="gallery" class="gallery">
             <h2>Artifacts of exploration</h2>
             <p>These are some of the tools that Vancouver and his crew would have used to navigate. Click an image to learn more</p>
@@ -237,7 +334,7 @@
                 <figure>
                     <img src="/images/sextant.jpg" alt="A brass sextant. It is triangular with an arc on the bottom.">
                     <figcaption>
-                        <p>Brass <strong>sextant</strong> with five eyepieces, made by Jesse Ramsden, was used by Joseph Baker, Vancouver’s First Lieutenant and is on loan courtesy of Richard Baker. The sextant is a doubly reflecting navigation instrument with a graduated arc of 60° and a sighting mechanism, used for measuring the angular distances between objects and especially for taking altitudes in navigation.</p>
+                        <p>Brass <strong>sextant</strong> with five eyepieces, made by Jesse Ramsden, was used by Joseph Baker, Vancouver&rsquo;s First Lieutenant and is on loan courtesy of Richard Baker. The sextant is a doubly reflecting navigation instrument with a graduated arc of 60° and a sighting mechanism, used for measuring the angular distances between objects and especially for taking altitudes in navigation.</p>
                     </figcaption>
                 </figure>
             </div>
@@ -247,8 +344,8 @@
                 <figure>
                     <img src="/images/chronometer.jpg" alt="A wooden box opened with a clock like mechanism inside of it.">
                     <figcaption>
-                        <p>John Arnold (maker) <strong>"Arnold 176" chronometer</strong> used by George Vancouver for 1790 expedition into Pacific Northwest. Completed in 1791 for the Board of Longitude, now in gimbal suspension with 3 tier mahogany case, purchased from Christie’s Auction House.</p>
-                        <p>A marine Chronometer is a timepiece that is precise and accurate enough to be used as a portable time standard, meaning it can be used to determine longitude by accurately measuring the time of a known fixed location. When first developed in the 18th century, it was a major technical achievement, as accurate knowledge of the time during sea voyage is necessary for navigation without the use of electronic or communication devices.</p>
+                        <p>John Arnold (maker) <strong>"Arnold 176" chronometer</strong> used by George Vancouver for 1790 expedition into Pacific Northwest. Completed in 1791 for the Board of Longitude, now in gimbal suspension with 3 tier mahogany case, purchased from Christie&rsquo;s Auction House.</p>
+                        <p>A marine chronometer is a timepiece that is precise and accurate enough to be used as a portable time standard, meaning it can be used to determine longitude by accurately measuring the time of a known fixed location. When first developed in the 18th century, it was a major technical achievement, as accurate knowledge of the time during sea voyage is necessary for navigation without the use of electronic or communication devices.</p>
                     </figcaption>
                 </figure>
             </div>
@@ -258,7 +355,7 @@
                 <figure>
                     <img src="/images/telescope.jpg" alt="A telescope with a brass tip holding the lens and eyepiece. The body is shiny weathered leather.">
                     <figcaption>
-                        <p>Two stage, leather-covered <strong>telescope</strong> made by G. or P. Dolland, inscribed "Capt. John. Baker Royal Navy" on loan courtesy of Richard Baker. Joseph Baker, Vancouver’s First Lieutenant . A telescope is an optical instrument which magnifies distant objects by arranging lenses or curved mirrors to collect and focus light.</p>
+                        <p>Two stage, leather-covered <strong>telescope</strong> made by G. or P. Dolland, inscribed "Capt. John. Baker Royal Navy" on loan courtesy of Richard Baker. Joseph Baker, Vancouver&rsquo;s First Lieutenant . A telescope is an optical instrument which magnifies distant objects by arranging lenses or curved mirrors to collect and focus light.</p>
                     </figcaption>
                 </figure>
             </div>

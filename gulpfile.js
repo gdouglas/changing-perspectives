@@ -10,6 +10,8 @@ const php = require('gulp-connect-php');
 var browserSync = require('browser-sync');
 const autoprefixer = require('gulp-autoprefixer');
 
+
+
 // concat and minify site js
 function scripts() {
     return gulp.src(["./scripts/*"])
@@ -20,8 +22,8 @@ function scripts() {
         }))
         .pipe(rename("app.min.js"))
         .pipe(uglify())
-        .pipe(gulp.dest('./dist'))
-};
+        .pipe(gulp.dest('./dist'));
+}
 function styles() {
     return gulp.src(["styles/main.css"])
     .pipe(concatCss('app.css'))
@@ -32,14 +34,14 @@ function styles() {
     .pipe(gulp.dest('./dist'))
     .pipe(rename("app.min.css"))
     .pipe(uglifycss())
-    .pipe(gulp.dest('./dist'))
-};
+    .pipe(gulp.dest('./dist'));
+}
 function prefix() {
     return gulp.src(["dist/app.css"])
     .pipe(autoprefixer({
         cascade: false,
         supports: true
-    }))
+    }));
 }
 
 // start php server
@@ -55,7 +57,6 @@ function connectSync() {
         });
     });
 }
-
 // start broswersync
 function browserSync(done) {
     browserSync.init({
@@ -81,6 +82,7 @@ function watchFiles() {
 
 const watch = gulp.parallel([watchFiles, connectSync]);
 exports.default = watch;
-exports.style = styles;
-exports.script = scripts;
-exports.prefix = prefix;
+exports.style   = styles;
+exports.script  = scripts;
+exports.prefix  = prefix;
+exports.serve   = connectSync;

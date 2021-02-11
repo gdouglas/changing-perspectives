@@ -24,6 +24,9 @@
 .container {
     max-width: 1600px;;
 }
+.width-100 {
+    width: 100%;
+}
 .narrow-container {
     max-width: 100%;
     width: 650px;
@@ -52,6 +55,12 @@
 }
 .margin-down {
     margin-bottom: -1rem;
+}
+.margin-top-none {
+    margin-top: 0;
+}
+.margin-bottom-none {
+    margin-bottom: 0;
 }
 .inline {
     display: inline;
@@ -191,6 +200,20 @@
     position: absolute;
     top: 0;
 }
+.responsive-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+.responsive-container > * {
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .debug-header {
     color: #eee;
     background: #111;

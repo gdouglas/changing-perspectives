@@ -113,13 +113,13 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/483195238?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="vimeo2" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
-                                    <video preload="none" src="/videos/ship-tech.mp4">
+                                    <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
                                     </video>
-                                    <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Download Video</a>
+                                    <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Download Video</a>
                                 </noscript>
                             </div>
                             <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
@@ -142,13 +142,13 @@
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo3" class="vimeo" src="https://player.vimeo.com/video/463155099?color=ADC70C&title=0&byline=0&portrait=0&speed=1&playsinline=true" width="640" height="274" allow="autoplay; fullscreen; gyroscope; accelerometer" allowfullscreen></iframe>
+                                <iframe id="vimeo3" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
-                                    <video preload="none" src="/videos/on-board-ship.mp4">
+                                    <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
                                     </video>
-                                    <a class="download_video" href="/videos/on-board.mp4" download="/videos/on-board-ship.mp4">Download Video</a>
+                                    <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Download Video</a>
                                 </noscript>
                             </div>
                             <button id="vimeo3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
@@ -166,6 +166,60 @@
             </div>
             <div class="close-all relative text-center">
                 <button id="close-cards-button" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Close Card</button>
+            </div>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Trade Artifacts</h2>
+            <p>These are some of the artifacts that Captain Vancouver and his crew would have traded with their Indigenous hosts. Click an image to learn more</p>
+            <ul>
+                <li>
+                    <a href="#item1" class="open">
+                        <img src="https://via.placeholder.com/350x200?text=placeholder" alt="Placeholder image.">
+                    </a>
+                </li>
+                <li>
+                    <a href="#item2" class="open">
+                        <img src="https://via.placeholder.com/350x350?text=placeholder" alt="Placeholder image.">
+                    </a>
+                </li>
+                <li>
+                    <a href="#item3" class="open">
+                        <img src="https://via.placeholder.com/200x500?text=placeholder" alt="Placeholder image.">
+                    </a>
+                </li>
+            </ul>
+            <div id="item1" class="description">
+                <a href="#gallery" class="close btn absolute top right">Close</a>
+                <h3 class="gold">Artifact 1</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/350x200?text=placeholder" alt="Placeholder image.">
+                    <figcaption>
+                        <p>Text description of artifact Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit esse fugit corporis ratione ex veritatis quibusdam necessitatibus saepe. Consectetur ratione obcaecati blanditiis esse expedita excepturi facilis odio ducimus aliquam rerum.
+                            Non a ipsam sapiente voluptas commodi recusandae soluta, illum quas laborum ex quibusdam esse vero natus ullam molestiae repellendus laboriosam quasi aliquid dolorum aut deleniti adipisci nulla. Necessitatibus, eaque placeat.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="item2" class="description">
+                <a href="#gallery" class="close btn absolute top right">Close</a>
+                <h3 class="gold">Artifact 2</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/900x500?text=placeholder" alt="Placeholder image.">
+                    <figcaption>
+                        <p>Text description of artifact Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit esse fugit corporis ratione ex veritatis quibusdam necessitatibus saepe. Consectetur ratione obcaecati blanditiis esse expedita excepturi facilis odio ducimus aliquam rerum.
+                            Non a ipsam sapiente voluptas commodi recusandae soluta, illum quas laborum ex quibusdam esse vero natus ullam molestiae repellendus laboriosam quasi aliquid dolorum aut deleniti adipisci nulla. Necessitatibus, eaque placeat.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div id="item3" class="description">
+                <a href="#gallery" class="close btn absolute top right">Close</a>
+                <h3 class="gold">Artifact 3</h3>
+                <figure>
+                    <img src="https://via.placeholder.com/800x1200?text=placeholder" alt="Placeholder image.">
+                    <figcaption>
+                        <p>Text description of artifact Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit esse fugit corporis ratione ex veritatis quibusdam necessitatibus saepe. Consectetur ratione obcaecati blanditiis esse expedita excepturi facilis odio ducimus aliquam rerum.
+                            Non a ipsam sapiente voluptas commodi recusandae soluta, illum quas laborum ex quibusdam esse vero natus ullam molestiae repellendus laboriosam quasi aliquid dolorum aut deleniti adipisci nulla. Necessitatibus, eaque placeat.</p>
+                    </figcaption>
+                </figure>
             </div>
         </section>
     </main>

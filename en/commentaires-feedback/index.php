@@ -25,16 +25,17 @@
         <?php include "send.php" ?>
         <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> onsubmit="return validate.check(this)">
             <fieldset>
-                <legend>Please enter your contact information and message</legend>
-                <label class="required">Name:<span class="required_star">*</span> <br> <input id="email_sender_name" name="email_sender_name" type="text" placeholder="Firstname, lastname" class="required" autocomplete="name" required></label>
-                <label class="required">Email:<span class="required_star">*</span> <br> <input id="email_sender_email" name="email_sender_email" type="email" class="required" required autocomplete="email" placeholder="example@email.com"></label>
-                <hr>
-                <label class="required">Subject:<span class="required_star">*</span> <br> <input id="subject" name="subject" type="text" required placeholder="Message Subject" maxlength="78"></label>
-                <label class="required">Message:<span class="required_star">*</span> <br> <textarea id="email_body" name="email_body" id="email-body" cols="30" rows="10" class="required" required placeholder="Lorem ipsum dolor sit amet..."></textarea></label>
-                <div class="form-controls">
-                    <button type="reset" class="reset-btn" value="Reset">Reset</button>
-                    <button type="submit" value="Submit">Submit</button>
+                <div class="width-100">
+                    <legend>Please enter your contact information and message</legend>
+                    <label class="required">Name:<span class="required_star">*</span> <br> <input id="email_sender_name" name="email_sender_name" type="text" placeholder="Firstname, lastname" class="required" autocomplete="name" required></label>
+                    <label class="required">Email:<span class="required_star">*</span> <br> <input id="email_sender_email" name="email_sender_email" type="email" class="required" required autocomplete="email" placeholder="example@email.com"></label>
                 </div>
+                    <label class="required">Subject:<span class="required_star">*</span> <br> <input id="subject" name="subject" type="text" required placeholder="Message Subject" maxlength="78"></label>
+                    <label class="required">Message:<span class="required_star">*</span> <br> <textarea id="email_body" name="email_body" id="email-body" cols="30" rows="10" class="required" required placeholder="Lorem ipsum dolor sit amet..."></textarea></label>
+                    <div class="form-controls">
+                        <button type="reset" class="reset-btn" value="Reset">Reset</button>
+                        <button type="submit" value="Submit">Submit</button>
+                    </div>
             </fieldset>
             <p class="disclaimer">The Internet is a public forum and electronic information can be intercepted. For reasons of security and privacy, we ask that you not send us any personal or confidential information, such as your Social Insurance Number (SIN), home or business address.</p>
         </form>

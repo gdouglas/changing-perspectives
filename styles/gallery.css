@@ -42,6 +42,7 @@
 .gallery li img {
     max-height: 100%;
     max-width: 100%;
+    object-fit: contain;
 }
 
 .gallery .description {
@@ -98,10 +99,10 @@
     overflow: auto;
 }
 .gallery .description:target figure {
-    display: inline-flex;
+    /* display: inline-flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-grow: 1;
+    flex-grow: 1; */
     margin: 0;
     padding: 1rem;
     background: inherit;
@@ -110,6 +111,7 @@
 .gallery .description:target img {
     /* max-width: none; */
     margin-bottom: 1rem;
+    object-fit: contain;
 }
 .gallery .close {
     position: absolute;
@@ -120,10 +122,10 @@
 }
 
 .gallery figcaption {
-    float: left;
-    margin: 0 1rem;
+    box-sizing: border-box;
+    margin: 1rem 0;
     padding: 1rem;
-    max-width: 780px;
+    width: 100%;
     color: #222;
     background: #eee;
 }

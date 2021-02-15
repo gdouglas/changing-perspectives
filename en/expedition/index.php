@@ -15,7 +15,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1>Vancouver's Story</h1>
+        <h1>Vancour&rsquo;s Story</h1>
         <div class="text-center">
             <h2 class="subtitle">Why did the British send Vancouver to Yuquot?</h2>
         </div>

@@ -126,6 +126,9 @@ nav li {
     border-radius: 4px 4px 0 0;
     z-index: 1;
 }
+nav .link:first-of-type {
+    display: none;
+}
 /* header .open {
     visibility: visible;
     transform: scaleY(1);
@@ -133,6 +136,9 @@ nav li {
 @media screen and (min-width: 1591px) {
     nav .link {
         width: auto;
+    }
+    nav .link:first-of-type {
+        display: flex;
     }
 }
 nav .current {

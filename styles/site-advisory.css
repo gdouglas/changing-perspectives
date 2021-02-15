@@ -4,16 +4,14 @@
 }
 
 .site-advisory {
-    margin: 4rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     padding: 2rem 2rem 4rem 2rem;
-    /* width: 90%; */
     background: var(--paper);
-    /* border-radius: 5px; */
-    /* box-shadow: 1px 1px 4px 0px #222; */
 }
 
 .home-advisory {
-    font-size: 0.7rem;
+    text-align: left;
+    font-size: 1rem;
     padding-top: 3rem;
     margin-bottom: -2rem;
 }

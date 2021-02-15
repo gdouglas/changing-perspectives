@@ -141,7 +141,8 @@ function skipCard(e) {
     nextCard.focus();
     setActive(nextCard);
 }
-//remove all other active class and add to element
+// remove all other active class and add to element
+// TODO: make buttons work for only one card list
 function setActive(element) {
     closeTranscripts();
     stopAllVimeo();

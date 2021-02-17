@@ -33,8 +33,15 @@ window.addEventListener("keydown", function(e){
 function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
     let header = document.querySelector("header");
+    let navLinks = document.querySelectorAll('#top-nav li');
     navBtn.addEventListener("click", function () {
         header.classList.toggle("open");
+    });
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function(e){
+            document.querySelector('#top-nav li.current').classList.remove('current');
+            link.classList.add('current');
+        });
     });
 }
 

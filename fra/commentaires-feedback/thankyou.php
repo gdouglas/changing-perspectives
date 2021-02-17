@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>
-    <title>Thank You | Changing Perspectives</title>
-    <meta name="description" content="Thank you for leaving your feedback about the Changing Perspectives website.">
+    <title>Merci | Changer les perspectives</title>
+    <meta name="description" content="Merci d'avoir laissé vos commentaires sur le site Web Changing Perspectives.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>
@@ -11,8 +11,9 @@
         <?php include $_SERVER['DOCUMENT_ROOT']."/en-nav.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
-        <h1>Thank You</h1>
-        Thank you for your feedback.
+        <h1>Merci</h1>
+        Merci pour votre avis.
+        <p><a href="/">Debut</a></p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>
 </body>

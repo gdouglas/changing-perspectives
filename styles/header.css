@@ -31,7 +31,7 @@ header:after {
     height: 100%;
     width: 100%;
     z-index: 1;
-    pointer-events: none; 
+    pointer-events: none;
 }
 header * {
     z-index: 2;
@@ -50,11 +50,16 @@ header * {
     /* background: rgba(255, 255, 255, 0.3); */
     padding: 0 4px;
     font-weight: bold;
+    display: block;
+    padding: 0.5rem 1rem;
+    background: rgba(90, 90, 90, 0.7);
+    border: 1px solid rgba(184, 134, 11, 0.3);
+    font-weight: 100;
+    font-size: 1rem;
+    border-radius: 3px;
+    box-shadow: 3px 7px 14px -10px black;
 }
-.super-nav .lang-link small {
-    font-weight: normal;
-}
-.vmc-logo {
+.dmc-logo {
     height: auto;
     min-height: 40px;
     min-width: 120px;
@@ -167,7 +172,7 @@ nav .current {
         line-height: 1;
         max-width: 100%;
         padding: 14px 0 20px 0;
-        box-sizing:border-box;
+        box-sizing: border-box;
     }
     .site-title a {
         line-height: inherit;
@@ -229,7 +234,7 @@ nav .current {
         height: 100%;
     }
     .site-title .gold {
-        background: linear-gradient(to right, #fde08d, #df9f28);
+        background: linear-gradient(to right, #fde08d, #a79067);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;

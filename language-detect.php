@@ -35,7 +35,7 @@
 
 	$lang = prefered_language($available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]));
 	if ($lang == "fr") {
-		$lang = "fra";
+		$lang = "fr";
 	}
 	// print "<h3>Site available in:</h3><pre>";
 	// print_r($available_languages);

@@ -18,9 +18,6 @@
 
   gtag('config', 'UA-148908480-1');
 </script>
-
-
-<meta name="description" content="Learn about the explorations and times of George Vancouver" />
 <meta name="robots" content="index, follow" />
 
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">

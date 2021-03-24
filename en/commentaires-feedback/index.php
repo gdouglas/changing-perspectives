@@ -21,7 +21,7 @@
     </header>
     <main id="main" role="main" tabindex="-1">
         <h1>Comments and Feedback</h1>
-        <p class="narrow-container centered-margin pad-bottom">Your comments will also be forwarded to the Canadian Museum of History (CMH), which has overall responsibility for the Virtual Museum of Canada (VMC), to be used as part of its audience research. Please see the <a href="http://www.virtualmuseum.ca/important-notices/" rel="noopener">VMC Privacy Policy</a> for more information.</p>
+        <p class="narrow-container centered-margin pad-bottom">Your comments will also be forwarded to the Canadian Museum of History (CMH), which has overall responsibility for the Virtual Museum of Canada (DMC), to be used as part of its audience research. Please see the <a href="http://www.virtualmuseum.ca/important-notices/" rel="noopener">DMC Privacy Policy</a> for more information.</p>
         <?php include "send.php" ?>
         <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> onsubmit="return validate.check(this)">
             <fieldset>

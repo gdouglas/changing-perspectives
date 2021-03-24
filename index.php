@@ -1,7 +1,7 @@
 <?php
     $language = "en";
     include 'language-detect.php';
-    if ($lang === "en" || $lang == "fra") {
+    if ($lang === "en" || $lang == "fr") {
         $language = $lang;
     }
     header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

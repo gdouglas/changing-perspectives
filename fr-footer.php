@@ -6,6 +6,6 @@
     <div class="block"><a href="/fr/droit_dauteur-copyright/">
             Droits d'auteur</a></div>
     <div class="block"><a href="/fr/commentaires-feedback/">Commentaires</a></div>
-    <div class="block"><a href="http://www.museevirtuel.ca/avis-importants/" target="_blank" rel="noopener">Politique de confidentialité du MNC</a></div>
+    <div class="block"><a href="https://www.museesnumeriques.ca/" target="_blank" rel="noopener">Politique de confidentialité du MNC</a></div>
     <script async src="/dist/app.min.js"></script>
 </footer>

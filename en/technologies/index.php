@@ -49,7 +49,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>How did Captain Vancouver navigate the oceans?</h3>
+                            <h3><span class="sr-only">Video: </span>How did Captain Vancouver navigate the oceans?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -103,7 +103,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What were the vessels like that Captain Vancouver sailed in?</h3>
+                            <h3><span class="sr-only">Video: </span>What were the vessels like that Captain Vancouver sailed in?</h3>
                         </div>
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
@@ -181,7 +181,7 @@
                 <div id="card1_1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>Hands aloft!</h3>
+                            <h3><span class="sr-only">Video: </span>Hands aloft!</h3>
                         </div>
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -214,7 +214,7 @@
                 <div id="card2_2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>That&rsquo;s well halyard</h3>
+                            <h3><span class="sr-only">Video: </span>That&rsquo;s well halyard</h3>
                         </div>
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
@@ -238,7 +238,7 @@
                 <div id="card3_3" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>That&rsquo;s well braces</h3>
+                            <h3><span class="sr-only">Video: </span>That&rsquo;s well braces</h3>
                         </div>
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>
@@ -271,14 +271,6 @@
                 <button id="close-cards-button-1" class="btn" onClick="setActive()" aria-expanded="true">Close Card</button>
             </div>
         </section>
-        <!-- <section>
-            <h2>Come on board a sailing brig and learn how sailor&rsquo;s speak.</h2>
-            <div class="videos nautical-language">
-                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
-                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
-                <div class="video-wrapper"><div class="responsive-container"><iframe id="vimeo6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe></div></div>
-            </div>
-        </section> -->
         <section id="gallery" class="gallery">
             <h2>Artifacts of exploration</h2>
             <p>These are some of the tools that Vancouver and his crew would have used to navigate. Click an image to learn more</p>

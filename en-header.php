@@ -1,5 +1,6 @@
 <div class="site-title">
     <a class="gold" href="/" aria-label="Homepage, Changing Perspectives">Changing Perspectives</a>
+    <img src="/images/native-view.jpg" class="accessible-hide" alt="Indigenous people stand on the shore next to their boats, looking out at a distant European sailing ship. Mountains are in the distance.">
 </div>
 <div id="super-nav" class="super-nav">
     <a class="lang-link" hreflang="fr" lang="fr" href="/fr<?php echo substr($_SERVER['REQUEST_URI'], 3); ?>">Français</a>

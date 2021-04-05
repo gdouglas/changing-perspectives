@@ -1,5 +1,6 @@
 <div class="site-title">
     <a class="gold" href="/fr/debut-home/" aria-label="Debut, Changer de Perspective">Changer de Perspective</a>
+    <img src="/images/native-view.jpg" class="accessible-hide" alt="Les peuples autochtones se tiennent sur le rivage à côté de leurs bateaux, regardant un voilier européen lointain. Les montagnes sont au loin.">
 </div>
 <div id="super-nav" class="super-nav">
     <a class="lang-link" hreflang="en" lang="en" href="/en<?php echo substr($_SERVER['REQUEST_URI'], 4); ?>">English</a>

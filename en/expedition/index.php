@@ -29,7 +29,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What did Vancouver's expedition actually achieve?</h3>
+                            <h3><span class="sr-only">Video: </span>What did Vancouver's expedition actually achieve?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -108,7 +108,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What was it like to be a member of Vancouver's crew?</h3>
+                            <h3><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h3>
                         </div>
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
@@ -137,7 +137,7 @@
                 <div id="card3" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What were the Indigenous people and the Europeans first meetings like?</h3>
+                            <h3><span class="sr-only">Video: </span>What were the Indigenous people and the Europeans first meetings like?</h3>
                         </div>
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>

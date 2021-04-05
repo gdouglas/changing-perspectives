@@ -29,7 +29,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What was life on the Pacific Northwest Coast like before the newcomers came?</h3>
+                            <h3><span class="sr-only">Video: </span>What was life on the Pacific Northwest Coast like before the newcomers came?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -57,7 +57,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>How were the Europeans changing global trade?</h3>
+                            <h3><span class="sr-only">Video: </span>How were the Europeans changing global trade?</h3>
                         </div>
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
@@ -114,7 +114,7 @@
                 <div id="card3" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>What attracted the Europeans to the Pacific Northwest Coast?</h3>
+                            <h3><span class="sr-only">Video: </span>What attracted the Europeans to the Pacific Northwest Coast?</h3>
                         </div>
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>

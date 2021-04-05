@@ -257,7 +257,8 @@ function addGalleryControls() {
     });
 }
 function closeGallery() {
-    window.location = window.location.pathname + "#gallery";
+    // window.location = window.location.pathname + "#gallery";
+    window.location = window.location.pathname + "#";
 }
 function nextGalleryImage() {
     let nextImage = document.querySelector(

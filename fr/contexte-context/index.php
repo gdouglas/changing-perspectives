@@ -29,7 +29,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>À quoi ressemblait la vie sur la côte nord-ouest du Pacifique avant l'arrivée des nouveaux arrivants?</h3>
+                            <h3><span class="sr-only">Vidéo: </span>À quoi ressemblait la vie sur la côte nord-ouest du Pacifique avant l'arrivée des nouveaux arrivants?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Passer à la carte suivante</a>
@@ -57,7 +57,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>Comment les Européens ont-ils changé le commerce mondial?</h3>
+                            <h3><span class="sr-only">Vidéo: </span>Comment les Européens ont-ils changé le commerce mondial?</h3>
                         </div>
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Passer à la carte suivante</a>
@@ -114,7 +114,7 @@
                 <div id="card3" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3>Qu'est-ce qui a attiré les Européens sur la côte nord-ouest du Pacifique?</h3>
+                            <h3><span class="sr-only">Vidéo: </span>Qu'est-ce qui a attiré les Européens sur la côte nord-ouest du Pacifique?</h3>
                         </div>
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Passer à la première carte</a>

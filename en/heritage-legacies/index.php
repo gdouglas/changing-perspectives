@@ -16,7 +16,7 @@
         <h1>Stories from Yuquot</h1>
         <h3>What are the Legacies of Vancouver&rsquo;s journey to the Yuquot?</h3>
         <div class="narrow-container centered-margin">
-            <div class="responsive-container">
+            <div class="responsive-container js">
                 <iframe class="standalone width-100" title="Vancouver's legacies in the Yuquot" width="640" height="360" style="margin: 0 auto; display: block; border: none;" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen>
                 </iframe>
             </div>

@@ -1,7 +1,6 @@
 .no-js {
     display: initial !important;
 }
-#sail-game .question{
-    position: static;
-    background: #fff;
+.no-js .js {
+    display: none;
 }

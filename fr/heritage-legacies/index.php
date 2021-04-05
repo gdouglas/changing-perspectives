@@ -15,8 +15,9 @@
     <main id="main" role="main" tabindex="-1">
         <h1>Histoires de Yuquot</h1>
         <h3>Quels sont les legs du voyage de Vancouver vers le Yuquot?</h3>
-            <iframe class="standalone width-100" title="L'héritage de Vancouver dans le Yuquot" width="640" height="360"  style="margin: 0 auto; display: block; border: none;" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen>
-        </iframe>
+        <div class="responsive-container js">
+            <iframe class="standalone width-100" title="L'héritage de Vancouver dans le Yuquot" width="640" height="360" style="margin: 0 auto; display: block; border: none;" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
         <noscript>
             <video preload="none" src="/videos/navigation.mp4">
                 <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

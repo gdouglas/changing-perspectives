@@ -8,4 +8,5 @@
         <img src="/images/logos/dmc_en_white.svg" class="dmc-logo" alt="Digital Museums of Canada" width="120">
     </a>
 </div>
+<div id="i"></div>
 <?php include "en-nav.php"; ?>

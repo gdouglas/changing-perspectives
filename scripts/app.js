@@ -214,7 +214,9 @@ vimeoPlayers.forEach((vim) => {
         }
     });
 });
-
+document.addEventListener("keydown", (e)=>{
+    // console.log(e);
+});
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
     for (let i = 0; i < buttons.length; i++) {
@@ -232,7 +234,10 @@ function toggleTranscript(e) {
         expanded = "true";
     }
     e.target.setAttribute("aria-expanded", expanded);
-    e.target.nextElementSibling.classList.toggle("closed");
+    let transcriptElement = e.target.parentElement.querySelector(
+        "div.transcript"
+    );
+    transcriptElement.classList.toggle("closed");
 }
 
 function addGalleryControls() {
@@ -258,7 +263,7 @@ function addGalleryControls() {
 }
 function closeGallery() {
     // window.location = window.location.pathname + "#gallery";
-    window.location = window.location.pathname + "#";
+    window.location = window.location.pathname + "#i";
 }
 function nextGalleryImage() {
     let nextImage = document.querySelector(

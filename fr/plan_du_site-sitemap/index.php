@@ -7,7 +7,6 @@
 <body>
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT']."/fr-header.php" ?>
-        <?php include $_SERVER['DOCUMENT_ROOT']."/fr-nav.php" ?>
         <h1>Site Map</h1>
     </header>
     <main id="main" tabindex="-1" class="text-left">

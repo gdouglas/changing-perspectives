@@ -64,6 +64,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo1-transcript" class="transcript closed">
                                 <p>How did Captain Vancouver navigate the oceans?</p>
                                 <p>Well, he relied on a magnetic compass to know which direction the ship was sailing.</p>
@@ -118,6 +120,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo2-transcript" class="transcript closed">
                                 <p>What were the vessels like that Captain Vancouver sailed in?</p>
                                 <p>&nbsp;A European ship in the 1700&rsquo;s was made from a variety of different wood.</p>
@@ -196,6 +200,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo4-transcript" class="transcript closed">
                                 <p>Setting foot on a sailing ship could leave you a little puzzled about what everyone is talking about. The orders a Captains gives the crew, even today, can almost sound like a different language.</p>
                                 <p>See If you can learn a few words and phrases. It will go a long way in helping you understand how sailing a ship works.&nbsp; Maybe one day you&rsquo;ll get to join the crew!</p>
@@ -229,6 +235,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo5-transcript" class="transcript closed">
                                 <p>Once the sails are 'loosed', most of the work sailing the ship happens down on the decking<br />using ropes. Ropes used to maneuver the sails are called halyards and braces, depending on<br />what they are attached to.<br />The captain may now call, "Hands to halyard. Haul away Halyard!&rdquo;<br />And the crew would go about pulling those halyard ropes to hoist up the yard, which is the<br />horizontal pole above the sail.<br />Those sails need to be good and tight to get the most out of the wind.<br />&ldquo;That&rsquo;s well halyard!&rdquo;</p>
                             </div>
@@ -253,6 +261,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo6-transcript" class="transcript closed">
                                 <p>Now that the sails are up, the Captain can steer the ship using the rudder and the wind. Something he calls tacking.</p>
                                 <p>He uses the Helm which moves the rudder at the stern. And that moves the boat left or right.</p>

@@ -44,6 +44,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo1-transcript" class="transcript closed">
                                 <p>&ldquo;Your Majesty&rsquo;s servants&hellip; humbly&hellip; submit&hellip; that Your Majesty&rsquo;s minister at the court of Madrid should&hellip; [demand] an immediate &hellip; satisfaction for the outrages committed by Monsieur de Mart&iacute;nez &hellip; and that it would be proper, in order to support that demand, &hellip; for the fitting out, a squadron of ships of the line&rdquo;</p>
                                 <p>Cabinet minute Lord Grenville to King George III, April 30th 1790.</p>
@@ -123,6 +125,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo2-transcript" class="transcript closed">
                                 <h4>Video #2 Placeholder transcript</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Bibendum arcu vitae elementum curabitur. Vitae proin sagittis nisl rhoncus mattis. Est pellentesque elit ullamcorper dignissim cras tincidunt. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pharetra et ultrices neque ornare aenean euismod. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Faucibus ornare suspendisse sed nisi lacus sed viverra. Potenti nullam ac tortor vitae purus. Felis eget nunc lobortis mattis. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Sem et tortor consequat id porta nibh. Potenti nullam ac tortor vitae purus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Etiam non quam lacus suspendisse.</p>
@@ -152,6 +156,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <label class="no-js">Transcript</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo3-transcript" class="transcript closed">
                                 <h4>Video #3 Placeholder transcript</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Bibendum arcu vitae elementum curabitur. Vitae proin sagittis nisl rhoncus mattis. Est pellentesque elit ullamcorper dignissim cras tincidunt. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pharetra et ultrices neque ornare aenean euismod. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Faucibus ornare suspendisse sed nisi lacus sed viverra. Potenti nullam ac tortor vitae purus. Felis eget nunc lobortis mattis. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Sem et tortor consequat id porta nibh. Potenti nullam ac tortor vitae purus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Etiam non quam lacus suspendisse.</p>

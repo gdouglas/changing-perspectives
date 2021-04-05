@@ -44,6 +44,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <label class="no-js">Transcription</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo1-transcript" class="transcript closed">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Bibendum arcu vitae elementum curabitur. Vitae proin sagittis nisl rhoncus mattis. Est pellentesque elit ullamcorper dignissim cras tincidunt. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pharetra et ultrices neque ornare aenean euismod. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Faucibus ornare suspendisse sed nisi lacus sed viverra. Potenti nullam ac tortor vitae purus. Felis eget nunc lobortis mattis. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Sem et tortor consequat id porta nibh. Potenti nullam ac tortor vitae purus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Etiam non quam lacus suspendisse.</p>
                                 <p>Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Dictumst quisque sagittis purus sit amet volutpat. Quis imperdiet massa tincidunt nunc pulvinar. Ut lectus arcu bibendum at varius vel pharetra. Non nisi est sit amet. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Sem viverra aliquet eget sit. Nunc sed id semper risus in hendrerit gravida rutrum. Ut aliquam purus sit amet luctus venenatis lectus. Senectus et netus et malesuada fames ac turpis egestas. Ut venenatis tellus in metus vulputate. Amet volutpat consequat mauris nunc. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Lacus viverra vitae congue eu consequat ac felis donec. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Sit amet commodo nulla facilisi nullam vehicula.</p>
@@ -72,6 +74,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcript</button>
+                            <label class="no-js">Transcription</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo2-transcript" class="transcript closed">
                                 <p>&ldquo;The evening of April the 29th brought us to an anchor in very thick rainy weather, about eight miles within the entrance on the southern shore of the supposed Straits of De Fuca. The following morning&hellip; a gentle breeze sprang up from the North West&hellip; which presented to our view this renowned inlet&rdquo;</p>
                                 <p>Captain Vancouver came to the Pacific North West Coast in 1792 to complete the last in a series of European expeditions.</p>
@@ -129,6 +133,8 @@
                                 </noscript>
                             </div>
                             <button id="vimeo3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <label class="no-js">Transcription</label>
+                            <input type="checkbox" class="no-js transcript-toggle">
                             <div id="vimeo3-transcript" class="transcript closed">
                                 <p>&ldquo;&hellip;there can be little doubt of there being a Northern communication of some sort, by sea, between this West side of America and the East side, through Baffin's Bay&hellip;</p>
                                 <p>Captain James Cook, Aleutian Islands, October 1778.&nbsp;</p>

@@ -9,7 +9,6 @@
 <body>
     <header>
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/fr-header.php" ?>
-        <?php include $_SERVER['DOCUMENT_ROOT'] . "/fr-nav.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
         <h1>Merci à nos partenaires</h1>

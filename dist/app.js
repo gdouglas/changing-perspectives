@@ -259,6 +259,26 @@ function addGalleryControls() {
 function closeGallery() {
     window.location = window.location.pathname + "#gallery";
 }
+function nextGalleryImage() {
+    let nextImage = document.querySelector(
+        '#gallery ul li a[href="' + window.location.hash + '"]'
+    ).parentElement.nextElementSibling;
+    if (!nextImage) {
+        nextImage = document.querySelector("#gallery ul li");
+    }
+    let nextHash = nextImage.querySelector("a").hash;
+    window.location = window.location.pathname + nextHash;
+}
+function previousGalleryImage() {
+    let prevImage = document.querySelector(
+        '#gallery ul li a[href="' + window.location.hash + '"]'
+    ).parentElement.previousElementSibling;
+    if (!prevImage) {
+        prevImage = document.querySelector("#gallery ul li:last-of-type");
+    }
+    let prevHash = prevImage.querySelector("a").hash;
+    window.location = window.location.pathname + prevHash;
+}
 
 (function() {
 	'use strict';

@@ -165,7 +165,7 @@
                 </div>
             </div>
             <div class="close-all relative text-center">
-                <button id="close-cards-button-2" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Fermer la carte</button>
+                <button id="close-cards-button-2" class="btn" onClick="setActive()" aria-expanded="true">Fermer la carte</button>
             </div>
         </section>
         <div class="pull-quote text-center">
@@ -268,7 +268,7 @@
                 </div>
             </div>
             <div class="close-all relative text-center">
-                <button id="close-cards-button-1" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Fermer la carte</button>
+                <button id="close-cards-button-1" class="btn" onClick="setActive()" aria-expanded="true">Fermer la carte</button>
             </div>
         </section>
         <section id="gallery" class="gallery">

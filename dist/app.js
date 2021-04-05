@@ -22,10 +22,14 @@ window.onload = function () {
     addNavListener();
     addCardListeners();
     addTranscripts();
+    addGalleryControls();
 };
 // let space open the card without scrolling
-window.addEventListener("keydown", function(e){
-    if (this.document.activeElement.classList.contains('card') && e.key == " ") {
+window.addEventListener("keydown", function (e) {
+    if (
+        this.document.activeElement.classList.contains("card") &&
+        e.key == " "
+    ) {
         e.preventDefault();
     }
 });
@@ -33,14 +37,16 @@ window.addEventListener("keydown", function(e){
 function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
     let header = document.querySelector("header");
-    let navLinks = document.querySelectorAll('#top-nav li');
+    let navLinks = document.querySelectorAll("#top-nav li");
     navBtn.addEventListener("click", function () {
         header.classList.toggle("open");
     });
-    navLinks.forEach(function(link) {
-        link.addEventListener('click', function(e){
-            document.querySelector('#top-nav li.current').classList.remove('current');
-            link.classList.add('current');
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
+            document
+                .querySelector("#top-nav li.current")
+                .classList.remove("current");
+            link.classList.add("current");
         });
     });
 }
@@ -67,12 +73,14 @@ function addCardListeners() {
 
 function closeTranscripts() {
     //close all transcripts before switching active
-    document.querySelectorAll('.transcript').forEach((transcript)=>{
-        transcript.classList.add('closed');
+    document.querySelectorAll(".transcript").forEach((transcript) => {
+        transcript.classList.add("closed");
     });
-    document.querySelectorAll('.transcript-toggle').forEach((transcriptToggle) => {
-        transcriptToggle.setAttribute("aria-expanded", "false");
-    });
+    document
+        .querySelectorAll(".transcript-toggle")
+        .forEach((transcriptToggle) => {
+            transcriptToggle.setAttribute("aria-expanded", "false");
+        });
 }
 
 /**
@@ -97,7 +105,7 @@ function addCardKeyboardControls(card, cards) {
     card.addEventListener("keyup", (e) => {
         switch (e.key) {
             case "Enter":
-                if (e.target.classList.contains('transcript-toggle')){
+                if (e.target.classList.contains("transcript-toggle")) {
                     break;
                 }
             case " ":
@@ -167,14 +175,18 @@ function setActive(element) {
         });
         element.classList.add("active");
         element.setAttribute("aria-expanded", "true");
-        closeButton.tabIndex = 0;
+        if (closeButton) {
+            closeButton.tabIndex = 0;
+        }
     } else {
         let wrapper = document.querySelectorAll(".has-active");
         [...wrapper].forEach((el) => {
             el.classList.remove("has-active");
             el.classList.add("no-active");
         });
-        closeButton.tabIndex = -1;
+        if (closeButton) {
+            closeButton.tabIndex = -1;
+        }
     }
 }
 
@@ -191,6 +203,18 @@ function createVimeoPlayers() {
 function stopAllVimeo() {
     vimeoPlayers.forEach((vim) => vim.pause());
 }
+vimeoPlayers.forEach((vim) => {
+    vim.element.addEventListener("keyup", (e) => {
+        switch (e.key) {
+            case "Escape":
+                setActive();
+                break;
+            default:
+                break;
+        }
+    });
+});
+
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
     for (let i = 0; i < buttons.length; i++) {
@@ -209,6 +233,31 @@ function toggleTranscript(e) {
     }
     e.target.setAttribute("aria-expanded", expanded);
     e.target.nextElementSibling.classList.toggle("closed");
+}
+
+function addGalleryControls() {
+    const gallery = document.getElementById("gallery");
+    if (!gallery) {
+        return;
+    }
+    window.addEventListener("keyup", function (e) {
+        switch (e.key) {
+            case "Escape":
+                closeGallery();
+                break;
+            case "ArrowRight":
+                nextGalleryImage();
+                break;
+            case "ArrowLeft":
+                previousGalleryImage();
+                break;
+            default:
+                break;
+        }
+    });
+}
+function closeGallery() {
+    window.location = window.location.pathname + "#gallery";
 }
 
 (function() {

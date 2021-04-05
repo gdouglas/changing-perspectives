@@ -12,7 +12,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1 class="text-center">Teacher&rsquo;s Resources</h1>
+        <h1 class="text-center">Teacher Resources</h1>
         <section class="intructor-resources text-left inline-block">
             <a href="/files/technology/changing-perspectives-BC-Curriculum-Connections-Chart.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Changing Perspectives BC Curriculum Connections Chart <span class="download-details">- (PDF 1.8<abbr title="megabytes">KB</abbr>)</span></a>
             <h2>The Story Before Vancouver</h2>

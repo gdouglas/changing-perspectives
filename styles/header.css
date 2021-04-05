@@ -41,7 +41,7 @@ header * {
     top: 16px;
     right: 16px;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
 }
 .super-nav .lang-link {
     margin: 4px 16px;
@@ -97,13 +97,14 @@ header nav {
     font-family: var(--header-font), script;
     display: flex;
     margin: 1rem;
+    margin-left: 0;
 }
 .site-title a {
     z-index: 2;
     position: relative;
     font-size: inherit;
     line-height: 5.5rem;
-    border-bottom: 1px solid #d4af37;
+    /* border-bottom: 1px solid #d4af37; */
 }
 header .btn {
     display: none;

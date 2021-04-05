@@ -740,7 +740,7 @@ header * {
   top: 16px;
   right: 16px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .super-nav .lang-link {
@@ -798,6 +798,7 @@ header nav {
   font-family: var(--header-font), script;
   display: flex;
   margin: 1rem;
+  margin-left: 0;
 }
 
 .site-title a {
@@ -805,7 +806,7 @@ header nav {
   position: relative;
   font-size: inherit;
   line-height: 5.5rem;
-  border-bottom: 1px solid #d4af37;
+  /* border-bottom: 1px solid #d4af37; */
 }
 
 header .btn {
@@ -1691,7 +1692,6 @@ to {
   transition: all 600ms ease-in;
   max-width: 650px;
   margin: 0 auto;
-  height: 350px;
   overflow: auto;
   border: 1px solid #222;
   padding: 1rem;

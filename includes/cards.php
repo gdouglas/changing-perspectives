@@ -92,7 +92,7 @@ $cards = '<section class="cards-wrapper no-active" aria-label="Videos about Euro
     </div>
 </div>
 <div class="close-all relative text-center">
-    <button id="close-cards-button" class="btn" onClick="setActive()" tabindex="-1" aria-expanded="true">Close Card</button>
+    <button id="close-cards-button" class="btn" onClick="setActive()" aria-expanded="true">Close Card</button>
 </div>
 </section>';
 

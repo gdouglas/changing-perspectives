@@ -1,3 +1,24 @@
+// var gulp = require('gulp');
+// var minify = require('gulp-minify');
+
+// gulp.task('min-js', function() {
+//     return gulp.src('scripts/*.js')
+//         .pipe(minify({
+//             ext: {
+//                 min: '.min.js'
+//             },
+//             ignoreFiles: ['-min.js']
+//         }))
+//         .pipe(gulp.dest('dist'))
+// });
+
+// gulp.task('watch', function() {
+//     gulp.watch('lib/*.js', ['min-js']);
+//     // Other watchers
+// });
+
+// gulp.task('default', ['min-js', 'watch']);
+
 const gulp = require('gulp');
 const { series } = require('gulp');
 const concat = require('gulp-concat');
@@ -24,24 +45,26 @@ function scripts() {
         .pipe(uglify())
         .pipe(gulp.dest('./dist'));
 }
+
 function styles() {
     return gulp.src(["styles/main.css"])
-    .pipe(concatCss('app.css'))
-    .pipe(autoprefixer({
-        cascade: false,
-        env: ["ie9"]
-    }))
-    .pipe(gulp.dest('./dist'))
-    .pipe(rename("app.min.css"))
-    .pipe(uglifycss())
-    .pipe(gulp.dest('./dist'));
+        .pipe(concatCss('app.css'))
+        .pipe(autoprefixer({
+            cascade: false,
+            env: ["ie9"]
+        }))
+        .pipe(gulp.dest('./dist'))
+        .pipe(rename("app.min.css"))
+        .pipe(uglifycss())
+        .pipe(gulp.dest('./dist'));
 }
+
 function prefix() {
     return gulp.src(["dist/app.css"])
-    .pipe(autoprefixer({
-        cascade: false,
-        supports: true
-    }));
+        .pipe(autoprefixer({
+            cascade: false,
+            supports: true
+        }));
 }
 
 // start php server
@@ -51,7 +74,7 @@ function connectSync() {
         port: 8000,
         keepalive: true,
         base: "./"
-    }, function (){
+    }, function() {
         browserSync({
             proxy: '127.0.0.1:8000'
         });
@@ -82,7 +105,7 @@ function watchFiles() {
 
 const watch = gulp.parallel([watchFiles, connectSync]);
 exports.default = watch;
-exports.style   = styles;
-exports.script  = scripts;
-exports.prefix  = prefix;
-exports.serve   = connectSync;
+exports.style = styles;
+exports.script = scripts;
+exports.prefix = prefix;
+exports.serve = connectSync;

@@ -1,6 +1,7 @@
 .gold {
     text-decoration: none;
-    color: #d4af37;;
+    color: #d4af37;
+    ;
     font-weight: 100;
 }
 
@@ -25,25 +26,29 @@ h3 {
     line-height: 1.2;
     margin-bottom: var(--margin-bottom);
 }
+
 h2 {
     font-size: 2.2rem;
 }
-.subtitle {
 
-}
+.subtitle {}
+
 h3 {
     font-size: 2rem;
     line-height: 1.4;
 }
+
 .breadcrumb {
     font-size: 1rem;
     margin-top: var(--margin-top);
 }
+
 .small-text {
     font-size: 0.75rem;
 }
+
 @media (max-width: 620px) {
-    :root {
+     :root {
         font-size: 14px;
     }
     h1 {
@@ -57,40 +62,15 @@ h3 {
         line-height: 1.4;
     }
 }
+
 .home-intro {
     max-width: 900px;
     margin: 2rem auto 1rem auto;
     text-align: center;
 }
-.welcome-header {
-    font-size: 3rem;
-    background-image: url(../images/banner.svg);
-    background-size: contain;
-    margin: 2rem auto 0 auto;
-    width: 900px;
-    background-repeat: no-repeat;
-    height: 80px;
-    background-position: center;
-    padding-top: 70px;
-    max-width: 100%;
-}
-@media (max-width: 900px) {
-    .welcome-header {
-        height: 65px;
-        padding-top: 65px;
-    }
-}
-@media (max-width: 460px) {
-    .welcome-header {
-        background: none;
-        margin: 2.5rem 0 0 0;
-        padding: 0;
-        text-align: left;
-        height: auto;
-    }
-}
+
 @media (max-width: 320px) {
-    :root {
+     :root {
         font-size: 12px;
     }
 }

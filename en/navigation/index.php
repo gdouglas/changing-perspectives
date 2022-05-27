@@ -12,7 +12,7 @@
                 content: '';
                 display: block;
                 pointer-events: none;
-                background-image: url(/images/anchor.png);
+                background-image: url(/images/bg/anchor.png);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;

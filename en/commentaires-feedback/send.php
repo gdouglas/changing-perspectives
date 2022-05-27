@@ -24,9 +24,9 @@
  *  please purchase an unbranded version from: https://www.freecontactform.com/unbranded_form.php
  *  Or upgrade to the more professional version at: https://www.freecontactform.com/responsive_form.php
  */
+
 $return_error = "";
 if (isset($_POST['email_sender_email'])) {
-
     include 'form_settings.php';
 
     function died($error)

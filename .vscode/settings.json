@@ -1,3 +1,5 @@
 {
-    "gitdoc.enabled": false
+    "gitdoc.enabled": false,
+    "phpcs.standard": "PSR12",
+    "phpcbf.standard": "PSR12"
 }

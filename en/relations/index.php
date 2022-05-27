@@ -29,7 +29,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What was life on the Pacific Northwest Coast like before the newcomers came?</h3>
+                            <h3><span class="sr-only">Video: </span>What was life on the Pacific Northwest Coast like before the Europeans came?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -197,6 +197,7 @@
                 <button id="close-cards-button" class="btn" onClick="setActive()" aria-expanded="true">Close Card</button>
             </div>
         </section>
+        <?php include 'gallery.php' ?>
     </main>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-footer.php'; ?>
 </body>

@@ -1,0 +1,12 @@
+.comic-wrapper {
+    height: 400px;
+    width: 450px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.comic-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}

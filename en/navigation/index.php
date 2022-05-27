@@ -282,8 +282,7 @@
             </div>
         </section>
         <section id="gallery" class="gallery">
-            <h2>Artifacts of exploration</h2>
-            <p>These are some of the tools that Vancouver and his crew would have used to navigate. Click an image to learn more</p>
+            <p>Click an image to learn more</p>
             <ul>
                 <li>
                     <a href="#sextant" class="open">

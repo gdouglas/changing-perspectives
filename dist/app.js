@@ -10,14 +10,14 @@ function a11yActivate(target, goal) {
         keys = [" "];
     }
     target.addEventListener("click", goal);
-    target.addEventListener("keyup", function (e) {
+    target.addEventListener("keyup", function(e) {
         if (keys.indexOf(e.key) > -1) {
             goal(e);
         }
     });
 }
 
-window.onload = function () {
+window.onload = function() {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
@@ -25,7 +25,7 @@ window.onload = function () {
     addGalleryControls();
 };
 // let space open the card without scrolling
-window.addEventListener("keydown", function (e) {
+window.addEventListener("keydown", function(e) {
     if (
         this.document.activeElement.classList.contains("card") &&
         e.key == " "
@@ -38,11 +38,11 @@ function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
     let header = document.querySelector("header");
     let navLinks = document.querySelectorAll("#top-nav li");
-    navBtn.addEventListener("click", function () {
+    navBtn.addEventListener("click", function() {
         header.classList.toggle("open");
     });
-    navLinks.forEach(function (link) {
-        link.addEventListener("click", function (e) {
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function(e) {
             document
                 .querySelector("#top-nav li.current")
                 .classList.remove("current");
@@ -59,7 +59,7 @@ function addCardListeners() {
     [...cards].forEach((card) => {
         card.setAttribute("tabindex", "0"); //make tabable to cards
         addCardKeyboardControls(card, cards);
-        card.addEventListener("click", function (e) {
+        card.addEventListener("click", function(e) {
             setActive(card);
         });
     });
@@ -191,6 +191,7 @@ function setActive(element) {
 }
 
 let vimeoPlayers = createVimeoPlayers();
+
 function createVimeoPlayers() {
     let players = document.querySelectorAll(".vimeo");
     let vimeoPlayers = [];
@@ -200,6 +201,7 @@ function createVimeoPlayers() {
     }
     return vimeoPlayers;
 }
+
 function stopAllVimeo() {
     vimeoPlayers.forEach((vim) => vim.pause());
 }
@@ -214,15 +216,17 @@ vimeoPlayers.forEach((vim) => {
         }
     });
 });
-document.addEventListener("keydown", (e)=>{
+document.addEventListener("keydown", (e) => {
     // console.log(e);
 });
+
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
     for (let i = 0; i < buttons.length; i++) {
         a11yActivate(buttons[i], toggleTranscript);
     }
 }
+
 function toggleTranscript(e) {
     e.stopPropagation();
     e.preventDefault();
@@ -245,7 +249,7 @@ function addGalleryControls() {
     if (!gallery) {
         return;
     }
-    window.addEventListener("keyup", function (e) {
+    window.addEventListener("keyup", function(e) {
         switch (e.key) {
             case "Escape":
                 closeGallery();
@@ -261,10 +265,12 @@ function addGalleryControls() {
         }
     });
 }
+
 function closeGallery() {
     // window.location = window.location.pathname + "#gallery";
     window.location = window.location.pathname + "#i";
 }
+
 function nextGalleryImage() {
     let nextImage = document.querySelector(
         '#gallery ul li a[href="' + window.location.hash + '"]'
@@ -275,6 +281,7 @@ function nextGalleryImage() {
     let nextHash = nextImage.querySelector("a").hash;
     window.location = window.location.pathname + nextHash;
 }
+
 function previousGalleryImage() {
     let prevImage = document.querySelector(
         '#gallery ul li a[href="' + window.location.hash + '"]'
@@ -285,7 +292,6 @@ function previousGalleryImage() {
     let prevHash = prevImage.querySelector("a").hash;
     window.location = window.location.pathname + prevHash;
 }
-
 (function() {
 	'use strict';
 

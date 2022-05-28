@@ -2,12 +2,12 @@
 @import "text.css";
 @import "utility.css";
 @import "slider.css";
+@import "home.css";
 @import "header.css";
 @import "footer.css";
 @import "tiles.css";
 @import "card.css";
 @import "gallery.css";
-@import "site-advisory.css";
 @import "comic.css";
 .no-js {
     display: none;

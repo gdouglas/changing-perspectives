@@ -18,12 +18,16 @@
 
             <div class="text-left">
                 <p>Welcome, this online virtual exhibit revisits the history of European colonization in what is now thePacific Northwest.</p>
-                <iframe class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                <section class="intro-video">
+                <div class="responsive-wrapper">
+                    <iframe title="European Navigation Video" src="https://player.vimeo.com/video/356042135?background=true" allow="autoplay;"></iframe>
+                </div>
                 <div class="site-advisory">
                     <p><em>This online virtual exhibit is produced by the Vancouver Maritime Museum which is fortunate to be hosted on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada.</em></p>
                     <br>
                     <p><em>The Museum would also like to acknowledge the Indigenous communities of the Pacific Northwest Coast, the Arctic and Hawai&rsquo;i whose traditional territories were visited by Captain Vancouver during his expedition.</em></p>
                 </div>
+                </section>
             </div>
             <div class="home-advisory">Some of the images on this website are by non-Aboriginal artists from the past and present. They are based on their perspective of early contact and not on Indigenous knowledge traditions. It is important to remember that they tell us as much about the artists themselves as they do about what really happened in the late 18th and early 19th centuries.</div>
         </div>

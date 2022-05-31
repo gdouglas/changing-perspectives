@@ -3,24 +3,30 @@
     position: relative;
     z-index: 1;
 }
-.gallery > p {
+
+.gallery>p {
     margin: 1rem auto;
 }
+
 .gallery h2 {
     text-align: left;
     margin-left: 12%;
-    width:85%;
-    box-shadow: 0 5px 5px -5px #333;;
+    width: 85%;
+    box-shadow: 0 5px 5px -5px #333;
+    ;
     padding: 0 0 0 3%;
 }
+
 .gallery ul {
     display: inline-flex;
     padding: 0;
     justify-content: center;
 }
+
 .gallery ul:hover li {
     opacity: 0.6;
 }
+
 .gallery ul:hover li:hover {
     opacity: 1;
     transform: scale(1.1);
@@ -35,10 +41,11 @@
     display: inline-block;
     padding: 1rem;
     vertical-align: top;
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 220px;
+    max-height: 220px;
     min-width: 40px;
 }
+
 .gallery li img {
     max-height: 100%;
     max-width: 100%;
@@ -60,24 +67,28 @@
     visibility: hidden;
     transition: all 600ms ease-in-out;
 }
+
 .gallery .description * {
     transition: none;
 }
+
 .gallery .description h3 {
     margin: 0;
     margin-right: 100px;
     padding-top: 1rem;
 }
+
 .gallery .open {
     position: relative;
     display: flex;
-    align-items:center;
+    align-items: center;
     height: 100%;
     background: var(--paper);
     border-radius: 5px;
     padding: 0.2rem;
     justify-content: center;
 }
+
 .gallery .open:after {
     content: url(../images/icons/expand.svg);
     position: absolute;
@@ -90,6 +101,7 @@
     height: 20px;
     border: 1px solid black;
 }
+
 .gallery .description:target {
     max-height: none;
     opacity: 1;
@@ -98,6 +110,7 @@
     /* max-width: none; */
     overflow: auto;
 }
+
 .gallery .description:target figure {
     /* display: inline-flex;
     justify-content: space-evenly;
@@ -106,13 +119,15 @@
     margin: 0;
     padding: 1rem;
     background: inherit;
-    border-radius:5px;
+    border-radius: 5px;
 }
+
 .gallery .description:target img {
     /* max-width: none; */
     margin-bottom: 1rem;
     object-fit: contain;
 }
+
 .gallery .close {
     position: absolute;
     background: #eee;

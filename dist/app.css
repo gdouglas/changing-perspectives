@@ -1653,7 +1653,7 @@ nav .current {
   z-index: 1;
 }
 
-.gallery > p {
+.gallery>p {
   margin: 1rem auto;
 }
 
@@ -1689,8 +1689,8 @@ nav .current {
   display: inline-block;
   padding: 1rem;
   vertical-align: top;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 220px;
+  max-height: 220px;
   min-width: 40px;
 }
 
@@ -1810,6 +1810,12 @@ nav .current {
   width: 450px;
   margin: 2rem auto;
   text-align: center;
+  overflow: auto;
+}
+
+.comic-wrapper ul {
+  padding: 0;
+  margin: 0;
 }
 
 .comic-wrapper img {
@@ -1817,6 +1823,13 @@ nav .current {
   max-width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+}
+
+.comic-wrapper li {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .no-js {

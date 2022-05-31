@@ -3,10 +3,23 @@
     width: 450px;
     margin: 2rem auto;
     text-align: center;
+    overflow: auto;
+}
+
+.comic-wrapper ul {
+    padding: 0;
+    margin: 0;
 }
 
 .comic-wrapper img {
     max-height: 100%;
     max-width: 100%;
     object-fit: contain;
+}
+
+.comic-wrapper li {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    margin-bottom: 1rem;
 }

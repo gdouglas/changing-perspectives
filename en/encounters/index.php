@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
-    <title>Vancouver's Story | Changing Perspectives</title>
+    <title>Encounters | Changing Perspectives</title>
     <meta name="description" content="Content to come">
     </meta>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
@@ -16,10 +16,8 @@
     </header>
     <main id="main" role="main" tabindex="-1">
         <section class="comic">
-            <h1>What were the Indigenous people's meetings with the fur traders like?</h1>
-            <div class="comic-wrapper">
-                <img src="/images/encounters/encounters1.png">
-            </div>
+            <h1>Encounters</h1>
+            <?php include "slider.php" ?>
         </section>
         <section class="cards-wrapper no-active" aria-label="Videos about European sailing technologies">
             <div class="offScreen">

@@ -3,7 +3,7 @@
 
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-    <title>The story before Vancouver | Changing Perspectives</title>
+    <title>Relations | Changing Perspectives</title>
     <meta name="description" content="Description to go here.">
     <script src="https://player.vimeo.com/api/player.js"></script>
 </head>
@@ -16,7 +16,7 @@
     <main id="main" role="main" tabindex="-1">
 
         <div class="text-center page-title">
-            <h1 class="subtitle">Why did the Europeans come to the Pacific North West Coast?</h1>
+            <h1 class="subtitle">Relations</h1>
         </div>
 
         <section class="cards-wrapper no-active" aria-label="Videos about European sailing technologies">

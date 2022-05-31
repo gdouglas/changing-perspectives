@@ -3,7 +3,7 @@
 
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
-    <title>Stories from Yuquot | Changing Perspectives</title>
+    <title>Legacies | Changing Perspectives</title>
     <meta name="description" content="Content to come">
     <style>
         @media (min-width:768px) {
@@ -33,9 +33,10 @@
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-header.php'; ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1>How did Europeans colonize the Pacific Northwest?</h1>
-<?php include "cards.php" ?>
-<?php include "gallery.php" ?>
+        <h1>Legacies</h1>
+        <?php include "slider.php" ?>
+        <?php include "cards.php" ?>
+        <?php include "gallery.php" ?>
     </main>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-footer.php'; ?>
 </body>

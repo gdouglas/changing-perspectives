@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
-    <title>Teacher Resources | Changing Perspectives</title>
+    <title>Learning Resources | Changing Perspectives</title>
     <meta name="description" content="Instructor resources for education about exploration in the late 1790's.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>

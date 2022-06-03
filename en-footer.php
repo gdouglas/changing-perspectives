@@ -1,6 +1,6 @@
 <footer>
     <div class="block"><a href="/en/sur-about/">About</a></div>
-    <div class="block"><a href="/en/ressources-resources/">Teacher Resources</a></div>
+    <div class="block"><a href="/en/ressources-resources/">Learning Resources</a></div>
     <div class="block"><a href="/en/credits/">Credits</a></div>
     <div class="block"><a href="/en/plan_du_site-sitemap/">Sitemap</a></div>
     <div class="block"><a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a></div>

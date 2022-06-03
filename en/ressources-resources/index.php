@@ -5,6 +5,11 @@
     <title>Learning Resources | Changing Perspectives</title>
     <meta name="description" content="Instructor resources for education about exploration in the late 1790's.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
+    <style>
+        .resources-list a {
+            margin: 0 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,28 +17,51 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1 class="text-center">Teacher Resources</h1>
-        <section class="intructor-resources text-left inline-block">
-            <a href="/files/technology/changing-perspectives-BC-Curriculum-Connections-Chart.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Changing Perspectives BC Curriculum Connections Chart <span class="download-details">- (PDF 1.8<abbr title="megabytes">KB</abbr>)</span></a>
-            <h2>The Story Before Vancouver</h2>
-            <a href="/files/context/Europeans-to-the-Pacific-Northwest-Coast-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Europeans to the Pacific Northwest Coast - Teacher&rsquo;s Guide<span class="download-details">- (PDF 1<abbr title="megabytes">MB</abbr>)</span></a>
-            <a href="/files/context/Europeans-to-the-Pacific-Northwest-Coast-Worksheet.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Europeans to the Pacific Northwest Coast - Worksheet<span class="download-details">- (PDF 32<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/context/Global-Trade-Worksheet.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Global Trade - Worksheet<span class="download-details">- (PDF 38<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/context/Global-Trade-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Global Trade - Teacher&rsquo;s Guide<span class="download-details">- (PDF 983<abbr title="kilobytes">KB</abbr>)</span></a>
-            <hr>
-            <h2>Vancouver's Story</h2>
-            <a href="/files/vancouver/vancouver-expedition-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Vancouver's Expedition - Teacher&rsquo;s Guide <span class="download-details">- (PDF 895<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/vancouver/vancouver-expedition-Worksheet.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Vancouver's Expedition - Worksheet <span class="download-details">- (PDF 37<abbr title="kilobytes">KB</abbr>)</span></a>
-            <hr>
-            <h2>European sailing technology</h2>
-            <a href="/files/technology/artifacts-of-exploration-Activity.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Artifacts Of Exploration - Activity<span class="download-details">- (PDF 656<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/technology/Come-On-Board-Colour-The-Ship-Activity.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Come On Board - Colour The Ship Activity  <span class="download-details">- (PDF 507<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/technology/Come-On-Board-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Come On Board - Teacher&rsquo;s Guide  <span class="download-details">- (PDF 1<abbr title="Megabyte">MB</abbr>)</span></a>
-            <a href="/files/technology/Navigation-Navigate-the-Coast-Math-Activity.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation - Navigate The Coast Math  <span class="download-details">- (PDF 72<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/technology/Navigation-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation - Teacher&rsquo;s Guide  <span class="download-details">- (PDF 1<abbr title="megabytes">MB</abbr>)</span></a>
-            <a href="/files/technology/Navigation-Worksheet.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Navigation - Worksheet  <span class="download-details">- (PDF 45<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/technology/Vessels-Teacher-Guide.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Vessels - Teacher&rsquo;s Guide  <span class="download-details">- (PDF 952<abbr title="kilobytes">KB</abbr>)</span></a>
-            <a href="/files/technology/Vessels-Worksheet.pdf" target="_blank" download class="download-link"><img src="/images/icons/file-download-solid.svg" alt="download icon" class="icon">Vessel - Worksheet  <span class="download-details">- (PDF 38<abbr title="kilobytes">KB</abbr>)</span></a>
+        <h1 class="text-center pad-bottom">Learning Resources</h1>
+        <section>
+            <p>Each video and slideshow in the exhibit is accompanied by a lesson plan. They cover the four exhibit themes: Relations, Encounters, Legacies, and Navigation. Educators are invited to review and customize these resources based on curriculum goals, grade level, and student interests.</p>
+            <p>The following lesson plans and activities have been designed with the Grades 4, 8, & 9 Social Studies BC Curriculum in mind. </p>
+            <a href="/files/bc-curriculum-connections.pdf" target="_blank" >Changing Perspectives BC Curriculum Connections</a>
+        </section>
+        <section>
+            <h2 class="text-left">Relations</h2>
+            <ul class="resources-list">
+                <li>What was life on the Pacific Northwest Coast like before the Europeans came?
+                    <p><a href="/files/relations/lesson-plan-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/relations/video-worksheet-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Video Worksheet</a>&nbsp;<a href="/files/relations/spiral-timeline-template.pdf" target="_blank" >Spiral Timeline</a>&nbsp;<a href="/files/relations/placemat-activity-template.pdf" target="_blank" >Placemat Activity</a></p></li>
+                <li>How were the Europeans changing global trade?
+                    <p><a href="/files/relations/lesson-plan-global-trade.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/relations/video-worksheet-global-trade.pdf" target="_blank" >Video Worksheet</a></p></li>
+                <li>What attracted the Europeans to the Pacific Northwest Coast?
+                    <p><a href="/files/relations/lesson-plan-europeans-to-the-pacific-northwest-coast.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/relations/video-worksheet-europeans-to-the-pacific-northwest-coast.pdf" target="_blank" >Video Worksheet</a></p></li>
+            </ul>
+            <h2 class="text-left">Encounters</h2>
+            <ul class="resources-list">
+                <li>What were the Indigenous people's meetings with the fur traders like?
+                    <p><a href="#">Lesson Plan</a></p></li>
+                <li>What did Vancouver's expedition actually achieve?
+                    <p><a href="/files/encounters/lesson-plan-captain-vancouvers-expedition.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/encounters/video-worksheet-captain-vancouvers-crew.pdf" target="_blank" >Video Worksheet</a></p></li>
+                <li>What was it like to be a member of Vancouver's crew?
+                    <p><a href="/files/encounters/lesson-plan-captain-vancouvers-crew.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/encounters/video-worksheet-captain-vancouvers-expedition.pdf" target="_blank" >Video Worksheet</a></p></li>
+            </ul>
+            <h2 class="text-left">Legacies</h2>
+            <ul class="resources-list">
+                <li>How did Europeans colonize the Pacific Northwest?
+                <p><a href="#">Lesson Plan</a></p></li>
+                <li>How are the Heiltsuk people re-writing their history?
+                    <p><a href="#">Lesson Plan</a>&nbsp;<a href="#">Video Worksheet</a></p></li>
+                <li>What has been the impact of colonization on the people of Yuquot?
+                    <p><a href="/files/legacies/lesson-plan-yuquot.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/legacies/video-worksheet-yuquot.pdf" target="_blank" >Video Worksheet</a></p></li>
+            </ul>
+            <h2 class="text-left">Navigation</h2>
+            <ul class="resources-list">
+                <li>How did Captain Vancouver navigate the oceans?
+                    <p><a href="/files/navigation/lesson-plan-navigate-the-oceans.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/navigation/video-worksheet-navigate the-oceans.pdf" target="_blank" >Video Worksheet</a>&nbsp;<a href="/files/navigation/navigate-the-coast-math-questions.pdf" target="_blank" >Navigation the Coast Math</a></p></li>
+                <li>What were the vessels like that Captain Vancouver sailed in?
+                    <p><a href="/files/navigation/lesson-plan-vessels.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/navigation/video-worksheet-vessels.pdf" target="_blank" >Video Worksheet</a></p></li>
+                <li>Board a Sailing Brig and learn how sailors speak.
+                    <p><a href="/files/navigation/lesson-plan-sailors-speak.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/navigation/brig-colouring-page.pdf" target="_blank" >Brig Colouring Page</a></p></li>
+            </ul>
+            <h2 class="text-left">Extra</h2>
+            <a href="/files/extra/close-looking-activity.pdf" target="_blank" >Close Looking Activity</a>
         </section>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>

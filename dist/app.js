@@ -26,10 +26,7 @@ window.onload = function() {
 };
 // let space open the card without scrolling
 window.addEventListener("keydown", function(e) {
-    if (
-        this.document.activeElement.classList.contains("card") &&
-        e.key == " "
-    ) {
+    if (this.document.activeElement.classList.contains("card") && e.key == " ") {
         e.preventDefault();
     }
 });
@@ -54,7 +51,6 @@ function addNavListener() {
 function addCardListeners() {
     let cards = document.querySelectorAll(".card");
     let skipLinks = document.querySelectorAll(".skip-card");
-    let playButtons = document.querySelectorAll(".play-video");
 
     [...cards].forEach((card) => {
         card.setAttribute("tabindex", "0"); //make tabable to cards
@@ -65,9 +61,6 @@ function addCardListeners() {
     });
     [...skipLinks].forEach((link) => {
         a11yActivate(link, skipCard);
-    });
-    [...playButtons].forEach((button) => {
-        a11yActivate(button, playVimeo);
     });
 }
 
@@ -84,19 +77,43 @@ function closeTranscripts() {
 }
 
 /**
+ * Card is active, call play on video
+ */
+function playCardVideo(el) {
+    if (el.querySelector('.vimeo')) {
+        playVimeo(el);
+    } else {
+        playYoutube(el);
+    }
+}
+
+/**
  *  Get the vimeo player closest to the event and start playing it
  *
  * @param {string} event
  */
-function playVimeo(event) {
-    event.stopPropagation();
+function playVimeo(el) {
+    // event.stopPropagation();
     // target vimeo player
-    let selected = event.target.parentElement.querySelector(".vimeo");
-
+    let selected = el.querySelector(".vimeo");
     //loop through players for a match then play
     for (let player in vimeoPlayers) {
         if (vimeoPlayers[player].element == selected) {
             vimeoPlayers[player].play();
+        }
+    }
+}
+
+function playYoutube(el) {
+    if (!youTubePlayers) {
+        console.log("no players loaded");
+        return;
+    }
+    let selected = el.querySelector('.youtube');
+    for (let player in youTubePlayers) {
+        if (youTubePlayers[player].getiframe().id === selected) {
+            console.log("player", youTubePlayers[player]);
+            youTubePlayers[player].playVideo();
         }
     }
 }
@@ -160,7 +177,7 @@ function skipCard(e) {
 // TODO: make buttons work for only one card list
 function setActive(element) {
     closeTranscripts();
-    stopAllVimeo();
+    pauseVideos();
     let closeButton = document.getElementById("close-cards-button");
     let active = document.querySelectorAll(".active");
     [...active].forEach((el) => {
@@ -174,6 +191,13 @@ function setActive(element) {
             el.classList.add("has-active");
         });
         element.classList.add("active");
+        // console.log(element);
+        element.addEventListener('transitionend', (e) => {
+            //card is open, play video
+            if (e.target.parentNode.classList.contains("active") && e.propertyName === "transform") {
+                playCardVideo(element);
+            }
+        });
         element.setAttribute("aria-expanded", "true");
         if (closeButton) {
             closeButton.tabIndex = 0;
@@ -190,7 +214,8 @@ function setActive(element) {
     }
 }
 
-let vimeoPlayers = createVimeoPlayers();
+let vimeoPlayers = createVimeoPlayers(),
+    youTubePlayers = [];
 
 function createVimeoPlayers() {
     let players = document.querySelectorAll(".vimeo");
@@ -202,8 +227,26 @@ function createVimeoPlayers() {
     return vimeoPlayers;
 }
 
-function stopAllVimeo() {
+function onYouTubeIframeAPIReady() {
+    console.log("add youtube");
+    let players = document.querySelectorAll(".youtube");
+    for (let i = 0; i < players.length; i++) {
+        let yt = new YT.Player(players[i]);
+        youTubePlayers.push(yt);
+    }
+}
+
+function pauseVideos() {
+    pauseAllVimeo();
+    pauseAllYoutube();
+}
+
+function pauseAllVimeo() {
     vimeoPlayers.forEach((vim) => vim.pause());
+}
+
+function pauseAllYoutube() {
+    youTubePlayers.forEach((yt) => yt.pauseVideo());
 }
 vimeoPlayers.forEach((vim) => {
     vim.element.addEventListener("keyup", (e) => {

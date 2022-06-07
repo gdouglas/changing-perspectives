@@ -1214,8 +1214,7 @@ nav .current {
   position: relative;
 }
 
-.card-skip-link:focus,
-.play-video:focus {
+.card-skip-link:focus {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1312,7 +1311,7 @@ nav .current {
 }
 
 .card .transcript .close a,
-:active + .card .transcript:target .close {
+:active+.card .transcript:target .close {
   visibility: visible;
 }
 
@@ -1567,7 +1566,7 @@ nav .current {
 }
 }
 
-.no-js .cards + .close-all {
+.no-js .cards+.close-all {
   display: none;
 }
 
@@ -1614,7 +1613,7 @@ nav .current {
   -webkit-appearance: checkbox;
 }
 
-.transcript-toggle:checked + .transcript {
+.transcript-toggle:checked+.transcript {
   display: block;
   height: auto;
 }

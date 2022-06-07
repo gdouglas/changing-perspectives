@@ -6,7 +6,8 @@
     <meta name="description" content="Content to come">
     </meta>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script async src="https://player.vimeo.com/api/player.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body>
@@ -26,15 +27,15 @@
                 </p>
             </div>
             <div class="cards">
-                <div id="card2" class="card">
+                <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
                             <h3><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h3>
                         </div>
                         <div class="back">
-                            <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
+                            <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo2" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/-K9-P8kbj4s?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -43,11 +44,11 @@
                                     <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Download Video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo2-transcript" class="transcript closed">
-                                <h4>Video #2 Placeholder transcript</h4>
+                            <div id="video1-transcript" class="transcript closed">
+                                <h4>Video #1 Placeholder transcript</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Bibendum arcu vitae elementum curabitur. Vitae proin sagittis nisl rhoncus mattis. Est pellentesque elit ullamcorper dignissim cras tincidunt. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pharetra et ultrices neque ornare aenean euismod. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Faucibus ornare suspendisse sed nisi lacus sed viverra. Potenti nullam ac tortor vitae purus. Felis eget nunc lobortis mattis. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Sem et tortor consequat id porta nibh. Potenti nullam ac tortor vitae purus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Etiam non quam lacus suspendisse.</p>
                                 <p>Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Dictumst quisque sagittis purus sit amet volutpat. Quis imperdiet massa tincidunt nunc pulvinar. Ut lectus arcu bibendum at varius vel pharetra. Non nisi est sit amet. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Sem viverra aliquet eget sit. Nunc sed id semper risus in hendrerit gravida rutrum. Ut aliquam purus sit amet luctus venenatis lectus. Senectus et netus et malesuada fames ac turpis egestas. Ut venenatis tellus in metus vulputate. Amet volutpat consequat mauris nunc. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Lacus viverra vitae congue eu consequat ac felis donec. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Sit amet commodo nulla facilisi nullam vehicula.</p>
                                 <p>In aliquam sem fringilla ut morbi tincidunt augue interdum. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Quis varius quam quisque id diam vel quam elementum. Sed risus pretium quam vulputate dignissim suspendisse in est. Faucibus turpis in eu mi bibendum neque egestas congue quisque. In fermentum posuere urna nec tincidunt praesent semper. Duis at consectetur lorem donec massa sapien faucibus et molestie. Nisl pretium fusce id velit ut tortor pretium viverra. Tellus orci ac auctor augue mauris augue neque gravida in. Lectus urna duis convallis convallis tellus id interdum. Pharetra pharetra massa massa ultricies. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Mauris augue neque gravida in fermentum.</p>
@@ -57,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="card3" class="card">
+                <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
                             <h3><span class="sr-only">Video: </span>What were the Indigenous people and the Europeans first meetings like?</h3>
@@ -65,7 +66,7 @@
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo3" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -74,11 +75,11 @@
                                     <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Download Video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                            <button id="video3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo3-transcript" class="transcript closed">
-                                <h4>Video #3 Placeholder transcript</h4>
+                            <div id="video3-transcript" class="transcript closed">
+                                <h4>Video #2 Placeholder transcript</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Bibendum arcu vitae elementum curabitur. Vitae proin sagittis nisl rhoncus mattis. Est pellentesque elit ullamcorper dignissim cras tincidunt. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Pharetra et ultrices neque ornare aenean euismod. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Faucibus ornare suspendisse sed nisi lacus sed viverra. Potenti nullam ac tortor vitae purus. Felis eget nunc lobortis mattis. Commodo elit at imperdiet dui accumsan sit amet nulla facilisi. Sed elementum tempus egestas sed sed risus pretium quam vulputate. Sem et tortor consequat id porta nibh. Potenti nullam ac tortor vitae purus. Lobortis elementum nibh tellus molestie nunc non blandit massa enim. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Etiam non quam lacus suspendisse.</p>
                                 <p>Nec sagittis aliquam malesuada bibendum arcu vitae elementum. Dictumst quisque sagittis purus sit amet volutpat. Quis imperdiet massa tincidunt nunc pulvinar. Ut lectus arcu bibendum at varius vel pharetra. Non nisi est sit amet. Viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Sem viverra aliquet eget sit. Nunc sed id semper risus in hendrerit gravida rutrum. Ut aliquam purus sit amet luctus venenatis lectus. Senectus et netus et malesuada fames ac turpis egestas. Ut venenatis tellus in metus vulputate. Amet volutpat consequat mauris nunc. Elementum facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Lacus viverra vitae congue eu consequat ac felis donec. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Massa id neque aliquam vestibulum morbi blandit cursus risus at. Sit amet commodo nulla facilisi nullam vehicula.</p>
                                 <p>In aliquam sem fringilla ut morbi tincidunt augue interdum. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus. Quis varius quam quisque id diam vel quam elementum. Sed risus pretium quam vulputate dignissim suspendisse in est. Faucibus turpis in eu mi bibendum neque egestas congue quisque. In fermentum posuere urna nec tincidunt praesent semper. Duis at consectetur lorem donec massa sapien faucibus et molestie. Nisl pretium fusce id velit ut tortor pretium viverra. Tellus orci ac auctor augue mauris augue neque gravida in. Lectus urna duis convallis convallis tellus id interdum. Pharetra pharetra massa massa ultricies. Nunc faucibus a pellentesque sit amet porttitor eget dolor morbi. Mauris augue neque gravida in fermentum.</p>

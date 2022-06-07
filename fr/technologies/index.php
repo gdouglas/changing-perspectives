@@ -54,7 +54,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -63,10 +63,10 @@
                                     <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Télécharger la video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo1-transcript" class="transcript closed">
+                            <div id="video1-transcript" class="transcript closed">
                                 <p>How did Captain Vancouver navigate the oceans?</p>
                                 <p>Well, he relied on a magnetic compass to know which direction the ship was sailing.</p>
                                 <p>While the navigator knew the ship&rsquo;s general direction, the problem was figuring out how far the ship had travelled once he had lost sight of the land.</p>
@@ -110,7 +110,7 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -119,10 +119,10 @@
                                     <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Télécharger la video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo2-transcript" class="transcript closed">
+                            <div id="video2-transcript" class="transcript closed">
                                 <p>What were the vessels like that Captain Vancouver sailed in?</p>
                                 <p>&nbsp;A European ship in the 1700&rsquo;s was made from a variety of different wood.</p>
                                 <p>The frame of the vessel was made from White Oak, because of its strength and resistance to rotting.</p>
@@ -190,7 +190,7 @@
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -199,10 +199,10 @@
                                     <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Télécharger la video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <button id="video4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo4-transcript" class="transcript closed">
+                            <div id="video4-transcript" class="transcript closed">
                                 <p>Setting foot on a sailing ship could leave you a little puzzled about what everyone is talking about. The orders a Captains gives the crew, even today, can almost sound like a different language.</p>
                                 <p>See If you can learn a few words and phrases. It will go a long way in helping you understand how sailing a ship works.&nbsp; Maybe one day you&rsquo;ll get to join the crew!</p>
                                 <p>Let's start here, on this square rigged Brig very similar to one used by Captain Vancouver hundreds of years ago.</p>
@@ -225,7 +225,7 @@
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -234,10 +234,10 @@
                                     <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Télécharger la video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <button id="video5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo5-transcript" class="transcript closed">
+                            <div id="video5-transcript" class="transcript closed">
                                 <p>Once the sails are 'loosed', most of the work sailing the ship happens down on the decking<br />using ropes. Ropes used to maneuver the sails are called halyards and braces, depending on<br />what they are attached to.<br />The captain may now call, "Hands to halyard. Haul away Halyard!&rdquo;<br />And the crew would go about pulling those halyard ropes to hoist up the yard, which is the<br />horizontal pole above the sail.<br />Those sails need to be good and tight to get the most out of the wind.<br />&ldquo;That&rsquo;s well halyard!&rdquo;</p>
                             </div>
                         </div>
@@ -251,7 +251,7 @@
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Passer à la première carte</a>
                             <div class="responsive-wrapper">
-                                <iframe id="vimeo6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/on-board-ship.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -260,10 +260,10 @@
                                     <a class="download_video" href="/videos/on-board.mp4" download="/videos/on-board-ship.mp4">Télécharger la video</a>
                                 </noscript>
                             </div>
-                            <button id="vimeo6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
+                            <button id="video6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
                             <input type="checkbox" class="no-js transcript-toggle">
-                            <div id="vimeo6-transcript" class="transcript closed">
+                            <div id="video6-transcript" class="transcript closed">
                                 <p>Now that the sails are up, the Captain can steer the ship using the rudder and the wind. Something he calls tacking.</p>
                                 <p>He uses the Helm which moves the rudder at the stern. And that moves the boat left or right.</p>
                                 <p>At the same time the captain orders the crew to move the sails to make sure they catch the wind</p>

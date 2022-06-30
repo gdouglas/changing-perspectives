@@ -242,10 +242,18 @@ function pauseVideos() {
 }
 
 function pauseAllVimeo() {
+    if (!vimeoPlayers) {
+        console.log("no players loaded");
+        return;
+    }
     vimeoPlayers.forEach((vim) => vim.pause());
 }
 
 function pauseAllYoutube() {
+    if (!youTubePlayers) {
+        console.log("no players loaded");
+        return;
+    }
     youTubePlayers.forEach((yt) => yt.pauseVideo());
 }
 vimeoPlayers.forEach((vim) => {

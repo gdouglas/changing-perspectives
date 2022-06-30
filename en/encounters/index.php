@@ -6,8 +6,6 @@
     <meta name="description" content="Content to come">
     </meta>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
-    <script async src="https://player.vimeo.com/api/player.js"></script>
-    <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body>
@@ -30,12 +28,12 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h3>
+                            <h3><span class="sr-only">Video: </span>What did Vancouver's Expedition actually achieve?</h3>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/-K9-P8kbj4s?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/B1jUPnAWO-0?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -61,12 +59,12 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What were the Indigenous people and the Europeans first meetings like?</h3>
+                            <h3><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h3>
                         </div>
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video2" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/-K9-P8kbj4s?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="placeholder-example.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

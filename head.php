@@ -20,6 +20,9 @@ include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
 
   gtag('config', 'UA-148908480-1');
 </script>
+<script async src="https://player.vimeo.com/api/player.js"></script>
+<script async src="https://www.youtube.com/iframe_api"></script>
+
 <meta name="robots" content="index, follow" />
 
 <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">

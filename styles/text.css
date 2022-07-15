@@ -46,6 +46,9 @@ h3 {
 .small-text {
     font-size: 0.75rem;
 }
+:root {
+    font-size: 18px;;
+}
 
 @media (max-width: 620px) {
      :root {

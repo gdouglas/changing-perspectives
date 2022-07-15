@@ -1,10 +1,36 @@
 <footer>
-    <div class="block"><a href="/en/sur-about/">About</a></div>
-    <div class="block"><a href="/en/ressources-resources/">Learning Resources</a></div>
-    <div class="block"><a href="/en/credits/">Credits</a></div>
-    <div class="block"><a href="/en/plan_du_site-sitemap/">Sitemap</a></div>
-    <div class="block"><a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a></div>
-    <div class="block"><a href="/en/commentaires-feedback/">Send us feedback</a></div>
-    <div class="block"><a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Policy</a></div>
-    <script async src="/dist/app.min.js"></script>
+    <div class="col site-title">Changing Perspectives</div>    
+    <div class="col vmm">
+        <img src="/images/logos/vmm_logo_white.png" alt="Vancouver Maritime Museum" />
+        <div class="content">
+            <address>
+                <p>1905 Ogden Ave.<br> Vancouver, BC<br> V6J 1A3</p>
+            </address>
+        </div>
+    </div>
+    <div class="col info">
+        <h3>Info</h3>
+        <div class="content">
+            <a href="/en/sur-about/">About</a>
+            <a href="/en/credits/">Credits</a>
+            <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Policy</a>
+        </div>
+    </div>
+    <div class="col resources">
+        <h3>Resources</h3>
+        <div class="content">
+            <a href="/en/ressources-resources/">Learning Resources</a>
+            <a href="/en/glossary/">Glossary</a>
+        </div>
+    </div>
+    <div class="sub-footer copyright">
+        <a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a>
+    </div>
+    <div class="sub-footer">
+        <a href="/en/plan_du_site-sitemap/">Sitemap</a>
+    </div>
+    <div class="sub-footer">
+        <a href="/en/commentaires-feedback/">Send us feedback</a>
+    </div>
 </footer>
+<script async src="/dist/app.min.js"></script>

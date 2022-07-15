@@ -8,7 +8,7 @@
         content="Learn about the expedition and legacies of George Vancouver in 1790 exploring the Pacific Northwest.">
 </head>
 
-<body class="splash">
+<body class="home splash">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-header.php'; ?>
@@ -21,32 +21,22 @@
                 <p>
                     Welcome, this online virtual exhibit revisits the history of European colonization in what is now thePacific Northwest.
                 </p>
-                <section class="intro-video">
-                <div class="responsive-wrapper">
-                    <iframe title="European Navigation Video"
-                        src="https://player.vimeo.com/video/356042135?background=true"
-                        allow="autoplay;">
-                    </iframe>
-                </div>
-                <div class="site-advisory">
-                    <p>
-                        <em>
-                            This online virtual exhibit is produced by the Vancouver Maritime Museum which is fortunate to be hosted on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada.
-                        </em>
-                    </p>
+                <section class="site-advisory">
+                    <p>This online virtual exhibit is produced by the Vancouver Maritime Museum which is fortunate to be hosted on the traditional territories of the xʷməθkwəy̓əm (Musqueam), Skwxwú7mesh (Squamish), and Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) Nations in Vancouver British Columbia, Canada.</p>
                     <br>
-                    <p>
-                        <em>
-                            The Museum would also like to acknowledge the Indigenous communities of the Pacific Northwest Coast, the Arctic and Hawai&rsquo;i whose traditional territories were visited by Captain Vancouver during his expedition.
-                        </em>
-                    </p>
-                </div>
+                    <p>The Changing Perspectives exhibit would also like to recognize our Haíɫzaqv (Heiltsuk) and Mowachaht/Muchalaht collaborators in Bella Bella and Yuquot, respectively. As hosts and partners, they shaped our understanding of the legacies of Captain Vancouver’s expedition for their communities and territories.</p>
                 </section>
             </div>
             <div class="home-advisory">
                 Some of the images on this website are by non-Aboriginal artists from the past and present. They are based on their perspective of early contact and not on Indigenous knowledge traditions. It is important to remember that they tell us as much about the artists themselves as they do about what really happened in the late 18th and early 19th centuries.
             </div>
         </div>
+        <div class="bg-video-wrapper">
+            <iframe title="European Navigation Video"
+                src="https://player.vimeo.com/video/356042135?background=true"
+                allow="autoplay;">
+            </iframe>
+        </div>        
     </main>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-footer.php'; ?>
 </body>

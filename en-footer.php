@@ -1,7 +1,7 @@
 <footer>
     <div class="col site-title">Changing Perspectives</div>    
     <div class="col vmm">
-        <img src="/images/logos/vmm_logo_white.png" alt="Vancouver Maritime Museum" />
+        <a href="https://vanmaritime.com"><img src="/images/logos/vmm_logo_white.png" alt="Vancouver Maritime Museum" /></a>
         <div class="content">
             <address>
                 <p>1905 Ogden Ave.<br> Vancouver, BC<br> V6J 1A3</p>

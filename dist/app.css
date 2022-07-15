@@ -1898,19 +1898,29 @@ footer a {
 }
 
 .comic-wrapper {
-  overflow: auto;
   width: 700px;
+  height: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 5px;
   border: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
 }
 
 .comic-wrapper .panels {
   height: 500px;
   margin: 2rem auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  overflow: auto;
+  outline: 1px dashed lightgray;
+  flex: none;
+  width: 100%;
+  flex-flow: row nowrap;
+  -ms-scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 .panels>div:first-of-type {
@@ -1921,19 +1931,22 @@ footer a {
   padding: 0;
   display: flex;
   max-height: 100%;
-  width: 100%;
+  max-width: 100%;
+  width: 700px;
   height: 100%;
   align-items: center;
   justify-content: center;
+  scroll-snap-align: center;
+  flex: none;
 }
 
 .comic-wrapper img {
   max-height: 100%;
   max-width: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
   height: 100%;
   width: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .no-js {

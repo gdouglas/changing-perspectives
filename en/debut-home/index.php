@@ -8,7 +8,7 @@
         content="Learn about the expedition and legacies of George Vancouver in 1790 exploring the Pacific Northwest.">
 </head>
 
-<body class="home splash">
+<body class="home">
     <a class="skip-main" href="#main">Skip to main content</a>
     <header>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-header.php'; ?>

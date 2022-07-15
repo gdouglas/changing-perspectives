@@ -696,7 +696,9 @@ h3 {
 .home #main {
   position: relative;
   max-width: none;
+  background: var(--paper-transparent);
   text-shadow: 2px 2px 1px #574b31;
+  color: #fff;
 }
 
 .bg-video-wrapper {
@@ -710,7 +712,7 @@ h3 {
   overflow: hidden;
 }
 
-.splash iframe {
+.home iframe {
   width: 100vw;
   height: 56.25vw;
   /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */

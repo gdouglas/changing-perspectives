@@ -1,13 +1,5 @@
 <footer>
     <div class="col site-title">Changing Perspectives</div>    
-    <div class="col vmm">
-        <a href="https://vanmaritime.com"><img src="/images/logos/vmm_logo_white.png" alt="Vancouver Maritime Museum" /></a>
-        <div class="content">
-            <address>
-                <p>1905 Ogden Ave.<br> Vancouver, BC<br> V6J 1A3</p>
-            </address>
-        </div>
-    </div>
     <div class="col info">
         <h3>Info</h3>
         <div class="content">
@@ -23,14 +15,22 @@
             <a href="/en/glossary/">Glossary</a>
         </div>
     </div>
-    <div class="sub-footer copyright">
-        <a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a>
+    <div class="col vmm">
+        <a href="https://vanmaritime.com"><img src="/images/logos/vmm_logo_white.png" alt="Vancouver Maritime Museum" /></a>
+        <div class="content">
+            <address>
+                <p>1905 Ogden Ave.<br> Vancouver, BC<br> V6J 1A3</p>
+            </address>
+        </div>
     </div>
     <div class="sub-footer">
-        <a href="/en/plan_du_site-sitemap/">Sitemap</a>
-    </div>
-    <div class="sub-footer">
-        <a href="/en/commentaires-feedback/">Send us feedback</a>
+        <div class="copyright">
+            <a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a>
+        </div>
+        <div class="sitemap">
+            <a href="/en/plan_du_site-sitemap/">Sitemap</a>
+            <a href="/en/commentaires-feedback/">Send us feedback</a>
+        </div>
     </div>
 </footer>
 <script async src="/dist/app.min.js"></script>

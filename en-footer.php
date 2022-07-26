@@ -1,11 +1,12 @@
 <footer>
-    <div class="col site-title">Changing Perspectives</div>    
     <div class="col info">
         <h3>Info</h3>
         <div class="content">
             <a href="/en/sur-about/">About</a>
             <a href="/en/credits/">Credits</a>
             <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Policy</a>
+            <a href="/en/plan_du_site-sitemap/">Sitemap</a>
+            <a href="/en/commentaires-feedback/">Send us feedback</a>
         </div>
     </div>
     <div class="col resources">
@@ -26,10 +27,6 @@
     <div class="sub-footer">
         <div class="copyright">
             <a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a>
-        </div>
-        <div class="sitemap">
-            <a href="/en/plan_du_site-sitemap/">Sitemap</a>
-            <a href="/en/commentaires-feedback/">Send us feedback</a>
         </div>
     </div>
 </footer>

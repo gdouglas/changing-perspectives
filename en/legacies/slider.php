@@ -10,6 +10,3 @@
         <div><img src="/images/colonization/colonization7.png" alt="" /></div>
     </div>
 </section>
-<div>
-    <p class="text-center centered-margin">Excerpt from <a href="https://arsenalpdivp.com/Books/T/The-500-Years-of-Indigenous-Resistance-Comic-Book-Revised-and-Expanded" target="_blank" rel="noopener">500 Years of Indigenous Resistance</a></p>
-</div>

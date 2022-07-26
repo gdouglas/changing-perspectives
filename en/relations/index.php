@@ -6,6 +6,27 @@
     <title>Relations | Changing Perspectives</title>
     <meta name="description" content="Description to go here.">
     <script src="https://player.vimeo.com/api/player.js"></script>
+    <style>
+        @media (min-width:768px) {
+            #main:before {
+                content: '';
+                display: block;
+                pointer-events: none;
+                background-image: url(/images/bg/western-red-cedar.gif);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 200vh;
+                max-height: 100%;
+                z-index: -1;
+                opacity: 0.1;
+            }
+        }
+    </style>
 </head>
 
 <body>

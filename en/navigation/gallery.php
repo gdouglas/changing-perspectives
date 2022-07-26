@@ -1,5 +1,5 @@
 <section id="gallery" class="gallery">
-    <p>Click an image to learn more</p>
+    <p class="text-left">Click an image to learn more</p>
     <ul>
         <li>
             <a href="#sextant" class="open">

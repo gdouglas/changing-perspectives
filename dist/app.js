@@ -111,7 +111,7 @@ function playYoutube(el) {
     }
     let selected = el.querySelector('.youtube');
     for (let player in youTubePlayers) {
-        if (youTubePlayers[player].getiframe().id === selected) {
+        if (youTubePlayers[player].getIframe().id === selected) {
             console.log("player", youTubePlayers[player]);
             youTubePlayers[player].playVideo();
         }
@@ -267,9 +267,6 @@ vimeoPlayers.forEach((vim) => {
         }
     });
 });
-document.addEventListener("keydown", (e) => {
-    // console.log(e);
-});
 
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
@@ -300,7 +297,24 @@ function addGalleryControls() {
     if (!gallery) {
         return;
     }
+    //set Focus on Gallery items
+    setGalleryThumbnailFocus(window.location.hash);
+    let galleryThumbnails = document.querySelectorAll('#gallery li>a');
+    for (let i = 0; i < galleryThumbnails.length; i++) {
+        galleryThumbnails[i].addEventListener('click', function(e){
+            e.preventDefault();
+            let chosenImageHash = galleryThumbnails[i].hash;
+            window.location.replace(chosenImageHash);
+            setGalleryThumbnailFocus(chosenImageHash);
+        })
+    }
     window.addEventListener("keyup", function(e) {
+        let gallery = document.getElementById('gallery');
+        if (gallery.contains(e.target)) {
+            //the gallery has focus so we can call navigation
+        } else {
+            return
+        }
         switch (e.key) {
             case "Escape":
                 closeGallery();
@@ -318,8 +332,7 @@ function addGalleryControls() {
 }
 
 function closeGallery() {
-    // window.location = window.location.pathname + "#gallery";
-    window.location = window.location.pathname + "#i";
+    window.location.replace(window.location.pathname + "#i");
 }
 
 function nextGalleryImage() {
@@ -330,7 +343,8 @@ function nextGalleryImage() {
         nextImage = document.querySelector("#gallery ul li");
     }
     let nextHash = nextImage.querySelector("a").hash;
-    window.location = window.location.pathname + nextHash;
+    window.location.replace(window.location.pathname + nextHash);
+    setGalleryThumbnailFocus(nextHash);
 }
 
 function previousGalleryImage() {
@@ -341,7 +355,11 @@ function previousGalleryImage() {
         prevImage = document.querySelector("#gallery ul li:last-of-type");
     }
     let prevHash = prevImage.querySelector("a").hash;
-    window.location = window.location.pathname + prevHash;
+    window.location.replace(window.location.pathname + prevHash);
+    setGalleryThumbnailFocus(prevHash);
+}
+function setGalleryThumbnailFocus(targetHash) {
+    document.querySelector('a[href="'+targetHash+'"]').focus();
 }
 (function() {
 	'use strict';

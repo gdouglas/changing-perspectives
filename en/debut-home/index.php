@@ -31,12 +31,20 @@
                 Some of the images on this website are by non-Aboriginal artists from the past and present. They are based on their perspective of early contact and not on Indigenous knowledge traditions. It is important to remember that they tell us as much about the artists themselves as they do about what really happened in the late 18th and early 19th centuries.
             </div>
         </div>
-        <div class="bg-video-wrapper">
+        <!-- <div class="bg-video-wrapper">
             <iframe title="European Navigation Video"
                 src="https://player.vimeo.com/video/356042135?background=true"
                 allow="autoplay;">
             </iframe>
-        </div>        
+        </div>         -->
+        <div class="bg-video-wrapper">
+            <video id="bg-vid"
+                width="100%"
+                height="100%"
+                autoplay muted loop
+                poster="/videos/home/poster.jpg"/>
+            </video>
+        </div>
     </main>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/en-footer.php'; ?>
 </body>

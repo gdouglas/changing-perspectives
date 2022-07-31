@@ -3,18 +3,6 @@
     margin: 2rem auto 1rem auto;
     text-align: center;
 }
-
-.intro-video {
-    width: 100%;
-    position: relative;
-}
-
-.intro-video .responsive-wrapper {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 56.25%;
-}
 .home #main {
     position: relative;
     max-width: none;
@@ -31,6 +19,9 @@
     z-index: -1;
     pointer-events: none;
     overflow: hidden;
+}
+.bg-video-wrapper video {
+    object-fit: cover;;
 }
 .home iframe {
     width: 100vw;

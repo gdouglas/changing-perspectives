@@ -567,7 +567,6 @@ h3 {
   }
 
   .slide figcaption h3 {
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     color: var(--gold);
@@ -682,18 +681,6 @@ h3 {
   text-align: center;
 }
 
-.intro-video {
-  width: 100%;
-  position: relative;
-}
-
-.intro-video .responsive-wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  padding-bottom: 56.25%;
-}
-
 .home #main {
   position: relative;
   max-width: none;
@@ -711,6 +698,11 @@ h3 {
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
+}
+
+.bg-video-wrapper video {
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .home iframe {

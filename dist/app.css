@@ -675,10 +675,9 @@ h3 {
   }
 }
 
-.home-intro {
+.home-intro-wrapper {
   max-width: 1200px;
   margin: 2rem auto 1rem auto;
-  text-align: center;
 }
 
 .home #main {
@@ -718,18 +717,18 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
-.site-advisory>p {
+.site-intro>p {
   margin: 0 auto;
   max-width: 900px;
 }
 
-.site-advisory {
+.site-intro {
   font-size: 1.6rem;
   padding: 2rem 2rem 4rem 2rem;
   color: #fff;
 }
 
-.home-advisory {
+.home-artist-acknowledgement {
   text-align: left;
   font-size: 1rem;
   padding-top: 3rem;

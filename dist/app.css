@@ -1110,14 +1110,18 @@ nav .current {
 }
 
 footer {
-  text-align: center;
+  width: 100%;
   background: #1b1b1b;
+}
+
+.footer-container {
+  text-align: center;
   color: #fff;
-  margin: 0;
+  margin: 0 auto 0 auto;
   margin-top: -5px;
   padding: 4.1rem 4rem 1rem 4rem;
   box-sizing: border-box;
-  width: 100%;
+  max-width: 980px;
   border-radius: 5px 5px 0 0;
   min-height: 250px;
   display: flex;
@@ -1125,22 +1129,22 @@ footer {
   justify-content: space-between;
 }
 
-footer a {
+.footer-container a {
   display: block;
 }
 
-footer .site-title,
-footer h3 {
+.footer-container .site-title,
+.footer-container h3 {
   margin: 0;
 }
 
-footer .site-title {
+.footer-container .site-title {
   /* grid-column: 1/1; */
   font-size: 2.85rem;
   line-height: 3rem;
 }
 
-footer h3 {
+.footer-container h3 {
   height: 5rem;
 }
 
@@ -1152,19 +1156,13 @@ footer h3 {
   width: 125px;
 }
 
-.info {
-  /* grid-column: 3/3; */
-}
-
-.resources {
-  /* grid-column: 4/4; */
-}
-
 .sub-footer {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  justify-content: flex-end;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  justify-content: center;
+  background: #060606;
 }
 
 .sub-footer div {
@@ -1172,67 +1170,69 @@ footer h3 {
 }
 
 .sub-footer a {
+  color: #fff;
   line-height: 1.6rem;
 }
 
-footer .copyright {
+.footer-container .copyright {
   text-align: center;
   width: 100%;
 }
 
-footer a {
+.footer-container a {
   color: lightgray;
 }
 
-footer .content {
+.footer-container .content {
   display: block;
 }
 
 @media screen and (min-width: 1440px) {
-  footer .copyright {
+  .footer-container .copyright {
     align-self: flex-end;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  footer h3 {
+  .footer-container h3 {
     height: auto;
   }
 
-  footer .vmm .content {
+  .footer-container .vmm .content {
     display: flex;
   }
 
-  footer .vmm {
+  .footer-container .vmm {
     width: 100%;
     display: flex;
     margin: 3rem auto;
     justify-content: center;
   }
 
-  footer .vmm .content p {
+  .footer-container .vmm .content p {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 425px) {
-  footer {
+  .footer-container {
     justify-content: center;
   }
 }
 
 @media screen and (max-width:375px) {
-  footer .col {
+  .footer-container .col {
     width: 100%;
     margin: 0;
     margin-bottom: 1rem;
   }
 
-  /* footer h3 {
-		height: auto;
-	} */
+  ./*-container footer h3 {
+    height: auto;
+  }
 
-  footer a {
+  */
+	.footer-container a {
     font-size: 1.4rem;
     margin: 1rem;
   }

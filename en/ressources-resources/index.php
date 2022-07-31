@@ -27,7 +27,13 @@
             <h2 class="text-left">Relations</h2>
             <ul class="resources-list">
                 <li>What was life on the Pacific Northwest Coast like before the Europeans came?
-                    <p><a href="/files/relations/lesson-plan-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/relations/video-worksheet-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Video Worksheet</a>&nbsp;<a href="/files/relations/spiral-timeline-template.pdf" target="_blank" >Spiral Timeline</a>&nbsp;<a href="/files/relations/placemat-activity-template.pdf" target="_blank" >Placemat Activity</a></p></li>
+                    <p>
+                        <a href="/files/relations/lesson-plan-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Lesson Plan</a>&nbsp;
+                        <a href="/files/relations/video-worksheet-life-on-the-pacific-northwest-coast.pdf" target="_blank" >Video Worksheet</a>&nbsp;
+                        <a href="/files/relations/spiral-timeline-template.pdf" target="_blank" >Spiral Timeline</a>&nbsp;
+                        <a href="/files/relations/placemat-activity-template.pdf" target="_blank" >Placemat Activity</a>
+                    </p>
+                </li>
                 <li>How were the Europeans changing global trade?
                     <p><a href="/files/relations/lesson-plan-global-trade.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/relations/video-worksheet-global-trade.pdf" target="_blank" >Video Worksheet</a></p></li>
                 <li>What attracted the Europeans to the Pacific Northwest Coast?
@@ -36,7 +42,7 @@
             <h2 class="text-left">Encounters</h2>
             <ul class="resources-list">
                 <li>What were the Indigenous people's meetings with the fur traders like?
-                    <p><a href="#">Lesson Plan</a></p></li>
+                    <p><a href="/files/encounters/lesson-plan-indigenous-fur-trader-meetings.pdf">Lesson Plan</a></p></li>
                 <li>What did Vancouver's expedition actually achieve?
                     <p><a href="/files/encounters/lesson-plan-captain-vancouvers-expedition.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/encounters/video-worksheet-captain-vancouvers-crew.pdf" target="_blank" >Video Worksheet</a></p></li>
                 <li>What was it like to be a member of Vancouver's crew?
@@ -45,9 +51,9 @@
             <h2 class="text-left">Legacies</h2>
             <ul class="resources-list">
                 <li>How did Europeans colonize the Pacific Northwest?
-                <p><a href="#">Lesson Plan</a></p></li>
+                <p><a href="/files/legacies/lesson-plan-colonize-the-pacific-northwest.pdf">Lesson Plan</a></p></li>
                 <li>How are the Heiltsuk people re-writing their history?
-                    <p><a href="#">Lesson Plan</a>&nbsp;<a href="#">Video Worksheet</a></p></li>
+                    <p><a href="/files/legacies/worksheet-heiltsuk.pdf">Lesson Plan</a>&nbsp;<a href="#">Video Worksheet</a></p></li>
                 <li>What has been the impact of colonization on the people of Yuquot?
                     <p><a href="/files/legacies/lesson-plan-yuquot.pdf" target="_blank" >Lesson Plan</a>&nbsp;<a href="/files/legacies/video-worksheet-yuquot.pdf" target="_blank" >Video Worksheet</a></p></li>
             </ul>

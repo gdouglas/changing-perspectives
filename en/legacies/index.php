@@ -13,7 +13,10 @@
                 pointer-events: none;
                 background-image: url(/images/bg/welcome-post.png);
                 background-repeat: no-repeat;
-                background-position: -5rem -8rem;
+                /* background-position: -5rem -8rem; */
+                right: -25%;
+                background-position-x: -10vw;
+                background-position-y: 15%;
                 background-size: cover;
                 position: absolute;
                 left: 1rem;

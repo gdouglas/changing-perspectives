@@ -1227,12 +1227,7 @@ footer {
     margin-bottom: 1rem;
   }
 
-  ./*-container footer h3 {
-    height: auto;
-  }
-
-  */
-	.footer-container a {
+  .footer-container a {
     font-size: 1.4rem;
     margin: 1rem;
   }

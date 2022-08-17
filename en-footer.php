@@ -28,7 +28,7 @@
     </div>
     <div class="sub-footer">
         <div class="copyright">
-            <a href="/en/droit_dauteur-copyright/">&copy; Vancouver Maritime Museum. All Rights Reserved.</a>
+            <a href="/en/droit_dauteur-copyright/">&copy; 2022 Vancouver Maritime Museum. All Rights Reserved.</a>
         </div>
     </div>
 </footer>

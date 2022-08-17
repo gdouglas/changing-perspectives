@@ -10,22 +10,22 @@ function a11yActivate(target, goal) {
         keys = [" "];
     }
     target.addEventListener("click", goal);
-    target.addEventListener("keyup", function(e) {
+    target.addEventListener("keyup", function (e) {
         if (keys.indexOf(e.key) > -1) {
             goal(e);
         }
     });
 }
 
-window.onload = function() {
+window.onload = function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
     addTranscripts();
-    addGalleryControls();
+    loadTobii();
 };
 // let space open the card without scrolling
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", function (e) {
     if (this.document.activeElement.classList.contains("card") && e.key == " ") {
         e.preventDefault();
     }
@@ -35,11 +35,11 @@ function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
     let header = document.querySelector("header");
     let navLinks = document.querySelectorAll("#top-nav li");
-    navBtn.addEventListener("click", function() {
+    navBtn.addEventListener("click", function () {
         header.classList.toggle("open");
     });
-    navLinks.forEach(function(link) {
-        link.addEventListener("click", function(e) {
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
             document
                 .querySelector("#top-nav li.current")
                 .classList.remove("current");
@@ -55,7 +55,7 @@ function addCardListeners() {
     [...cards].forEach((card) => {
         card.setAttribute("tabindex", "0"); //make tabable to cards
         addCardKeyboardControls(card, cards);
-        card.addEventListener("click", function(e) {
+        card.addEventListener("click", function (e) {
             setActive(card);
         });
     });
@@ -291,73 +291,18 @@ function toggleTranscript(e) {
     );
     transcriptElement.classList.toggle("closed");
 }
-
-function addGalleryControls() {
-    const gallery = document.getElementById("gallery");
-    if (!gallery) {
-        return;
-    }
-    //set Focus on Gallery items
-    setGalleryThumbnailFocus(window.location.hash);
-    let galleryThumbnails = document.querySelectorAll('#gallery li>a');
-    for (let i = 0; i < galleryThumbnails.length; i++) {
-        galleryThumbnails[i].addEventListener('click', function(e){
-            e.preventDefault();
-            let chosenImageHash = galleryThumbnails[i].hash;
-            window.location.replace(chosenImageHash);
-            setGalleryThumbnailFocus(chosenImageHash);
-        })
-    }
-    window.addEventListener("keyup", function(e) {
-        let gallery = document.getElementById('gallery');
-        if (gallery.contains(e.target)) {
-            //the gallery has focus so we can call navigation
-        } else {
-            return
-        }
-        switch (e.key) {
-            case "Escape":
-                closeGallery();
-                break;
-            case "ArrowRight":
-                nextGalleryImage();
-                break;
-            case "ArrowLeft":
-                previousGalleryImage();
-                break;
-            default:
-                break;
-        }
-    });
+// Gallery, used by Tobii to get the caption
+function getCaption(el) {
+    return el.querySelector('figcaption').innerText;
 }
-
-function closeGallery() {
-    window.location.replace(window.location.pathname + "#i");
-}
-
-function nextGalleryImage() {
-    let nextImage = document.querySelector(
-        '#gallery ul li a[href="' + window.location.hash + '"]'
-    ).parentElement.nextElementSibling;
-    if (!nextImage) {
-        nextImage = document.querySelector("#gallery ul li");
+function loadTobii() {
+    if (document.querySelector('div.tobii')) {
+        Tobii.destroy();
     }
-    let nextHash = nextImage.querySelector("a").hash;
-    window.location.replace(window.location.pathname + nextHash);
-    setGalleryThumbnailFocus(nextHash);
-}
-
-function previousGalleryImage() {
-    let prevImage = document.querySelector(
-        '#gallery ul li a[href="' + window.location.hash + '"]'
-    ).parentElement.previousElementSibling;
-    if (!prevImage) {
-        prevImage = document.querySelector("#gallery ul li:last-of-type");
-    }
-    let prevHash = prevImage.querySelector("a").hash;
-    window.location.replace(window.location.pathname + prevHash);
-    setGalleryThumbnailFocus(prevHash);
-}
-function setGalleryThumbnailFocus(targetHash) {
-    document.querySelector('a[href="'+targetHash+'"]').focus();
+    const tobii = new Tobii({
+        captionsSelector: "self",
+        captionAttribute: "data-caption",
+        captionText: getCaption
+    })
+    console.log(tobii);
 }

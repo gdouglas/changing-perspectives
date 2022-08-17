@@ -7,6 +7,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <link rel="stylesheet" type="text/css" href="/dist/app.css">
+<link href="/dist/tobii.min.css" rel="stylesheet">
 <noscript>
     <link rel="stylesheet" type="text/css" href="/styles/no-script.css">
 </noscript>
@@ -22,6 +23,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
 </script>
 <script async src="https://player.vimeo.com/api/player.js"></script>
 <script async src="https://www.youtube.com/iframe_api"></script>
+<script src="/libs/tobii/tobii.min.js"></script>
 
 <meta name="robots" content="index, follow" />
 

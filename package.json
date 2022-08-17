@@ -39,6 +39,7 @@
   },
   "homepage": "https://github.com/gdouglas/changing-perspectives",
   "dependencies": {
+    "@midzer/tobii": "^2.4.0",
     "@vimeo/player": "^2.11.0",
     "element-scroll-polyfill": "^1.0.1",
     "micromodal": "^0.4.6",

@@ -10,22 +10,22 @@ function a11yActivate(target, goal) {
         keys = [" "];
     }
     target.addEventListener("click", goal);
-    target.addEventListener("keyup", function(e) {
+    target.addEventListener("keyup", function (e) {
         if (keys.indexOf(e.key) > -1) {
             goal(e);
         }
     });
 }
 
-window.onload = function() {
+window.onload = function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
     addTranscripts();
-    addGalleryControls();
+    loadTobii();
 };
 // let space open the card without scrolling
-window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", function (e) {
     if (this.document.activeElement.classList.contains("card") && e.key == " ") {
         e.preventDefault();
     }
@@ -35,11 +35,11 @@ function addNavListener() {
     let navBtn = document.getElementById("nav-menu");
     let header = document.querySelector("header");
     let navLinks = document.querySelectorAll("#top-nav li");
-    navBtn.addEventListener("click", function() {
+    navBtn.addEventListener("click", function () {
         header.classList.toggle("open");
     });
-    navLinks.forEach(function(link) {
-        link.addEventListener("click", function(e) {
+    navLinks.forEach(function (link) {
+        link.addEventListener("click", function (e) {
             document
                 .querySelector("#top-nav li.current")
                 .classList.remove("current");
@@ -55,7 +55,7 @@ function addCardListeners() {
     [...cards].forEach((card) => {
         card.setAttribute("tabindex", "0"); //make tabable to cards
         addCardKeyboardControls(card, cards);
-        card.addEventListener("click", function(e) {
+        card.addEventListener("click", function (e) {
             setActive(card);
         });
     });
@@ -291,75 +291,20 @@ function toggleTranscript(e) {
     );
     transcriptElement.classList.toggle("closed");
 }
-
-function addGalleryControls() {
-    const gallery = document.getElementById("gallery");
-    if (!gallery) {
-        return;
-    }
-    //set Focus on Gallery items
-    setGalleryThumbnailFocus(window.location.hash);
-    let galleryThumbnails = document.querySelectorAll('#gallery li>a');
-    for (let i = 0; i < galleryThumbnails.length; i++) {
-        galleryThumbnails[i].addEventListener('click', function(e){
-            e.preventDefault();
-            let chosenImageHash = galleryThumbnails[i].hash;
-            window.location.replace(chosenImageHash);
-            setGalleryThumbnailFocus(chosenImageHash);
-        })
-    }
-    window.addEventListener("keyup", function(e) {
-        let gallery = document.getElementById('gallery');
-        if (gallery.contains(e.target)) {
-            //the gallery has focus so we can call navigation
-        } else {
-            return
-        }
-        switch (e.key) {
-            case "Escape":
-                closeGallery();
-                break;
-            case "ArrowRight":
-                nextGalleryImage();
-                break;
-            case "ArrowLeft":
-                previousGalleryImage();
-                break;
-            default:
-                break;
-        }
-    });
+// Gallery, used by Tobii to get the caption
+function getCaption(el) {
+    return el.querySelector('figcaption').innerText;
 }
-
-function closeGallery() {
-    window.location.replace(window.location.pathname + "#i");
-}
-
-function nextGalleryImage() {
-    let nextImage = document.querySelector(
-        '#gallery ul li a[href="' + window.location.hash + '"]'
-    ).parentElement.nextElementSibling;
-    if (!nextImage) {
-        nextImage = document.querySelector("#gallery ul li");
+function loadTobii() {
+    if (document.querySelector('div.tobii')) {
+        Tobii.destroy();
     }
-    let nextHash = nextImage.querySelector("a").hash;
-    window.location.replace(window.location.pathname + nextHash);
-    setGalleryThumbnailFocus(nextHash);
-}
-
-function previousGalleryImage() {
-    let prevImage = document.querySelector(
-        '#gallery ul li a[href="' + window.location.hash + '"]'
-    ).parentElement.previousElementSibling;
-    if (!prevImage) {
-        prevImage = document.querySelector("#gallery ul li:last-of-type");
-    }
-    let prevHash = prevImage.querySelector("a").hash;
-    window.location.replace(window.location.pathname + prevHash);
-    setGalleryThumbnailFocus(prevHash);
-}
-function setGalleryThumbnailFocus(targetHash) {
-    document.querySelector('a[href="'+targetHash+'"]').focus();
+    const tobii = new Tobii({
+        captionsSelector: "self",
+        captionAttribute: "data-caption",
+        captionText: getCaption
+    })
+    console.log(tobii);
 }
 (function() {
 	'use strict';
@@ -496,63 +441,6 @@ function offsetOf(elem) {
 ";
 	body.appendChild(style);
 })();
-//should be added to a build process
-
-function nextQuestion() {
-  //called on button click
-
-  // remove active class
-  // add active class to next
-  // enable previous button if needed
-  // if last question change button to set sail
-  // keep disabled until question is answered
-  //
-  let currentQuestion = document.querySelector(".question.active");
-  let checked = currentQuestion.querySelector("input:checked");
-  if (checked) {
-    checkAnswer(checked);
-  } else {
-    //nothing checked
-    alert("Please choose an answer");
-    return;
-  }
-  currentQuestion.classList.remove("active");
-  if (currentQuestion.nextElementSibling) {
-    currentQuestion.nextElementSibling.classList.add("active");
-  } else {
-    alert("all done!");
-  }
-  // console.log(currentQuestion.nextElementSibling);
-}
-
-function checkAnswer(question) {
-  let xhr = new XMLHttpRequest();
-
-  xhr.open("GET", `./game/tech-game.php?${question.name}=${question.value}`);
-
-  // request state change event
-  xhr.onreadystatechange = function() {
-    // request completed?
-    if (xhr.readyState !== 4) return;
-
-    if (xhr.status === 200) {
-      // request successful - show response
-      console.log("success", xhr.responseText);
-      if (xhr.responseText === "Correct") {
-          alert ("correct!");
-      } else {
-          alert("incorrect");
-      }
-    } else {
-      // request error
-      console.error("HTTP error", xhr.status, xhr.statusText);
-    }
-  };
-
-  // start request
-  xhr.send("some shit");
-}
-
 // Vid sizes
 // 360
 // 540
@@ -568,6 +456,9 @@ function checkAnswer(question) {
 
 function checkMediaQuery() {
 	const vid = document.getElementById('bg-vid');
+	if (!vid) {
+		return
+	}
 	let source = document.querySelector("#bg-vid > source");
 	if (source !== null) {
 		console.log("there is source", source);
@@ -578,6 +469,9 @@ function checkMediaQuery() {
 	vid.load();
 }
 function addSource(vid) {
+	if (!vid) {
+		return
+	}
 	const source = document.createElement('source');
 	source.type = 'video/mp4';
 	const video = document.createElement('video');

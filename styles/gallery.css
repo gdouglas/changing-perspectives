@@ -52,104 +52,15 @@
     object-fit: contain;
 }
 
-.gallery .description {
-    text-align: left;
-    box-sizing: border-box;
-    background: #222;
-    padding: 0;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    position: relative;
-    transition: all 400ms;
-    color: #eee;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 600ms ease-in-out;
-}
-
-.gallery .description * {
-    transition: none;
-}
-
-.gallery .description h3 {
-    margin: 0;
-    margin-right: 100px;
-    padding-top: 1rem;
-}
-
-.gallery .open {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    background: var(--paper);
-    border-radius: 5px;
-    padding: 0.2rem;
-    justify-content: center;
-}
-
-.gallery .open:after {
-    content: url(../images/icons/expand.svg);
-    position: absolute;
-    width: 20px;
-    display: block;
-    right: 5px;
-    top: 5px;
-    background: white;
-    border-radius: 50%;
-    height: 20px;
-    border: 1px solid black;
-}
-
-.gallery .description:target {
-    max-height: none;
-    opacity: 1;
-    height: auto;
-    visibility: visible;
-    /* max-width: none; */
-    overflow: auto;
-}
-
-.gallery .description:target figure {
-    /* display: inline-flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    flex-grow: 1; */
-    margin: 0;
-    padding: 1rem;
-    background: inherit;
-    border-radius: 5px;
-}
-
-.gallery .description:target img {
-    /* max-width: none; */
-    margin-bottom: 1rem;
-    object-fit: contain;
-}
-
-.gallery .close {
-    position: absolute;
-    background: #eee;
-    box-shadow: 2px 2px 1px 0px #999;
-    top: 0.5rem;
-    right: 0.5rem;
+.tobii__slide .tobii-image figure>figcaption {
+    white-space: pre-line;
+    padding: 50px;
+    padding-top: 0;
 }
 
 .gallery figcaption {
-    box-sizing: border-box;
-    margin: 1rem 0;
-    padding: 1rem;
-    width: 100%;
-    color: #222;
-    background: #eee;
+    display: none;
 }
-
-@media (max-width:580px) {
-    #gallery figure {
-        margin-top: 1rem;
-    }
-    .gallery .description h3 {
-        padding-top: 2rem;
-    }
+.gallery figure {
+    margin: 0;
 }

@@ -13,6 +13,9 @@
 
 function checkMediaQuery() {
 	const vid = document.getElementById('bg-vid');
+	if (!vid) {
+		return
+	}
 	let source = document.querySelector("#bg-vid > source");
 	if (source !== null) {
 		console.log("there is source", source);
@@ -23,6 +26,9 @@ function checkMediaQuery() {
 	vid.load();
 }
 function addSource(vid) {
+	if (!vid) {
+		return
+	}
 	const source = document.createElement('source');
 	source.type = 'video/mp4';
 	const video = document.createElement('video');

@@ -57,6 +57,29 @@
     padding: 50px;
     padding-top: 0;
 }
+.tobii-image,
+.tobii-image figure {
+    width: 100vw;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tobii-image img {
+    margin-bottom: -1rem;
+}
+.tobii-image figure {
+    display: flex;
+    overflow: visible;
+    height: 90vh;
+}
+.tobii__slide .tobii-image figcaption {
+    position: static;
+    max-width: 400px;
+    overflow: auto;
+    max-height: 100%;
+}
+
 
 .gallery figcaption {
     display: none;

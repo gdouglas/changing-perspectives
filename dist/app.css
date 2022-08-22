@@ -730,6 +730,9 @@ h3 {
   font-size: 1.6rem;
   padding: 2rem 2rem 4rem 2rem;
   color: #fff;
+  max-width: 80%;
+  min-width: 300px;
+  margin: 0 auto;
 }
 
 .home-artist-acknowledgement {
@@ -1122,15 +1125,27 @@ footer {
   text-align: center;
   color: #fff;
   margin: 0 auto 0 auto;
-  margin-top: -5px;
   padding: 4.1rem 4rem 1rem 4rem;
-  box-sizing: border-box;
   max-width: 980px;
-  border-radius: 5px 5px 0 0;
   min-height: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 1rem;
+  grid-auto-flow: row;
+  grid-template-areas: ". . ."
+		". . .";
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: -webkit-max-content 1fr;
+  grid-template-rows: max-content 1fr;
+  gap: 16px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "."
+	  ".";
 }
 
 .footer-container a {
@@ -1150,10 +1165,7 @@ footer {
 
 .footer-container h3 {
   height: 5rem;
-}
-
-.vmm {
-  /* grid-column: 2/2; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .vmm img {
@@ -1201,26 +1213,26 @@ footer {
   .footer-container h3 {
     height: auto;
   }
-
-  .footer-container .vmm .content {
-    display: flex;
-  }
-
-  .footer-container .vmm {
-    width: 100%;
-    display: flex;
-    margin: 3rem auto;
-    justify-content: center;
-  }
-
-  .footer-container .vmm .content p {
-    margin: 0;
-  }
 }
 
 @media screen and (max-width: 425px) {
   .footer-container {
-    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: '.'
+			'.'
+			'.';
+    grid-row-gap: 1rem;
+  }
+
+  .footer-container .col :where(h3, p, img, li, a) {
+    text-align: left;
+    margin-left: 3rem;
+  }
+
+  .footer-container .col :is(h3, img),
+  .footer-container .col.vmm>a {
+    margin-left: 0;
   }
 }
 
@@ -1851,6 +1863,32 @@ footer {
   white-space: pre-line;
   padding: 50px;
   padding-top: 0;
+}
+
+.tobii-image,
+.tobii-image figure {
+  width: 100vw;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tobii-image img {
+  margin-bottom: -1rem;
+}
+
+.tobii-image figure {
+  display: flex;
+  overflow: visible;
+  height: 90vh;
+}
+
+.tobii__slide .tobii-image figcaption {
+  position: static;
+  max-width: 400px;
+  overflow: auto;
+  max-height: 100%;
 }
 
 .gallery figcaption {

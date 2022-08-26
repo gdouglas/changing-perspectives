@@ -14,7 +14,7 @@
             <h3>Resources</h3>
             <div class="content">
                 <a href="/en/ressources-resources/">Learning Resources</a>
-                <a href="/en/glossary/">Glossary</a>
+                <a href="/en/references/">References</a>
             </div>
         </div>
         <div class="col vmm">

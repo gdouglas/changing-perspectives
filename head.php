@@ -7,23 +7,37 @@ include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <link rel="stylesheet" type="text/css" href="/dist/app.css">
-<link href="/dist/tobii.min.css" rel="stylesheet">
 <noscript>
-    <link rel="stylesheet" type="text/css" href="/styles/no-script.css">
+	<link rel="stylesheet" type="text/css" href="/styles/no-script.css">
 </noscript>
-<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato&family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato&family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap"
+	rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-148908480-1');
+function gtag() {
+	dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'UA-148908480-1');
 </script>
+
+<!-- Libraries -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script async src="https://player.vimeo.com/api/player.js"></script>
 <script async src="https://www.youtube.com/iframe_api"></script>
-<script src="/libs/tobii/tobii.min.js"></script>
+
+<link href="/libs/tobi/tobii.min.css" rel="stylesheet">
+<script asynyc src="/libs/tobii/tobii.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/libs/slick/accessible-slick-theme.min.css">
+<script asynyc type="text/javascript" src="/libs/slick/slick.min.js"></script>
+
+
 
 <meta name="robots" content="index, follow" />
 

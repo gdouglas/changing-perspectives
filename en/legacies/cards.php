@@ -13,7 +13,7 @@
                 <div class="back">
                     <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
                     <div class="responsive-wrapper">
-                        <iframe id="video1" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                        <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/IfFX1MdGsSI?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                         <noscript>
                             <video preload="none" src="placeholder-example.mp4">
                                 <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -39,7 +39,7 @@
                 <div class="back">
                     <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                     <div class="responsive-wrapper">
-                    <iframe id="video2" class="no-js-hide youtube"  width="560" height="315" src="https://www.youtube.com/embed/e_R1sWRdLT8?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                    <iframe id="video2" class="no-js-hide youtube"  width="560" height="315" src="https://www.youtube.com/embed/MeKmfSroonk?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                         <noscript>
                             <video preload="none" src="placeholder-example.mp4">
                                 <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

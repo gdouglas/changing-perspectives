@@ -87,3 +87,11 @@
 .gallery figure {
     margin: 0;
 }
+.gallery .gallery-title {
+    font-size: 1.8rem;
+    text-align: left;
+    margin-left: unset;
+    width: auto;
+    box-shadow: unset;
+    padding: none;
+}

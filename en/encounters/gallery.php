@@ -1,4 +1,5 @@
 <section id="gallery" class="gallery">
+<h2 class="text-left gallery-title">What role did these artifacts play in Vancouver&rsquo;s expedition?</h2>
 <p class="text-left">Click an image to learn more</p>
 <ul>
     <li>

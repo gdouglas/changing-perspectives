@@ -53,8 +53,11 @@
 
 <script>
     $(document).ready(function () {
+        console.log("load slider");
         $(".panels").slick({
             dots: true,
+            adaptiveHeight:true
         });
     });
 </script>
+

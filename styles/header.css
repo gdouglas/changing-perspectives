@@ -98,6 +98,7 @@ header nav {
     display: flex;
     margin: 1rem;
     margin-left: 0;
+    padding-bottom: 1rem;
 }
 .site-title a {
     z-index: 2;
@@ -133,9 +134,9 @@ nav li {
     border-radius: 4px 4px 0 0;
     z-index: 1;
 }
-nav .link:first-of-type {
+/* nav .link:first-of-type {
     display: none;
-}
+} */
 /* header .open {
     visibility: visible;
     transform: scaleY(1);

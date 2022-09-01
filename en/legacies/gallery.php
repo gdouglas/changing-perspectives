@@ -1,4 +1,5 @@
 <section id="gallery" class="gallery">
+<h2 class="text-left gallery-title">How do these Indigenous artworks reshape our understandings of colonization?</h2>
     <p class="text-left">Click an image to learn more</p>
     <ul>
         <li>

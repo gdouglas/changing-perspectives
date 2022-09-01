@@ -21,7 +21,7 @@
                 position: absolute;
                 left: 1rem;
                 top: 0;
-                width: 100%;
+                width: calc(100% - 1rem);
                 height: 100%;
                 z-index: -1;
                 transform:scaleX(-1);

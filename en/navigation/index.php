@@ -52,7 +52,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/356042135?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -98,7 +98,7 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video2" class="no-js-hide vimeo" src="https://player.vimeo.com/video/356042272?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -182,7 +182,7 @@
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video4" class="no-js-hide vimeo" title="Nautical Language part 1" src="https://player.vimeo.com/video/508980308?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/navigation.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -221,7 +221,7 @@
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video5" class="no-js-hide vimeo" title="Nautical Language part 2" src="https://player.vimeo.com/video/508980345?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/ship-tech.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
@@ -255,7 +255,7 @@
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video6" class="no-js-hide vimeo" title="Nautical Language part 3" src="https://player.vimeo.com/video/508980371?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                                <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                                 <noscript>
                                     <video preload="none" src="/videos/on-board-ship.mp4">
                                         <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

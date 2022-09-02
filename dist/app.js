@@ -80,28 +80,7 @@ function closeTranscripts() {
  * Card is active, call play on video
  */
 function playCardVideo(el) {
-    if (el.querySelector('.vimeo')) {
-        playVimeo(el);
-    } else {
-        playYoutube(el);
-    }
-}
-
-/**
- *  Get the vimeo player closest to the event and start playing it
- *
- * @param {string} event
- */
-function playVimeo(el) {
-    // event.stopPropagation();
-    // target vimeo player
-    let selected = el.querySelector(".vimeo");
-    //loop through players for a match then play
-    for (let player in vimeoPlayers) {
-        if (vimeoPlayers[player].element == selected) {
-            vimeoPlayers[player].play();
-        }
-    }
+    playYoutube(el);
 }
 
 function playYoutube(el) {
@@ -214,21 +193,8 @@ function setActive(element) {
     }
 }
 
-let vimeoPlayers = createVimeoPlayers(),
-    youTubePlayers = [];
-
-function createVimeoPlayers() {
-    let players = document.querySelectorAll(".vimeo");
-    let vimeoPlayers = [];
-    for (let i = 0; i < players.length; i++) {
-        let vim = new Vimeo.Player(players[i]);
-        vimeoPlayers.push(vim);
-    }
-    return vimeoPlayers;
-}
-
-function onYouTubeIframeAPIReady() {
-    console.log("add youtube");
+let youTubePlayers = [];
+window.onYouTubeIframeAPIReady = function () {
     let players = document.querySelectorAll(".youtube");
     for (let i = 0; i < players.length; i++) {
         let yt = new YT.Player(players[i]);
@@ -237,17 +203,9 @@ function onYouTubeIframeAPIReady() {
 }
 
 function pauseVideos() {
-    pauseAllVimeo();
     pauseAllYoutube();
 }
 
-function pauseAllVimeo() {
-    if (!vimeoPlayers) {
-        console.log("no players loaded");
-        return;
-    }
-    vimeoPlayers.forEach((vim) => vim.pause());
-}
 
 function pauseAllYoutube() {
     if (!youTubePlayers) {
@@ -256,17 +214,6 @@ function pauseAllYoutube() {
     }
     youTubePlayers.forEach((yt) => yt.pauseVideo());
 }
-vimeoPlayers.forEach((vim) => {
-    vim.element.addEventListener("keyup", (e) => {
-        switch (e.key) {
-            case "Escape":
-                setActive();
-                break;
-            default:
-                break;
-        }
-    });
-});
 
 function addTranscripts() {
     let buttons = document.querySelectorAll(".transcript-toggle");
@@ -304,7 +251,6 @@ function loadTobii() {
         captionAttribute: "data-caption",
         captionText: getCaption
     })
-    console.log(tobii);
 }
 (function() {
 	'use strict';

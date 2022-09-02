@@ -20,13 +20,14 @@ footer {
 }
 .col { 
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: max-content 1fr;
-	gap: 16px 0px;
-	grid-auto-flow: row;
-	grid-template-areas:
-	  "."
-	  ".";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr;
+    gap: 16px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titles"
+        "links";
+    align-items: end;
 }
 
 .footer-container a {
@@ -42,7 +43,6 @@ footer {
 	line-height: 3rem;
 }
 .footer-container h3 {
-	height: 5rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .vmm img {
@@ -73,7 +73,14 @@ footer {
 }
 
 .footer-container .content {
-	display: block;
+	display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.footer-container .content p {
+	margin-top: 0;
 }
 
 @media screen and (min-width: 1440px) {

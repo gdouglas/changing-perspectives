@@ -56,7 +56,11 @@
         console.log("load slider");
         $(".panels").slick({
             dots: true,
-            adaptiveHeight:true
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            centerMode: true,
+            variableWidth: true,
+            infinite: false
         });
     });
 </script>

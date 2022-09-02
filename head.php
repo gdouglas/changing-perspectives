@@ -28,7 +28,6 @@ gtag('config', 'UA-148908480-1');
 
 <!-- Libraries -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script async src="https://player.vimeo.com/api/player.js"></script>
 <script async src="https://www.youtube.com/iframe_api"></script>
 
 <link href="/libs/tobii/tobii.min.css" rel="stylesheet">
@@ -37,8 +36,6 @@ gtag('config', 'UA-148908480-1');
 <!-- Add the core slick.min.css -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
 
 
 <meta name="robots" content="index, follow" />
@@ -47,4 +44,3 @@ gtag('config', 'UA-148908480-1');
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 <link rel="icon" type="image/svg+xml" href="/images/favicon_io/favicon.svg">
-<link rel="manifest" href="/images/favicon_io/site.webmanifest">

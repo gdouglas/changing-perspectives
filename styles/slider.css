@@ -13,6 +13,13 @@
   /* max-height: 500px; */
   margin: 0 auto;
 }
+.slick-slide {
+  scale: 0.9;
+  transition: all .3s;
+}
+.slick-slide.slick-center {
+  scale: 1;
+}
 div.slick-track {
   /* display: flex;
   align-items: center;

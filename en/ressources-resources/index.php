@@ -51,7 +51,7 @@
             <ul class="resources-list">
                 <li>What were the Indigenous people's meetings with the fur traders like?
                     <p>
-                        <a href="/files/encounters/lesson-plan-indigenous-fur-trader-meetings.pdf">Lesson Plan</a>
+                        <a href="/files/encounters/lesson-plan-indigenous-fur-trader-meetings.pdf" target="_blank">Lesson Plan</a>
                 </p>
             </li>
                 <li>What did Vancouver's expedition actually achieve?
@@ -71,19 +71,19 @@
             <ul class="resources-list">
                 <li>How did Europeans colonize the Pacific Northwest?
                 <p>
-                    <a href="/files/legacies/lesson-plan-colonize-the-pacific-northwest.pdf">Lesson Plan</a>
+                    <a href="/files/legacies/lesson-plan-colonize-the-pacific-northwest.pdf" target="_blank">Lesson Plan</a>
             </p>
         </li>
                 <li>How are the Heiltsuk people re-writing their history?
                     <p>
-                        <a href="/files/legacies/lesson-plan-heiltsuk.pdf">Lesson Plan</a>&nbsp;
-                        <a href="/files/legacies/worksheet-heiltsuk.pdf">Video Worksheet</a>&nbsp;
+                        <a href="/files/legacies/lesson-plan-heiltsuk.pdf" target="_blank">Lesson Plan</a>&nbsp;
+                        <a href="/files/legacies/worksheet-heiltsuk.pdf" target="_blank">Video Worksheet</a>&nbsp;
                     </p>
                 </li>
                 <li>What has been the impact of colonization on the people of Yuquot?
                     <p>
                         <a href="/files/legacies/lesson-plan-yuquot.pdf" target="_blank" >Lesson Plan</a>&nbsp;
-                        <a href="/files/legacies/video-worksheet-yuquot.pdf" target="_blank" >Video Worksheet</a></p>
+                        <a href="/files/legacies/video-worksheet-yuquot-impact.pdf" target="_blank" >Video Worksheet</a></p>
                 </li>
             </ul>
             <h2 class="text-left">Navigation</h2>

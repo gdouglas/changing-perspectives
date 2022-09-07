@@ -31,8 +31,6 @@ h2 {
     font-size: 2.2rem;
 }
 
-.subtitle {}
-
 h3 {
     font-size: 2rem;
     line-height: 1.4;
@@ -48,6 +46,9 @@ h3 {
 }
 :root {
     font-size: 18px;;
+}
+.use-max-line-length {
+    max-width: 70ch;
 }
 
 @media (max-width: 620px) {

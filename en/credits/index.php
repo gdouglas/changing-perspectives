@@ -66,6 +66,7 @@
             </p>
             <p>Voiceover Narration</p>
             <ul>
+                <li>John Bateman</li>
                 <li>Turza Brown</li>
                 <li>Alex Kennedy</li>
                 <li>Heather Taryn</li>

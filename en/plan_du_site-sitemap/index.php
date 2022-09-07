@@ -13,16 +13,17 @@
         <h1>Sitemap</h1>
         <ul>
             <li><a href="/en/debut-home/" rel="noopener">Home</a></li>
-            <li><a href="/en/contexte-context/" rel="noopener">The Story Before Vancouver</a></li>
-            <li><a href="/en/expedition/" rel="noopener">Vancouver's Story</a></li>
-            <li><a href="/en/heritage-legacies/" rel="noopener">Stories from Yuquot</a></li>
-            <li><a href="/en/technologies/" rel="noopener">European Navigation and Ship Technology</a></li>
-            <li><a href="/en/sur-about/" rel="noopener">About</a></li>
-            <li><a href="/en/ressources-resources/" rel="noopener">Teacher Resources</a></li>
+            <li><a href="/en/relations/" rel="noopener">Relations</a></li>
+            <li><a href="/en/encounters/" rel="noopener">Encounters</a></li>
+            <li><a href="/en/legacies/" rel="noopener">Legacies</a></li>
+            <li><a href="/en/navigation/" rel="noopener">Navigation</a></li>
+            <li><a href="/en/ressources-resources/" rel="noopener">Learning Resources</a></li>
+            <li><a href="/en/lecture-reading/" rel="noopener">Recommended Reading</a></li>
             <li><a href="/en/credits/" rel="noopener">Credits</a></li>
             <li><a href="/en/plan_du_site-sitemap/" rel="noopener">Sitemap</a></li>
-            <li><a href="/en/droit_dauteur-copyright/" rel="noopener">Copyright</a></li>
             <li><a href="/en/commentaires-feedback/" rel="noopener">Send us feedback</a></li>
+            <li><a href="https://www.digitalmuseums.ca/privacy-notice/" rel="noopener" target="_blank">DMC Privacy Policy</a></li>
+            <li><a href="/en/droit_dauteur-copyright/" rel="noopener">Copyright</a></li>
         </ul>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>

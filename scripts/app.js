@@ -17,13 +17,14 @@ function a11yActivate(target, goal) {
     });
 }
 
-window.onload = function () {
+$(document).ready(function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
     addTranscripts();
     loadTobii();
-};
+    initYoutube();
+});
 // let space open the card without scrolling
 window.addEventListener("keydown", function (e) {
     if (this.document.activeElement.classList.contains("card") && e.key == " ") {
@@ -85,16 +86,14 @@ function playCardVideo(el) {
 
 function playYoutube(el) {
     if (!youTubePlayers) {
-        console.log("no players loaded");
+        console.error("no players loaded");
         return;
     }
-    let selected = el.querySelector('.youtube');
-    for (let player in youTubePlayers) {
-        if (youTubePlayers[player].getIframe().id === selected) {
-            console.log("player", youTubePlayers[player]);
-            youTubePlayers[player].playVideo();
-        }
-    }
+    let selected = $(el).find(".youtube")[0];
+    selected.contentWindow.postMessage(
+        '{"event":"command","func":"' + "playVideo" + '","args":""}',
+        "*"
+    );
 }
 
 function addCardKeyboardControls(card, cards) {
@@ -194,25 +193,19 @@ function setActive(element) {
 }
 
 let youTubePlayers = [];
-window.onYouTubeIframeAPIReady = function () {
+function initYoutube() {
     let players = document.querySelectorAll(".youtube");
     for (let i = 0; i < players.length; i++) {
-        let yt = new YT.Player(players[i]);
-        youTubePlayers.push(yt);
+        youTubePlayers.push(players[i]);
     }
 }
 
 function pauseVideos() {
-    pauseAllYoutube();
-}
-
-
-function pauseAllYoutube() {
-    if (!youTubePlayers) {
-        console.log("no players loaded");
-        return;
-    }
-    youTubePlayers.forEach((yt) => yt.pauseVideo());
+    youTubePlayers.forEach(yt => {
+        yt.contentWindow.postMessage(
+            '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+            "*");
+    });
 }
 
 function addTranscripts() {

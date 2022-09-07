@@ -28,7 +28,6 @@ gtag('config', 'UA-148908480-1');
 
 <!-- Libraries -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script async src="https://www.youtube.com/iframe_api"></script>
 
 <link href="/libs/tobii/tobii.min.css" rel="stylesheet">
 <script asynyc src="/libs/tobii/tobii.min.js"></script>

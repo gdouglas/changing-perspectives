@@ -81,10 +81,12 @@ if (isset($_POST['email_sender_email'])) {
     $email_message .= "Full Name: " . clean_string($full_name) . "\r\n";
     $email_message .= "Email: " . clean_string($email_from) . "\r\n";
     $email_message .= "Message: " . clean_string($comments);
+    $confirm_email_message = "Thank you for your email about the Changing Perspectives website. We are looking forward to reviewing your message.";
     $headers = 'From: ' . $email_from . "\r\n" .
         'Reply-To: ' . $email_from . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
     mail($email_to, $subject, $email_message, $headers);
+    mail($email_from, "re: " . $subject, $confirm_email_message, $headers);
     header("Location: $thankyou");
     echo "<script>location.replace('$thankyou')</script>";
 }

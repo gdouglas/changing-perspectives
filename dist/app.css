@@ -1614,6 +1614,10 @@ footer {
   object-fit: contain;
 }
 
+.gallery .tobii__slider {
+  top: 0;
+}
+
 .tobii__slide .tobii-image figure>figcaption {
   white-space: pre-line;
   padding: 50px;
@@ -1626,17 +1630,24 @@ footer {
   display: flex;
   flex: 1;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
-.tobii-image img {
+.tobii__slide .tobii-image img {
   margin-bottom: -1rem;
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  max-height: 100%;
 }
 
 .tobii-image figure {
   display: flex;
-  overflow: visible;
-  height: 90vh;
+  padding: 40px;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
 }
 
 .tobii__slide .tobii-image figcaption {

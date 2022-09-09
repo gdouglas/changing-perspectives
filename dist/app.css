@@ -1619,9 +1619,7 @@ footer {
 }
 
 .tobii__slide .tobii-image figure>figcaption {
-  white-space: pre-line;
   padding: 50px;
-  padding-top: 0;
 }
 
 .tobii-image,

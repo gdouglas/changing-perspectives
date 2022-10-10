@@ -3,17 +3,17 @@
         <div class="col info">
             <h3>Info</h3>
             <div class="content">
-                <a href="/en/credits/">Credits</a>
+                <a href="/en/about-us/">About us</a>
                 <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Policy</a>
-                <a href="/en/plan_du_site-sitemap/">Sitemap</a>
-                <a href="/en/commentaires-feedback/">Send us feedback</a>
+                <a href="/en/sitemap/">Sitemap</a>
+                <a href="/en/feedback/">Send us feedback</a>
             </div>
         </div>
         <div class="col resources">
             <h3>Resources</h3>
             <div class="content">
-                <a href="/en/ressources-resources/">Learning Resources</a>
-                <a href="/en/lecture-reading/">Recommended Reading</a>
+                <a href="/en/learner-resources/">Learner Resources</a>
+                <a href="/en/reading/">Recommended Reading</a>
             </div>
         </div>
         <div class="col vmm">
@@ -32,5 +32,4 @@
     </div>
 </footer>
 <script async src="/dist/app.js"></script>
-<!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script> -->
 <script type="text/javascript" src="/libs/accessible-slick-1.0.1/slick/slick.js"></script>

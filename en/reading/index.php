@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
-    <title>References | Changing Perspectives</title>
+    <title>Reading | Changing Perspectives</title>
     <meta name="description" content="How this project was completed and created.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>

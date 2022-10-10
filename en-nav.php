@@ -1,7 +1,7 @@
 <nav id="top-nav">
     <button id="nav-menu" class="btn" type="button">Menu</button>
     <ul>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'debut-home') ? '"current link"' : 'link'; ?>>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'home') ? '"current link"' : 'link'; ?>>
             <a class="gold" href="/" rel="noopener noreferrer">Home</a>
         </li>
         <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'relations') ? '"current link"' : 'link'; ?>>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
 <head>
-    <title>Learning Resources | Changing Perspectives</title>
+    <title>Learner Resources | Changing Perspectives</title>
     <meta name="description" content="Instructor resources for education about exploration in the late 1790's.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <style>
@@ -17,7 +17,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-header.php" ?>
     </header>
     <main id="main" role="main" tabindex="-1">
-        <h1 class="text-center pad-bottom">Teacher's Resources</h1>
+        <h1 class="text-center pad-bottom">Learner Resources</h1>
         <section>
             <p>A lesson plan and worksheets accompany each video and slideshow in the exhibit. They cover the four exhibit themes: Relations, Encounters, Legacies, and Navigation. Educators are invited to review and customize these resources based on curriculum goals, grade level, and student interests.</p>
             <p>The following lesson plans and activities have been designed with the Grades 4, 8, & 9 Social Studies BC Curriculum in mind. The worksheets are intended for Grade 4 students, while the analysis and project prompts in the lesson plans will deepen learning for Grade 8 and 9 students.</p>

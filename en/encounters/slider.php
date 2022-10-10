@@ -6,7 +6,8 @@
                     src="/images/encounters/encounters-title.png"
                     alt="title panel"
                 />
-                <figcaption class="comic-caption sr-only">
+                <button id="panel-one-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-one-transcript" class="comic-caption transcript closed">
                     &ldquo;What were the Indigenous people&rsquo;s meetings with
                     the fur traders like?&rdquo;(The title is white on a black
                     background with a chalkboard-like font. All following images
@@ -16,8 +17,9 @@
         </div>
         <div>
             <figure id="two">
-                <img src="/images/encounters/encounters1.png" alt="panel 1" />
-                <figcaption class="comic-caption sr-only">
+                <img src="/images/encounters/encounters1.png" alt="Panel 1 of 6" />
+                <button id="panel-two-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-two-transcript" class="comic-caption transcript closed">
                     &ldquo;For several decades the fur trade was the main
                     concern of European + US ships entering the region&mldr;This
                     trade decimated the sea otter population. Ship&rsquo;s crews
@@ -28,8 +30,9 @@
             </figure>
         </div>
         <figure id="three">
-            <img src="/images/encounters/encounters2.png" alt="panel 2" />
-            <figcaption class="comic-caption sr-only">
+            <img src="/images/encounters/encounters2.png" alt="Panel 2 of 6" />
+            <button id="panel-three-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-three-transcript" class="comic-caption transcript closed">
                 &ldquo;The Russians began trading with the Aleut in 1741. They
                 took families hostage &amp; forced hunters to gather sea otters.
                 In 1763, Aleuts revolted + destroyed 4 of 5 Russian ships. In
@@ -40,8 +43,9 @@
             </figcaption>
         </figure>
         <figure id="four">
-            <img src="/images/encounters/encounters3.png" alt="panel 3" />
-            <figcaption class="comic-caption sr-only">
+            <img src="/images/encounters/encounters3.png" alt="Panel 3 of 6" />
+            <button id="panel-four-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-four-transcript" class="comic-caption transcript closed">
                 &ldquo;As the Russians ravaged the Aleut &amp; sea otter
                 populations, they began moving south into Tlingit territory. But
                 the Tlingit were much better armed from trading with British
@@ -53,8 +57,9 @@
             </figcaption>
         </figure>
         <figure id="five">
-            <img src="/images/encounters/encounters4.png" alt="panel 4" />
-            <figcaption class="comic-caption sr-only">
+            <img src="/images/encounters/encounters4.png" alt="Panel 4 of 6" />
+            <button id="panel-five-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-five-transcript" class="comic-caption transcript closed">
                 &ldquo;As more ships descended on the region throughout the
                 1780s &amp; &lsquo;90s, more ships were attacked. Over the next
                 30 years dozens of ships would be captured.&rdquo; (Warriors in
@@ -63,8 +68,9 @@
             </figcaption>
         </figure>
         <figure id="six">
-            <img src="/images/encounters/encounters5.png" alt="panel 5" />
-            <figcaption class="comic-caption sr-only">
+            <img src="/images/encounters/encounters5.png" alt="Panel 5 of 6" />
+            <button id="panel-six-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-six-transcript" class="comic-caption transcript closed">
                 In 1803, the US ship Boston was attacked by Mowachaht &amp;
                 Muchalaht warriors, who killed 25 or 27 crew members. The 2
                 survivors were forced to identify the severed heads of the crew.
@@ -74,8 +80,9 @@
             </figcaption>
         </figure>
         <figure id="seven">
-            <img src="/images/encounters/encounters6.png" alt="panel 6" />
-            <figcaption class="comic-caption sr-only">
+            <img src="/images/encounters/encounters6.png" alt="Panel 6 of 6" />
+            <button id="panel-seven-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-seven-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1811, the Tonquin was attacked by Tla-o-qui-aht
                 warriors led with Wickaninnish in Clayoquot Sound. A surviving
                 crew member rigged explosives &amp; escaped. THe blast killed as
@@ -85,25 +92,3 @@
         </figure>
     </div>
 </section>
-
-<script>
-    $(document).ready(function () {
-        $(".panels").slick({
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: true,
-            variableWidth: true,
-            infinite: false,
-            initialSlide : 0,
-        });
-    });
-    $(".panels").on("init", slickConfig);
-    function slickConfig(e) {
-        $("div[data-slick-index]").click(function (e) {
-            e.preventDefault();
-            let slideno = $(this).data("slickIndex");
-            $(".panels").slick("slickGoTo", slideno);
-        });
-    }
-</script>

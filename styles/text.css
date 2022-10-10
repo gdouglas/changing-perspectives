@@ -2,7 +2,7 @@
     text-decoration: none;
     color: #d4af37;
     ;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @supports (background-clip: text) {

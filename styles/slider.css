@@ -10,8 +10,9 @@
   /* display: flex; */
 }
 .slick-slider img{
-  /* max-height: 500px; */
   margin: 0 auto;
+  max-width: calc(100vw - 10px);
+  z-index: 2; /* appear above the outline on the transcript button */
 }
 .slick-slide {
   scale: 0.7;
@@ -27,6 +28,8 @@
 }
 .comic-wrapper .slick-track {
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 12px;
 }
 .comic-wrapper .slick-track .slick-slide {
   display: flex;
@@ -36,4 +39,54 @@
 }
 .slick-slide figure {
   margin: 0;
+}
+.slick-list.draggable {
+  cursor: pointer;
+  cursor: hand;
+  cursor: grab;
+}
+.slick-list.dragging, .slick-list.draggable:active:hover {
+  cursor: grabbing;
+}
+figcaption.comic-caption {
+  width: 450px;
+  overflow: auto;
+  margin: 1rem auto;
+}
+.slick-slide .transcript-toggle {
+  margin: 0;
+  border-radius: 0 0 9px 10px;
+  border-top: none;
+  border-color: blanchedalmond;
+  border-width: 1px;
+  cursor: pointer;
+  outline-offset: 0 1px;
+  display: flex;
+  margin-left: auto;
+  z-index: 0;
+  white-space: pre-wrap;
+}
+.slick-slide .transcript-toggle span {
+}
+
+@media (max-width: 426px) {
+  .comic-wrapper {
+    padding: 0;
+    width: 100vw;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .slick-slider .slick-next {
+    right: 15px;
+  }
+  .slick-slider .slick-prev {
+    left: 15px;
+  }
+  .slick-slider .slick-next,
+  .slick-slider .slick-prev,
+  .slick-slider .slick-next:focus,
+  .slick-slider .slick-prev:focus {
+    top: calc(100% - 25px);
+    z-index: 100;
+  }
 }

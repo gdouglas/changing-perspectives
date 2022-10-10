@@ -55,6 +55,9 @@ footer {
 	padding: 0.5rem 0;
 	justify-content: center;
 	background: #060606;
+	color: #fff;
+	font-weight: 300;
+	line-height: 2;
 }
 .sub-footer div {
 	display: inline-block;

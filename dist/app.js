@@ -17,13 +17,14 @@ function a11yActivate(target, goal) {
     });
 }
 
-$(document).ready(function () {
+$(function () {
     document.querySelector("html").classList.remove("no-js");
     addNavListener();
     addCardListeners();
     addTranscripts();
     loadTobii();
     initYoutube();
+    initSlick();
 });
 // let space open the card without scrolling
 window.addEventListener("keydown", function (e) {
@@ -227,7 +228,7 @@ function toggleTranscript(e) {
     }
     e.target.setAttribute("aria-expanded", expanded);
     let transcriptElement = e.target.parentElement.querySelector(
-        "div.transcript"
+        ".transcript"
     );
     transcriptElement.classList.toggle("closed");
 }
@@ -245,6 +246,45 @@ function loadTobii() {
         captionText: getCaption
     })
 }
+
+
+// Slider
+function initSlick() {
+    if ($('.comic-wrapper').length){
+        setupSlick();
+    } else {
+        console.log("no slick",$('#comic-wrapper'));
+    }
+}
+
+function setupSlick() {
+    $(".panels").on("init", setSlickConfig);
+    $(".panels").slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        infinite: false,
+        initialSlide : 0,
+    });
+}
+function setSlickConfig(e) {
+    console.log("set config");
+    $("div[data-slick-index]").click(function (e) {
+        e.preventDefault();
+        goToSlide($(this).data("slickIndex"));
+    });
+    $("div[data-slick-index]").focusin(function (e) {
+        e.preventDefault();
+        goToSlide($(this).data("slickIndex"));
+    })
+}
+
+function goToSlide(slideNumber) {
+    $(".panels").slick("slickGoTo", slideNumber);
+}
+
 (function() {
 	'use strict';
 

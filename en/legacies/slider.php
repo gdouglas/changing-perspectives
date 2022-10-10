@@ -1,20 +1,22 @@
 <section class="comic-wrapper">
     <div class="panels">
-        <figure id="1">
+        <figure id="one">
             <img
                 src="/images/colonization/colonization-title.png"
                 alt="title-panel"
             />
-            <figcaption class="comic-caption sr-only">
+            <button id="panel-one-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-one-transcript" class="comic-caption transcript closed">
                 &ldquo;How did Europeans colonize the Pacific Northwest?&rdquo;
                 (The title is white on a black background with a chalkboard-like
                 font. All following images are hand-drawn and in black and
                 white.)
             </figcaption>
         </figure>
-        <figure id="2">
-            <img src="/images/colonization/colonization1.png" alt="panel 1" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="two">
+            <img src="/images/colonization/colonization1.png" alt="Panel 1 of 8" />
+            <button id="panel-two-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-two-transcript" class="comic-caption transcript closed">
                 &ldquo;By the 1820s, the Hudson&rsquo;s Bay Company was the main
                 colonial power in the region, even as the fur trade declined.
                 The company had numerous forts and ships. In 1828, a Klallam
@@ -23,17 +25,19 @@
                 village on shore.)
             </figcaption>
         </figure>
-        <figure id="3">
-            <img src="/images/colonization/colonization2.png" alt="panel 2" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="three">
+            <img src="/images/colonization/colonization2.png" alt="Panel 2 of 8" />
+            <button id="panel-three-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-three-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1849, Vancouver Island was named an official colony,
                 with the HBC acting as government.&rdquo; (A drawing of a fort
                 with a British flag.)
             </figcaption>
         </figure>
-        <figure id="4">
-            <img src="/images/colonization/colonization3.png" alt="panel 3" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="four">
+            <img src="/images/colonization/colonization3.png" alt="Panel 3 of 8" />
+            <button id="panel-four-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-four-transcript" class="comic-caption transcript closed">
                 &ldquo;At the same time, settlement and selling land became a
                 main concern of the government…For 30 years, Royal Navy gunboats
                 were used to improve British colonialism + to bring the coast
@@ -43,9 +47,10 @@
                 another man responds, &ldquo;Yes, sir…&rdquo;.)
             </figcaption>
         </figure>
-        <figure id="5">
-            <img src="/images/colonization/colonization4.png" alt="panel 4" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="five">
+            <img src="/images/colonization/colonization4.png" alt="Panel 4 of 8" />
+            <button id="panel-five-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-five-transcript" class="comic-caption transcript closed">
                 &ldquo;The gunboats served as military + police forces…They were
                 well-armed with up to 50 cannons + rockets as well as Royal
                 marines.&rdquo; (A drawing of cannons lined up along the side of
@@ -53,9 +58,10 @@
                 musket in his hands.)
             </figcaption>
         </figure>
-        <figure id="6">
-            <img src="/images/colonization/colonization5.png" alt="panel 5" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="six">
+            <img src="/images/colonization/colonization5.png" alt="Panel 6 of 8" />
+            <button id="panel-six-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-six-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1862, a smallpox epidemic began in Victoria. Colonial
                 authorities forced hundred of Natives out. Infected, they
                 returned to their villages, spreading the disease. An estimated
@@ -65,9 +71,10 @@
                 is a longhouse and two others lying dead on the beach.)
             </figcaption>
         </figure>
-        <figure id="7">
-            <img src="/images/colonization/colonization6.png" alt="panel 6" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="seven">
+            <img src="/images/colonization/colonization6.png" alt="Panel 7 of 8" />
+            <button id="panel-seven-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-seven-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1871, BC became a part of Canada. In 1874, the BC
                 Lands Act was passed to open land to settlement. Canada issued
                 the 1875 Duty-of-Disallowance, striking down the BC Lands Act +
@@ -76,9 +83,10 @@
                 &lsquo;1875 Duty of Disallowance&rsquo;.)
             </figcaption>
         </figure>
-        <figure id="8">
-            <img src="/images/colonization/colonization7.png" alt="panel 7" />
-            <figcaption class="comic-caption sr-only">
+        <figure id="eight">
+            <img src="/images/colonization/colonization7.png" alt="Panel 8 of 8" />
+            <button id="panel-eight-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
+                <figcaption id="panel-eight-transcript" class="comic-caption transcript closed">
                 &ldquo;In response, BC threatened to withdraw from Canada…In
                 1876, Canada issued the Indian Act, extending government control
                 over all Natives, inc. those in BC, &lsquo;legalizing&rsquo; the
@@ -90,25 +98,3 @@
         </figure>
     </div>
 </section>
-
-<script>
-    $(document).ready(function () {
-        $(".panels").slick({
-            dots: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            centerMode: true,
-            variableWidth: true,
-            infinite: false,
-            initialSlide : 0,
-        });
-    });
-    $(".panels").on("init", slickConfig);
-    function slickConfig(e) {
-        $("div[data-slick-index]").click(function (e) {
-            e.preventDefault();
-            let slideno = $(this).data("slickIndex");
-            $(".panels").slick("slickGoTo", slideno);
-        });
-    }
-</script>

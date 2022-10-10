@@ -51,7 +51,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What did Vancouver's Expedition actually achieve?</h3>
+                            <h2><span class="sr-only">Video: </span>What did Vancouver's Expedition actually achieve?</h2>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
@@ -107,7 +107,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h3>
+                            <h2><span class="sr-only">Video: </span>What was it like to be a member of Vancouver's crew?</h2>
                         </div>
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>

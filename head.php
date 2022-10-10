@@ -11,7 +11,7 @@ include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
     <link rel="stylesheet" type="text/css" href="/styles/no-script.css">
 </noscript>
 <link
-    href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato&family=Libre+Baskerville&family=Nothing+You+Could+Do&family=Open+Sans:wght@400;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Libre+Baskerville&display=swap"
     rel="stylesheet">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>

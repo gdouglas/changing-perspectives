@@ -47,7 +47,7 @@
                 <div id="card1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>How did Captain Vancouver navigate the oceans?</h3>
+                            <h2><span class="sr-only">Video: </span>How did Captain Vancouver navigate the oceans?</h2>
                         </div>
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -93,7 +93,7 @@
                 <div id="card2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>What were the vessels like that Captain Vancouver sailed in?</h3>
+                            <h2><span class="sr-only">Video: </span>What were the vessels like that Captain Vancouver sailed in?</h2>
                         </div>
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
@@ -177,7 +177,7 @@
                 <div id="card1_1" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>Hands aloft!</h3>
+                            <h2><span class="sr-only">Video: </span>Hands aloft!</h2>
                         </div>
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
@@ -216,7 +216,7 @@
                 <div id="card2_2" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>That&rsquo;s well halyard</h3>
+                            <h2><span class="sr-only">Video: </span>That&rsquo;s well halyard</h2>
                         </div>
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
@@ -250,7 +250,7 @@
                 <div id="card3_3" class="card">
                     <div class="content">
                         <div class="front">
-                            <h3><span class="sr-only">Video: </span>That&rsquo;s well braces</h3>
+                            <h2><span class="sr-only">Video: </span>That&rsquo;s well braces</h2>
                         </div>
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>

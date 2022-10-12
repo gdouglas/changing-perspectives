@@ -36,7 +36,7 @@
 }
 .site-intro>p {
     margin: 0 auto;
-    max-width: 900px
+    max-width: 900px;
 }
 
 .site-intro {
@@ -55,3 +55,15 @@
     margin-bottom: -2rem;
 }
 
+@media (max-width: 426px) {
+    .home #main {
+        background: linear-gradient(90deg,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0.75) 10%,
+            rgba(0,0,0,0.7539390756302521) 90%,
+            rgba(0,0,0,0) 100%)
+    }
+    .site-intro {
+        padding: 0;
+    }
+}

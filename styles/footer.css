@@ -104,11 +104,23 @@ footer {
 			'.'
 			'.'
 			'.';
-		grid-row-gap: 1rem;
+		grid-row-gap: 2rem;
 	}
+	.footer-container .col {
+		grid-template-rows: auto 1fr;
+		grid-template-columns: 1fr 1fr;
+		align-items: flex-start;
+	}
+	.footer-container .content {
+		align-items: flex-start;
+	}
+	.col.vmm {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 1.5em;
+        justify-items: left;
+    }
 	.footer-container .col :where(h3, p, img, li, a){
 		text-align: left;
-		margin-left: 3rem;
 	}
 	.footer-container .col :is(h3, img),
 	.footer-container .col.vmm>a {
@@ -131,5 +143,6 @@ footer {
 	}
 	.sub-footer div {
 		width: 100%;
+		text-align: center;
 	}
 }

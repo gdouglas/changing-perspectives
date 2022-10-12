@@ -4,7 +4,7 @@
             <img
                 src="/images/colonization/colonization-title.png"
                 alt="title-panel"
-            />
+                aria-describedby="panel-one-transcript"/>
             <button id="panel-one-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-one-transcript" class="comic-caption transcript closed">
                 &ldquo;How did Europeans colonize the Pacific Northwest?&rdquo;
@@ -14,7 +14,7 @@
             </figcaption>
         </figure>
         <figure id="two">
-            <img src="/images/colonization/colonization1.png" alt="Panel 1 of 8" />
+            <img src="/images/colonization/colonization1.png" alt="Panel 1 of 8" aria-describedby="panel-two-transcript"/>
             <button id="panel-two-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-two-transcript" class="comic-caption transcript closed">
                 &ldquo;By the 1820s, the Hudson&rsquo;s Bay Company was the main
@@ -26,7 +26,7 @@
             </figcaption>
         </figure>
         <figure id="three">
-            <img src="/images/colonization/colonization2.png" alt="Panel 2 of 8" />
+            <img src="/images/colonization/colonization2.png" alt="Panel 2 of 8" aria-describedby="panel-three-transcript"/>
             <button id="panel-three-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-three-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1849, Vancouver Island was named an official colony,
@@ -35,7 +35,7 @@
             </figcaption>
         </figure>
         <figure id="four">
-            <img src="/images/colonization/colonization3.png" alt="Panel 3 of 8" />
+            <img src="/images/colonization/colonization3.png" alt="Panel 3 of 8" aria-describedby="panel-four-transcript"/>
             <button id="panel-four-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-four-transcript" class="comic-caption transcript closed">
                 &ldquo;At the same time, settlement and selling land became a
@@ -48,7 +48,7 @@
             </figcaption>
         </figure>
         <figure id="five">
-            <img src="/images/colonization/colonization4.png" alt="Panel 4 of 8" />
+            <img src="/images/colonization/colonization4.png" alt="Panel 4 of 8" aria-describedby="panel-five-transcript"/>
             <button id="panel-five-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-five-transcript" class="comic-caption transcript closed">
                 &ldquo;The gunboats served as military + police forces…They were
@@ -59,7 +59,7 @@
             </figcaption>
         </figure>
         <figure id="six">
-            <img src="/images/colonization/colonization5.png" alt="Panel 6 of 8" />
+            <img src="/images/colonization/colonization5.png" alt="Panel 6 of 8" aria-describedby="panel-six-transcript"/>
             <button id="panel-six-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-six-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1862, a smallpox epidemic began in Victoria. Colonial
@@ -72,7 +72,7 @@
             </figcaption>
         </figure>
         <figure id="seven">
-            <img src="/images/colonization/colonization6.png" alt="Panel 7 of 8" />
+            <img src="/images/colonization/colonization6.png" alt="Panel 7 of 8" aria-describedby="panel-seven-transcript"/>
             <button id="panel-seven-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-seven-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1871, BC became a part of Canada. In 1874, the BC
@@ -84,7 +84,7 @@
             </figcaption>
         </figure>
         <figure id="eight">
-            <img src="/images/colonization/colonization7.png" alt="Panel 8 of 8" />
+            <img src="/images/colonization/colonization7.png" alt="Panel 8 of 8" aria-describedby="panel-eight-transcript"/>
             <button id="panel-eight-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-eight-transcript" class="comic-caption transcript closed">
                 &ldquo;In response, BC threatened to withdraw from Canada…In

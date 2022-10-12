@@ -5,7 +5,7 @@
                 <img
                     src="/images/encounters/encounters-title.png"
                     alt="title panel"
-                />
+                    aria-describedby="panel-one-transcript"/>
                 <button id="panel-one-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-one-transcript" class="comic-caption transcript closed">
                     &ldquo;What were the Indigenous people&rsquo;s meetings with
@@ -17,7 +17,7 @@
         </div>
         <div>
             <figure id="two">
-                <img src="/images/encounters/encounters1.png" alt="Panel 1 of 6" />
+                <img src="/images/encounters/encounters1.png" alt="Panel 1 of 6" aria-describedby="panel-two-transcript"/>
                 <button id="panel-two-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-two-transcript" class="comic-caption transcript closed">
                     &ldquo;For several decades the fur trade was the main
@@ -30,7 +30,7 @@
             </figure>
         </div>
         <figure id="three">
-            <img src="/images/encounters/encounters2.png" alt="Panel 2 of 6" />
+            <img src="/images/encounters/encounters2.png" alt="Panel 2 of 6" aria-describedby="panel-three-transcript"/>
             <button id="panel-three-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-three-transcript" class="comic-caption transcript closed">
                 &ldquo;The Russians began trading with the Aleut in 1741. They
@@ -43,7 +43,7 @@
             </figcaption>
         </figure>
         <figure id="four">
-            <img src="/images/encounters/encounters3.png" alt="Panel 3 of 6" />
+            <img src="/images/encounters/encounters3.png" alt="Panel 3 of 6" aria-describedby="panel-four-transcript"/>
             <button id="panel-four-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-four-transcript" class="comic-caption transcript closed">
                 &ldquo;As the Russians ravaged the Aleut &amp; sea otter
@@ -57,7 +57,7 @@
             </figcaption>
         </figure>
         <figure id="five">
-            <img src="/images/encounters/encounters4.png" alt="Panel 4 of 6" />
+            <img src="/images/encounters/encounters4.png" alt="Panel 4 of 6" aria-describedby="panel-five-transcript"/>
             <button id="panel-five-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-five-transcript" class="comic-caption transcript closed">
                 &ldquo;As more ships descended on the region throughout the
@@ -68,7 +68,7 @@
             </figcaption>
         </figure>
         <figure id="six">
-            <img src="/images/encounters/encounters5.png" alt="Panel 5 of 6" />
+            <img src="/images/encounters/encounters5.png" alt="Panel 5 of 6" aria-describedby="panel-six-transcript"/>
             <button id="panel-six-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-six-transcript" class="comic-caption transcript closed">
                 In 1803, the US ship Boston was attacked by Mowachaht &amp;
@@ -80,7 +80,7 @@
             </figcaption>
         </figure>
         <figure id="seven">
-            <img src="/images/encounters/encounters6.png" alt="Panel 6 of 6" />
+            <img src="/images/encounters/encounters6.png" alt="Panel 6 of 6" aria-describedby="panel-seven-transcript"/>
             <button id="panel-seven-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                 <figcaption id="panel-seven-transcript" class="comic-caption transcript closed">
                 &ldquo;In 1811, the Tonquin was attacked by Tla-o-qui-aht

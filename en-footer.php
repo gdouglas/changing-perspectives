@@ -31,5 +31,4 @@
         </div>
     </div>
 </footer>
-<script async src="/dist/app.js"></script>
-<script type="text/javascript" src="/libs/accessible-slick-1.0.1/slick/slick.js"></script>
+<script async src="/dist/app.min.js"></script>

@@ -8,12 +8,12 @@
         <div id="card1" class="card">
             <div class="content">
                 <div class="front">
-                    <h2><span class="sr-only">Video: </span>How are the Heiltsuk people re-writing their history?</h2>
+                    <h2><span class="sr-only">Video: </span>How are the Heiltsuk combining archaeology and traditional knowledge to re-tell Captain Vancouver’s story?</h2>
                 </div>
                 <div class="back">
                     <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
                     <div class="responsive-wrapper">
-                        <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/IfFX1MdGsSI?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                        <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/agXvi7_P_Kg?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                         <noscript>
                             <video preload="none" src="placeholder-example.mp4">
                                 <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">

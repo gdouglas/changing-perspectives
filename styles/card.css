@@ -255,6 +255,7 @@
     .transcript {
         color: #eee;
         background: #222;
+        font-weight: 100;
     }
     @supports (transform-style: preserve-3d) {
         .card .content {
@@ -285,6 +286,10 @@
             background: url(../images/wood-light.jpg);
             background-size: cover;
             max-width: 100%;
+        }
+        .card h2 {
+            padding: 1em;
+            width: 100%;
         }
         .card .back {
             background: #222;

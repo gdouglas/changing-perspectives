@@ -483,6 +483,23 @@ figcaption.comic-caption {
   }
 }
 
+.comic-advisory {
+  display: inline-flex !important;
+  flex-direction: column;
+  max-width: 350px;
+  height: 350px;
+  background: #fff;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 20px;
+}
+
+.comic-advisory strong {
+  font-size: 25px;
+}
+
 .home-intro-wrapper {
   max-width: 1200px;
   margin: 2rem auto 1rem auto;
@@ -1458,6 +1475,7 @@ footer {
   .transcript {
     color: #eee;
     background: #222;
+    font-weight: 100;
   }
 
 @supports (transform-style: preserve-3d) {
@@ -1492,6 +1510,11 @@ footer {
       background: url("../images/wood-light.jpg");
       background-size: cover;
       max-width: 100%;
+    }
+
+    .card h2 {
+      padding: 1em;
+      width: 100%;
     }
 
     .card .back {

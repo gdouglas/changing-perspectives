@@ -90,3 +90,20 @@ figcaption.comic-caption {
     z-index: 100;
   }
 }
+
+.comic-advisory {
+  display: inline-flex !important;
+  flex-direction: column;
+  max-width: 350px;
+  height: 350px;
+  background: #fff;
+  align-content: center;
+  justify-content: center;
+  padding: 50px;
+
+  font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 20px;
+}
+.comic-advisory strong {
+  font-size: 25px;
+}

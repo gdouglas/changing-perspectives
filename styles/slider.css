@@ -18,6 +18,7 @@
   scale: 0.7;
   transition: all .3s;
   height: 500px;
+  max-width: 95vw;
 }
 
 .slick-slide.slick-center {
@@ -96,14 +97,20 @@ figcaption.comic-caption {
   flex-direction: column;
   max-width: 350px;
   height: 350px;
+  width: 100%;
   background: #fff;
   align-content: center;
   justify-content: center;
   padding: 50px;
 
   font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', 'Comic Neue', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
 }
+.comic-advisory p {
+  margin: 0 auto;
+}
+
 .comic-advisory strong {
-  font-size: 25px;
+  font-size: 1.2em;
 }

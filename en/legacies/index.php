@@ -3,7 +3,7 @@
     <head>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
         <title>Legacies | Changing Perspectives</title>
-        <meta name="description" content="Content to come" />
+        <meta name="description" content="Legacies and impacts of Vancouver's exploration of the Pacific Northwest." />
         <style>
             @media (min-width: 768px) {
                 #main:before {

@@ -1,7 +1,7 @@
 <section class="comic-wrapper">
     <div class="panels">
         <div id="content-advisory" class="comic-advisory">
-            <p>This comic strip is from "The 500 Years of Indigenous Resistance Comic Book", created by Gord Hill a Kwakwaka'wakw artist and historian</p>
+            <p>This comic strip is from "The 500 Years of Indigenous Resistance Comic Book", created by Gord Hill a Kwakwaka'wakw artist and historian.</p>
             <p><strong>Warning:</strong> Some of the images are graphic in nature and may be disturbing.</p>
         </div>    
         <div>

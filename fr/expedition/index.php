@@ -35,13 +35,6 @@
                             <a href="#card2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video1" class="no-js-hide vimeo" title="European Navigation Video" src="https://player.vimeo.com/video/483195238?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/navigation.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Télécharger la video</a>
-                                </noscript>
                             </div>
                             <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -116,13 +109,6 @@
                             <a href="#card3" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
                                 <iframe id="vimeo2" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="placeholder-example.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Télécharger la video</a>
-                                </noscript>
                             </div>
                             <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -147,13 +133,6 @@
                             <a href="#card1" class="card-skip-link offScreen">Passer à la première carte</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video3" class="no-js-hide vimeo" title="placeholder" src="https://player.vimeo.com/video/87110435?color=ee314a&title=0&byline=0&portrait=0&speed=1&playsinline=true" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="placeholder-example.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/placeholder-example.mp4" download="placeholder-example.mp4">Télécharger la video</a>
-                                </noscript>
                             </div>
                             <button id="video3-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Montrer</span><span class="hide-status">Cacher</span> Transcription</button>
                             <label class="no-js">Transcription</label>

@@ -30,28 +30,6 @@
                             allow="autoplay;"
                             allowfullscreen
                         ></iframe>
-                        <noscript>
-                            <video preload="none" src="placeholder-example.mp4">
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="en"
-                                    label="English"
-                                />
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="fr"
-                                    label="French"
-                                />
-                            </video>
-                            <a
-                                class="download_video"
-                                href="/placeholder-example.mp4"
-                                download="placeholder-example.mp4"
-                                >Download Video</a
-                            >
-                        </noscript>
                     </div>
                     <button
                         id="video1-transcript-toggle"
@@ -93,28 +71,6 @@
                             allow="autoplay;"
                             allowfullscreen
                         ></iframe>
-                        <noscript>
-                            <video preload="none" src="/videos/ship-tech.mp4">
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="en"
-                                    label="English"
-                                />
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="fr"
-                                    label="French"
-                                />
-                            </video>
-                            <a
-                                class="download_video"
-                                href="/videos/ship-tech.mp4"
-                                download="/videos/ship-tech.mp4"
-                                >Download Video</a
-                            >
-                        </noscript>
                     </div>
                     <button
                         id="video2-transcript-toggle"
@@ -156,31 +112,6 @@
                             allow="autoplay;"
                             allowfullscreen
                         ></iframe>
-                        <noscript>
-                            <video
-                                preload="none"
-                                src="/videos/on-board-ship.mp4"
-                            >
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="en"
-                                    label="English"
-                                />
-                                <track
-                                    kind="captions"
-                                    src="/videos/placeholder-example.vtt"
-                                    srclang="fr"
-                                    label="French"
-                                />
-                            </video>
-                            <a
-                                class="download_video"
-                                href="/videos/on-board.mp4"
-                                download="/videos/on-board-ship.mp4"
-                                >Download Video</a
-                            >
-                        </noscript>
                     </div>
                     <button
                         id="video3-transcript-toggle"

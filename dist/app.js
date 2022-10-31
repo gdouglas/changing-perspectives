@@ -253,7 +253,7 @@ function initSlick() {
     if ($('.comic-wrapper').length){
         setupSlick();
     } else {
-        console.log("no slick",$('#comic-wrapper'));
+        // console.log("no slick",$('#comic-wrapper'));
     }
 }
 
@@ -270,7 +270,6 @@ function setupSlick() {
     });
 }
 function setSlickConfig(e) {
-    console.log("set config");
     $("div[data-slick-index]").click(function (e) {
         e.preventDefault();
         goToSlide($(this).data("slickIndex"));
@@ -440,7 +439,7 @@ function checkMediaQuery() {
 	}
 	let source = document.querySelector("#bg-vid > source");
 	if (source !== null) {
-		console.log("there is source", source);
+		// console.log("there is source", source);
 		return
 	} else {
 		addSource(vid);
@@ -955,7 +954,6 @@ checkMediaQuery();
                         switch(_.options.arrowsPlacement) {
                             case 'beforeSlides':
                             case 'split':
-                                console.log('test');
                                 _.$prevArrow.prependTo(_.options.appendArrows);
                                 break;
 
@@ -973,7 +971,6 @@ checkMediaQuery();
                     if(_.options.arrowsPlacement != null) {
                         switch(_.options.arrowsPlacement) {
                             case 'beforeSlides':
-                                console.log('test2');
                                 _.$prevArrow.after(_.$nextArrow);
                                 break;
 

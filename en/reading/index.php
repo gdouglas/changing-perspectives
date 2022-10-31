@@ -3,7 +3,7 @@
 
 <head>
     <title>Reading | Changing Perspectives</title>
-    <meta name="description" content="How this project was completed and created.">
+    <meta name="description" content="Recommended reading material on the colonial history of colonial exploration of the Pacific northwest.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
 

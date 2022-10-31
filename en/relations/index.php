@@ -4,7 +4,7 @@
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
     <title>Relations | Changing Perspectives</title>
-    <meta name="description" content="Description to go here.">
+    <meta name="description" content="Information regarding the relationships between indigenous and colonial nations in the Pacific Northwest from the time of Vancouver's exploration.">
     <style>
         @media (min-width:768px) {
             #main:before {

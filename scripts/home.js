@@ -18,7 +18,7 @@ function checkMediaQuery() {
 	}
 	let source = document.querySelector("#bg-vid > source");
 	if (source !== null) {
-		console.log("there is source", source);
+		// console.log("there is source", source);
 		return
 	} else {
 		addSource(vid);

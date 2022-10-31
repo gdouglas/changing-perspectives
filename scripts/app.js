@@ -253,7 +253,7 @@ function initSlick() {
     if ($('.comic-wrapper').length){
         setupSlick();
     } else {
-        console.log("no slick",$('#comic-wrapper'));
+        // console.log("no slick",$('#comic-wrapper'));
     }
 }
 
@@ -270,7 +270,6 @@ function setupSlick() {
     });
 }
 function setSlickConfig(e) {
-    console.log("set config");
     $("div[data-slick-index]").click(function (e) {
         e.preventDefault();
         goToSlide($(this).data("slickIndex"));

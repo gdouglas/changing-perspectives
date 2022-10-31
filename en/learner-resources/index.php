@@ -74,7 +74,7 @@
                     <a href="/files/legacies/lesson-plan-colonize-the-pacific-northwest.pdf" target="_blank">Lesson Plan</a>
             </p>
         </li>
-                <li>How are the Heiltsuk people re-writing their history?
+                <li>How are the Heiltsuk combining archaeology and traditional knowledge to re-tell Captain Vancouver’s story?
                     <p>
                         <a href="/files/legacies/lesson-plan-heiltsuk.pdf" target="_blank">Lesson Plan</a>&nbsp;
                         <a href="/files/legacies/worksheet-heiltsuk.pdf" target="_blank">Video Worksheet</a>&nbsp;

@@ -4,3 +4,108 @@
 .no-js .js {
     display: none;
 }
+
+.panels .comic-caption {
+    padding: 40px;
+}
+
+
+.card .content > div{
+    padding: 40px;
+}
+.cards label {
+    display: none !important;
+}
+.transcript {
+    display: block;
+    height: auto;
+}
+
+
+.no-js .transcript {
+    height: unset;
+    display: block;
+    max-height: none;
+}
+
+.no-js .cards+.close-all {
+    display: none;
+}
+
+.no-js .cards {
+    display: block;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.no-js .cards .card {
+    display: block;
+    width: 100%;
+}
+
+.no-js .front,
+.no-js .back {
+    display: block;
+    position: static;
+    width: 100%;
+    padding: 0;
+}
+
+.no-js .front h3 {
+    box-sizing: border-box;
+}
+
+.no-js .back {
+    /* display: flex;
+    flex: 1;*/
+    max-width: 100%;
+}
+
+.no-js .responsive-wrapper {
+    position: static;
+    /* max-width: 55%; */
+    display: block;
+    padding: 0;
+}
+
+.no-js .transcript-toggle {
+    display: none;
+}
+
+.no-js .no-js.transcript-toggle {
+    display: none;
+    -webkit-appearance: checkbox;
+}
+
+.transcript-toggle:checked+.transcript {
+    display: block;
+    height: auto;
+}
+
+.no-js .cards .card {
+    height: auto;
+    cursor: initial;
+    perspective: unset;
+}
+
+.no-js .card:hover {
+    box-shadow: none;
+}
+
+.no-js #main .front,
+.no-js #main .back,
+.no-js #main .card .content {
+    transform: rotateX(0);
+    visibility: initial;
+}
+
+.no-js .no-js-hide {
+    display: none;
+}
+
+.no-js video {
+    width: 750px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}

@@ -53,13 +53,6 @@
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/navigation.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Download Video</a>
-                                </noscript>
                             </div>
                             <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -99,13 +92,6 @@
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/ship-tech.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Download Video</a>
-                                </noscript>
                             </div>
                             <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -183,13 +169,6 @@
                             <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/navigation.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/navigation.mp4" download="/videos/navigation.mp4">Download Video</a>
-                                </noscript>
                             </div>
                             <button id="video4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -222,13 +201,6 @@
                             <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/ship-tech.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/ship-tech.mp4" download="/videos/ship-tech.mp4">Download Video</a>
-                                </noscript>
                             </div>
                             <button id="video5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -256,13 +228,6 @@
                             <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
                                 <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
-                                <noscript>
-                                    <video preload="none" src="/videos/on-board-ship.mp4">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="en" label="English">
-                                        <track kind="captions" src="/videos/placeholder-example.vtt" srclang="fr" label="French">
-                                    </video>
-                                    <a class="download_video" href="/videos/on-board.mp4" download="/videos/on-board-ship.mp4">Download Video</a>
-                                </noscript>
                             </div>
                             <button id="video6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>

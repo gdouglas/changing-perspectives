@@ -3,7 +3,7 @@
 
 <head>
     <title>Encounters | Changing Perspectives</title>
-    <meta name="description" content="Content to come">
+    <meta name="description" content="Learn about some of the interactions between nations during the time of Vancouvers exploration.">
     </meta>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <style>

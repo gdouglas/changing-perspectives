@@ -1,3 +1,6 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 
@@ -23,7 +26,7 @@
         <h1>Comments and Feedback</h1>
         <p class="narrow-container centered-margin pad-bottom">Your comments will be forwarded to the Vancouver Maritime Museum. They will also be sent to the Canadian Museum of History, which has overall responsibility for Digital Museums Canada (DMC), for public research purposes. Please refer to the <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC’s Policy on Protection of Personal Information</a> for more information.</p>
         <?php include "send.php" ?>
-        <form class=" contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> onsubmit="return validate.check(this)">
+        <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> onsubmit="return validate.check(this)">
                 <fieldset>
                     <div class="width-100">
                         <legend>Please enter your contact information and message</legend>

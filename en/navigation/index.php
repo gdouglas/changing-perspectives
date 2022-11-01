@@ -52,7 +52,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -91,7 +91,7 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -168,7 +168,7 @@
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Skip to the next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -200,7 +200,7 @@
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Skip to next card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>
@@ -227,7 +227,7 @@
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Skip to first card</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                             <label class="no-js">Transcript</label>

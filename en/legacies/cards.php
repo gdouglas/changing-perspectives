@@ -13,7 +13,7 @@
                 <div class="back">
                     <a href="#card2" class="card-skip-link offScreen">Skip to next card</a>
                     <div class="responsive-wrapper">
-                        <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube.com/embed/agXvi7_P_Kg?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                        <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/agXvi7_P_Kg?enablejsapi=1&modestbranding=1&rel=0&origin=https://changing-perspectives.grmdgs.com" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                     </div>
                     <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                     <label class="no-js">Transcript</label>
@@ -32,7 +32,7 @@
                 <div class="back">
                     <a href="#card1" class="card-skip-link offScreen">Skip to first card</a>
                     <div class="responsive-wrapper">
-                    <iframe id="video2" class="no-js-hide youtube"  width="560" height="315" src="https://www.youtube.com/embed/MeKmfSroonk?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                    <iframe id="video2" class="no-js-hide youtube"  width="560" height="315" src="https://www.youtube-nocookie.com/embed/MeKmfSroonk?enablejsapi=1&modestbranding=1&rel=0&origin=https://changing-perspectives.grmdgs.com" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                     </div>
                     <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
                     <label class="no-js">Transcript</label>

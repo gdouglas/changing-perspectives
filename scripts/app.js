@@ -1,3 +1,4 @@
+import {name, loadVideos } from './modules/videos.js';
 /**
  * Listen for click, space or enter keyup then call a function passing the event
  *
@@ -195,18 +196,20 @@ function setActive(element) {
 
 let youTubePlayers = [];
 function initYoutube() {
-    let players = document.querySelectorAll(".youtube");
-    for (let i = 0; i < players.length; i++) {
-        youTubePlayers.push(players[i]);
-    }
+    loadVideos(youTubePlayers);
+    console.log(name);
+    // let players = document.querySelectorAll(".youtube");
+    // for (let i = 0; i < players.length; i++) {
+    //     youTubePlayers.push(players[i]);
+    // }
 }
 
 function pauseVideos() {
-    youTubePlayers.forEach(yt => {
-        yt.contentWindow.postMessage(
-            '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
-            "*");
-    });
+    // youTubePlayers.forEach(yt => {
+    //     yt.contentWindow.postMessage(
+    //         '{"event":"command","func":"' + "pauseVideo" + '","args":""}',
+    //         "*");
+    // });
 }
 
 function addTranscripts() {

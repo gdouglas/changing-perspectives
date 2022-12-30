@@ -5,6 +5,7 @@
   "main": "index.php",
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
     "@babel/preset-env": "^7.9.6",
     "babel-core": "^6.26.3",
     "browser-sync": "^2.26.7",

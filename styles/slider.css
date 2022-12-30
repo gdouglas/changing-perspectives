@@ -114,3 +114,19 @@ figcaption.comic-caption {
 .comic-advisory strong {
   font-size: 1.2em;
 }
+
+.comic-wrapper .transcript-toggle {
+    display: block;
+    margin: 1rem auto;
+}
+.comic-wrapper .transcript {
+    display: flex;
+    max-width: 100%;
+    gap: 1em;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.comic-wrapper .transcript > div {
+    flex-basis: 310px;
+}

@@ -39,7 +39,7 @@
         </div>
         <div id="card-1">
             <h2>Panel 2</h2>
-            <p>
+            <p id="panel-one-transcript">
                 &ldquo;What were the Indigenous people&rsquo;s meetings with
                 the fur traders like?&rdquo;(The title is white on a black
                 background with a chalkboard-like font. All following images
@@ -48,7 +48,7 @@
         </div>
         <div id="card-2">
             <h2>Panel 3</h2>
-            <p>
+            <p id="panel-two-transcript">
                 &ldquo;For several decades the fur trade was the main
                 concern of European + US ships entering the region&mldr;This
                 trade decimated the sea otter population. Ship&rsquo;s crews
@@ -59,7 +59,7 @@
         </div>
         <div id="card-3">
             <h2>Panel 4</h2>
-            <p>
+            <p id="panel-three-transcript">
                 &ldquo;The Russians began trading with the Aleut in 1741. They
                 took families hostage &amp; forced hunters to gather sea otters.
                 In 1763, Aleuts revolted + destroyed 4 of 5 Russian ships. In
@@ -71,7 +71,7 @@
         </div>
         <div id="card-4">
             <h2>Panel 5</h2>
-            <p>
+            <p id="panel-four-transcript">
                 &ldquo;As the Russians ravaged the Aleut &amp; sea otter
                 populations, they began moving south into Tlingit territory. But
                 the Tlingit were much better armed from trading with British
@@ -84,7 +84,7 @@
         </div>
         <div id="card-5">
             <h2>Panel 6</h2>
-            <p>
+            <p id="panel-five-transcript">
                 &ldquo;As more ships descended on the region throughout the
                 1780s &amp; &lsquo;90s, more ships were attacked. Over the next
                 30 years dozens of ships would be captured.&rdquo; (Warriors in
@@ -94,7 +94,7 @@
         </div>
         <div id="card-6">
             <h2>Panel 7</h2>
-            <p>
+            <p id="panel-six-transcript">
                 In 1803, the US ship Boston was attacked by Mowachaht &amp;
                 Muchalaht warriors, who killed 25 or 27 crew members. The 2
                 survivors were forced to identify the severed heads of the crew.
@@ -105,7 +105,7 @@
         </div>
         <div id="card-7">
             <h2>Panel 8</h2>
-            <p>
+            <p id="panel-seven-transcript">
                 &ldquo;In 1811, the Tonquin was attacked by Tla-o-qui-aht
                 warriors led with Wickaninnish in Clayoquot Sound. A surviving
                 crew member rigged explosives &amp; escaped. THe blast killed as

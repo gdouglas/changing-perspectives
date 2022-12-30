@@ -519,10 +519,16 @@ figcaption.comic-caption {
   flex-wrap: wrap;
   flex-grow: 0;
   flex-shrink: 1;
+  justify-content: center;
 }
 
 .comic-wrapper .transcript > div {
-  flex-basis: 310px;
+  flex-basis: clamp(200px, calc(25% - 3rem), 320px);
+  padding: 1rem;
+  border-radius: 4px;
+  background: #222222;
+  box-shadow: 5px 5px 6px #1f1f1f,
+             -5px -5px 6px #252525;
 }
 
 .home-intro-wrapper {

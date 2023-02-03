@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html class="no-js" lang="en" xml:lang="en" dir="ltr">
 <head>

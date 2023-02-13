@@ -507,6 +507,30 @@ figcaption.comic-caption {
   font-size: 1.2em;
 }
 
+.comic-wrapper .transcript-toggle {
+  display: block;
+  margin: 1rem auto;
+}
+
+.comic-wrapper .transcript {
+  display: flex;
+  max-width: 100%;
+  gap: 1em;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: center;
+}
+
+.comic-wrapper .transcript > div {
+  flex-basis: clamp(200px, calc(25% - 3rem), 320px);
+  padding: 1rem;
+  border-radius: 4px;
+  background: #222222;
+  box-shadow: 5px 5px 6px #1f1f1f,
+             -5px -5px 6px #252525;
+}
+
 .home-intro-wrapper {
   max-width: 1200px;
   margin: 2rem auto 1rem auto;

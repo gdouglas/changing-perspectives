@@ -6,7 +6,7 @@ if ($lang === "en" || $lang == "fr") {
     $language = $lang;
     $home = "/en/home/";
 } else {
-    $home = "/fr/debut/";
+    $home = "/fr/accueil/";
 }
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

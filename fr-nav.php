@@ -1,20 +1,20 @@
 <nav id="top-nav">
     <button id="nav-menu" class="btn" type="button">Menu</button>
     <ul>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'debut-home') ? '"current link"' : "link" ?>>
-            <a class="gold" href="/" rel="noopener noreferrer">Debut</a>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'accueil') ? '"current link"' : 'link'; ?>>
+            <a class="gold" href="/" rel="noopener noreferrer">Accueil</a>
         </li>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'context') ? '"current link"' : "link" ?>>
-            <a class="gold" href="/fr/contexte-context/" rel="noopener noreferrer">L'histoire avant Vancouver</a>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'relations') ? '"current link"' : 'link'; ?>>
+            <a class="gold" href="/fr/relations/" rel="noopener noreferrer">Relations</a>
         </li>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'expedition') ? '"current link"' : "link" ?>>
-            <a class="gold" href="/fr/expedition/" rel="noopener noreferrer">L'histoire de Vancouver</a>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'rencontres') ? '"current link"' : 'link'; ?>>
+            <a class="gold" href="/fr/encounters/" rel="noopener noreferrer">Rencontres</a>
         </li>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'legacies') ? '"current link"' : "link" ?>>
-            <a class="gold" href="/fr/heritage-legacies/" rel="noopener noreferrer">Histoires de Yuquot</a>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'legs') ? '"current link"' : 'link'; ?>>
+            <a class="gold" href="/fr/legacies/" rel="noopener noreferrer">Legs</a>
         </li>
-        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'technologies') ? '"current link"' : "link" ?>>
-            <a class="gold" href="/fr/technologies/" rel="noopener noreferrer">Technologie de voile européenne</a>
+        <li class=<?php echo strpos($_SERVER['REQUEST_URI'], 'navigation') ? '"current link"' : 'link'; ?>>
+            <a class="gold" href="/fr/navigation/" rel="noopener noreferrer">Navigation</a>
         </li>
     </ul>
 </nav>

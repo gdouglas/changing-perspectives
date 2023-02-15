@@ -1,0 +1,14 @@
+<p>(Au début de la vidéo, on entend une musique celtique entraînante avec du violon. Vidéo d’un brick du XVIIIe siècle qui navigue en mer par une belle journée ensoleillée.)</p>
+<p>Narrateur : Embarquer à bord d’un voilier pourrait vous laisser pantois devant le langage employé. Les ordres donnés par le capitaine à l’équipage, même aujourd’hui, peuvent parfois sonner comme une langue étrangère. Voyons si vous pouvez apprendre quelques mots ou expressions. Cela vous aidera beaucoup à comprendre la façon dont fonctionne la navigation sur un bateau. Peut-être, un jour, pourriez-vous être appelé à vous joindre à l’équipage! </p>
+<p>(Vidéo du capitaine qui dirige le bateau et des marins qui tirent fort sur des cordes attachées aux mâts.)</p>
+<p>Commençons ici, sur ce brick à voiles carrées, très similaire à celui utilisé par le capitaine Vancouver il y a de cela quelques siècles.</p>
+<p>(Le brick est sur l’eau. Il a deux mâts, chacun gréé de deux voiles carrées. Deux voiles triangulaires se trouvent à l’avant du bateau. L’arrière du bateau est doté d’une grand-voile.)</p>
+<p>Tous les bateaux ont une proue, une poupe, un côté bâbord et un côté tribord. Les voiles sont attachées aux mâts et aux vergues et sont identifiées selon leur position sur le bateau (voile de misaine et grand-voile) et selon leur position sur le mât (huniers et perroquets).</p>
+<p>(Le devant du bateau est désigné comme « proue ». L’arrière du bateau est désigné comme « poupe ». Le côté gauche est désigné comme « bâbord » et le côté droit comme « tribord ». Les mâts sont les grands poteaux verticaux sur lesquels les voiles sont attachées. Les vergues sont de longues poutres horizontales qui supportent le haut et le bas des voiles. Les voiles de misaine sont les voiles les plus près de la proue et les grand-voiles sont au centre du bateau. Les huniers sont hauts sur les mâts, et les perroquets sont les voiles au sommet des mâts.)</p>
+<p>Narrateur : Un capitaine pourrait ordonner…</p>
+<p>Capitaine : « Hand aloft to loose out the fore and main tops'ls and t'gallants. » </p>
+<p>Narrateur : « Hand » fait référence à l’équipage. « Aloft » signifie de grimper sur le gréement.  </p>
+<p>(Vidéo de marins qui escaladent des échelles de corde, appelées gréement, jusqu’en haut des mâts.)</p>
+<p>Narrateur : « Tops’ls » et « T’gallants » sont des expressions de slang nautique pour désigner les huniers et les perroquets. Donc ce commandement pourrait être traduit par « Aux mâts matelots pour abaisser huniers et perroquets du mât de misaine et du grand-mât », par lequel le capitaine ordonne à l’équipage d’escalader le mât de misaine et le grand-mât et d’abaisser les huniers et les perroquets.</p>
+<p>Capitaine : « Laissez tomber! »</p>
+<p>(Les marins marchent ensuite sur des cordes horizontales pour dérouler les huniers et les perroquets, déployant ainsi des voiles blanches.)</p>

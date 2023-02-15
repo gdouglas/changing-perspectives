@@ -43,3 +43,18 @@ gtag('config', 'UA-148908480-1');
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 <link rel="icon" type="image/svg+xml" href="/images/favicon_io/favicon.svg">
+<?php
+//language links
+/*
+about-us, qui-sommes-nous
+encounters, rencontres
+feedback, commentaires
+home, accueil
+learner-resources, ressources-apprenant
+legacies, legs
+navigation, navigation
+reading, lectures-recommandees
+relations, relations
+sitemap, plan-du-site
+*/
+?>

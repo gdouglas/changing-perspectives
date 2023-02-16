@@ -114,7 +114,7 @@
             </p>
             <p>
                 Thank-you to the following individuals: Christopher Ball, Connie
-                Chan, Julie Colero, Gillian Darling, Sharon Doyle, Roger Dunlop,
+                Chan, Julie Colero, Gillian Darling, Kelly Douglas, Sharon Doyle, Roger Dunlop,
                 Tom Froh, Stephen Gillis, Emma Harris, Meigan Henry, William
                 Housty, Jack Johnson, Katherine Kalsbeek, Erika Kinach, Kelina
                 Kwan, David Lampron, Isabella Losinger, Bruce Macdonald, Bob

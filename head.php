@@ -60,7 +60,7 @@ function get_translated_page() {
             echo "accueil";
             break;
         case "learner-resources";
-            echo "ressources-apprenant";
+            echo "ressources-educatives";
             break;
         case "legacies";
             echo "legs";
@@ -119,7 +119,7 @@ about-us, qui-sommes-nous
 encounters, rencontres
 feedback, commentaires
 home, accueil
-learner-resources, ressources-apprenant
+learner-resources, ressources-educatives
 legacies, legs
 navigation, navigation
 reading, lectures-recommandees

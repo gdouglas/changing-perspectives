@@ -15,7 +15,7 @@
             <?php include $_SERVER['DOCUMENT_ROOT'] . "/fr-header.php" ?>
         </header>
         <main id="main" role="main" tabindex="-1">
-            <h1>Recommended Reading</h1>
+            <h1>Lectures recommandées</h1>
             <ul class="use-max-line-length centered-margin">
                 <li><em>Contact and Conflict; Indian-European Relations in British Columbia, 1774-1890 (2è édition).</em> Vancouver : Presse de l’Université de la Colombie-Britannique (1977) : Robin Fisher.</li>
                 <li><a href="https://challengeracistbc.ca/" target="_blank"><em>Challenging Racist British Columbia.</em></a> Publication gratuite en ligne (2021) : Nicholas XEMŦOLTW̱ Claxton, Denise Fong, Fran Morrison, Christine O’Bonsawin, Maryka Omatsu, John Price, Sharanjit Kaur Sandhra.</li>

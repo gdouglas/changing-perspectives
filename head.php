@@ -44,6 +44,75 @@ gtag('config', 'UA-148908480-1');
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
 <link rel="icon" type="image/svg+xml" href="/images/favicon_io/favicon.svg">
 <?php
+function get_translated_page() {
+    $url = substr($_SERVER['REQUEST_URI'], 4, -1);
+    switch ($url) {
+        case "about-us";
+            echo "qui-sommes-nous";
+            break;
+        case "encounters";
+            echo "rencontres";
+            break;
+        case "feedback";
+            echo "commentaires";
+            break;
+        case "home";
+            echo "accueil";
+            break;
+        case "learner-resources";
+            echo "ressources-apprenant";
+            break;
+        case "legacies";
+            echo "legs";
+            break;
+        case "navigation";
+            echo "navigation";
+            break;
+        case "reading";
+            echo "lectures-recommandees";
+            break;
+        case "relations"; 
+            echo "relations";
+            break;
+        case "sitemap";
+            echo "plan-du-site";
+            break;
+    // fr
+        case "qui-sommes-nous";
+            echo "about-us";
+            break;
+        case "rencontres";
+            echo "encounters";
+            break;
+        case "commentaires";
+            echo "feedback";
+            break;
+        case "accueil";
+            echo "home";
+            break;
+        case "ressources-apprenant";
+            echo "learner-resources";
+            break;
+        case "legs";
+            echo "legacies";
+            break;
+        case "navigation";
+            echo "navigation";
+            break;
+        case "lectures-recommandees";
+            echo "reading";
+            break;
+        case "relations";
+            echo "relations"; 
+            break;
+        case "plan-du-site";
+            echo "sitemap";
+            break;
+        default;
+            echo "";
+            break;
+    }
+}
 //language links
 /*
 about-us, qui-sommes-nous

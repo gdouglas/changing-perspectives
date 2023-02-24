@@ -49,7 +49,7 @@
 .slick-list.dragging, .slick-list.draggable:active:hover {
   cursor: grabbing;
 }
-figcaption.comic-caption {
+.comic-wrapper figcaption {
   width: 450px;
   overflow: auto;
   margin: 1rem auto;

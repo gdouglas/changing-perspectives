@@ -4,7 +4,7 @@
             <h3>Info</h3>
             <div class="content">
                 <a href="/fr/qui-sommes-nous/">Qui sommes-nous</a>
-                <a href="https://www.museesnumeriques.ca/avis/" target="_blank" rel="noopener">Politique de confidentialité de MnC</a>
+                <a href="https://www.museesnumeriques.ca/avis/" target="_blank" rel="noopener">Politique de confidentialité de MNC</a>
                 <a href="/fr/plan-du-site/">Plan du site</a>
                 <a href="/fr/commentaires/">Vos commentaires</a>
             </div>

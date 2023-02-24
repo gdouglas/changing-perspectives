@@ -32,12 +32,12 @@
     </div>
     <button id="slider-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
     <div class="transcript closed">
-        <div id="card-0">
+        <div id="card-0" tabindex="0">
             <h2>Panel 1</h2>
             <p>This comic strip is from "The 500 Years of Indigenous Resistance Comic Book", created by Gord Hill a Kwakwaka'wakw artist and historian.</p>
             <p><strong>Warning:</strong> Some of the images are graphic in nature and may be disturbing.</p>
         </div>
-        <div id="card-1">
+        <div id="card-1" tabindex="0">
             <h2>Panel 2</h2>
             <p id="panel-one-transcript">
                 &ldquo;What were the Indigenous people&rsquo;s meetings with
@@ -46,7 +46,7 @@
                 are hand-drawn and in black and white.)
             </p>
         </div>
-        <div id="card-2">
+        <div id="card-2" tabindex="0">
             <h2>Panel 3</h2>
             <p id="panel-two-transcript">
                 &ldquo;For several decades the fur trade was the main
@@ -57,7 +57,7 @@
                 sea otters swimming.)
             </p>
         </div>
-        <div id="card-3">
+        <div id="card-3" tabindex="0">
             <h2>Panel 4</h2>
             <p id="panel-three-transcript">
                 &ldquo;The Russians began trading with the Aleut in 1741. They
@@ -69,7 +69,7 @@
                 sail ship.)
             </p>
         </div>
-        <div id="card-4">
+        <div id="card-4" tabindex="0">
             <h2>Panel 5</h2>
             <p id="panel-four-transcript">
                 &ldquo;As the Russians ravaged the Aleut &amp; sea otter
@@ -82,7 +82,7 @@
                 and also armed with a musket.)
             </p>
         </div>
-        <div id="card-5">
+        <div id="card-5" tabindex="0">
             <h2>Panel 6</h2>
             <p id="panel-five-transcript">
                 &ldquo;As more ships descended on the region throughout the
@@ -92,7 +92,7 @@
                 ship armed with Europeans.)
             </p>
         </div>
-        <div id="card-6">
+        <div id="card-6" tabindex="0">
             <h2>Panel 7</h2>
             <p id="panel-six-transcript">
                 In 1803, the US ship Boston was attacked by Mowachaht &amp;
@@ -103,7 +103,7 @@
                 spears and clubs while one American points at the heads.)
             </p>
         </div>
-        <div id="card-7">
+        <div id="card-7" tabindex="0">
             <h2>Panel 8</h2>
             <p id="panel-seven-transcript">
                 &ldquo;In 1811, the Tonquin was attacked by Tla-o-qui-aht

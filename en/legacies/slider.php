@@ -31,19 +31,19 @@
     </div>
     <button id="slider-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>
     <div class="transcript closed">
-        <div id="card-0">
+        <div id="card-0" tabindex="0">
             <h2>Panel 1</h2>
             <p>This comic strip is from "The 500 Years of Indigenous Resistance Comic Book", created by Gord Hill a Kwakwaka'wakw artist and historian.</p>
             <p><strong>Warning:</strong> Some of the images are graphic in nature and may be disturbing.</p>
         </div>
-        <div id="card-1">
+        <div id="card-1" tabindex="0">
             <h2>Panel 2</h2>
             <p>&ldquo;How did Europeans colonize the Pacific Northwest?&rdquo;
             (The title is white on a black background with a chalkboard-like
             font. All following images are hand-drawn and in black and
             white.)</p>
         </div>
-        <div id="card-2">
+        <div id="card-2" tabindex="0">
             <h2>Panel 3</h2>
             <p id="panel-two-transcript">&ldquo;By the 1820s, the Hudson&rsquo;s Bay Company was the main
             colonial power in the region, even as the fur trade declined.
@@ -52,13 +52,13 @@
             (A drawing of men on a gunboat loading and firing cannons at a
             village on shore.)</p>
         </div>
-        <div id="card-3">
+        <div id="card-3" tabindex="0">
             <h2>Panel 4</h2>
             <p id="panel-three-transcript">&ldquo;In 1849, Vancouver Island was named an official colony,
             with the HBC acting as government.&rdquo; (A drawing of a fort
             with a British flag.)</p>
         </div>
-        <div id="card-4">
+        <div id="card-4" tabindex="0">
             <h2>Panel 5</h2>
             <p id="panel-four-transcript">&ldquo;At the same time, settlement and selling land became a
             main concern of the government…For 30 years, Royal Navy gunboats
@@ -68,7 +68,7 @@
             says, &ldquo;The Kwakiutl are still head-hunting?&rdquo; and
             another man responds, &ldquo;Yes, sir…&rdquo;.)</p>
         </div>
-        <div id="card-5">
+        <div id="card-5" tabindex="0">
             <h2>Panel 6</h2>
             <p id="panel-five-transcript">&ldquo;The gunboats served as military + police forces…They were
             well-armed with up to 50 cannons + rockets as well as Royal
@@ -76,7 +76,7 @@
             a gunboat, and a marine in uniform looking out at shore with a
             musket in his hands.)</p>
         </div>
-        <div id="card-6">
+        <div id="card-6" tabindex="0">
             <h2>Panel 7</h2>
             <p id="panel-six-transcript">&ldquo;In 1862, a smallpox epidemic began in Victoria. Colonial
             authorities forced hundred of Natives out. Infected, they
@@ -86,7 +86,7 @@
             smallpox lying dead on a beach. A crow pecks at her face. Behind
             is a longhouse and two others lying dead on the beach.)</p>
         </div>
-        <div id="card-7">
+        <div id="card-7" tabindex="0">
             <h2>Panel 8</h2>
             <p id="panel-seven-transcript">&ldquo;In 1871, BC became a part of Canada. In 1874, the BC
             Lands Act was passed to open land to settlement. Canada issued
@@ -95,7 +95,7 @@
             surrendering Native land.&rdquo; (A hand holds a paper titled
             &lsquo;1875 Duty of Disallowance&rsquo;.)</p>
         </div>
-        <div id="card-8">
+        <div id="card-8" tabindex="0">
             <h2>Panel 9</h2>
             <p id="panel-eight-transcript">&ldquo;In response, BC threatened to withdraw from Canada…In
             1876, Canada issued the Indian Act, extending government control

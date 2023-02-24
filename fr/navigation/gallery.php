@@ -14,7 +14,7 @@
             <a href="/images/navigation/telescope.jpg" class="lightbox">
                 <figure>
                     <img src="/images/navigation/telescope-thumb.jpg" alt="A telescope with a brass tip holding the lens and eyepiece. The body is shiny weathered leather.">
-                    <figcaption><p>Téléscope en deux morceaux, recouvert de cuir, v. 1790. Fabriqué par G. ou P. Dolland, avec inscription « Capt. John. Baker Royal Navy », prêté au Vancouver Maritime Museum, courtoisie de Richard Baker. Joseph Baker était le lieutenant de Vancouver. Un télescope est un instrument optique qui magnifie les objets éloignés en disposant des lentilles ou des miroirs incurvés de façon à recueillir et focaliser la lumière.</p>
+                    <figcaption><p>Téléscope en deux morceaux, recouvert de cuir, v. 1790. Fabriqué par G. ou P. Dolland, avec inscription «&nbsp;Capt. John. Baker Royal Navy&nbsp;», prêté au Vancouver Maritime Museum, courtoisie de Richard Baker. Joseph Baker était le lieutenant de Vancouver. Un télescope est un instrument optique qui magnifie les objets éloignés en disposant des lentilles ou des miroirs incurvés de façon à recueillir et focaliser la lumière.</p>
                     </figcaption>
                 </figure>
             </a>

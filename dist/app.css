@@ -439,7 +439,7 @@ h3 {
   cursor: grabbing;
 }
 
-figcaption.comic-caption {
+.comic-wrapper figcaption {
   width: 450px;
   overflow: auto;
   margin: 1rem auto;

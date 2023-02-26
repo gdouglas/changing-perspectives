@@ -2,11 +2,10 @@
 
 $language = "en";
 include 'language-detect.php';
-if ($lang === "en" || $lang == "fr") {
-    $language = $lang;
-    $home = "/en/home/";
-} else {
+if ($_SESSION[$lang] === "fr") {
     $home = "/fr/accueil/";
+} else {
+    $home = "/en/home/";
 }
 
 header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

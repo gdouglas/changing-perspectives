@@ -10,7 +10,7 @@
             </div>
         </div>
         <div class="col resources">
-            <h3>Resources</h3>
+            <h3>Ressources</h3>
             <div class="content">
                 <a href="/fr/ressources-educatives/">Ressources éducatives</a>
                 <a href="/fr/lectures-recommandees/">Lectures recommandées</a>

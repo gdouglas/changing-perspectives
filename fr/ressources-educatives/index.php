@@ -19,9 +19,9 @@
     <main id="main" role="main" tabindex="-1">
         <h1 class="text-center pad-bottom">Ressources éducatives</h1>
         <section>
-            <p>Un plan de cours et des feuilles de travail accompagnent chaque vidéo et diaporama de l'exposition. Ils couvrent les quatre thèmes de l'exposition : Relations, Rencontres, Héritages et Navigation. Les éducateurs sont invités à examiner et à personnaliser ces ressources en fonction des objectifs du programme, du niveau scolaire et des intérêts des élèves.</p>
-            <p>Les plans de cours et les activités suivants ont été conçus en fonction du programme d'études sociales de la Colombie-Britannique pour les 4e, 8e et 9e années. Les feuilles de travail sont destinées aux élèves de 4e année, tandis que les analyses et les projets proposés dans les plans de cours permettront d'approfondir l'apprentissage des élèves de 8e et 9e année.</p>
-            <a href="/files/bc-curriculum-connections.pdf" target="_blank" >Nouvelles perspectives BC Curriculum Connections</a>
+            <p>Un plan de cours et des fiches de travail accompagnent chaque vidéo et diaporama de l'exposition. Ils couvrent les quatre thèmes de l'exposition : Relations, Rencontres, Legs et Navigation. Les enseignants sont invités à revoir et à personnaliser ces ressources en fonction des objectifs du programme, du niveau scolaire et des intérêts des élèves.</p>
+            <p>Les plans de cours et les activités suivants ont été conçus en fonction du programme d'études sociales de la Colombie-Britannique pour les 4e, 8e et 9e années. Les feuilles de travail sont destinées aux élèves de 4e année, tandis que les analyses et les projets proposés dans les plans de cours permettront d'approfondir les apprentissages des élèves de 8e et 9e année.</p>
+            <a href="/files/bc-curriculum-connections.pdf" target="_blank" >Nouvelles perspectives – Liens avec le programme éducatif de la C.-B.</a>
         </section>
         <section>
             <h2 class="text-left">Relations</h2>

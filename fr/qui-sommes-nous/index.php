@@ -49,6 +49,9 @@
             <p>Professor Coll Thrush</p>
             <p>Dr. Sue Rowley</p>
             <p>Dr. Jennifer Kramer</p>
+            
+            <h2>Traduction française</h2>
+            <p>Patricia Raynault-Desgagné</p>
 
             <h2>Partenaires</h2>
             <p>

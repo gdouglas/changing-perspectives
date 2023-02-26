@@ -25,7 +25,7 @@ ob_start();
     </header>
     <main id="main" role="main" tabindex="-1">
         <h1>Vos commentaires</h1>
-        <p class="narrow-container centered-margin pad-bottom">Vos commentaires seront envoyés au Vancouver Maritime Museum. Ils seront également envoyés au Musée canadien de l’histoire qui chapeaute Musées numériques Canada à des fins de recherche publique. Veuillez vous référer à la <a href="https://www.museesnumeriques.ca/avis/" target="_blank" rel="noopener"> Politique sur la protection des renseignements personnels des MnC</a> pour plus d’information.</p>
+        <p class="narrow-container centered-margin pad-bottom">Vos commentaires seront envoyés au Vancouver Maritime Museum. Ils seront également envoyés au Musée canadien de l’histoire qui chapeaute Musées numériques Canada à des fins de recherche publique. Veuillez vous référer à la <a href="https://www.museesnumeriques.ca/avis/" target="_blank" rel="noopener"> Politique sur la protection des renseignements personnels des MNC</a> pour plus d’information.</p>
         <?php include "send.php" ?>
         <form class="contact-form" name="contactform" method="post" action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> onsubmit="return validate.check(this)">
             <fieldset>

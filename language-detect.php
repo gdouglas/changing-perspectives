@@ -31,8 +31,10 @@ function prefered_language($available_languages, $http_accept_language)
         return $default_language;
     }
 }
-
-$lang = prefered_language($available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]));
-if ($lang == "fr") {
-    $lang = "fr";
+// set a default language
+if (!$_SESSION[$lang]) {
+    $_SESSION[$lang] = prefered_language(
+        $available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"])
+    );
 }
+

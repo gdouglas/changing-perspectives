@@ -1,5 +1,4 @@
 :root {
-  font-size: 16px;
   --main-bg-color: #fff;
   --main-text-color: #222;
   --primary: #000;
@@ -424,6 +423,9 @@ h3 {
 
 .slick-slide figure {
   margin: 0;
+  width: -webkit-min-content !important;
+  width: -moz-min-content !important;
+  width: min-content !important;
 }
 
 .slick-list.draggable {
@@ -439,10 +441,19 @@ h3 {
   cursor: grabbing;
 }
 
+.comic-wrapper div:has(>figcaption) {
+  border: 1px solid black;
+}
+
 .comic-wrapper figcaption {
-  width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
   overflow: auto;
-  margin: 1rem auto;
+  margin: 2px auto 0 auto;
+  background: #fff;
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
 }
 
 .slick-slide .transcript-toggle {

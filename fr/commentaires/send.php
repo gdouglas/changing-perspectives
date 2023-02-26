@@ -34,7 +34,7 @@ if (isset($_POST['email_sender_email'])) {
         global $return_error;
         // $_SESSION[]
         $return_error = "<div class='error narrow-container'>";
-        $return_error .= "<p class='error-title'>Please fix these errors to send your message.</p>";
+        $return_error .= "<p class='error-title'>Veuillez corriger ces erreurs pour envoyer votre message.</p>";
         $return_error .= "<ol>$error</ol>";
         $return_error .= "</div>";
         echo $return_error;
@@ -46,7 +46,7 @@ if (isset($_POST['email_sender_email'])) {
         !isset($_POST['subject']) ||
         !isset($_POST['email_body'])
     ) {
-        $error_message .= "Something went wrong with the submission. Please try again.";
+        $error_message .= "Un problème est survenu lors de la soumission. Veuillez réessayer.";
     }
 
     $full_name = $_POST['email_sender_name']; // required
@@ -58,19 +58,19 @@ if (isset($_POST['email_sender_email'])) {
 
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
     if (preg_match($email_exp, $email_from) == 0) {
-        $error_message .= "<li>The Email Address you entered does not appear to be valid.</li>";
+        $error_message .= "<li>L'adresse électronique que vous avez saisie ne semble pas être valide.</li>";
     }
     if (strlen($full_name) < 2) {
-        $error_message .= "<li>Your Name does not appear to be valid.</li>";
+        $error_message .= "<li>Votre nom ne semble pas être valide.</li>";
     }
     if (strlen($comments) < 2) {
-        $error_message .= "<li>The Comments you entered do not appear to be valid.</li>";
+        $error_message .= "<li>Les commentaires que vous avez saisis ne semblent pas être valides.</li>";
     }
 
     if (strlen($error_message) > 0) {
         died($error_message);
     } else {
-        $email_message = "Form details below.\r\n";
+        $email_message = "Détails du formulaire ci-dessous.\r\n";
 
         function clean_string($string)
         {
@@ -81,7 +81,7 @@ if (isset($_POST['email_sender_email'])) {
         $email_message .= "Full Name: " . clean_string($full_name) . "\r\n";
         $email_message .= "Email: " . clean_string($email_from) . "\r\n";
         $email_message .= "Message: " . clean_string($comments);
-        $confirm_email_message = "Thank you for your email about the Nouvelles perspectives website. We are looking forward to reviewing your message.";
+        $confirm_email_message = "Nous vous remercions de votre courriel à propos du site Web Nouvelles perspectives. Nous le lirons avec beaucoup d’intérêt.";
         $headers = 'From: ' . $email_from . "\r\n" .
             'Reply-To: ' . $email_from . "\r\n" .
             'X-Mailer: PHP/' . phpversion();

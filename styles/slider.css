@@ -40,6 +40,7 @@
 }
 .slick-slide figure {
   margin: 0;
+  width: min-content !important;
 }
 .slick-list.draggable {
   cursor: pointer;
@@ -49,10 +50,18 @@
 .slick-list.dragging, .slick-list.draggable:active:hover {
   cursor: grabbing;
 }
+.comic-wrapper div:has(>figcaption) {
+  border: 1px solid black;
+}
 .comic-wrapper figcaption {
-  width: 450px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
   overflow: auto;
-  margin: 1rem auto;
+  margin: 2px auto 0 auto;
+  background: #fff;
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
 }
 .slick-slide .transcript-toggle {
   margin: 0;
@@ -66,8 +75,6 @@
   margin-left: auto;
   z-index: 0;
   white-space: pre-wrap;
-}
-.slick-slide .transcript-toggle span {
 }
 
 @media (max-width: 426px) {

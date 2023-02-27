@@ -22,7 +22,7 @@
             <li><a href="/fr/qui-sommes-nous/">Qui sommes-nous</a></li>
             <li><a href="/fr/plan-du-site/">Plan du site</a></li>
             <li><a href="/fr/commentaires/">Vos commentaires</a></li>
-            <li><a href="https://www.museesnumeriques.ca/avis/" target="_blank">Politique de confidentialité des MnC</a></li>
+            <li><a href="https://www.museesnumeriques.ca/avis/" target="_blank">Politique de confidentialité des MNC</a></li>
         </ul>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/fr-footer.php" ?>

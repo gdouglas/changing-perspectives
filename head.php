@@ -90,7 +90,7 @@ function get_translated_page() {
         case "accueil";
             echo "home";
             break;
-        case "ressources-apprenant";
+        case "ressources-educatives";
             echo "learner-resources";
             break;
         case "legs";

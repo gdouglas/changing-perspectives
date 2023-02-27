@@ -13,7 +13,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dScAU6QWCsA?enablejsapi=1&modestbranding=1&rel=0" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dScAU6QWCsA?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" disablePictureInPicture title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -32,7 +32,7 @@
                         <div class="back">
                             <a href="#card1" class="card-skip-link offScreen">Passer à la première carte</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jo0CDeyM8dA?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay;" allowfullscreen disablePictureInPicture></iframe>
+                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jo0CDeyM8dA?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allow="autoplay;" allowfullscreen disablePictureInPicture></iframe>
                             </div>
                             <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>

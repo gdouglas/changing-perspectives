@@ -82,6 +82,9 @@
             <p>Dr. Sue Rowley</p>
             <p>Dr. Jennifer Kramer</p>
 
+            <h2>French Translation</h2>
+            <p>Patricia Raynault-Desgagné</p>
+
             <h2>Partners</h2>
             <p>
                 <a

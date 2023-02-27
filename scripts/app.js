@@ -58,7 +58,16 @@ function addCardListeners() {
         card.setAttribute("tabindex", "0"); //make tabable to cards
         addCardKeyboardControls(card, cards);
         card.addEventListener("click", function (e) {
+            console.log("card click is on ",e.target)
             setActive(card);
+        });
+    });
+    // negate click handler on transcripts
+    document.querySelectorAll(".transcript").forEach((transcript) => {
+        transcript.addEventListener("click", function (e) {
+            if (!e) var e = window.event;
+            e.cancelBubble = true;
+            if (e.stopPropagation) e.stopPropagation(); 
         });
     });
     [...skipLinks].forEach((link) => {
@@ -219,7 +228,6 @@ function addTranscripts() {
 function toggleTranscript(e) {
     e.stopPropagation();
     e.preventDefault();
-
     let expanded = e.target.getAttribute("aria-expanded");
     if (expanded == "true") {
         expanded = "false";

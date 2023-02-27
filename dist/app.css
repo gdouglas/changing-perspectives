@@ -1337,6 +1337,7 @@ footer {
   scrollbar-shadow-color: #01a9b2;
   scrollbar-width: 50px;
   color: unset;
+  cursor: auto;
 }
 
 /* width */
@@ -1729,6 +1730,7 @@ footer {
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
+  cursor: auto;
 }
 
 .tobii__slide .tobii-image figcaption {
@@ -1736,10 +1738,12 @@ footer {
   max-width: 400px;
   overflow: auto;
   max-height: 100%;
+  cursor: auto;
 }
 
 .gallery figcaption {
   display: none;
+  cursor: auto;
 }
 
 .gallery figure {
@@ -1777,7 +1781,7 @@ footer {
 }
 
 .no-js {
-  display: none;
+  display: none !important;
 }
 
 body {

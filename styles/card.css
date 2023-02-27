@@ -84,6 +84,7 @@
     scrollbar-shadow-color: #01a9b2;
     scrollbar-width: 50px;
     color: unset;
+    cursor: auto;
 }
 
 /* width */

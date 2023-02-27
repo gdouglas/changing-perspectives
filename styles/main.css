@@ -10,7 +10,7 @@
 @import "gallery.css";
 @import "comic.css";
 .no-js {
-    display: none;
+    display: none !important;
 }
 
 body {

@@ -52,7 +52,7 @@
                         <div class="back">
                             <a href="#card2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video1" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/mEZ3ePRd8hs?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video1-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -71,7 +71,7 @@
                         <div class="back">
                             <a href="#card3" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video2" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/NchNzpj5YQo?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video2-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -105,7 +105,7 @@
                         <div class="back">
                             <a href="#card2_2" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video4" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/KnNdpcpPm5M?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video4-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> la transcription</button>
                             <label class="no-js">Transcription</label>
@@ -124,7 +124,7 @@
                         <div class="back">
                             <a href="#card3_3" class="card-skip-link offScreen">Passer à la carte suivante</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video5" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/Xeh-VUMTl9g?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video5-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>
@@ -143,7 +143,7 @@
                         <div class="back">
                             <a href="#card1_1" class="card-skip-link offScreen">Passer à la première carte</a>
                             <div class="responsive-wrapper">
-                                <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
+                                <iframe id="video6" class="no-js-hide youtube" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lcxAUgMuqCg?enablejsapi=1&modestbranding=1&rel=0&hl=fr-ca&cc_lang_pref=fr" title="YouTube video player" frameborder="0" allow="autoplay;" allowfullscreen></iframe>
                             </div>
                             <button id="video6-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Afficher</span><span class="hide-status">Masquer</span> Transcription</button>
                             <label class="no-js">Transcription</label>

@@ -2,7 +2,7 @@
 
 $language = "en";
 include 'language-detect.php';
-if ($_SESSION[$lang] === "fr") {
+if ($_SESSION['lang'] === "fr") {
     $home = "/fr/accueil/";
 } else {
     $home = "/en/home/";

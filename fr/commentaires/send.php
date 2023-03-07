@@ -82,11 +82,26 @@ if (isset($_POST['email_sender_email'])) {
         $email_message .= "Email: " . clean_string($email_from) . "\r\n";
         $email_message .= "Message: " . clean_string($comments);
         $confirm_email_message = "Nous vous remercions de votre courriel à propos du site Web Nouvelles perspectives. Nous le lirons avec beaucoup d’intérêt.";
-        $headers = 'From: ' . $email_from . "\r\n" .
-            'Reply-To: ' . $email_from . "\r\n" .
-            'X-Mailer: PHP/' . phpversion();
-        mail($email_to, $subject, $email_message, $headers);
-        mail($email_from, "re: " . $subject, $confirm_email_message, $headers);
+        $headers = array('From: ' . $email_from . "\r\n" .
+            'Reply-To: donotreply@grmdgs.com ' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion());
+        $headers = implode("\r\n", $headers);
+
+        if (mail($email_to, $subject, $email_message, $headers)) {
+            //
+        } else {
+            $errorMessage = "Oups, quelque chose s'est mal passé. Veuillez réessayer plus tard.";
+            var_dump($error_message);
+            die();
+        }
+        if ( mail($email_from, "re: " . $subject, $confirm_email_message, $headers) ) {
+            
+        } else {
+            $errorMessage = "Oups, quelque chose s'est mal passé. Je vous réponds. Veuillez réessayer plus tard.";
+            var_dump($error_message);
+            die();
+        }
+
         header("Location: $thankyou");
         echo "<script>location.replace('$thankyou')</script>";
     }

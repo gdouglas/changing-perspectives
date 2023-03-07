@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 // Languages we support
 $available_languages = array("fr", "en");
@@ -32,9 +33,7 @@ function prefered_language($available_languages, $http_accept_language)
     }
 }
 // set a default language
-if (!$_SESSION[$lang]) {
-    $_SESSION[$lang] = prefered_language(
-        $available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"])
-    );
-}
+$_SESSION['lang'] = prefered_language(
+    $available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"])
+);
 

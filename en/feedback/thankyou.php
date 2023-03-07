@@ -16,7 +16,7 @@
     <main id="main" role="main" tabindex="-1" class="text-center">
         <h1>Thank You</h1>
         Thank you for your feedback.
-        <p><a href="/">Home Page</a></p>
+        <p><a href="/en/">Home Page</a></p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/en-footer.php" ?>
 </body>

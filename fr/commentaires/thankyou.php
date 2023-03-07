@@ -15,8 +15,8 @@
     </header>
     <main id="main" role="main" tabindex="-1" class="text-center">
         <h1>Merci</h1>
-        Merci pour votre avis.
-        <p><a href="/">Accueil</a></p>
+        <p>Nous vous remercions de vos commentaires</p>
+        <p><a href="/">Retour á l'Accueil</a></p>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/fr-footer.php" ?>
 </body>

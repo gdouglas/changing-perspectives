@@ -82,8 +82,8 @@ if (isset($_POST['email_sender_email'])) {
         $email_message .= "Email: " . clean_string($email_from) . "\r\n";
         $email_message .= "Message: " . clean_string($comments);
         $confirm_email_message = "Nous vous remercions de votre courriel à propos du site Web Nouvelles perspectives. Nous le lirons avec beaucoup d’intérêt.";
-        $headers = array('From: ' . $email_from . "\r\n" .
-            'Reply-To: donotreply@grmdgs.com ' . "\r\n" .
+        $headers = array('From: ' . $system_address . "\r\n" .
+            'Reply-To: '. $system_address . "\r\n" .
             'X-Mailer: PHP/' . phpversion());
         $headers = implode("\r\n", $headers);
 

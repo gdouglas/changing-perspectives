@@ -32,7 +32,6 @@ if (isset($_POST['email_sender_email'])) {
     function died($error)
     {
         global $return_error;
-        // $_SESSION[]
         $return_error = "<div class='error narrow-container'>";
         $return_error .= "<p class='error-title'>Please fix these errors to send your message.</p>";
         $return_error .= "<ol>$error</ol>";
@@ -82,24 +81,20 @@ if (isset($_POST['email_sender_email'])) {
         $email_message .= "Email: " . clean_string($email_from) . "\r\n";
         $email_message .= "Message: " . clean_string($comments);
         $confirm_email_message = "Thank you for your email about the Changing Perspectives website. We are looking forward to reviewing your message.";
-        $headers = array('From: ' . $email_from . "\r\n" .
-            'Reply-To: donotreply@grmdgs.com ' . "\r\n" .
+        $headers = array('From: ' . $system_address . "\r\n" .
+            'Reply-To: '. $system_address . "\r\n" .
             'X-Mailer: PHP/' . phpversion());
         $headers = implode("\r\n", $headers);
 
         if (mail($email_to, $subject, $email_message, $headers)) {
-            //
+
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later';
-            var_dump($error_message);
-            die();
         }
         if ( mail($email_from, "re: " . $subject, $confirm_email_message, $headers) ) {
-            
+
         } else {
             $errorMessage = 'Oops, something went wrong. Responding to you. Please try again later';
-            var_dump($error_message);
-            die();
         }
         
         header("Location: $thankyou");

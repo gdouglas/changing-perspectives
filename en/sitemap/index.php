@@ -22,7 +22,7 @@
             <li><a href="/en/about-us/">Credits</a></li>
             <li><a href="/en/sitemap/">Sitemap</a></li>
             <li><a href="/en/feedback/">Send us feedback</a></li>
-            <li><a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank">DMC Privacy Policy</a></li>
+            <li><a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank">DMC Privacy Notice</a></li>
         </ul>
     </main>
     <?php include $_SERVER['DOCUMENT_ROOT']."/en-footer.php" ?>

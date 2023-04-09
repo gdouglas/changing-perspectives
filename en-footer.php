@@ -4,7 +4,7 @@
             <h3>Info</h3>
             <div class="content">
                 <a href="/en/about-us/">About us</a>
-                <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Policy</a>
+                <a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank" rel="noopener">DMC Privacy Notice</a>
                 <a href="/en/sitemap/">Sitemap</a>
                 <a href="/en/feedback/">Send us feedback</a>
             </div>

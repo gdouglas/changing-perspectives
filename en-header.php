@@ -5,7 +5,7 @@
 <div id="super-nav" class="super-nav">
     <a class="lang-link" hreflang="fr" lang="fr" href="/fr/<?php get_translated_page(); ?>">Français</a>
     <a class="logo" href="https://www.digitalmuseums.ca/" rel="noopener">
-        <img src="/images/logos/dmc_en_white.svg" class="dmc-logo" alt="Digital Museums of Canada" width="120">
+        <img src="/images/logos/dmc_eng_white.svg" class="dmc-logo" alt="Digital Museums Canada" width="120">
     </a>
 </div>
 <div id="i"></div>

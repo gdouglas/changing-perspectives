@@ -19,7 +19,7 @@
             <li><a href="/en/navigation/">Navigation</a></li>
             <li><a href="/en/learner-resources/">Learner Resources</a></li>
             <li><a href="/en/reading/">Recommended Reading</a></li>
-            <li><a href="/en/about-us/">Credits</a></li>
+            <li><a href="/en/about-us/">About Us</a></li>
             <li><a href="/en/sitemap/">Sitemap</a></li>
             <li><a href="/en/feedback/">Send us feedback</a></li>
             <li><a href="https://www.digitalmuseums.ca/privacy-notice/" target="_blank">DMC Privacy Notice</a></li>

@@ -72,10 +72,10 @@
                 >
             </p>
 
-            <p>Merci aux consultants universitaires suivants&nbsp; Stephen Bown, Dr. Robin Fisher, Dr. Sharon Fortney, Robin Inglis, Dr. John Lutz, Dr. John Price, Dr. Paige Raibmon, Cynthia Updegrave, Dr. Eldon Yellowhorn.</p>
-            <p>Merci aux artistes européens et autochtones suivants&nbsp; Steve Biesty, Shirl Hall, Gord Hill, John Horton, Steven Mayo, Gordon Miller, Mark Myers, Sandford Williams</p>
+            <p>Merci aux consultants universitaires suivants&nbsp;Stephen Bown, Dr. Robin Fisher, Dr. Sharon Fortney, Robin Inglis, Dr. John Lutz, Dr. John Price, Dr. Paige Raibmon, Cynthia Updegrave, Dr. Eldon Yellowhorn.</p>
+            <p>Merci aux artistes européens et autochtones suivants&nbsp;Steve Biesty, Shirl Hall, Gord Hill, John Horton, Steven Mayo, Gordon Miller, Mark Myers, Sandford Williams</p>
             <p>
-                Merci aux individus suivants&nbsp;  Christopher Ball, Connie
+                Merci aux individus suivants&nbsp;Christopher Ball, Connie
                 Chan, Julie Colero, Gillian Darling, Kelly Douglas, Sharon Doyle, Roger Dunlop,
                 Tom Froh, Stephen Gillis, Emma Harris, Meigan Henry, William
                 Housty, Jack Johnson, Katherine Kalsbeek, Erika Kinach, Kelina
@@ -86,7 +86,7 @@
                 Zachary Rothman, Gatlin Saip, Sheila Savey, Chelsea Shriver,
                 au skippeur Brendan et à l’équipage du Lady Washington, Kevin Starr, Tanis Wilkie.
             </p>
-            <p>Merci aux organisations suivantes&nbsp; Port maritime historique de Grays Harbor, Magazine Hakai, Location de bateau Shearwater, Bibliothèque de l’UCB et collections spéciales, la faculté de médecine de l’UCB, Bibliothèque de la faculté d’éducation de l’UCB.</p>
+            <p>Merci aux organisations suivantes&nbsp;Port maritime historique de Grays Harbor, Magazine Hakai, Location de bateau Shearwater, Bibliothèque de l’UCB et collections spéciales, la faculté de médecine de l’UCB, Bibliothèque de la faculté d’éducation de l’UCB.</p>
             <h2>Déclaration sur les droits d’auteur</h2>
             <p>Tout le contenu de ce site Web est protégé par la Loi sur le droit d’auteur du Canada et par d’autres conventions internationales. Toute reproduction, représentation ou transmission, en partie ou en entier, du contenu de ce site Web (p. ex. textes, photos, vidéos, musique, voix, etc.) est interdite sans le consentement écrit exprès du Vancouver Maritime Museum et de tout détenteur de droits d’auteur. L’utilisation de ce contenu est permise à des fins de recherche et d’utilisation privée, et à des fins prévues par la loi. La modification numérique du contenu (p. ex. altérations, coupures, ajouts, superposition d’éléments graphiques, modification des couleurs, etc.) est strictement interdite.</p>
             <p>L’utilisation de ce site et de son contenu est autorisée à des fins pédagogiques par des professeurs et des étudiants, ainsi qu’à des fins de recherche et d’étude privée.</p>

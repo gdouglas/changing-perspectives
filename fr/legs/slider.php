@@ -79,7 +79,7 @@
         </div>
         <div id="card-4" tabindex="0">
             <h2>Vignette 5</h2>
-            <p id="panel-four-transcript">«&nbsp;Au même moment, l’établissement de colons et la vente de terres étaient devenus des sujets cruciaux pour le gouvernement… Pendant 30 ans, les canonnières de la Marine royale ont été utilisées pour servir le colonialisme britannique et contrôler les tribus côtières.&nbsp;» (Un dessin de trois hommes pointant une carte intitulée «&nbsp;Colonie de l’île de Vancouver&nbsp;». Un des hommes dit&nbsp; «&nbsp;Les Kwakiutl sont toujours des chasseurs de têtes?&nbsp;», ce à quoi répond un autre homme&nbsp; «&nbsp;Oui monsieur…&nbsp;») </p>
+            <p id="panel-four-transcript">«&nbsp;Au même moment, l’établissement de colons et la vente de terres étaient devenus des sujets cruciaux pour le gouvernement… Pendant 30 ans, les canonnières de la Marine royale ont été utilisées pour servir le colonialisme britannique et contrôler les tribus côtières.&nbsp;» (Un dessin de trois hommes pointant une carte intitulée «&nbsp;Colonie de l’île de Vancouver&nbsp;». Un des hommes dit&nbsp;«&nbsp;Les Kwakiutl sont toujours des chasseurs de têtes?&nbsp;», ce à quoi répond un autre homme&nbsp;«&nbsp;Oui monsieur…&nbsp;») </p>
         </div>
         <div id="card-5" tabindex="0">
             <h2>Vignette 6</h2>

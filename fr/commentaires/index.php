@@ -2,11 +2,11 @@
 ob_start();
 ?>
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <title>Vos commentaires | Nouvelles perspectives</title>
-    <meta name="description" content="Leave feedback about the Nouvelles perspectives website.">
+    <meta name="description" content="Laissez un commentaire sur le site web Nouvelles perspectives.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <script src="/scripts/validation.js"></script>
     <script>

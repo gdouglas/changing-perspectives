@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <title>Rencontres | Nouvelles perspectives</title>
-    <meta name="description" content="Learn about some of the interactions between nations during the time of Vancouvers exploration.">
+    <meta name="description" content="Découvrez quelques-unes des interactions entre les nations à l'époque de l'exploration de Vancouver.">
     </meta>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <style>

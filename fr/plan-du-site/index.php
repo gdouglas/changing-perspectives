@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 <head>
     <title>Plan du site | Nouvelles perspectives</title>
-    <meta name="description" content="Listing of all site pages.">
+    <meta name="description" content="Liste des pages du site.">
     <?php include $_SERVER['DOCUMENT_ROOT']."/head.php" ?>
 </head>
 <body>

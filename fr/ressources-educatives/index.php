@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <title>Ressources éducatives | Nouvelles perspectives</title>
-    <meta name="description" content="Instructor resources for education about exploration in the late 1790's.">
+    <meta name="description" content="Ressources pédagogiques pour l'enseignement de l'exploration à la fin des années 1790.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <style>
         .resources-list a {

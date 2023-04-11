@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
     <title>Relations | Nouvelles perspectives</title>
-    <meta name="description" content="Information regarding the relationships between indigenous and colonial nations in the Pacific Northwest from the time of Vancouver's exploration.">
+    <meta name="description" content="Informations sur les relations entre les nations indigènes et coloniales dans le nord-ouest du Pacifique depuis l'époque de l'exploration de Vancouver.">
     <style>
         @media (min-width:768px) {
             #main:before {

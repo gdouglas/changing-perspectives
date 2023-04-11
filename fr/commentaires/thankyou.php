@@ -2,10 +2,10 @@
 
 ?>
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 <head>
     <title>Merci | Nouvelles perspectives</title>
-    <meta name="description" content="Thank you for leaving your feedback about the Nouvelles perspectives website.">
+    <meta name="description" content="Merci de nous avoir fait part de vos commentaires sur le site web de Nouvelles perspectives.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
 <body>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
     <head>
         <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
         <title>Legs | Nouvelles perspectives</title>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" xml:lang="en" dir="ltr">
+<html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
     <title>Home | Nouvelles perspectives</title>
     <meta name="description"
-        content="Learn about the expedition and legacies of George Vancouver in 1790 exploring the Pacific Northwest.">
+        content="Découvrez l'expédition et l'héritage de George Vancouver, qui a exploré le nord-ouest du Pacifique en 1790.">
 </head>
 
 <body class="home">

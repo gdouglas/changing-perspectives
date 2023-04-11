@@ -27,7 +27,7 @@
     </div>
     <div class="sub-footer">
         <div class="copyright">
-            &copy; 2022 Vancouver Maritime Museum. All Rights Reserved.
+            &copy; <?php echo date("Y"); ?> Vancouver Maritime Museum. All Rights Reserved.
         </div>
     </div>
 </footer>

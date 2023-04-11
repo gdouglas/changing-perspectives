@@ -3,7 +3,7 @@
 
 <head>
     <title>Reading | Nouvelles perspectives</title>
-    <meta name="description" content="Recommended reading material on the colonial history of colonial exploration of the Pacific northwest.">
+    <meta name="description" content="Lectures recommandées sur l'histoire coloniale de l'exploration coloniale du nord-ouest du Pacifique.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
 

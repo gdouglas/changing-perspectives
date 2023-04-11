@@ -162,6 +162,7 @@ nav .current {
     padding: 10px 15px;
     display: inline-block;
     margin: 0 auto;
+    width: 100%;
 }
 @media sceen and (max-width: 1330px) {
     header nav ul {

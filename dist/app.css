@@ -1421,7 +1421,7 @@ footer {
 @media (min-width: 756px) and (max-width: 980px) {
   html:not(.no-js) .cards-wrapper .cards {
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
   }
 
   html:not(.no-js) .cards div.card {

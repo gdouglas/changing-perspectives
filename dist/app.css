@@ -1442,13 +1442,14 @@ footer {
 @media screen and (min-width: 756px) {
   .cards {
     flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .cards .card {
     perspective: 1000px;
-    transform-style: preserve-3d;
     display: inline-flex;
-    width: auto;
+    width: 30%;
     min-width: 300px;
     min-height: 200px;
     cursor: pointer;
@@ -1461,6 +1462,10 @@ footer {
     flex-basis: auto;
     flex-shrink: 1;
     margin-bottom: 1rem;
+  }
+
+  .card.active {
+    flex-grow: 5;
   }
 
   .cards .card:first-of-type {
@@ -1476,7 +1481,8 @@ footer {
     height: 100%;
     width: 100%;
     min-height: 56.25%;
-    transform-style: preserve-3d;
+    /* transform-style: preserve-3d; */
+    perspective: inherit;
     transition: all 600ms;
     z-index: 1;
   }
@@ -1535,14 +1541,16 @@ footer {
 
     .card .front,
     .card .back {
+      perspective: 1000px;
+      transform-style: preserve-3d;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
       position: relative;
       display: flex;
       align-items: center;
-      max-width: 25vw;
+      /* max-width: 25vw; not sure why i need this*/
       transition: all 600ms;
-      width: 100vw;
+      width: 100%;
       flex-wrap: wrap;
     }
 
@@ -1550,9 +1558,9 @@ footer {
       min-height: 100%;
       position: absolute;
       width: 100%;
-      left: 50%;
       top: 0;
-      transform: translate(-50%, 0);
+      /*left: 50%;
+            transform: translate(-50%, 0); remove this since i'm animating the card side now */
       background: url("../images/wood-light.jpg");
       background-size: cover;
       max-width: 100%;
@@ -1566,7 +1574,7 @@ footer {
     .card .back {
       background: #222;
       color: #fff;
-      transform: rotateX(180deg);
+      transform: rotateX(-180deg);
       visibility: hidden;
     }
 
@@ -1576,15 +1584,19 @@ footer {
       box-shadow: 1px 6px 14px -2px blue;
     }
 
-    .card:focus-within .content,
-    .card:hover .content {
+    .card:focus-within:not(.active) .content .front,
+    .card:hover:not(.active) .content .front {
       transform: rotateX(20deg);
       box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
     }
 
-    .card.active .content {
+    .card.active .content .front {
       transform: rotateX(180deg);
       box-shadow: 0 20px 20px rgba(50, 50, 50, 0.2);
+    }
+
+    .card.active .content .back {
+      transform: rotateX(0);
     }
 
     .close-all input,
@@ -1633,7 +1645,7 @@ footer {
     .card.active .back {
       display: flex;
       visibility: visible;
-      max-width: 60vw;
+      max-width: calc(100vw - 50px);
     }
 
     .back.game-card a {

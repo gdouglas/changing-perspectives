@@ -1,0 +1,9 @@
+<p>(As the video begins, there is upbeat Celtic music with violin. Video of a 1700s brig sailing at sea on a sunny day.)</p>
+<p>Narrator: Now that the sails are up, the Captain can steer the ship using the rudder and the wind. Something he calls tacking. He uses the helm which moves the rudder at the stern. And that moves the boat left or right.</p>
+<p>(An animation focuses on the stern (the back) of a brig. Under the water is a large rudder, that moves from side to side.)</p>
+<p>Narrator: At the same time the captain orders the crew to move the sails to make sure they catch the wind. The Captain shouts:</p>
+<p>Captain: <em>"Hands to main braces. Brace up sharp. Port Tack!"</em></p>
+<p>Narrator: Braces are ropes attached to the yard. They are used for rotating the yard around the mast. "Brace up sharp, port tack" means to rotate hard towards the wind, which happens to be coming from the port side. </p>
+<p>(Sailors on deck are unwinding and loosening vertical ropes. An animation shows that braces are long ropes extending from the deck up to the sails. They are attached to yards, which support the sails and help the sails move from side to side. The sails change direction to face the direction of the wind.)</p>
+<p>Narrator: And from there, you can determine the full command given by the captain. If you were talking to your friend you might say, "Hey buddy, grab that rope attached to the spinny part of that horizontal pole there, about halfway up, and pull it hard until it's facing the left and catching that wind." But, that's a mouthful!</p>
+<p>Captain: <em>“That’s well, braces!”</em></p>

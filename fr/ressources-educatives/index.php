@@ -29,7 +29,7 @@
                 <li>Quelle était la vie des gens de la côte nord-ouest du Pacifique avant l’arrivée des Européens?
                     <p>
                         <a href="/files/relations/fr/video-intro-cnop-plan-de-cours.pdf" target="_blank" >Plan de cours</a>&nbsp;
-                        <a href="/files/relations/fr/europeens-sur-la-cote-nop-fiche-de-travail.pdf" target="_blank" >Fiche de travail sur la vidéo</a>&nbsp;
+                        <a href="/files/relations/fr/video-intro-cnop-fiche-de-travail.pdf" target="_blank" >Fiche de travail sur la vidéo</a>&nbsp;
                         <a href="/files/relations/fr/intro-cnop-modele-ligne-du-temps-spirale.pdf" target="_blank" >Ligne du temps en spirale</a>&nbsp;
                         <a href="/files/relations/fr/intro-cnop-modele-activite-fabrication-naperon.pdf" target="_blank" >Activité de fabrication d’un napperon</a>
                     </p>

@@ -8,7 +8,7 @@
                 <figure>
                     <img src="/images/encounters/sea-otter-pelts-thumb.jpg"
                         alt="Deux photos en noir et blanc. Sur l'une, un homme portant un chapeau melon pose contre un mur en shiplap avec trois peaux ovales. Sur l'autre, un homme se tient à côté d'une longue peau et d'une petite peau de bébé. Au stylo, la première image porte l'inscription &#34;Peau de loutre de mer. 1892 Ounakaska&#34;. L'autre image porte l'inscription &#34;Sea Otter Skin Ounalaska&#34;.">
-                    <figcaption><p>Peaux de loutre de mer, v. 1892. 
+                    <figcaption><p>Peaux de loutre de mer, 1892. 
 
 Photographe d’archives Stefan Claesson. Unalaska, Alaska, projet de morue du golfe du Maine. Sanctuaires marins nationaux, NOAA; courtoisie des Archives nationales. Ces photos montrent toute la beauté et la grande dimension des fourrures de loutres de mer. Elles ont une fourrure épaisse et douce qui les tient au chaud dans l’océan Pacifique. Les peuples autochtones ont échangé ces fourrures avec des commerçants étrangers à partir des années 1700. Les marins pouvaient vendre les fourrures en Chine pour une petite fortune. En 200 ans, la population de loutres de mer sur la côte a presque été chassée jusqu’à son extinction.</p>
                     </figcaption>

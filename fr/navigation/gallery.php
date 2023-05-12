@@ -35,7 +35,7 @@
                     <img src="/images/navigation/chronometer-thumb.jpg"
                         alt="Une boîte en bois s'est ouverte, avec à l'intérieur un mécanisme ressemblant à une horloge.">
                     <figcaption>
-<p>Chronomètre “Arnold 176”, v. 1791.</p>
+<p>Chronomètre “Arnold 176”, v. 1780.</p>
 
 <p>Fabriqué par John Arnold et utilisé par George Vancouver pour son expédition sur la côte nord-ouest du Pacifique. Propriété du Vancouver Maritime Museum. Un chronomètre marin est une montre suffisamment précise et exacte pour être utilisée comme étalon de temps portatif, ce qui signifie qu’il peut être utilisé pour déterminer la longitude en mesurant avec précision l’heure d’un emplacement fixe connu. Au moment de son invention, au XVIIIe siècle, il s’agissait d’une réalisation technique majeure, car une connaissance précise de l’heure pendant les voyages en mer est nécessaire à la navigation dépourvue d’appareils électroniques ou de communication.</p>
                     </figcaption>

@@ -31,7 +31,7 @@ Les commerçants de fourrures étrangers transportaient une variété d’articl
             <a href="/images/relations/trade-musket.jpg" class="lightbox">
                 <figure>
                     <img src="/images/relations/trade-musket-thumb.jpg" alt="Un fusil avec une crosse en bois.">
-                    <figcaption><p>Mousquet, vers 1871. Fabriqué par J.E. Barnett et Fils, courtoisie du Musée du Manitoba. 
+                    <figcaption><p>Mousquet, 1871. Fabriqué par J.E. Barnett et Fils, courtoisie du Musée du Manitoba. 
                         
 Ce mousquet datant de 1871 est un modèle plus récent que ceux échangés par les marchands contre des fourrures à la fin des années 1700. Les arcs, flèches et assommoirs autochtones traditionnels étaient souvent de meilleures armes. Ces mousquets étaient susceptibles de se briser, ils étaient longs à recharger et n’étaient pas précis. Toutefois, les mousquets sont devenus un symbole de richesse sur la côte, souvent offerts en cadeau dans les potlatchs. Le capitaine Vancouver ne permettait pas de faire le commerce des armes car il craignait qu’elles ne soient utilisées contre son équipage. Ils ont d’ailleurs vécu plusieurs violentes rencontres&nbsp;les Hawaïens ont tué un membre de l’équipage à O’ahu en 1792 et des guerriers Tlingit ont attaqué l’expédition l’année suivante. Deux des membres de l’équipage ont été blessés et au moins neuf guerriers Tlingit ont été tués. Les expéditions de la Marine royale britannique étaient fortement armées avec des armes de poing et des canons.</p>
                     </figcaption>

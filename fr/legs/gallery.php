@@ -18,7 +18,7 @@ Les artistes Haíɫzaqv (Heiltsuk) ont peint et gravé des parois rocheuses dans
             <a href="/images/legacies/mowachaht-spanish.jpg" class="lightbox">
                 <figure>
                     <img src="/images/legacies/mowachaht-spanish-thumb.jpg" alt="Vue avant et arrière d'un poteau en bois épais coupé en deux avec une sculpture d'un orque sur la courbe extérieure et une plaque sur la coupe plate. La plaque est rédigée en Nuučaan̓uɫ et en espagnol.">
-                    <figcaption><p>Commission des lieux et monuments historiques. Plaque de Yuquot, v. 2021.
+                    <figcaption><p>Commission des lieux et monuments historiques. Plaque de Yuquot, 2021.
 
 Ces plaques parlent de l’importance de Yuquot d’une perspective mowachaht/muchalaht. Le Ha'wilth (chef) Ambrose Maquinna voulait remplacer l’ancienne plaque provenant des sites historiques nationaux datant de 1923, qui ne faisait pas mention du chef Maquinna ni des Mowachaht/Muchalaht. Il existe maintenant deux nouvelles plaques&nbsp;celle-ci est écrite en Nuu-chah-nulth (Nuučaan̓uɫ) et en espagnol, tandis que l’autre est en anglais et en français. Les deux plaques sont fixées à un tronc de cèdre sculpté d’un loup réalisé par Sanford Williams. Dans la culture mowachaht/muchalaht, les loups sont vus comme des protecteurs du territoire. (Voir la prochaine image pour la traduction française du texte de la plaque).</p>
                     </figcaption>
@@ -29,7 +29,7 @@ Ces plaques parlent de l’importance de Yuquot d’une perspective mowachaht/mu
             <a href="/images/legacies/yuquot-plaque-double.jpg" class="lightbox">
                 <figure>
                     <img src="/images/legacies/yuquot-plaque-double-thumb.jpg" alt="Vue avant et arrière d'un poteau en bois épais coupé en deux avec une sculpture d'un orque sur la courbe extérieure et une plaque sur la coupe plate. La plaque est en anglais et en français.">
-                    <figcaption><p>Commission des lieux et monuments historiques. Plaque de Yuquot, v. 2021. 
+                    <figcaption><p>Commission des lieux et monuments historiques. Plaque de Yuquot, 2021. 
 
 Ces plaques parlent de l’importance de Yuquot d’une perspective mowachaht/muchalaht. Le Ha'wilth (chef) Ambrose Maquinna voulait remplacer l’ancienne plaque provenant des sites historiques nationaux datant de 1923, qui ne faisait pas mention du chef Maquinna ni des Mowachaht/Muchalaht. Il existe maintenant deux nouvelles plaques&nbsp;celle-ci est écrite en Nuu-chah-nulth (Nuučaan̓uɫ) et en espagnol, tandis que l’autre est en anglais et en français. Les deux plaques sont fixées à un tronc de cèdre sculpté d’un loup réalisé par Sanford Williams. Dans la culture mowachaht/muchalaht, les loups sont vus comme des protecteurs du territoire.</p>
 

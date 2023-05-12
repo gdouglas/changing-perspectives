@@ -8,7 +8,7 @@
             <figure>
                 <img src="/images/encounters/sea-otter-pelts-thumb.jpg" alt="Two black and white photos. In one, a man wearing a bowler hat poses against a shiplap wall with three oval pelts. In the other a man stands beside one long pelt and a small baby pelt. In pen the first image has 'Sea Otter Skin. 1892 Ounakaska' written. The other has 'Sea Otter Skin Ounalaska.'">
                 <figcaption>
-<p>Sea otter skins, ca.1892. Archival Photographer Stefan Claesson. Unalaska, Alaska, Gulf of Maine Cod Project, NOAA National Marine Sanctuaries; Courtesy of National Archives.</p>
+<p>Sea otter skins, Archival Photographer Stefan Claesson. Unalaska, Alaska, Gulf of Maine Cod Project, NOAA National Marine Sanctuaries; Courtesy of National Archives.</p>
 
 <p>These photos show how large and beautiful sea otter pelts are. They have a soft, thick coat of fur to keep them warm in the Pacific Ocean. Indigenous peoples traded the pelts with overseas fur traders starting in the 1700s. Sailors could sell the pelts in China for a small fortune. Within 200 years, sea otters were almost hunted to extinction on the coast.</p></figcaption>
             </figure>

@@ -30,7 +30,7 @@ Courtesy of Fort Vancouver National Historic Site Catalogue Number: FOVA 44083.<
             <figure>
                 <img src="/images/relations/trade-musket-thumb.jpg" alt="A rifle with a wooden stock.">
                 <figcaption>
-<p>Musket, ca. 1871. Made by J.E. Barnett and Sons Courtesy of The Manitoba Museum.</p>
+<p>Musket, 1871. Made by J.E. Barnett and Sons Courtesy of The Manitoba Museum.</p>
 
 <p>This 1871 musket is a later model of those exchanged by fur traders for pelts in the late 1700s. Traditional Indigenous bows, arrows and clubs were often better weapons. These muskets were breakable, took a long time to reload, and were not accurate. However, muskets became a symbol of wealth on the coast, often gifted at potlatch feasts. Captain Vancouver did not allow the trading of weapons because he feared they would be used against his crew. They experienced several violent encounters: the Hawaiians killed one crewman at O&#39;ahu in 1792 and Tlingit warriors attacked the expedition the following year. Two of the crew were wounded and as many as nine Tlingit warriors were killed. British Royal Navy expeditions were heavily armed with handguns and cannons.</p></figcaption>
             </figure>

@@ -30,7 +30,7 @@
                 <figure>
                     <img src="/images/navigation/chronometer-thumb.jpg" alt="A wooden box opened with a clock like mechanism inside of it.">
                     <figcaption>
-<p>&quot;Arnold 176&quot; chronometer, ca. 1791.</p>
+<p>&quot;Arnold 176&quot; chronometer, ca. 1780s.</p>
 
 <p>Made by John Arnold and used by George Vancouver for his expedition to the Pacific Northwest. Owned by the Vancouver Maritime Museum. A marine chronometer is a timepiece that is precise and accurate enough to be used as a portable time standard, meaning it can be used to determine longitude by accurately measuring the time of a known fixed location. When first developed in the 18th century, it was a major technical achievement, as accurate knowledge of the time during sea voyages is necessary for navigation without the use of electronic or communication devices.</p>
                     </figcaption>

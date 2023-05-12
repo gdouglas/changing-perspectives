@@ -21,7 +21,7 @@
                     <img src="/images/legacies/mowachaht-spanish-thumb.jpg"
                         alt="A front and back view of a thick wood post cut it half with a carving of an orca on the outside curve and a plaque on the flat cut. The plaque is in Nuučaan̓uɫ and Spanish">
                     <figcaption>
-<p>Historic Sites and Monuments Board Yuquot Plaque, ca. 2021.</p>
+<p>Historic Sites and Monuments Board Yuquot Plaque, 2021.</p>
 
 <p>These plaques share the importance of Yuquot from the Mowachaht / Muchalaht perspective. Ha&#39;wilth (Chief) Ambrose Maquinna wanted to replace the older 1923 National Historic Sites plaque that did not mention Chief Maquinna or the Mowachaht / Muchalaht people. There are two new plaques: This plaque is in the Nuu-chah-nulth (Nuučaan̓uɫ) and Spanish languages, the other in English and French. Both plaques are attached to cedar log carvings of a wolf made by Sanford Williams. In the Mowachaht / Muchalaht culture, wolves are known as protectors of the land. (See the next image for the English translations of the plaque text).</p>
                     </figcaption>
@@ -34,7 +34,7 @@
                     <img src="/images/legacies/yuquot-plaque-double-thumb.jpg"
                         alt="A front and back view of a thick wood post cut it half with a carving of an orca on the outside curve and a plaque on the flat cut. The plaque is in English and French">
                     <figcaption>
-<p>Historic Sites and d Monuments Board Yuquot Plaque, ca. 2021.
+<p>Historic Sites and d Monuments Board Yuquot Plaque, 2021.
 
 <p>These plaques share the importance of Yuquot from the Mowachaht / Muchalaht perspective. Ha&#39;wilth (Chief) Ambrose Maquinna wanted to replace the older 1923 National Historic Sites plaque that did not mention Chief Maquinna or the Mowachaht / Muchalaht people. There are two new plaques: This plaque is in English and French. the other in Nuu-chah-nulth (Nuučaan̓uɫ) and Spanish. Both plaques are attached to cedar log carvings of a wolf made by Sanford Williams. In the Mowachaht / Muchalaht culture, wolves are known as protectors of the land.</p>
 

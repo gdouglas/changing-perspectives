@@ -1,6 +1,12 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";?>
+include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";
+
+require_once $_SERVER['DOCUMENT_ROOT'] . '/dev/protect.php';
+Protect\with($_SERVER['DOCUMENT_ROOT'] . '/dev/form.php', 'vancouver','site');
+
+
+?>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

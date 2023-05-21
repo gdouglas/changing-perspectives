@@ -25,7 +25,7 @@
                 <li><em>James Cook; The Voyages.</em> Londres, The British Library (2018)&nbsp;: William Frame et Laura Walker.</li>
                 <li><em>Madness, Betrayal and the Lash; the Epic Voyage of Captain Vancouver.</em> Vancouver&nbsp;: Douglas & McIntyre, (2008)&nbsp;: Stephen R. Bown.</li>
                 <li><em>Stephen Biesty's Cross-Sections: <em>Man-Of-War.</em> Éditions</em> Dorling Kindersley Publishing (1993)&nbsp;: Richard Platt.</li>
-                <li><em>The 500 Years of Indigenous Resistance Comic Book&nbsp;: édition revu et augmentée.</em> Vancouver&nbsp;: Presses Arsenal Pulp (2021)&nbsp;: Gord Hill.</li>
+                <li><em>The 500 Years of Indigenous Resistance Comic Book&nbsp;: édition revue et augmentée.</em> Vancouver&nbsp;: Presses Arsenal Pulp (2021)&nbsp;: Gord Hill.</li>
                 <li><em>The 500 Years of Indigenous Resistance Comic Book.</em> Vancouver&nbsp;Arsenal Pulp Press (2010)&nbsp;: Gord Hill.</li>
                 <li><em>The Voyage of George Vancouver, 1791-1795.</em> Londres&nbsp;Hakluyt Society (1984)&nbsp;W. Kaye Lamb.</li>
                 <li><em>Vancouver Voyages; Charting the Northwest Coast, 1791- 1795.</em> Vancouver&nbsp;: Douglas & McIntyre, (1992)&nbsp;: Robin Fisher.</li>

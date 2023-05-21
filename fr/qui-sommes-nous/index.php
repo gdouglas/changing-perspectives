@@ -72,12 +72,12 @@
             <a href="https://moa.ubc.ca/" target="_blank">Musée d’anthropologie de l’UCB </a>
         </p>
 
-        <p>Merci aux consultants universitaires suivants&nbsp;Stephen Bown, Dr. Robin Fisher, Dr. Sharon Fortney, Robin
+        <p>Merci aux consultants universitaires suivants&nbsp;: Stephen Bown, Dr. Robin Fisher, Dr. Sharon Fortney, Robin
             Inglis, Dr. John Lutz, Dr. John Price, Dr. Paige Raibmon, Cynthia Updegrave, Dr. Eldon Yellowhorn.</p>
-        <p>Merci aux artistes européens et autochtones suivants&nbsp;Steve Biesty, Shirl Hall, Gord Hill, John Horton,
+        <p>Merci aux artistes européens et autochtones suivants&nbsp;: Steve Biesty, Shirl Hall, Gord Hill, John Horton,
             Steven Mayo, Gordon Miller, Mark Myers, Sandford Williams</p>
         <p>
-            Merci aux individus suivants&nbsp;Christopher Ball, Connie
+            Merci aux individus suivants&nbsp;: Christopher Ball, Connie
             Chan, Julie Colero, Gillian Darling, Kelly Douglas, Sharon Doyle, Roger Dunlop,
             Tom Froh, Stephen Gillis, Emma Harris, Meigan Henry, William
             Housty, Jack Johnson, Katherine Kalsbeek, Erika Kinach, Kelina
@@ -88,7 +88,7 @@
             Zachary Rothman, Gatlin Saip, Sheila Savey, Chelsea Shriver,
             au skippeur Brendan et à l’équipage du Lady Washington, Kevin Starr, Tanis Wilkie.
         </p>
-        <p>Merci aux organisations suivantes&nbsp;Port maritime historique de Grays Harbor, Magazine Hakai, Location de
+        <p>Merci aux organisations suivantes&nbsp;: Port maritime historique de Grays Harbor, Magazine Hakai, Location de
             bateau Shearwater, Bibliothèque de l’UCB et collections spéciales, la faculté de médecine de l’UCB,
             Bibliothèque de la faculté d’éducation de l’UCB.</p>
         <h2>Déclaration sur les droits d’auteur</h2>

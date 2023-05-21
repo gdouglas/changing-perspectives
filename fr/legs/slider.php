@@ -64,9 +64,9 @@
             <img src="/images/colonization/colonization6.png" alt="Panneau 8 de 9"
                 aria-describedby="panel-eight-transcript" />
             <figcaption>
-                <p>En 1871, la C.-B. est entrée dans le Canada. En 1874, la Loi relative aux terres de la C.-B. fut
+                <p>En 1871, la C.-B. est entrée dans le Canada. En 1874, la <em>Loi relative aux terres de la C.-B.</em> fut
                     adoptée pour ouvrir le territoire à la colonisation.</p>
-                <p>Le Canada émit le Désaveu de 1875, supprimant ainsi la Loi relative aux terres de la C.-B., citant
+                <p>Le Canada émit le <em>Désaveu de 1875</em>, supprimant ainsi la <em>Loi relative aux terres de la C.-B.</em>, citant
                     l’échec de la province à conclure des traités stipulant légalement la cession des terres par les
                     Autochtones.</p>
             </figcaption>
@@ -76,7 +76,7 @@
                 aria-describedby="panel-nine-transcript" />
             <figcaption>
                 <p>En réponse à cela, la C.-B. menaça de se retirer du Canada…</p>
-                <p>En 1876, le Canada adopta la Loi sur les Indiens, qui avait pour effet d’étendre le contrôle
+                <p>En 1876, le Canada adopta la <em>Loi sur les Indiens</em>, qui avait pour effet d’étendre le contrôle
                     gouvernemental sur tous les Autochtones, incluant ceux de la C.-B., " légalisant " ainsi le vol des
                     territoires autochtones.</p>
             </figcaption>
@@ -121,7 +121,7 @@
                 <p>&laquo; Au m&ecirc;me moment, l&rsquo;&eacute;tablissement de colons et la vente de terres &eacute;taient devenus des sujets cruciaux pour le gouvernement&hellip;</p>
                 <p>Pendant 30 ans, les canonni&egrave;res de la Marine royale ont &eacute;t&eacute; utilis&eacute;es pour servir le colonialisme britannique et contr&ocirc;ler les tribus c&ocirc;ti&egrave;res. &raquo;</p>
                 <p>(Un dessin de trois hommes pointant une carte intitul&eacute;e &laquo; Colonie de l&rsquo;&icirc;le de Vancouver &raquo;.</p>
-                <p>Un des hommes dit : &laquo; Les Kwakiutl sont toujours des chasseurs de t&ecirc;tes? &raquo;, ce &agrave;quoi r&eacute;pond un autre homme : </p><p>&laquo; Oui monsieur&hellip; &raquo;)&nbsp;</p>
+                <p>Un des hommes dit : &laquo; Les Kwakiutl sont toujours des chasseurs de t&ecirc;tes? &raquo;, ce &agrave; quoi r&eacute;pond un autre homme : </p><p>&laquo; Oui monsieur&hellip; &raquo;)&nbsp;</p>
             </div>
         </div>
         <div id="card-5" tabindex="0">
@@ -141,16 +141,16 @@
         <div id="card-7" tabindex="0">
             <h2>Vignette 8</h2>
             <div id="panel-eight-transcript">
-                <p>&laquo; En 1871, la C.-B. est entr&eacute;e dans le Canada. En 1874, la Loi relative aux terres de la C.-B. fut adopt&eacute;e pour ouvrir le territoire &agrave; la colonisation. Le Canada &eacute;mit le D&eacute;saveu de 1875, supprimant ainsi la Loi relative aux terres de la C.-B., citant l&rsquo;&eacute;chec de la province &agrave; conclure des trait&eacute;s stipulant l&eacute;galement la cession des terres par les Autochtones. &raquo;</p>
-                <p>(Une main tient un papier intitul&eacute; &laquo; Devoir de d&eacute;saveu &raquo;.)</p>
+                <p>&laquo; En 1871, la C.-B. est entr&eacute;e dans le Canada. En 1874, la <em>Loi relative aux terres de la C.-B.</em> fut adopt&eacute;e pour ouvrir le territoire &agrave; la colonisation. Le Canada &eacute;mit le D&eacute;saveu de 1875, supprimant ainsi la <em>Loi relative aux terres de la C.-B.</em>, citant l&rsquo;&eacute;chec de la province &agrave; conclure des trait&eacute;s stipulant l&eacute;galement la cession des terres par les Autochtones. &raquo;</p>
+                <p>(Une main tient un papier intitul&eacute; &laquo;&nbsp;Devoir de d&eacute;saveu&nbsp;&raquo;.)</p>
             </div>
         </div>
         <div id="card-8" tabindex="0">
             <h2>Vignette 9</h2>
             <div id="panel-nine-transcript">
                 <p>&laquo; En r&eacute;ponse &agrave; cela, la C.-B. mena&ccedil;a de se retirer du Canada&hellip;</p>
-                <p>En 1876, le Canada adopta la Loi sur les Indiens, qui avait pour effet d&rsquo;&eacute;tendre le contr&ocirc;le gouvernemental sur tous les Autochtones, incluant ceux de la C.-B., &quot; l&eacute;galisant &quot; ainsi le vol des territoires autochtones &raquo;.</p>
-                <p>(Une main tient un papier intitul&eacute; &laquo; Loi sur les Indiens de 1876 &raquo;. &Agrave; c&ocirc;t&eacute;, il y a d&rsquo;autres papiers intitul&eacute;s &laquo; Conseils de bande &raquo;, &laquo; R&eacute;serves &raquo; et &laquo; Statut &raquo;.)</p>
+                <p>En 1876, le Canada adopta la <em>Loi sur les Indiens</em>, qui avait pour effet d&rsquo;&eacute;tendre le contr&ocirc;le gouvernemental sur tous les Autochtones, incluant ceux de la C.-B., &quot; l&eacute;galisant &quot; ainsi le vol des territoires autochtones &raquo;.</p>
+                <p>(Une main tient un papier intitul&eacute; &laquo; <em>Loi sur les Indiens</em> de 1876 &raquo;. &Agrave; c&ocirc;t&eacute;, il y a d&rsquo;autres papiers intitul&eacute;s &laquo; Conseils de bande &raquo;, &laquo; R&eacute;serves &raquo; et &laquo; Statut &raquo;.)</p>
             </div>
         </div>
     </div>

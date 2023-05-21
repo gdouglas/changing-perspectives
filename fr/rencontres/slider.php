@@ -42,7 +42,7 @@
         <figure id="seven">
             <img src="/images/encounters/encounters5.png" alt="Panneau 7 de 8" aria-describedby="panel-seven-transcript" />
             <figcaption>
-                <p>En 1803, le navire américain Boston fut attaqué par des guerriers Mowachaht-Muchalaht qui tuèrent 25 des 27 membres de l’équipage.</p>
+                <p>En 1803, le navire américain <em>Boston</em> fut attaqué par des guerriers Mowachaht-Muchalaht qui tuèrent 25 des 27 membres de l’équipage.</p>
                 <p>Les deux survivants ont été forcés d’identifier les têtes décapitées de l’équipage. Ils ont été soumis à l’esclavage pendant 2 ans…</p>
             </figcaption>
         </figure>

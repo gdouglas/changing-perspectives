@@ -1,10 +1,7 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";
-
+// include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . '/dev/protect.php';
-Protect\with($_SERVER['DOCUMENT_ROOT'] . '/dev/form.php', 'vancouver','site');
-
 
 ?>
 
@@ -19,17 +16,15 @@ Protect\with($_SERVER['DOCUMENT_ROOT'] . '/dev/form.php', 'vancouver','site');
 <link
     href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Lato:wght@300;400&family=Libre+Baskerville&display=swap"
     rel="stylesheet">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148908480-1"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE83GVZYKH"></script>
 <script>
-window.dataLayer = window.dataLayer || [];
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-function gtag() {
-    dataLayer.push(arguments);
-}
-gtag('js', new Date());
-
-gtag('config', 'UA-148908480-1');
+  gtag('config', 'G-YE83GVZYKH');
 </script>
 
 <!-- Libraries -->

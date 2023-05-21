@@ -1,35 +1,63 @@
 <?php
-# https://gist.github.com/4692807
-namespace Protect;
-
-# Will protect a page with a simple password. The user will only need
-# to input the password once. After that their session will be enough
-# to get them in. The optional scope allows access on one page to
-# grant access on another page. If not specified then it only grants
-# access to the current page.
-function with($form, $password, $scope = null)
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+function showForm($error = "LOGIN")
 {
-    if (!$scope)
-        $scope = current_url();
-    $session_key = 'password_protect_' . preg_replace('/\W+/', '_', $scope);
+    ?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
+    <html>
 
-    session_start();
+    <body>
+        <?php echo $error; ?>
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" name="pwd">
+            Password:
+            <table>
+                <tr>
+                    <td><input name="passwd" type="password" /></td>
+                </tr>
+                <tr>
+                    <td align="center"><br />
+                        <input type="submit" name="submit_pwd" value="Login" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+<?php
+}
+?>
 
-    # Check the POST for access
-    if (isset($_POST['password']) && $_POST['password'] ==  $password) {
-        $_SESSION[$session_key] = true;
-        redirect(current_url());
+<?php
+
+if (isset($_COOKIE['loggedIn']) && ($_COOKIE['loggedIn']) != 1) {
+    getLogin();
+} elseif (isset($_COOKIE['loggedIn']) == false) {
+    getLogin();
+}
+function getLogin()
+{
+    ob_start();
+    // print_r($_COOKIE);
+    $Password = 'vancouver'; // Set your password here
+    if (isset($_POST['submit_pwd'])) {
+        $pass = isset($_POST['passwd']) ? $_POST['passwd'] : '';
+
+        if ($pass != $Password) {
+            showForm("Wrong password");
+            exit();
+        } else {
+            //password is correct
+            // echo "correct";
+            echo '<script>document.cookie = "loggedIn=1; path=/";</script>';
+            redirect(current_url());
+        }
+    } else {
+        showForm();
+        exit();
     }
-
-    # If user has access then simply return so original page can render.
-    if (isset($_SESSION[$session_key]))
-        return;
-
-    require $form;
-    exit;
 }
 
-#### PRIVATE ####
 
 function current_url($script_only = false)
 {
@@ -47,6 +75,10 @@ function current_url($script_only = false)
 
 function redirect($url)
 {
+    echo '<script>window.location.reload();</script>';
     header("Location: $url");
-    exit;
+    exit();
 }
+
+
+?>

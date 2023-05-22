@@ -126,6 +126,12 @@ footer {
 	.footer-container .col.vmm>a {
 		margin-left: 0;
 	}
+	.vmm .content {
+		align-self: self-end;
+	}
+	.vmm .content p {
+		margin: 0;
+	}
 }
 
 @media screen and (max-width:375px) {
@@ -144,5 +150,8 @@ footer {
 	.sub-footer div {
 		width: 100%;
 		text-align: center;
+	}
+	.vmm .content {
+		margin-bottom: 1rem;
 	}
 }

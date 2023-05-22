@@ -251,7 +251,8 @@ function loadTobii() {
     const tobii = new Tobii({
         captionsSelector: "self",
         captionAttribute: "data-caption",
-        captionText: getCaption
+        captionText: getCaption,
+        swipeClose: false
     })
 }
 

@@ -141,7 +141,7 @@
         <div id="card-7" tabindex="0">
             <h2>Vignette 8</h2>
             <div id="panel-eight-transcript">
-                <p>&laquo; En 1871, la C.-B. est entr&eacute;e dans le Canada. En 1874, la <em>Loi relative aux terres de la C.-B.</em> fut adopt&eacute;e pour ouvrir le territoire &agrave; la colonisation. Le Canada &eacute;mit le D&eacute;saveu de 1875, supprimant ainsi la <em>Loi relative aux terres de la C.-B.</em>, citant l&rsquo;&eacute;chec de la province &agrave; conclure des trait&eacute;s stipulant l&eacute;galement la cession des terres par les Autochtones. &raquo;</p>
+                <p>&laquo; En 1871, la C.-B. est entr&eacute;e dans le Canada. En 1874, la <em>Loi relative aux terres de la C.-B.</em> fut adopt&eacute;e pour ouvrir le territoire &agrave; la colonisation. Le Canada &eacute;mit le <em>D&eacute;saveu de 1875</em>, supprimant ainsi la <em>Loi relative aux terres de la C.-B.</em>, citant l&rsquo;&eacute;chec de la province &agrave; conclure des trait&eacute;s stipulant l&eacute;galement la cession des terres par les Autochtones. &raquo;</p>
                 <p>(Une main tient un papier intitul&eacute; &laquo;&nbsp;Devoir de d&eacute;saveu&nbsp;&raquo;.)</p>
             </div>
         </div>

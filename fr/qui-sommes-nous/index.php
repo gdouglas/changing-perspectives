@@ -83,7 +83,7 @@
             Housty, Jack Johnson, Katherine Kalsbeek, Erika Kinach, Kelina
             Kwan, David Lampron, Isabella Losinger, Bruce Macdonald, Bob
             Martin, John McKay, Iain McKechnie, Paul Milaire, Reg Moody,
-            Clare Newlands, Geralie Oba-Underwood, Lucian Ploias, Matthew
+            Clare Newlands, Geralie Oba-Underwood, Lucian Ploias, Devon Rhys, Matthew
             Richardson, Mike Ritchie, Larissa Ringham,Gary Rosborough,
             Zachary Rothman, Gatlin Saip, Sheila Savey, Chelsea Shriver,
             au skippeur Brendan et à l’équipage du Lady Washington, Kevin Starr, Tanis Wilkie.

@@ -122,7 +122,7 @@
                 Housty, Jack Johnson, Katherine Kalsbeek, Erika Kinach, Kelina
                 Kwan, David Lampron, Isabella Losinger, Bruce Macdonald, Bob
                 Martin, John McKay, Iain McKechnie, Paul Milaire, Reg Moody,
-                Clare Newlands, Geralie Oba-Underwood, Lucian Ploias, Matthew
+                Clare Newlands, Geralie Oba-Underwood, Lucian Ploias, Devon Rhys, Matthew
                 Richardson, Mike Ritchie, Larissa Ringham,Gary Rosborough,
                 Zachary Rothman, Gatlin Saip, Sheila Savey, Chelsea Shriver,
                 Skipper Brendan and the crew of the Lady Washington, Kevin

@@ -91,14 +91,14 @@ if (isset($_POST['email_sender_email'])) {
             //
         } else {
             $errorMessage = "Oups, quelque chose s'est mal passé. Veuillez réessayer plus tard.";
-            var_dump($error_message);
+            // var_dump($error_message);
             die();
         }
         if ( mail($email_from, "re: " . $subject, $confirm_email_message, $headers) ) {
             
         } else {
             $errorMessage = "Oups, quelque chose s'est mal passé. Je vous réponds. Veuillez réessayer plus tard.";
-            var_dump($error_message);
+            // var_dump($error_message);
             die();
         }
 

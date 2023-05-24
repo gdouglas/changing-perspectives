@@ -2,7 +2,7 @@
 <html class="no-js" lang="fr" xml:lang="fr" dir="ltr">
 
 <head>
-    <title>Reading | Nouvelles perspectives</title>
+    <title>Lectures recommandées | Nouvelles perspectives</title>
     <meta name="description" content="Lectures recommandées sur l'histoire coloniale de l'exploration coloniale du nord-ouest du Pacifique.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>

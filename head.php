@@ -97,13 +97,13 @@ function get_translated_page() {
         case "legs";
             echo "legacies";
             break;
-        case "navigation";
+        case "navigation"; //redundant with english but left for simplicity
             echo "navigation";
             break;
         case "lectures-recommandees";
             echo "reading";
             break;
-        case "relations";
+        case "relations"; //redundant with english but left for simplicity
             echo "relations"; 
             break;
         case "plan-du-site";

@@ -1,39 +1,48 @@
 <?php
 session_start();
 
-// Languages we support
-$available_languages = array("fr", "en");
-$default_language = "en"; // a default language to fall back to in case there's no match
-
-function prefered_language($available_languages, $http_accept_language)
-{
-    global $default_language;
-    $available_languages = array_flip($available_languages);
-
-    $langs = array();
-    preg_match_all('~([\w-]+)(?:[^,\d]+([\d.]+))?~', strtolower($http_accept_language), $matches, PREG_SET_ORDER);
-    foreach ($matches as $match) {
-        list($a, $b) = explode('-', $match[1]) + array('', '');
-        $value = isset($match[2]) ? (float) $match[2] : 1.0;
-
-        if (isset($available_languages[$match[1]])) {
-            $langs[$match[1]] = $value;
-            continue;
-        }
-
-        if (isset($available_languages[$a])) {
-            $langs[$a] = $value - 0.1;
-        }
+function detectUrlLanguagePreference() {
+    // Check if '/en' is present in the current URL
+    if (strpos($_SERVER['REQUEST_URI'], '/en') === 0) {
+        return 'en'; // English
     }
-    if ($langs) {
-        arsort($langs);
-        return key($langs); // We don't need the whole array of choices since we have a match
-    } else {
-        return $default_language;
+    
+    // Check if '/fr' is present in the current URL
+    if (strpos($_SERVER['REQUEST_URI'], '/fr') === 0) {
+        return 'fr'; // French
     }
+    
+    // Default to null if no language preference is found in the URL
+    return null;
 }
-// set a default language
-$_SESSION['lang'] = prefered_language(
-    $available_languages, strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"])
-);
 
+// Check if the language preference is set in the URL
+$language = detectUrlLanguagePreference();
+
+// If the language preference is not set in the URL, check the session variable
+if ($language === null && isset($_SESSION['lang'])) {
+    $language = $_SESSION['lang'];
+} else {
+    // Check if the user has a language preference in their browser
+    if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
+        $acceptedLanguages = explode(',', $_SERVER['HTTP_ACCEPT_LANGUAGE']);
+        
+        foreach ($acceptedLanguages as $language) {
+            if (strpos($language, 'fr') !== false) {
+                $language = 'fr'; // French
+                break;
+            } elseif (strpos($language, 'en') !== false) {
+                $language = 'en'; // English
+                break;
+            }
+        }
+    }
+    
+    // If no language preference is found, default to English
+    if ($language === null) {
+        $language = 'en'; // English
+    }
+    
+    // Update the session variable with the detected language preference
+    $_SESSION['lang'] = $language;
+}

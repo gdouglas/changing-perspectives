@@ -28,12 +28,13 @@
 
     // Get the HTTP error code
     $errorCode = http_response_code();
-
+    
     // Get the appropriate error message based on the language and error code
     $errorMessage = $errorMessages[$preferredLanguage][$errorCode];
 
     // Display the error message
     echo "<h1>$errorMessage</h1>";
+    var_dump($errorCode);
     ?>
 </body>
 </html>

@@ -4,7 +4,7 @@
 <head>
     <title>Qui sommes-nous | Nouvelles perspectives</title>
     <meta name="description"
-        content="Partners and organizations that helped create the Nouvelles perspectives website." />
+        content="Partenaires et organisations qui ont contribué à la création du site Nouvelles perspectives." />
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
 </head>
 

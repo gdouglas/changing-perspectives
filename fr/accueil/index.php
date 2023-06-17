@@ -4,8 +4,7 @@
 <head>
     <?php require $_SERVER['DOCUMENT_ROOT'] . '/head.php'; ?>
     <title>Accueil | Nouvelles perspectives</title>
-    <meta name="description"
-        content="Découvrez l'expédition et l'héritage de George Vancouver, qui a exploré le nord-ouest du Pacifique en 1790.">
+    <meta name="description"content="Découvrez l'expédition et l'héritage de George Vancouver, qui a exploré le nord-ouest du Pacifique en 1790.">
 </head>
 
 <body class="home">

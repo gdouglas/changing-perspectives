@@ -3,8 +3,7 @@
 
 <head>
     <title>Navigation | Nouvelles perspectives</title>
-    <meta name="description" content=
-        "Découvrez la technologie et les techniques utilisées par les Européens pour explorer le monde à la fin des années 1700.">
+    <meta name="description" content="Découvrez la technologie et les techniques utilisées par les Européens pour explorer le monde à la fin des années 1700.">
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/head.php" ?>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <style>

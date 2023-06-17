@@ -7,13 +7,8 @@
  * 
  **/
 
-// Determine the language based on user preferences or other criteria
-$preferredLanguage = 'en'; // Set default language to English
 
-// Check if the user's preferred language is French
-if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) && strpos($_SERVER['HTTP_ACCEPT_LANGUAGE'], 'fr') !== false) {
-    $preferredLanguage = 'fr';
-}
+require_once 'language-detect.php';
 
 // Error messages in English and French
 $errorMessages = array(
@@ -47,7 +42,7 @@ if ($errorCode === 200) {
     $errorCode = $_SERVER['REDIRECT_STATUS'];
 }
 // Get the appropriate error message based on the language and error code
-$errorMessage = $errorMessages[$errorCode][$preferredLanguage];
+$errorMessage = $errorMessages[$errorCode][$language];
 ?>
 <!DOCTYPE html>
 <html>
@@ -64,7 +59,7 @@ $errorMessage = $errorMessages[$errorCode][$preferredLanguage];
     <body class="error-page">
         <a class="skip-main" href="#main">Skip to main content</a>
         <header>
-            <?php require $_SERVER['DOCUMENT_ROOT'] . '/' . $preferredLanguage . '-header.php'; ?>
+            <?php require $_SERVER['DOCUMENT_ROOT'] . '/' . $language . '-header.php'; ?>
         </header>
         <main id="main" role="main" tabindex="-1">
 
@@ -74,7 +69,7 @@ $errorMessage = $errorMessages[$errorCode][$preferredLanguage];
             echo "<h1>$errorMessage</h1>";
             ?>
         </main>
-        <?php require $_SERVER['DOCUMENT_ROOT'] . '/' . $preferredLanguage . '-footer.php'; ?>
+        <?php require $_SERVER['DOCUMENT_ROOT'] . '/' . $language . '-footer.php'; ?>
     </body>
 
 </html>

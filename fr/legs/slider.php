@@ -1,17 +1,17 @@
 <section class="comic-wrapper">
     <div class="panels">
-    <div id="content-advisory" class="comic-advisory">
+        <div id="content-advisory" class="comic-advisory" aria-label="Vignette 1 de 9">
             <p>Cette bande dessin&eacute;e est tir&eacute;e de l&rsquo;album &laquo;&nbsp;500 ans de r&eacute;sistance autochtone&nbsp;&raquo; (<em>The 500 Years of Indigenous Resistance Comic Book)</em> cr&eacute;&eacute; par l&rsquo;artiste et historien Kwakwaka&rsquo;wakw Gord Hill.</p>
             <br>
             <p><strong>AVERTISSEMENT</strong> : Certaines images sont de nature tr&egrave;s crue et peuvent &ecirc;tre troublantes.</p>
         </div>
         <figure id="two">
-            <img src="/images/colonization/colonization-title.png" alt="Panneau 2 de 9"
+            <img src="/images/colonization/colonization-title.png" alt="Vignette 2 de 9"
                 aria-describedby="panel-two-transcript" />
             <figcaption><p>Comment les Européens ont-ils colonisé la côte nord-ouest du Pacifique?</p></figcaption>
         </figure>
         <figure id="three">
-            <img src="/images/colonization/colonization1.png" alt="Panneau 3 de 9"
+            <img src="/images/colonization/colonization1.png" alt="Vignette 3 de 9"
                 aria-describedby="panel-three-transcript" />
             <figcaption>
                 <p>Dans les années 1820, la Compagnie de la Baie d’Hudson constituait le principal pouvoir colonial de la
@@ -21,7 +21,7 @@
             </figcaption>
         </figure>
         <figure id="four">
-            <img src="/images/colonization/colonization2.png" alt="Panneau 4 de 9"
+            <img src="/images/colonization/colonization2.png" alt="Vignette 4 de 9"
                 aria-describedby="panel-four-transcript" />
             <figcaption>
                 <p>En 1849, l’île de Vancouver fut déclarée colonie officielle avec la CBH agissant à titre de
@@ -29,7 +29,7 @@
             </figcaption>
         </figure>
         <figure id="five">
-            <img src="/images/colonization/colonization3.png" alt="Panneau 5 de 9"
+            <img src="/images/colonization/colonization3.png" alt="Vignette 5 de 9"
                 aria-describedby="panel-five-transcript" />
             <figcaption>
                 <p>Au même moment, l’établissement de colons et la vente de terres étaient devenus des sujets cruciaux
@@ -41,7 +41,7 @@
             </figcaption>
         </figure>
         <figure id="six">
-            <img src="/images/colonization/colonization4.png" alt="Panneau 6 de 9"
+            <img src="/images/colonization/colonization4.png" alt="Vignette 6 de 9"
                 aria-describedby="panel-six-transcript" />
             <figcaption>
                 <p>Les canonnières servaient de forces militaire et policière…</p>
@@ -50,7 +50,7 @@
             </figcaption>
         </figure>
         <figure id="seven">
-            <img src="/images/colonization/colonization5.png" alt="Panneau 7 de 9"
+            <img src="/images/colonization/colonization5.png" alt="Vignette 7 de 9"
                 aria-describedby="panel-seven-transcript" />
             <figcaption>
                 <p>En 1862, une épidémie de variole se déclara à Victoria. Les autorités coloniales ont forcé une
@@ -61,7 +61,7 @@
             </figcaption>
         </figure>
         <figure id="eight">
-            <img src="/images/colonization/colonization6.png" alt="Panneau 8 de 9"
+            <img src="/images/colonization/colonization6.png" alt="Vignette 8 de 9"
                 aria-describedby="panel-eight-transcript" />
             <figcaption>
                 <p>En 1871, la C.-B. est entrée dans le Canada. En 1874, la <em>Loi relative aux terres de la C.-B.</em> fut
@@ -72,7 +72,7 @@
             </figcaption>
         </figure>
         <figure id="nine">
-            <img src="/images/colonization/colonization7.png" alt="Panneau 9 de 9"
+            <img src="/images/colonization/colonization7.png" alt="Vignette 9 de 9"
                 aria-describedby="panel-nine-transcript" />
             <figcaption>
                 <p>En réponse à cela, la C.-B. menaça de se retirer du Canada…</p>

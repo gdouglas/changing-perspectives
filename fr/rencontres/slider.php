@@ -1,53 +1,53 @@
 <section class="comic-wrapper">
     <div class="panels">
-        <div id="content-advisory" class="comic-advisory">
+        <div id="content-advisory" class="comic-advisory" aria-label="Vignette 1 de 8">
             <p>Cette bande dessin&eacute;e est tir&eacute;e de l&rsquo;album &laquo;&nbsp;500 ans de r&eacute;sistance autochtone&nbsp;&raquo; (<em>The 500 Years of Indigenous Resistance Comic Book)</em> cr&eacute;&eacute; par l&rsquo;artiste et historien Kwakwaka&rsquo;wakw Gord Hill.</p>
             <br>
             <p><strong>AVERTISSEMENT</strong> : Certaines images sont de nature tr&egrave;s crue et peuvent &ecirc;tre troublantes.</p>
         </div>
         <div>
             <figure id="two">
-                <img src="/images/encounters/encounters-title.png" alt="Panneau 2 de 8" aria-describedby="panel-two-transcript" />
+                <img src="/images/encounters/encounters-title.png" alt="Vignette 2 de 8" aria-describedby="panel-two-transcript" />
                 <figcaption>À quoi ressemblaient les peuples autochtones qui rencontraient les commerçants de fourrure?</figcaption>
             </figure>
         </div>
         <div>
             <figure id="three">
-                <img src="/images/encounters/encounters1.png" alt="Panneau 3 de 8" aria-describedby="panel-three-transcript" />
+                <img src="/images/encounters/encounters1.png" alt="Vignette 3 de 8" aria-describedby="panel-three-transcript" />
                 <figcaption>
                     <p>Pendant plusieurs décennies, la traite des fourrures était la principale raison pour laquelle les bateaux européens et américains visitaient la région…</p>
                     <p>Ce commerce a décimé la population de loutre de mer. Les équipages usaient parfois de la force pour mater les récalcitrants, même parfois en prenant des otages.</p></figcaption>
             </figure>
         </div>
         <figure id="four">
-            <img src="/images/encounters/encounters2.png" alt="Panneau 4 de 8" aria-describedby="panel-four-transcript" />
+            <img src="/images/encounters/encounters2.png" alt="Vignette 4 de 8" aria-describedby="panel-four-transcript" />
             <figcaption>
                 <p>Les Russes ont commencé à traiter avec les Aléoutes en 1741. Ils ont pris des familles en otage et ont forcé des chasseurs à récolter des loutres de mer.</p>
                 <p>En 1763, les Aléoutes se sont révoltés et ont détruit 4 de 5 bateaux russes. En signe de représailles, plusieurs villages aléoutes ont été massacrés.</p>
             </figcaption>
         </figure>
         <figure id="five">
-            <img src="/images/encounters/encounters3.png" alt="Panneau 5 de 8" aria-describedby="panel-five-transcript" />
+            <img src="/images/encounters/encounters3.png" alt="Vignette 5 de 8" aria-describedby="panel-five-transcript" />
             <figcaption>
                 <p>Comme les Russes avaient ravagé les populations aléoutes et de loutre de mer, ils se sont mis à se déplacer vers le sud en territoire Tlingit. Mais les Tlingit étaient beaucoup mieux armés en raison de leur commerce avec les bateaux britanniques et américains.</p>
                 <p>Les articles de traite les plus prisés étaient les fusils et les munitions. Sur la côte, les femmes dirigeaient la plupart des négociations commerciales.</p>
             </figcaption>
         </figure>
         <figure id="six">
-            <img src="/images/encounters/encounters4.png" alt="Panneau 6 de 8" aria-describedby="panel-six-transcript" />
+            <img src="/images/encounters/encounters4.png" alt="Vignette 6 de 8" aria-describedby="panel-six-transcript" />
             <figcaption>
                 <p>Avec l’augmentation du nombre de bateaux venant dans la région entre les années 1780 et 1790, les attaques se sont multipliées. Au cours des 30 années suivantes, des douzaines de bateaux ont été capturés.</p>
             </figcaption>
         </figure>
         <figure id="seven">
-            <img src="/images/encounters/encounters5.png" alt="Panneau 7 de 8" aria-describedby="panel-seven-transcript" />
+            <img src="/images/encounters/encounters5.png" alt="Vignette 7 de 8" aria-describedby="panel-seven-transcript" />
             <figcaption>
                 <p>En 1803, le navire américain <em>Boston</em> fut attaqué par des guerriers Mowachaht-Muchalaht qui tuèrent 25 des 27 membres de l’équipage.</p>
                 <p>Les deux survivants ont été forcés d’identifier les têtes décapitées de l’équipage. Ils ont été soumis à l’esclavage pendant 2 ans…</p>
             </figcaption>
         </figure>
         <figure id="eight">
-            <img src="/images/encounters/encounters6.png" alt="Panneau 8 de 8" aria-describedby="panel-eight-transcript" />
+            <img src="/images/encounters/encounters6.png" alt="Vignette 8 de 8" aria-describedby="panel-eight-transcript" />
             <figcaption>
                 <p>En 1811, le Tonquin fut attaqué par des guerriers Tla-o-qui-aht dirigés par Wickaninnish, dans la baie de Clayoquot. Un survivant parmi les membres de l’équipage arma des explosifs avant de s’enfuir. L’explosion fit au moins 100 morts parmi les Tla-o-qui-aht.</p>
             </figcaption>

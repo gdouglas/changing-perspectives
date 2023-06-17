@@ -1,33 +1,33 @@
 <section class="comic-wrapper">
     <div class="panels">
-        <div id="content-advisory" class="comic-advisory">
+        <div id="content-advisory" class="comic-advisory" aria-label="Panel 1 de 9">
             <p>This comic strip is from "The 500 Years of Indigenous Resistance Comic Book", created by Gord Hill a Kwakwaka'wakw artist and historian.</p>
             <br>
             <p><strong>Warning:</strong> Some of the images are graphic in nature and may be disturbing.</p>
         </div>
         <figure id="one">
-            <img src="/images/colonization/colonization-title.png" alt="Panel 1 of 9" aria-describedby="panel-two-transcript" />
+            <img src="/images/colonization/colonization-title.png" alt="Panel 2 of 9" aria-describedby="panel-two-transcript" />
         </figure>
         <figure id="two">
-            <img src="/images/colonization/colonization1.png" alt="Panel 2 of 9" aria-describedby="panel-three-transcript" />
+            <img src="/images/colonization/colonization1.png" alt="Panel 3 of 9" aria-describedby="panel-three-transcript" />
         </figure>
         <figure id="three">
-            <img src="/images/colonization/colonization2.png" alt="Panel 3 of 9" aria-describedby="panel-four-transcript" />
+            <img src="/images/colonization/colonization2.png" alt="Panel 4 of 9" aria-describedby="panel-four-transcript" />
         </figure>
         <figure id="four">
-            <img src="/images/colonization/colonization3.png" alt="Panel 4 of 9" aria-describedby="panel-five-transcript" />
+            <img src="/images/colonization/colonization3.png" alt="Panel 5 of 9" aria-describedby="panel-five-transcript" />
         </figure>
         <figure id="five">
-            <img src="/images/colonization/colonization4.png" alt="Panel 5 of 9" aria-describedby="panel-six-transcript" />
+            <img src="/images/colonization/colonization4.png" alt="Panel 6 of 9" aria-describedby="panel-six-transcript" />
         </figure>
         <figure id="six">
-            <img src="/images/colonization/colonization5.png" alt="Panel 6 of 9" aria-describedby="panel-seven-transcript" />
+            <img src="/images/colonization/colonization5.png" alt="Panel 7 of 9" aria-describedby="panel-seven-transcript" />
         </figure>
         <figure id="seven">
-            <img src="/images/colonization/colonization6.png" alt="Panel 7 of 9" aria-describedby="panel-eight-transcript" />
+            <img src="/images/colonization/colonization6.png" alt="Panel 8 of 9" aria-describedby="panel-eight-transcript" />
         </figure>
         <figure id="eight">
-            <img src="/images/colonization/colonization7.png" alt="Panel 8 of 9" aria-describedby="panel-nine-transcript" />
+            <img src="/images/colonization/colonization7.png" alt="Panel 9 of 9" aria-describedby="panel-nine-transcript" />
         </figure>
     </div>
     <button id="slider-transcript-toggle" class="transcript-toggle" aria-expanded="false"><span class="show-status">Show</span><span class="hide-status">Hide</span> Transcript</button>

@@ -1,6 +1,24 @@
+# Enable RewriteEngine
 RewriteEngine On
+
+# Force HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Set the default language to English
+SetEnvIf Request_URI "^" LANGUAGE=en
+
+# ErrorDocument directive for 404 Not Found
 ErrorDocument 404 /error.php
+
+# ErrorDocument directive for 500 Internal Server Error
 ErrorDocument 500 /error.php
+
+# ErrorDocument directive for 403 Forbidden
+ErrorDocument 403 /error.php
+
+# ErrorDocument directive for 400 Bad Request
+ErrorDocument 400 /error.php
+
+# ErrorDocument directive for 503 Service Unavailable
+ErrorDocument 503 /error.php

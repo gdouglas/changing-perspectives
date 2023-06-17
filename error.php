@@ -7,7 +7,7 @@
  * 
  **/
 
-
+// Get a languge code "en" or "fr"
 require_once 'language-detect.php';
 
 // Error messages in English and French
@@ -31,17 +31,28 @@ $errorMessages = array(
     503 => array(
         'en' => "Sorry, the service is temporarily unavailable. Please try again later.",
         'fr' => "Désolé, le service est temporairement indisponible. Veuillez réessayer ultérieurement."
-    )
+    ),
+    200 => array(
+        'en' => "Oops! Something went wrong on our server. Please try again later.",
+        'fr' => "Oops ! Quelque chose s'est mal passé sur notre serveur. Veuillez réessayer ultérieurement."
+    ),
+    201 => array(
+        'en' => "Created",
+        'fr' => "Créé"
+    ),
+    // Add more entries for other possible return values here
 );
+
 
 
 // Get the HTTP error code
 $errorCode = http_response_code();
-// if response code is incrorrect for an error page replace it with the redirect_status
+// 200 code is being returned in error on the server. if response code is incrorrect for an error page replace it with the redirect_status
 if ($errorCode === 200) {
     $errorCode = $_SERVER['REDIRECT_STATUS'];
 }
-// Get the appropriate error message based on the language and error code
+
+// Get the appropriate error message based on the language and error code. This file is only loaded when an error is redirected.
 $errorMessage = $errorMessages[$errorCode][$language];
 ?>
 <!DOCTYPE html>

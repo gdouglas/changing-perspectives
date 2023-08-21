@@ -1,7 +1,7 @@
 <?php
 
 // include $_SERVER['DOCUMENT_ROOT'] . "/dev/tools.php";
-require_once $_SERVER['DOCUMENT_ROOT'] . '/dev/protect.php'; //disable this to remove password from site.
+// require_once $_SERVER['DOCUMENT_ROOT'] . '/dev/protect.php'; //disable this to remove password from site.
 
 ?>
 
